@@ -17,6 +17,18 @@
     ],
     "meta-charset-utf-8": "off",
     "meta-viewport": "off",
-    "no-inline-styles": "off"
+    "no-inline-styles": "off",
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "-ms-touch-action",
+          "user-select",
+          "text-size-adjust",
+          "-webkit-overflow-scrolling",
+          "scrollbar-width"
+        ]
+      }
+    ]
   }
 }
