@@ -831,42 +831,49 @@
 			<!-- /.overflow-hidden -->
 		</section>
 		<!-- /.content-wrapper -->
-		<footer class=" text-inverse" style="background: #5674a1; color:#FFF ">
-			<div class="container pt-5 pt-md-5 pb-7">
-				<div class="row gy-6 gy-lg-0">
-					<div class="col-lg-4">
-						<div class="widget">
-							<h3 class="h2 mb-3 text-white">ABOUT</h3>
-							<p class="lead mb-5">Lorem ipsum dolor sit amet, consec
-								tetur adipisicing elit, sed do eiusmod tempor incididunt ultimam quantum</p>
+		<co:template id="FooterSection" name="footer_section" title="Footer Section" type="static" detached="true">
+			<div class="FooterContainer">
+				<co:section id="Footer" name="Footer" title="Footer" actions="edit,delete">
+					<footer class=" text-inverse" style="background: #5674a1; color:#FFF ">
+						<div class="container pt-5 pt-md-5 pb-7">
+							<div class="row gy-6 gy-lg-0">
+								<div class="col-lg-4">
+									<div class="widget">
+										<h3 class="h2 mb-3 text-white">ABOUT</h3>
+										<p class="lead mb-5">Lorem ipsum dolor sit amet, consec
+											tetur adipisicing elit, sed do eiusmod tempor incididunt ultimam quantum</p>
+									</div>
+									<!-- /.widget -->
+								</div>
+								<!-- /column -->
+								<co:template class="chabad_navigator_bar" id="Navigation" name="nagivation" title="Navigation Bar"
+									max_chars="70"></co:template>
+							</div>
+							<!--/.row -->
+							<!-- /div -->
 						</div>
-						<!-- /.widget -->
-					</div>
-					<!-- /column -->
-					<co:template class="chabad_navigator_bar" id="Navigation" name="nagivation" title="Navigation Bar"
-						max_chars="70"></co:template>
-				</div>
-				<!--/.row -->
-				<!-- /div -->
+						<!-- /.container -->
+					</footer>
+					<footer class=" text-inverse" style="background: #061737; color:#FFF ">
+						<div class="container pt-5 pt-md-5 pb-5">
+							<div class="d-md-flex align-items-center justify-content-between">
+								<p class="mb-2 mb-lg-0"><span class="iconsfoot"><i class="uil-home"></i> Address St, City, State
+										12345</span>
+									<span class="iconsfoot"><i class="uil-phone"></i> 213-892-1202</span> <span class="iconsfoot"><i
+											class="uil-envelope-add"></i> camp@chabad.org</span>
+								</p>
+								<nav class="nav social social-white text-md-end">
+									<a href="./assets/media/movie.mp4" class="btn btn-sm btn-primary rounded-pill"
+										style="background-color:#32afea; border-color:#32afea; ">
+										<i class="icn-caret-LEFT"></i> APPLY NOW</a>
+								</nav>
+								<!-- /.social -->
+							</div>
+						</div>
+					</footer>
+				</co:section>
 			</div>
-			<!-- /.container -->
-		</footer>
-		<footer class=" text-inverse" style="background: #061737; color:#FFF ">
-			<div class="container pt-5 pt-md-5 pb-5">
-				<div class="d-md-flex align-items-center justify-content-between">
-					<p class="mb-2 mb-lg-0"><span class="iconsfoot"><i class="uil-home"></i> Address St, City, State 12345</span>
-						<span class="iconsfoot"><i class="uil-phone"></i> 213-892-1202</span> <span class="iconsfoot"><i
-								class="uil-envelope-add"></i> camp@chabad.org</span>
-					</p>
-					<nav class="nav social social-white text-md-end">
-						<a href="./assets/media/movie.mp4" class="btn btn-sm btn-primary rounded-pill"
-							style="background-color:#32afea; border-color:#32afea; ">
-							<i class="icn-caret-LEFT"></i> APPLY NOW</a>
-					</nav>
-					<!-- /.social -->
-				</div>
-			</div>
-		</footer>
+		</co:template>
 	</div>
 </div>
 <script src="./assets/js/plugins.js"></script>
