@@ -14,24 +14,21 @@
 			<header class="wrapper">
 				<div id="chabad_head">
 					<co:template id="HeaderSection" name="header_section" title="Header Section" type="static">
-						<nav class="navbar navbar-expand-lg center-nav transparent position-absolute navbar-dark px-md-10 px-xxl-0">
+						<nav
+							class="navbar navbar-expand-lg center-nav transparent position-absolute navbar-dark px-md-10 px-xxl-0">
 							<div class="container flex-lg-row flex-nowrap align-items-center">
 								<div class="navbar-brand w-100">
 									<a href="https://mendelgordon.github.io/chabad-org-preschool-4/index.html"
 										style="color: white; font-size: .85rem; font-weight: bold;">
-										<co:section id="ContentHeading" name="content_heading" title="Content Heading" actions="edit">Chabad
+										<co:section id="ContentHeading" name="content_heading" title="Content Heading"
+											actions="edit">Chabad
 											Preschool</co:section>
 									</a>
 								</div>
+								<co:template class="chabad_navigator_bar" id="Navigation" name="nagivation"
+									title="Navigation Bar" max_chars="70"></co:template>
 								<div class="offcanvas-nav">
-									<co:template class="chabad_navigator_bar" id="Navigation" name="nagivation" title="Navigation Bar"
-										max_chars="70"></co:template>
 								</div>
-								<ul class="navbar-nav flex-row align-items-center ms-auto">
-									<li class="nav-item d-lg-none">
-										<button class="hamburger offcanvas-nav-btn"><span></span></button>
-									</li>
-								</ul>
 							</div>
 							<!-- /.container -->
 						</nav>
@@ -45,37 +42,59 @@
 				<co:template class="chabad_left_column" title="Content Area 1" actions="edit,delete" name="content_area"
 					id="ContentArea" type="static">
 					<div class="chabad_left_column">
-						<section class="section-frame br-fix overflow-hidden">
-							<div class="wrapper image-wrapper bg-cover bg-image bg-overlay bg-overlay-500"
-								style="background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/assets/img/photos/bg26.jpg)"
-								data-image-src="https://mendelgordon.github.io/chabad-org-preschool-4/assets/img/photos/bg26.jpg">
-								<div
-									style="background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/assets/img/illustrations/White-wavy-bottom-border.png);background-position: bottom;background-size: contain;background-repeat: no-repeat;">
-									<div class="container pt-10 pt-lg-21 pb-17 pb-lg-19 text-center">
-										<div class="row">
-											<div class="col-md-9 col-lg-8 col-xl-7 col-xxl-6 mx-auto" data-cues="zoomIn"
-												data-group="page-title" data-interval="-200" data-delay="500">
-												<h3 class="display-1 fs-54 text-white mb-7"
-													style="color: rgb(21, 112, 6); animation-name: zoomIn; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 500ms; animation-direction: normal; animation-fill-mode: both;">
-													Chabad Preschool Now Open!</h3>
-												<h2 class="h6 text-uppercase ls-xl text-white mb-5"
-													style="animation-name: zoomIn; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 1000ms; animation-direction: normal; animation-fill-mode: both;">
-													Lorem ipsum dolor sit amet, consectetuer
-													adipiscing
-													elit.</h2>
-												<a href="#" class="btn btn-sm btn-primary rounded-pill"
-													style="animation-name: zoomIn; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 1500ms; animation-direction: normal; animation-fill-mode: both;">Apply
-													Now</a>
-											</div>
-											<!-- /column -->
-										</div>
-										<!-- /.row -->
+						<co:section id='Section1' name='Section1' title='Section1' actions='edit,delete,copy'>
+							<section class="section-frame br-fix overflow-hidden">
+								<div class="wrapper image-wrapper bg-cover bg-image bg-overlay-500"
+									style="position: relative;">
+									<co:editable id='Section1Image' name='Section1Image' title='Section1Image'
+										attribute='src' actions='edit,delete' tag_only='true'>
+										<img src="https://mendelgordon.github.io/chabad-org-preschool-4/assets/img/photos/bg26.jpg"
+											alt="Background"
+											style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+									</co:editable>
+									<div
+										style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 0;">
 									</div>
-									<!-- /.overflow-hidden -->
+									<div
+										style="background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/assets/img/illustrations/White-wavy-bottom-border.png);background-position: bottom;background-size: contain;background-repeat: no-repeat; position: relative;">
+										<div class="container pt-10 pt-lg-21 pb-17 pb-lg-19 text-center">
+											<div class="row">
+												<div class="col-md-9 col-lg-8 col-xl-7 col-xxl-6 mx-auto"
+													data-cues="zoomIn" data-group="page-title" data-interval="-200"
+													data-delay="500">
+													<h3 class="display-1 fs-54 text-white mb-7"
+														style="color: rgb(21, 112, 6); animation-name: zoomIn; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 500ms; animation-direction: normal; animation-fill-mode: both;">
+														<co:editable id='Section1Title' name='Section1Title'
+															title='Section1Title' actions='edit,delete' datatype='line'>
+															Chabad Preschool Now Open!
+														</co:editable>
+													</h3>
+													<h2 class="h6 text-uppercase ls-xl text-white mb-5"
+														style="animation-name: zoomIn; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 1000ms; animation-direction: normal; animation-fill-mode: both;">
+														<co:editable id='Section1Description' name='Section1Description'
+															title='Section1Description' actions='edit,delete'
+															datatype='line'>
+															Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+														</co:editable>
+													</h2>
+													<co:editable id='Section1Button' name='Section1Button'
+														title='Section1Button' attribute='href,innertext'
+														actions='edit,delete,copy' tag_only='true'>
+														<a href="#" class="btn btn-sm btn-primary rounded-pill"
+															style="animation-name: zoomIn; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 1500ms; animation-direction: normal; animation-fill-mode: both;">Apply
+															Now</a>
+													</co:editable>
+												</div>
+												<!-- /column -->
+											</div>
+											<!-- /.row -->
+										</div>
+										<!-- /.overflow-hidden -->
+									</div>
 								</div>
-							</div>
-							<!-- /.wrapper -->
-						</section>
+								<!-- /.wrapper -->
+							</section>
+						</co:section>
 						<section class="wrapper bg-light ">
 							<div class="container pt-10 pt-md-14 pb-8 text-center">
 								<div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
@@ -89,18 +108,25 @@
 									</div>
 									<!-- /column -->
 									<div class="col-md-10 offset-md-1 offset-lg-0 col-lg-7 text-center text-lg-start">
-										<h3 class="display-3 mb-5 mx-md-n5 mx-lg-0" style="color: #28a73c">Welcome to School!</h3>
-										<p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+										<h3 class="display-3 mb-5 mx-md-n5 mx-lg-0" style="color: #28a73c">Welcome to
+											School!</h3>
+										<p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+											eiusmod tempor
 											incididunt
-											ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+											ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+											exercitation ullamco
 											laboris
 											nisi ut aliquip ex ea commodo consequat.
-											Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+											Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+											eu fugiat nulla
 											pariatur.
-											Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+											Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+											deserunt mollit anim id
 											est
-											laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-											laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+											laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+											accusantium doloremque
+											laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis
+											et quasi architecto
 											beatae
 											vitae dicta sunt explicabo. </p>
 									</div>
@@ -115,14 +141,16 @@
 							<div class="container py-14 py-md-16 text-center">
 								<div class="row">
 									<div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-										<h3 class="display-3 mb-10 px-xl-10" style="color: #393d72">Get Started With Our School</h3>
+										<h3 class="display-3 mb-10 px-xl-10" style="color: #393d72">Get Started With Our
+											School</h3>
 									</div>
 									<!-- /column -->
 								</div>
 								<!-- /.row -->
 								<div class="position-relative">
-									<div class="shape rounded-circle bg-soft-blue rellax w-16 h-16" data-rellax-speed="1"
-										style="bottom: -0.5rem; right: -2.2rem; z-index: 0;"></div>
+									<div class="shape rounded-circle bg-soft-blue rellax w-16 h-16"
+										data-rellax-speed="1" style="bottom: -0.5rem; right: -2.2rem; z-index: 0;">
+									</div>
 									<div class="shape bg-dot yellow rellax w-16 h-17" data-rellax-speed="1"
 										style="top: -0.5rem; left: -2.5rem; z-index: 0;"></div>
 									<div class="row gx-md-5 gy-5 text-center">
@@ -132,7 +160,8 @@
 													<img src="https://mendelgordon.github.io/chabad-org-preschool-4/assets/img/photos/icon4.png"
 														class="" alt="" />
 													<h4 class="mb-1">Special Education</h4>
-													<p class="mb-2">Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida
+													<p class="mb-2">Nulla vitae elit libero, a pharetra augue. Donec id
+														elit non mi porta gravida
 														at
 														eget metus cras justo.</p>
 												</div>
@@ -147,7 +176,8 @@
 													<img src="https://mendelgordon.github.io/chabad-org-preschool-4/assets/img/photos/icon5.png"
 														class="" alt="" />
 													<h4 class="mb-1">Full Day Session</h4>
-													<p class="mb-2">Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida
+													<p class="mb-2">Nulla vitae elit libero, a pharetra augue. Donec id
+														elit non mi porta gravida
 														at
 														eget metus cras justo.</p>
 												</div>
@@ -162,7 +192,8 @@
 													<img src="https://mendelgordon.github.io/chabad-org-preschool-4/assets/img/photos/icon6.png"
 														class="" alt="" />
 													<h4 class="mb-1">Qualified Teachers</h4>
-													<p class="mb-2">Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida
+													<p class="mb-2">Nulla vitae elit libero, a pharetra augue. Donec id
+														elit non mi porta gravida
 														at
 														eget metus cras justo.</p>
 												</div>
@@ -177,7 +208,8 @@
 													<img src="https://mendelgordon.github.io/chabad-org-preschool-4/assets/img/photos/icon7.png"
 														class="" alt="" />
 													<h4 class="mb-1">Quality Education</h4>
-													<p class="mb-2">Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida
+													<p class="mb-2">Nulla vitae elit libero, a pharetra augue. Donec id
+														elit non mi porta gravida
 														at
 														eget metus cras justo.</p>
 												</div>
@@ -198,10 +230,12 @@
 								<div class="row text-center">
 									<div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
 										<h3 class="display-3 mb-10 px-xl-10" style="color: #7e0f7c">What We Offer</h3>
-										<p class=" mb-2 " style="line-height: 1.4;padding-bottom: 50px">At our education center, we provide
+										<p class=" mb-2 " style="line-height: 1.4;padding-bottom: 50px">At our education
+											center, we provide
 											a
 											variety of benefits and advantages for your kids’ successful
-											education, while allowing your kid to stay fully active, creative and healthy</p>
+											education, while allowing your kid to stay fully active, creative and
+											healthy</p>
 									</div>
 									<!-- /column -->
 								</div>
@@ -211,7 +245,8 @@
 										<div class="d-flex card-body">
 											<div>
 												<h4 class="mb-1">Safety First</h4>
-												<p class="mb-0">Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio
+												<p class="mb-0">Duis mollis gravida commodo id luctus erat porttitor
+													ligula, eget lacinia odio
 													sem
 													aget elit nullam quis risus eget.</p>
 											</div>
@@ -222,7 +257,8 @@
 										<div class="d-flex  card-body">
 											<div>
 												<h4 class="mb-1">Small Class Size</h4>
-												<p class="mb-0">Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio
+												<p class="mb-0">Duis mollis gravida commodo id luctus erat porttitor
+													ligula, eget lacinia odio
 													sem
 													aget elit nullam quis risus eget.</p>
 											</div>
@@ -233,7 +269,8 @@
 										<div class="d-flex  card-body">
 											<div>
 												<h4 class="mb-1">Certified Teachers</h4>
-												<p class="mb-0">Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio
+												<p class="mb-0">Duis mollis gravida commodo id luctus erat porttitor
+													ligula, eget lacinia odio
 													sem
 													aget elit nullam quis risus eget.</p>
 											</div>
@@ -244,7 +281,8 @@
 										<div class="d-flex  card-body">
 											<div>
 												<h4 class="mb-1">Infant Care</h4>
-												<p class="mb-0">Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio
+												<p class="mb-0">Duis mollis gravida commodo id luctus erat porttitor
+													ligula, eget lacinia odio
 													sem
 													aget elit nullam quis risus eget.</p>
 											</div>
@@ -255,7 +293,8 @@
 										<div class="d-flex card-body">
 											<div>
 												<h4 class="mb-1">Creative Lessons</h4>
-												<p class="mb-0">Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio
+												<p class="mb-0">Duis mollis gravida commodo id luctus erat porttitor
+													ligula, eget lacinia odio
 													sem
 													aget elit nullam quis risus eget.</p>
 											</div>
@@ -266,7 +305,8 @@
 										<div class="d-flex  card-body">
 											<div>
 												<h4 class="mb-1">Happy Environment</h4>
-												<p class="mb-0">Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio
+												<p class="mb-0">Duis mollis gravida commodo id luctus erat porttitor
+													ligula, eget lacinia odio
 													sem
 													aget elit nullam quis risus eget.</p>
 											</div>
@@ -285,10 +325,12 @@
 									<div class="row text-center">
 										<div class="col-xl-11 col-xxl-10 mx-auto">
 											<h3 class="display-3 mb-10 px-xl-10" style="color: #393d72">Title 1</h3>
-											<p class=" mb-2 " style="line-height: 1.4;padding-bottom: 50px">At our education center, we
+											<p class=" mb-2 " style="line-height: 1.4;padding-bottom: 50px">At our
+												education center, we
 												provide a
 												variety of benefits and advantages for your kids’ successful
-												education, while allowing your kid to stay fully active, creative and healthy</p>
+												education, while allowing your kid to stay fully active, creative and
+												healthy</p>
 											<!-- /.row -->
 										</div>
 										<!-- /column -->
@@ -305,10 +347,12 @@
 									<div class="row text-center">
 										<div class="col-xl-11 col-xxl-10 mx-auto">
 											<h3 class="display-3 mb-10 px-xl-10" style="color: #393d72">Title 1</h3>
-											<p class=" mb-2 " style="line-height: 1.4;padding-bottom: 50px">At our education center, we
+											<p class=" mb-2 " style="line-height: 1.4;padding-bottom: 50px">At our
+												education center, we
 												provide a
 												variety of benefits and advantages for your kids’ successful
-												education, while allowing your kid to stay fully active, creative and healthy</p>
+												education, while allowing your kid to stay fully active, creative and
+												healthy</p>
 											<!-- /.row -->
 										</div>
 										<!-- /column -->
@@ -330,8 +374,9 @@
 								</div>
 								<!-- /.row -->
 								<div class="position-relative">
-									<div class="shape rounded-circle bg-soft-blue rellax w-16 h-16" data-rellax-speed="1"
-										style="bottom: -0.5rem; right: -2.2rem; z-index: 0;"></div>
+									<div class="shape rounded-circle bg-soft-blue rellax w-16 h-16"
+										data-rellax-speed="1" style="bottom: -0.5rem; right: -2.2rem; z-index: 0;">
+									</div>
 									<div class="shape bg-dot yellow rellax w-16 h-17" data-rellax-speed="1"
 										style="top: -0.5rem; left: -2.5rem; z-index: 0;"></div>
 									<div class="row gx-md-5 gy-5 text-center">
@@ -341,14 +386,16 @@
 													<img src="https://mendelgordon.github.io/chabad-org-preschool-4/assets/img/photos/icon1.png"
 														class="" alt="" />
 													<h4 class="mb-1">Arts Program</h4>
-													<p class="mb-2">Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida
+													<p class="mb-2">Nulla vitae elit libero, a pharetra augue. Donec id
+														elit non mi porta gravida
 														at
 														eget metus cras justo.</p>
 												</div>
 												<!--/.card-body -->
 											</div>
-											<!--/.card --><a href="#" class="btn  btn-primaryx2 rounded-pill" data-cue="zoomIn"
-												data-interval="-200" data-group="page-title" data-delay="500" data-show="true"
+											<!--/.card --><a href="#" class="btn  btn-primaryx2 rounded-pill"
+												data-cue="zoomIn" data-interval="-200" data-group="page-title"
+												data-delay="500" data-show="true"
 												style="animation-name: zoomIn; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 1500ms; animation-direction: normal; animation-fill-mode: both;">Learn
 												More</a>
 										</div>
@@ -359,13 +406,15 @@
 													<img src="https://mendelgordon.github.io/chabad-org-preschool-4/assets/img/photos/icon2.png"
 														alt="" />
 													<h4 class="mb-1">Jewish Studies</h4>
-													<p class="mb-2">Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida
+													<p class="mb-2">Nulla vitae elit libero, a pharetra augue. Donec id
+														elit non mi porta gravida
 														at
 														eget metus cras justo.</p>
 												</div>
 												<!--/.card-body -->
-											</div> <a href="#" class="btn  btn-primaryx rounded-pill" data-cue="zoomIn" data-interval="-200"
-												data-group="page-title" data-delay="500" data-show="true"
+											</div> <a href="#" class="btn  btn-primaryx rounded-pill" data-cue="zoomIn"
+												data-interval="-200" data-group="page-title" data-delay="500"
+												data-show="true"
 												style="animation-name: zoomIn; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 1500ms; animation-direction: normal; animation-fill-mode: both;">Learn
 												More</a>
 											<!--/.card -->
@@ -377,13 +426,15 @@
 													<img src="https://mendelgordon.github.io/chabad-org-preschool-4/assets/img/photos/icon3.png"
 														alt="" />
 													<h4 class="mb-1">Sports Program</h4>
-													<p class="mb-2">Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida
+													<p class="mb-2">Nulla vitae elit libero, a pharetra augue. Donec id
+														elit non mi porta gravida
 														at
 														eget metus cras justo.</p>
 												</div>
 												<!--/.card-body -->
-											</div> <a href="#" class="btn btn-primaryx2 rounded-pill" data-cue="zoomIn" data-interval="-200"
-												data-group="page-title" data-delay="500" data-show="true"
+											</div> <a href="#" class="btn btn-primaryx2 rounded-pill" data-cue="zoomIn"
+												data-interval="-200" data-group="page-title" data-delay="500"
+												data-show="true"
 												style="animation-name: zoomIn; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 1500ms; animation-direction: normal; animation-fill-mode: both;">Learn
 												More</a>
 											<!--/.card -->
@@ -402,13 +453,13 @@
 								<h3 class="display-3 mb-3 text-center" style="color: #92278f">What Parents Say</h3>
 								<p class="lead text-center mb-6 px-md-16 px-lg-0"></p>
 								<div class="position-relative">
-									<div class="shape rounded-circle bg-soft-yellow rellax w-16 h-16" data-rellax-speed="1"
-										style="bottom: 0.5rem; right: -1.7rem;"></div>
+									<div class="shape rounded-circle bg-soft-yellow rellax w-16 h-16"
+										data-rellax-speed="1" style="bottom: 0.5rem; right: -1.7rem;"></div>
 									<div class="shape bg-dot primary rellax w-16 h-16" data-rellax-speed="1"
 										style="top: -1rem; left: -1.7rem;">
 									</div>
-									<div class="swiper-container dots-closer mb-6" data-margin="0" data-dots="true" data-items-xl="3"
-										data-items-md="2" data-items-xs="1">
+									<div class="swiper-container dots-closer mb-6" data-margin="0" data-dots="true"
+										data-items-xl="3" data-items-md="2" data-items-xs="1">
 										<div class="swiper">
 											<div class="swiper-wrapper">
 												<div class="swiper-slide">
@@ -417,9 +468,11 @@
 															<div class="red-triangle2"></div>
 															<div class="card-body">
 																<blockquote class="icon mb-0">
-																	<p>“Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum
+																	<p>“Vivamus sagittis lacus vel augue laoreet rutrum
+																		faucibus dolor auctor. Vestibulum
 																		id
-																		ligula porta felis euismod semper. Cras justo odio dapibus facilisis sociis natoque
+																		ligula porta felis euismod semper. Cras justo
+																		odio dapibus facilisis sociis natoque
 																		penatibus.”</p>
 																</blockquote>
 															</div>
@@ -446,9 +499,11 @@
 															<div class="red-triangle"></div>
 															<div class="card-body">
 																<blockquote class="icon mb-0">
-																	<p>“Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum
+																	<p>“Vivamus sagittis lacus vel augue laoreet rutrum
+																		faucibus dolor auctor. Vestibulum
 																		id
-																		ligula porta felis euismod semper. Cras justo odio dapibus facilisis sociis natoque
+																		ligula porta felis euismod semper. Cras justo
+																		odio dapibus facilisis sociis natoque
 																		penatibus.”</p>
 																</blockquote>
 															</div>
@@ -475,9 +530,11 @@
 															<div class="red-triangle"></div>
 															<div class="card-body">
 																<blockquote class="icon mb-0">
-																	<p>“Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum
+																	<p>“Vivamus sagittis lacus vel augue laoreet rutrum
+																		faucibus dolor auctor. Vestibulum
 																		id
-																		ligula porta felis euismod semper. Cras justo odio dapibus facilisis sociis natoque
+																		ligula porta felis euismod semper. Cras justo
+																		odio dapibus facilisis sociis natoque
 																		penatibus.”</p>
 																</blockquote>
 															</div>
@@ -504,9 +561,11 @@
 															<div class="red-triangle"></div>
 															<div class="card-body">
 																<blockquote class="icon mb-0">
-																	<p>“Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum
+																	<p>“Vivamus sagittis lacus vel augue laoreet rutrum
+																		faucibus dolor auctor. Vestibulum
 																		id
-																		ligula porta felis euismod semper. Cras justo odio dapibus facilisis sociis natoque
+																		ligula porta felis euismod semper. Cras justo
+																		odio dapibus facilisis sociis natoque
 																		penatibus.”</p>
 																</blockquote>
 															</div>
@@ -533,9 +592,11 @@
 															<div class="red-triangle"></div>
 															<div class="card-body">
 																<blockquote class="icon mb-0">
-																	<p>“Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum
+																	<p>“Vivamus sagittis lacus vel augue laoreet rutrum
+																		faucibus dolor auctor. Vestibulum
 																		id
-																		ligula porta felis euismod semper. Cras justo odio dapibus facilisis sociis natoque
+																		ligula porta felis euismod semper. Cras justo
+																		odio dapibus facilisis sociis natoque
 																		penatibus.”</p>
 																</blockquote>
 															</div>
@@ -562,9 +623,11 @@
 															<div class="red-triangle"></div>
 															<div class="card-body">
 																<blockquote class="icon mb-0">
-																	<p>“Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum
+																	<p>“Vivamus sagittis lacus vel augue laoreet rutrum
+																		faucibus dolor auctor. Vestibulum
 																		id
-																		ligula porta felis euismod semper. Cras justo odio dapibus facilisis sociis natoque
+																		ligula porta felis euismod semper. Cras justo
+																		odio dapibus facilisis sociis natoque
 																		penatibus.”</p>
 																</blockquote>
 															</div>
@@ -598,7 +661,8 @@
 						</section>
 						<section class="wrapper bg-soft-primary">
 							<div class="container py-14 py-md-16">
-								<h3 class="display-3 mb-3 text-center" style="color: #92278f">Frequently Asked Questions</h3>
+								<h3 class="display-3 mb-3 text-center" style="color: #92278f">Frequently Asked Questions
+								</h3>
 								<p class="lead text-center mb-6 px-md-16 px-lg-0"></p>
 								<div class="row gx-lg-8 gx-xl-12 gy-10">
 									<!--/column -->
@@ -606,20 +670,27 @@
 										<div id="accordion-3" class="accordion-wrapper">
 											<div class="card accordion-item">
 												<div class="card-header" id="accordion-heading-3-1">
-													<button class="collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-3-1"
-														aria-expanded="false" aria-controls="accordion-collapse-3-1">How do I get my subscription
+													<button class="collapsed" data-bs-toggle="collapse"
+														data-bs-target="#accordion-collapse-3-1" aria-expanded="false"
+														aria-controls="accordion-collapse-3-1">How do I get my
+														subscription
 														receipt?</button>
 												</div>
 												<!-- /.card-header -->
-												<div id="accordion-collapse-3-1" class="collapse" aria-labelledby="accordion-heading-3-1"
+												<div id="accordion-collapse-3-1" class="collapse"
+													aria-labelledby="accordion-heading-3-1"
 													data-bs-target="#accordion-3">
 													<div class="card-body">
-														<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
+														<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris
+															condimentum nibh, ut fermentum
 															massa
-															justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo
+															justo sit amet risus. Cras mattis consectetur purus sit amet
+															fermentum. Praesent commodo
 															cursus
-															magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis
-															parturient montes, nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac
+															magna, vel scelerisque nisl consectetur et. Cum sociis
+															natoque penatibus et magnis dis
+															parturient montes, nascetur ridiculus mus. Donec sed odio
+															dui. Cras justo odio, dapibus ac
 															facilisis.</p>
 													</div>
 													<!-- /.card-body -->
@@ -629,22 +700,29 @@
 											<!-- /.card -->
 											<div class="card accordion-item">
 												<div class="card-header" id="accordion-heading-3-2">
-													<button class="collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-3-2"
-														aria-expanded="false" aria-controls="accordion-collapse-3-2">Are there any discounts for
+													<button class="collapsed" data-bs-toggle="collapse"
+														data-bs-target="#accordion-collapse-3-2" aria-expanded="false"
+														aria-controls="accordion-collapse-3-2">Are there any discounts
+														for
 														people
 														in
 														need?</button>
 												</div>
 												<!-- /.card-header -->
-												<div id="accordion-collapse-3-2" class="collapse" aria-labelledby="accordion-heading-3-2"
+												<div id="accordion-collapse-3-2" class="collapse"
+													aria-labelledby="accordion-heading-3-2"
 													data-bs-target="#accordion-3">
 													<div class="card-body">
-														<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
+														<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris
+															condimentum nibh, ut fermentum
 															massa
-															justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo
+															justo sit amet risus. Cras mattis consectetur purus sit amet
+															fermentum. Praesent commodo
 															cursus
-															magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis
-															parturient montes, nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac
+															magna, vel scelerisque nisl consectetur et. Cum sociis
+															natoque penatibus et magnis dis
+															parturient montes, nascetur ridiculus mus. Donec sed odio
+															dui. Cras justo odio, dapibus ac
 															facilisis.</p>
 													</div>
 													<!-- /.card-body -->
@@ -654,20 +732,26 @@
 											<!-- /.card -->
 											<div class="card accordion-item">
 												<div class="card-header" id="accordion-heading-3-3">
-													<button class="collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-3-3"
-														aria-expanded="false" aria-controls="accordion-collapse-3-3">Do you offer a free trial
+													<button class="collapsed" data-bs-toggle="collapse"
+														data-bs-target="#accordion-collapse-3-3" aria-expanded="false"
+														aria-controls="accordion-collapse-3-3">Do you offer a free trial
 														edit?</button>
 												</div>
 												<!-- /.card-header -->
-												<div id="accordion-collapse-3-3" class="collapse" aria-labelledby="accordion-heading-3-3"
+												<div id="accordion-collapse-3-3" class="collapse"
+													aria-labelledby="accordion-heading-3-3"
 													data-bs-target="#accordion-3">
 													<div class="card-body">
-														<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
+														<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris
+															condimentum nibh, ut fermentum
 															massa
-															justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo
+															justo sit amet risus. Cras mattis consectetur purus sit amet
+															fermentum. Praesent commodo
 															cursus
-															magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis
-															parturient montes, nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac
+															magna, vel scelerisque nisl consectetur et. Cum sociis
+															natoque penatibus et magnis dis
+															parturient montes, nascetur ridiculus mus. Donec sed odio
+															dui. Cras justo odio, dapibus ac
 															facilisis.</p>
 													</div>
 													<!-- /.card-body -->
@@ -677,20 +761,26 @@
 											<!-- /.card -->
 											<div class="card accordion-item">
 												<div class="card-header" id="accordion-heading-3-4">
-													<button class="collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-3-4"
-														aria-expanded="false" aria-controls="accordion-collapse-3-4">How do I reset my Account
+													<button class="collapsed" data-bs-toggle="collapse"
+														data-bs-target="#accordion-collapse-3-4" aria-expanded="false"
+														aria-controls="accordion-collapse-3-4">How do I reset my Account
 														password?</button>
 												</div>
 												<!-- /.card-header -->
-												<div id="accordion-collapse-3-4" class="collapse" aria-labelledby="accordion-heading-3-4"
+												<div id="accordion-collapse-3-4" class="collapse"
+													aria-labelledby="accordion-heading-3-4"
 													data-bs-target="#accordion-3">
 													<div class="card-body">
-														<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
+														<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris
+															condimentum nibh, ut fermentum
 															massa
-															justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo
+															justo sit amet risus. Cras mattis consectetur purus sit amet
+															fermentum. Praesent commodo
 															cursus
-															magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis
-															parturient montes, nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac
+															magna, vel scelerisque nisl consectetur et. Cum sociis
+															natoque penatibus et magnis dis
+															parturient montes, nascetur ridiculus mus. Donec sed odio
+															dui. Cras justo odio, dapibus ac
 															facilisis.</p>
 													</div>
 													<!-- /.card-body -->
@@ -699,20 +789,26 @@
 											</div>
 											<div class="card accordion-item">
 												<div class="card-header" id="accordion-heading-3-5">
-													<button class="collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-3-4"
-														aria-expanded="false" aria-controls="accordion-collapse-3-4">How do I reset my Account
+													<button class="collapsed" data-bs-toggle="collapse"
+														data-bs-target="#accordion-collapse-3-4" aria-expanded="false"
+														aria-controls="accordion-collapse-3-4">How do I reset my Account
 														password?</button>
 												</div>
 												<!-- /.card-header -->
-												<div id="accordion-collapse-3-5" class="collapse" aria-labelledby="accordion-heading-3-4"
+												<div id="accordion-collapse-3-5" class="collapse"
+													aria-labelledby="accordion-heading-3-4"
 													data-bs-target="#accordion-3">
 													<div class="card-body">
-														<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
+														<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris
+															condimentum nibh, ut fermentum
 															massa
-															justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo
+															justo sit amet risus. Cras mattis consectetur purus sit amet
+															fermentum. Praesent commodo
 															cursus
-															magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis
-															parturient montes, nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac
+															magna, vel scelerisque nisl consectetur et. Cum sociis
+															natoque penatibus et magnis dis
+															parturient montes, nascetur ridiculus mus. Donec sed odio
+															dui. Cras justo odio, dapibus ac
 															facilisis.</p>
 													</div>
 													<!-- /.card-body -->
@@ -721,20 +817,26 @@
 											</div>
 											<div class="card accordion-item">
 												<div class="card-header" id="accordion-heading-3-6">
-													<button class="collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-3-4"
-														aria-expanded="false" aria-controls="accordion-collapse-3-4">How do I reset my Account
+													<button class="collapsed" data-bs-toggle="collapse"
+														data-bs-target="#accordion-collapse-3-4" aria-expanded="false"
+														aria-controls="accordion-collapse-3-4">How do I reset my Account
 														password?</button>
 												</div>
 												<!-- /.card-header -->
-												<div id="accordion-collapse-3-6" class="collapse" aria-labelledby="accordion-heading-3-4"
+												<div id="accordion-collapse-3-6" class="collapse"
+													aria-labelledby="accordion-heading-3-4"
 													data-bs-target="#accordion-3">
 													<div class="card-body">
-														<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
+														<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris
+															condimentum nibh, ut fermentum
 															massa
-															justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo
+															justo sit amet risus. Cras mattis consectetur purus sit amet
+															fermentum. Praesent commodo
 															cursus
-															magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis
-															parturient montes, nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac
+															magna, vel scelerisque nisl consectetur et. Cum sociis
+															natoque penatibus et magnis dis
+															parturient montes, nascetur ridiculus mus. Donec sed odio
+															dui. Cras justo odio, dapibus ac
 															facilisis.</p>
 													</div>
 													<!-- /.card-body -->
@@ -747,12 +849,15 @@
 									</div>
 									<div class="col-lg-4 mb-0">
 										<figure><img class="w-auto"
-												src="https://mendelgordon.github.io/chabad-org-preschool-4/assets/img/photos/grey.jpg" alt="" />
+												src="https://mendelgordon.github.io/chabad-org-preschool-4/assets/img/photos/grey.jpg"
+												alt="" />
 										</figure>
-										<p class="lead mb-6">uis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia
+										<p class="lead mb-6">uis mollis, est non commodo luctus, nisi erat porttitor
+											ligula, eget lacinia
 											odio
 											sem
-											nec elit.Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem
+											nec elit.Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
+											eget lacinia odio sem
 											nec
 											elit. Nullam quis risus eget urna mollis ornare.</p>
 									</div>
@@ -766,13 +871,14 @@
 							<div class="container py-14 py-md-16">
 								<div class="row">
 									<div class="col-lg-9 col-xl-8 col-xxl-7 mx-auto mb-8">
-										<h3 class="display-3 mb-3 text-center" style="color: #393d72">Our Preschool in Photos</h3>
+										<h3 class="display-3 mb-3 text-center" style="color: #393d72">Our Preschool in
+											Photos</h3>
 									</div>
 									<!-- /column -->
 								</div>
 								<!-- /.row -->
-								<co:template id="latest_photo" name="Latest_Photo" title="Latest Photos" autoselect="true" aid="-1"
-									actions="delete" photo_count="6" />
+								<co:template id="latest_photo" name="Latest_Photo" title="Latest Photos"
+									autoselect="true" aid="-1" actions="delete" photo_count="6" />
 								<!-- /.grid -->
 							</div>
 							<!-- /.container -->
@@ -792,7 +898,8 @@
 		<co:template id="FooterSection" name="footer_section" title="Footer Section" type="static" detached="true">
 			<div class="FooterContainer">
 				<co:section id="Footer" name="Footer" title="Footer" actions="edit,delete">
-					<img src="https://mendelgordon.github.io/chabad-org-preschool-4/assets/img/illustrations/blue-wavy-bottom-border.png" alt="" width="100%" height="auto" />
+					<img src="https://mendelgordon.github.io/chabad-org-preschool-4/assets/img/illustrations/blue-wavy-bottom-border.png"
+						alt="" width="100%" height="auto" />
 					<footer class=" text-inverse" style="background: #5674a1; color:#FFF ">
 						<div class="container pt-5 pt-md-5 pb-7">
 							<div class="row gy-6 gy-lg-0">
@@ -805,8 +912,8 @@
 									<!-- /.widget -->
 								</div>
 								<!-- /column -->
-								<co:template class="chabad_navigator_bar" id="Navigation" name="nagivation" title="Navigation Bar"
-									max_chars="70"></co:template>
+								<co:template class="chabad_navigator_bar" id="Navigation" name="nagivation"
+									title="Navigation Bar" max_chars="70"></co:template>
 							</div>
 							<!--/.row -->
 							<!-- /div -->
@@ -816,10 +923,11 @@
 					<footer class=" text-inverse" style="background: #061737; color:#FFF ">
 						<div class="container pt-5 pt-md-5 pb-5">
 							<div class="d-md-flex align-items-center justify-content-between">
-								<p class="mb-2 mb-lg-0"><span class="iconsfoot"><i class="uil-home"></i> Address St, City, State
+								<p class="mb-2 mb-lg-0"><span class="iconsfoot"><i class="uil-home"></i> Address St,
+										City, State
 										12345</span>
-									<span class="iconsfoot"><i class="uil-phone"></i> 213-892-1202</span> <span class="iconsfoot"><i
-											class="uil-envelope-add"></i> camp@chabad.org</span>
+									<span class="iconsfoot"><i class="uil-phone"></i> 213-892-1202</span> <span
+										class="iconsfoot"><i class="uil-envelope-add"></i> camp@chabad.org</span>
 								</p>
 								<nav class="nav social social-white text-md-end">
 									<a href="#" class="btn btn-sm btn-primary rounded-pill"
