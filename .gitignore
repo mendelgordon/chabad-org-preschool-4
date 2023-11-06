@@ -5,8 +5,7 @@ node_modules/
 /dev
 /assets
 
-# Ignore all .json, .md, and .js files in the root
-README.md
+# Ignore all .json, and .js files in the root
 *.json
 /*.js
 
