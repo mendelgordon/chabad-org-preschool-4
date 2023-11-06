@@ -1,6 +1,5 @@
-node_modules
-src
-dev
-assets
-dist/*.html
+node_modules/
+src/
+dev/
+assets/
 *.j*
