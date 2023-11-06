@@ -3,7 +3,6 @@ node_modules/
 # Ignore everything in the src, dev, and assets folders
 /src
 /dev
-/assets
 
 # Ignore all .json, and .js files in the root
 *.json
