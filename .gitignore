@@ -8,3 +8,6 @@ node_modules/
 # Ignore all .json and .js files
 *.json
 *.js
+
+# Ignore all .html files not in the root
+*/*.html
