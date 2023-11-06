@@ -3,10 +3,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@700');
-	@import url("https://mendelgordon.github.io/chabad-org-preschool-4/assets/css/plugins.css");
-	@import url("https://mendelgordon.github.io/chabad-org-preschool-4/assets/css/style.css");
-	@import url("https://mendelgordon.github.io/chabad-org-preschool-4/assets/css/colors/purple.css");
-	@import url("https://mendelgordon.github.io/chabad-org-preschool-4/assets/css/fonts/urbanist.css");
+	@import url("https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/css/plugins.css");
+	@import url("https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/css/style.css");
+	@import url("https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/css/colors/purple.css");
+	@import url("https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/css/fonts/urbanist.css");
 </style>
 <div id="chabad_body_page" style="padding-bottom: 1.5rem">
 	<div id="chabad_main_content">
@@ -14,17 +14,19 @@
 			<header class="wrapper">
 				<div id="chabad_head">
 					<co:template id="HeaderSection" name="header_section" title="Header Section" type="static">
-						<nav class="navbar navbar-expand-lg center-nav transparent position-absolute navbar-dark px-md-10 px-xxl-0">
+						<nav
+							class="navbar navbar-expand-lg center-nav transparent position-absolute navbar-dark px-md-10 px-xxl-0">
 							<div class="container flex-lg-row flex-nowrap align-items-center">
 								<div class="navbar-brand w-100">
 									<a href="https://mendelgordon.github.io/chabad-org-preschool-4/index.html"
 										style="color: white; font-size: .85rem; font-weight: bold;">
-										<co:section id="ContentHeading" name="content_heading" title="Content Heading" actions="edit">Chabad
+										<co:section id="ContentHeading" name="content_heading" title="Content Heading"
+											actions="edit">Chabad
 											Preschool</co:section>
 									</a>
 								</div>
-								<co:template class="chabad_navigator_bar" id="Navigation" name="nagivation" title="Navigation Bar"
-									max_chars="70"></co:template>
+								<co:template class="chabad_navigator_bar" id="Navigation" name="nagivation"
+									title="Navigation Bar" max_chars="70"></co:template>
 								<div class="offcanvas-nav">
 								</div>
 							</div>
@@ -42,12 +44,13 @@
 					<div class="chabad_left_column">
 						<co:section id='Section1' name='Section1' title='Section1' actions='edit,delete,copy'>
 							<section class="section-frame br-fix overflow-hidden">
-								<div class="wrapper image-wrapper bg-cover bg-image bg-overlay-500" style="position: relative;">
-									<co:editable id='Section1Image' name='Section1Image' title='Section1Image' attribute='src'
-										actions='edit,delete' tag_only='true'>
+								<div class="wrapper image-wrapper bg-cover bg-image bg-overlay-500"
+									style="position: relative;">
+									<co:editable id='Section1Image' name='Section1Image' title='Section1Image'
+										attribute='src' actions='edit,delete' tag_only='true'>
 										<img src="https://mendelgordon.github.io/chabad-org-preschool-4/assets/img/photos/bg26.jpg"
 											alt="Background"
-											style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;"/>
+											style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;" />
 									</co:editable>
 									<div
 										style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 0;">
@@ -57,8 +60,8 @@
 										<div class="container pt-10 pt-lg-21 pb-17 pb-lg-19 text-center">
 											<div class="row">
 												<div class="col-md-9 col-lg-8 col-xl-7 col-xxl-6 mx-auto">
-													<co:editable id='Section1Title' name='Section1Title' title='Section1Title'
-														actions='edit,delete' datatype='html'>
+													<co:editable id='Section1Title' name='Section1Title'
+														title='Section1Title' actions='edit,delete' datatype='html'>
 														<h3 class="display-1 fs-54 text-white mb-7"
 															style="color: rgb(21, 112, 6); animation-name: zoomIn; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 500ms; animation-direction: normal; animation-fill-mode: both;">
 															Chabad Preschool Now Open!
@@ -66,13 +69,15 @@
 													</co:editable>
 													<h2 class="h6 text-uppercase ls-xl text-white mb-5"
 														style="animation-name: zoomIn; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 1000ms; animation-direction: normal; animation-fill-mode: both;">
-														<co:editable id='Section1Description' name='Section1Description' title='Section1Description'
-															actions='edit,delete' datatype='line'>
+														<co:editable id='Section1Description' name='Section1Description'
+															title='Section1Description' actions='edit,delete'
+															datatype='line'>
 															Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
 														</co:editable>
 													</h2>
-													<co:editable id='Section1Button' name='Section1Button' title='Section1Button'
-														attribute='href,innertext' actions='edit,delete,copy' tag_only='true'>
+													<co:editable id='Section1Button' name='Section1Button'
+														title='Section1Button' attribute='href,innertext'
+														actions='edit,delete,copy' tag_only='true'>
 														<a href="#" class="btn btn-sm btn-primary rounded-pill"
 															style="animation-name: zoomIn; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 1500ms; animation-direction: normal; animation-fill-mode: both;">Apply
 															Now</a>
@@ -93,8 +98,8 @@
 								<div class="container pt-10 pt-md-14 pb-8 text-center">
 									<div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
 										<div class="col-lg-5" style="position: relative;aspect-ratio: 1;">
-											<co:editable id='Section2Image' name='Section2Image' title='Section2Image' attribute='src'
-												actions='edit,delete' tag_only='true'>
+											<co:editable id='Section2Image' name='Section2Image' title='Section2Image'
+												attribute='src' actions='edit,delete' tag_only='true'>
 												<img src="https://mendelgordon.github.io/chabad-org-preschool-4/assets/img/photos/bg26.jpg"
 													alt="image"
 													style="position: absolute; top: 0; left: 0; width: 100%;height: 100%;object-fit: cover;" />
@@ -104,16 +109,17 @@
 												style="position: absolute; top: 0; left: 0; width: 100%;height: 100%;object-fit: cover;" />
 										</div>
 										<!-- /column -->
-										<div class="col-md-10 offset-md-1 offset-lg-0 col-lg-7 text-center text-lg-start">
-											<co:editable id='Section2Title' name='Section2Title' title='Section2Title' actions='edit,delete'
-												datatype='html'>
+										<div
+											class="col-md-10 offset-md-1 offset-lg-0 col-lg-7 text-center text-lg-start">
+											<co:editable id='Section2Title' name='Section2Title' title='Section2Title'
+												actions='edit,delete' datatype='html'>
 												<h3 class="display-3 mb-5 mx-md-n5 mx-lg-0" style="color: #28a73c">
 													Welcome to School!
 												</h3>
 											</co:editable>
 											<p class="mb-2">
-												<co:editable id='Section2Description' name='Section2Description' title='Section2Description'
-													actions='edit,delete' datatype='text'>
+												<co:editable id='Section2Description' name='Section2Description'
+													title='Section2Description' actions='edit,delete' datatype='text'>
 													Lorem ipsum dolor sit amet, consectetur adipisicing elit,
 													sed do
 													eiusmod tempor
@@ -156,15 +162,16 @@
 								<div class="container py-14 py-md-16 text-center">
 									<div class="row">
 										<div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-											<h3 class="display-3 mb-10 px-xl-10" style="color: #393d72">Get Started With Our
+											<h3 class="display-3 mb-10 px-xl-10" style="color: #393d72">Get Started With
+												Our
 												School</h3>
 										</div>
 										<!-- /column -->
 									</div>
 									<!-- /.row -->
 									<div class="position-relative">
-										<div class="shape rounded-circle bg-soft-blue rellax w-16 h-16" data-rellax-speed="1"
-											style="bottom: -0.5rem; right: -2.2rem; z-index: 0;">
+										<div class="shape rounded-circle bg-soft-blue rellax w-16 h-16"
+											data-rellax-speed="1" style="bottom: -0.5rem; right: -2.2rem; z-index: 0;">
 										</div>
 										<div class="shape bg-dot yellow rellax w-16 h-17" data-rellax-speed="1"
 											style="top: -0.5rem; left: -2.5rem; z-index: 0;"></div>
@@ -175,7 +182,8 @@
 														<img src="https://mendelgordon.github.io/chabad-org-preschool-4/assets/img/photos/icon4.png"
 															class="" alt="" />
 														<h4 class="mb-1">Special Education</h4>
-														<p class="mb-2">Nulla vitae elit libero, a pharetra augue. Donec id
+														<p class="mb-2">Nulla vitae elit libero, a pharetra augue. Donec
+															id
 															elit non mi porta gravida
 															at
 															eget metus cras justo.</p>
@@ -191,7 +199,8 @@
 														<img src="https://mendelgordon.github.io/chabad-org-preschool-4/assets/img/photos/icon5.png"
 															class="" alt="" />
 														<h4 class="mb-1">Full Day Session</h4>
-														<p class="mb-2">Nulla vitae elit libero, a pharetra augue. Donec id
+														<p class="mb-2">Nulla vitae elit libero, a pharetra augue. Donec
+															id
 															elit non mi porta gravida
 															at
 															eget metus cras justo.</p>
@@ -207,7 +216,8 @@
 														<img src="https://mendelgordon.github.io/chabad-org-preschool-4/assets/img/photos/icon6.png"
 															class="" alt="" />
 														<h4 class="mb-1">Qualified Teachers</h4>
-														<p class="mb-2">Nulla vitae elit libero, a pharetra augue. Donec id
+														<p class="mb-2">Nulla vitae elit libero, a pharetra augue. Donec
+															id
 															elit non mi porta gravida
 															at
 															eget metus cras justo.</p>
@@ -223,7 +233,8 @@
 														<img src="https://mendelgordon.github.io/chabad-org-preschool-4/assets/img/photos/icon7.png"
 															class="" alt="" />
 														<h4 class="mb-1">Quality Education</h4>
-														<p class="mb-2">Nulla vitae elit libero, a pharetra augue. Donec id
+														<p class="mb-2">Nulla vitae elit libero, a pharetra augue. Donec
+															id
 															elit non mi porta gravida
 															at
 															eget metus cras justo.</p>
@@ -246,8 +257,10 @@
 								<div class="container py-14 py-md-16">
 									<div class="row text-center">
 										<div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-											<h3 class="display-3 mb-10 px-xl-10" style="color: #7e0f7c">What We Offer</h3>
-											<p class=" mb-2 " style="line-height: 1.4;padding-bottom: 50px">At our education
+											<h3 class="display-3 mb-10 px-xl-10" style="color: #7e0f7c">What We Offer
+											</h3>
+											<p class=" mb-2 " style="line-height: 1.4;padding-bottom: 50px">At our
+												education
 												center, we provide
 												a
 												variety of benefits and advantages for your kids’ successful
@@ -348,7 +361,8 @@
 													education center, we
 													provide a
 													variety of benefits and advantages for your kids’ successful
-													education, while allowing your kid to stay fully active, creative and
+													education, while allowing your kid to stay fully active, creative
+													and
 													healthy</p>
 												<!-- /.row -->
 											</div>
@@ -372,7 +386,8 @@
 													education center, we
 													provide a
 													variety of benefits and advantages for your kids’ successful
-													education, while allowing your kid to stay fully active, creative and
+													education, while allowing your kid to stay fully active, creative
+													and
 													healthy</p>
 												<!-- /.row -->
 											</div>
@@ -391,14 +406,15 @@
 								<div class="container py-14 py-md-16 text-center">
 									<div class="row">
 										<div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-											<h3 class="display-3 mb-10 px-xl-10" style="color: #393d72">Our Programs</h3>
+											<h3 class="display-3 mb-10 px-xl-10" style="color: #393d72">Our Programs
+											</h3>
 										</div>
 										<!-- /column -->
 									</div>
 									<!-- /.row -->
 									<div class="position-relative">
-										<div class="shape rounded-circle bg-soft-blue rellax w-16 h-16" data-rellax-speed="1"
-											style="bottom: -0.5rem; right: -2.2rem; z-index: 0;">
+										<div class="shape rounded-circle bg-soft-blue rellax w-16 h-16"
+											data-rellax-speed="1" style="bottom: -0.5rem; right: -2.2rem; z-index: 0;">
 										</div>
 										<div class="shape bg-dot yellow rellax w-16 h-17" data-rellax-speed="1"
 											style="top: -0.5rem; left: -2.5rem; z-index: 0;"></div>
@@ -409,15 +425,17 @@
 														<img src="https://mendelgordon.github.io/chabad-org-preschool-4/assets/img/photos/icon1.png"
 															class="" alt="" />
 														<h4 class="mb-1">Arts Program</h4>
-														<p class="mb-2">Nulla vitae elit libero, a pharetra augue. Donec id
+														<p class="mb-2">Nulla vitae elit libero, a pharetra augue. Donec
+															id
 															elit non mi porta gravida
 															at
 															eget metus cras justo.</p>
 													</div>
 													<!--/.card-body -->
 												</div>
-												<!--/.card --><a href="#" class="btn  btn-primaryx2 rounded-pill" data-cue="zoomIn"
-													data-interval="-200" data-group="page-title" data-delay="500" data-show="true"
+												<!--/.card --><a href="#" class="btn  btn-primaryx2 rounded-pill"
+													data-cue="zoomIn" data-interval="-200" data-group="page-title"
+													data-delay="500" data-show="true"
 													style="animation-name: zoomIn; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 1500ms; animation-direction: normal; animation-fill-mode: both;">Learn
 													More</a>
 											</div>
@@ -428,14 +446,16 @@
 														<img src="https://mendelgordon.github.io/chabad-org-preschool-4/assets/img/photos/icon2.png"
 															alt="" />
 														<h4 class="mb-1">Jewish Studies</h4>
-														<p class="mb-2">Nulla vitae elit libero, a pharetra augue. Donec id
+														<p class="mb-2">Nulla vitae elit libero, a pharetra augue. Donec
+															id
 															elit non mi porta gravida
 															at
 															eget metus cras justo.</p>
 													</div>
 													<!--/.card-body -->
-												</div> <a href="#" class="btn  btn-primaryx rounded-pill" data-cue="zoomIn" data-interval="-200"
-													data-group="page-title" data-delay="500" data-show="true"
+												</div> <a href="#" class="btn  btn-primaryx rounded-pill"
+													data-cue="zoomIn" data-interval="-200" data-group="page-title"
+													data-delay="500" data-show="true"
 													style="animation-name: zoomIn; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 1500ms; animation-direction: normal; animation-fill-mode: both;">Learn
 													More</a>
 												<!--/.card -->
@@ -447,14 +467,16 @@
 														<img src="https://mendelgordon.github.io/chabad-org-preschool-4/assets/img/photos/icon3.png"
 															alt="" />
 														<h4 class="mb-1">Sports Program</h4>
-														<p class="mb-2">Nulla vitae elit libero, a pharetra augue. Donec id
+														<p class="mb-2">Nulla vitae elit libero, a pharetra augue. Donec
+															id
 															elit non mi porta gravida
 															at
 															eget metus cras justo.</p>
 													</div>
 													<!--/.card-body -->
-												</div> <a href="#" class="btn btn-primaryx2 rounded-pill" data-cue="zoomIn" data-interval="-200"
-													data-group="page-title" data-delay="500" data-show="true"
+												</div> <a href="#" class="btn btn-primaryx2 rounded-pill"
+													data-cue="zoomIn" data-interval="-200" data-group="page-title"
+													data-delay="500" data-show="true"
 													style="animation-name: zoomIn; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 1500ms; animation-direction: normal; animation-fill-mode: both;">Learn
 													More</a>
 												<!--/.card -->
@@ -475,13 +497,13 @@
 									<h3 class="display-3 mb-3 text-center" style="color: #92278f">What Parents Say</h3>
 									<p class="lead text-center mb-6 px-md-16 px-lg-0"></p>
 									<div class="position-relative">
-										<div class="shape rounded-circle bg-soft-yellow rellax w-16 h-16" data-rellax-speed="1"
-											style="bottom: 0.5rem; right: -1.7rem;"></div>
+										<div class="shape rounded-circle bg-soft-yellow rellax w-16 h-16"
+											data-rellax-speed="1" style="bottom: 0.5rem; right: -1.7rem;"></div>
 										<div class="shape bg-dot primary rellax w-16 h-16" data-rellax-speed="1"
 											style="top: -1rem; left: -1.7rem;">
 										</div>
-										<div class="swiper-container dots-closer mb-6" data-margin="0" data-dots="true" data-items-xl="3"
-											data-items-md="2" data-items-xs="1">
+										<div class="swiper-container dots-closer mb-6" data-margin="0" data-dots="true"
+											data-items-xl="3" data-items-md="2" data-items-xs="1">
 											<div class="swiper">
 												<div class="swiper-wrapper">
 													<div class="swiper-slide">
@@ -490,10 +512,12 @@
 																<div class="red-triangle2"></div>
 																<div class="card-body">
 																	<blockquote class="icon mb-0">
-																		<p>“Vivamus sagittis lacus vel augue laoreet rutrum
+																		<p>“Vivamus sagittis lacus vel augue laoreet
+																			rutrum
 																			faucibus dolor auctor. Vestibulum
 																			id
-																			ligula porta felis euismod semper. Cras justo
+																			ligula porta felis euismod semper. Cras
+																			justo
 																			odio dapibus facilisis sociis natoque
 																			penatibus.”</p>
 																	</blockquote>
@@ -521,10 +545,12 @@
 																<div class="red-triangle"></div>
 																<div class="card-body">
 																	<blockquote class="icon mb-0">
-																		<p>“Vivamus sagittis lacus vel augue laoreet rutrum
+																		<p>“Vivamus sagittis lacus vel augue laoreet
+																			rutrum
 																			faucibus dolor auctor. Vestibulum
 																			id
-																			ligula porta felis euismod semper. Cras justo
+																			ligula porta felis euismod semper. Cras
+																			justo
 																			odio dapibus facilisis sociis natoque
 																			penatibus.”</p>
 																	</blockquote>
@@ -552,10 +578,12 @@
 																<div class="red-triangle"></div>
 																<div class="card-body">
 																	<blockquote class="icon mb-0">
-																		<p>“Vivamus sagittis lacus vel augue laoreet rutrum
+																		<p>“Vivamus sagittis lacus vel augue laoreet
+																			rutrum
 																			faucibus dolor auctor. Vestibulum
 																			id
-																			ligula porta felis euismod semper. Cras justo
+																			ligula porta felis euismod semper. Cras
+																			justo
 																			odio dapibus facilisis sociis natoque
 																			penatibus.”</p>
 																	</blockquote>
@@ -583,10 +611,12 @@
 																<div class="red-triangle"></div>
 																<div class="card-body">
 																	<blockquote class="icon mb-0">
-																		<p>“Vivamus sagittis lacus vel augue laoreet rutrum
+																		<p>“Vivamus sagittis lacus vel augue laoreet
+																			rutrum
 																			faucibus dolor auctor. Vestibulum
 																			id
-																			ligula porta felis euismod semper. Cras justo
+																			ligula porta felis euismod semper. Cras
+																			justo
 																			odio dapibus facilisis sociis natoque
 																			penatibus.”</p>
 																	</blockquote>
@@ -614,10 +644,12 @@
 																<div class="red-triangle"></div>
 																<div class="card-body">
 																	<blockquote class="icon mb-0">
-																		<p>“Vivamus sagittis lacus vel augue laoreet rutrum
+																		<p>“Vivamus sagittis lacus vel augue laoreet
+																			rutrum
 																			faucibus dolor auctor. Vestibulum
 																			id
-																			ligula porta felis euismod semper. Cras justo
+																			ligula porta felis euismod semper. Cras
+																			justo
 																			odio dapibus facilisis sociis natoque
 																			penatibus.”</p>
 																	</blockquote>
@@ -645,10 +677,12 @@
 																<div class="red-triangle"></div>
 																<div class="card-body">
 																	<blockquote class="icon mb-0">
-																		<p>“Vivamus sagittis lacus vel augue laoreet rutrum
+																		<p>“Vivamus sagittis lacus vel augue laoreet
+																			rutrum
 																			faucibus dolor auctor. Vestibulum
 																			id
-																			ligula porta felis euismod semper. Cras justo
+																			ligula porta felis euismod semper. Cras
+																			justo
 																			odio dapibus facilisis sociis natoque
 																			penatibus.”</p>
 																	</blockquote>
@@ -685,7 +719,8 @@
 						<co:section id="Section9" name="Section9" title="Section9" actions="edit,delete,copy">
 							<section class="wrapper bg-soft-primary">
 								<div class="container py-14 py-md-16">
-									<h3 class="display-3 mb-3 text-center" style="color: #92278f">Frequently Asked Questions
+									<h3 class="display-3 mb-3 text-center" style="color: #92278f">Frequently Asked
+										Questions
 									</h3>
 									<p class="lead text-center mb-6 px-md-16 px-lg-0"></p>
 									<div class="row gx-lg-8 gx-xl-12 gy-10">
@@ -694,24 +729,29 @@
 											<div id="accordion-3" class="accordion-wrapper">
 												<div class="card accordion-item">
 													<div class="card-header" id="accordion-heading-3-1">
-														<button class="collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-3-1"
-															aria-expanded="false" aria-controls="accordion-collapse-3-1">How do I get my
+														<button class="collapsed" data-bs-toggle="collapse"
+															data-bs-target="#accordion-collapse-3-1"
+															aria-expanded="false"
+															aria-controls="accordion-collapse-3-1">How do I get my
 															subscription
 															receipt?</button>
 													</div>
 													<!-- /.card-header -->
-													<div id="accordion-collapse-3-1" class="collapse" aria-labelledby="accordion-heading-3-1"
+													<div id="accordion-collapse-3-1" class="collapse"
+														aria-labelledby="accordion-heading-3-1"
 														data-bs-target="#accordion-3">
 														<div class="card-body">
 															<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris
 																condimentum nibh, ut fermentum
 																massa
-																justo sit amet risus. Cras mattis consectetur purus sit amet
+																justo sit amet risus. Cras mattis consectetur purus sit
+																amet
 																fermentum. Praesent commodo
 																cursus
 																magna, vel scelerisque nisl consectetur et. Cum sociis
 																natoque penatibus et magnis dis
-																parturient montes, nascetur ridiculus mus. Donec sed odio
+																parturient montes, nascetur ridiculus mus. Donec sed
+																odio
 																dui. Cras justo odio, dapibus ac
 																facilisis.</p>
 														</div>
@@ -722,26 +762,32 @@
 												<!-- /.card -->
 												<div class="card accordion-item">
 													<div class="card-header" id="accordion-heading-3-2">
-														<button class="collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-3-2"
-															aria-expanded="false" aria-controls="accordion-collapse-3-2">Are there any discounts
+														<button class="collapsed" data-bs-toggle="collapse"
+															data-bs-target="#accordion-collapse-3-2"
+															aria-expanded="false"
+															aria-controls="accordion-collapse-3-2">Are there any
+															discounts
 															for
 															people
 															in
 															need?</button>
 													</div>
 													<!-- /.card-header -->
-													<div id="accordion-collapse-3-2" class="collapse" aria-labelledby="accordion-heading-3-2"
+													<div id="accordion-collapse-3-2" class="collapse"
+														aria-labelledby="accordion-heading-3-2"
 														data-bs-target="#accordion-3">
 														<div class="card-body">
 															<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris
 																condimentum nibh, ut fermentum
 																massa
-																justo sit amet risus. Cras mattis consectetur purus sit amet
+																justo sit amet risus. Cras mattis consectetur purus sit
+																amet
 																fermentum. Praesent commodo
 																cursus
 																magna, vel scelerisque nisl consectetur et. Cum sociis
 																natoque penatibus et magnis dis
-																parturient montes, nascetur ridiculus mus. Donec sed odio
+																parturient montes, nascetur ridiculus mus. Donec sed
+																odio
 																dui. Cras justo odio, dapibus ac
 																facilisis.</p>
 														</div>
@@ -752,23 +798,29 @@
 												<!-- /.card -->
 												<div class="card accordion-item">
 													<div class="card-header" id="accordion-heading-3-3">
-														<button class="collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-3-3"
-															aria-expanded="false" aria-controls="accordion-collapse-3-3">Do you offer a free trial
+														<button class="collapsed" data-bs-toggle="collapse"
+															data-bs-target="#accordion-collapse-3-3"
+															aria-expanded="false"
+															aria-controls="accordion-collapse-3-3">Do you offer a free
+															trial
 															edit?</button>
 													</div>
 													<!-- /.card-header -->
-													<div id="accordion-collapse-3-3" class="collapse" aria-labelledby="accordion-heading-3-3"
+													<div id="accordion-collapse-3-3" class="collapse"
+														aria-labelledby="accordion-heading-3-3"
 														data-bs-target="#accordion-3">
 														<div class="card-body">
 															<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris
 																condimentum nibh, ut fermentum
 																massa
-																justo sit amet risus. Cras mattis consectetur purus sit amet
+																justo sit amet risus. Cras mattis consectetur purus sit
+																amet
 																fermentum. Praesent commodo
 																cursus
 																magna, vel scelerisque nisl consectetur et. Cum sociis
 																natoque penatibus et magnis dis
-																parturient montes, nascetur ridiculus mus. Donec sed odio
+																parturient montes, nascetur ridiculus mus. Donec sed
+																odio
 																dui. Cras justo odio, dapibus ac
 																facilisis.</p>
 														</div>
@@ -779,23 +831,29 @@
 												<!-- /.card -->
 												<div class="card accordion-item">
 													<div class="card-header" id="accordion-heading-3-4">
-														<button class="collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-3-4"
-															aria-expanded="false" aria-controls="accordion-collapse-3-4">How do I reset my Account
+														<button class="collapsed" data-bs-toggle="collapse"
+															data-bs-target="#accordion-collapse-3-4"
+															aria-expanded="false"
+															aria-controls="accordion-collapse-3-4">How do I reset my
+															Account
 															password?</button>
 													</div>
 													<!-- /.card-header -->
-													<div id="accordion-collapse-3-4" class="collapse" aria-labelledby="accordion-heading-3-4"
+													<div id="accordion-collapse-3-4" class="collapse"
+														aria-labelledby="accordion-heading-3-4"
 														data-bs-target="#accordion-3">
 														<div class="card-body">
 															<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris
 																condimentum nibh, ut fermentum
 																massa
-																justo sit amet risus. Cras mattis consectetur purus sit amet
+																justo sit amet risus. Cras mattis consectetur purus sit
+																amet
 																fermentum. Praesent commodo
 																cursus
 																magna, vel scelerisque nisl consectetur et. Cum sociis
 																natoque penatibus et magnis dis
-																parturient montes, nascetur ridiculus mus. Donec sed odio
+																parturient montes, nascetur ridiculus mus. Donec sed
+																odio
 																dui. Cras justo odio, dapibus ac
 																facilisis.</p>
 														</div>
@@ -805,23 +863,29 @@
 												</div>
 												<div class="card accordion-item">
 													<div class="card-header" id="accordion-heading-3-5">
-														<button class="collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-3-4"
-															aria-expanded="false" aria-controls="accordion-collapse-3-4">How do I reset my Account
+														<button class="collapsed" data-bs-toggle="collapse"
+															data-bs-target="#accordion-collapse-3-4"
+															aria-expanded="false"
+															aria-controls="accordion-collapse-3-4">How do I reset my
+															Account
 															password?</button>
 													</div>
 													<!-- /.card-header -->
-													<div id="accordion-collapse-3-5" class="collapse" aria-labelledby="accordion-heading-3-4"
+													<div id="accordion-collapse-3-5" class="collapse"
+														aria-labelledby="accordion-heading-3-4"
 														data-bs-target="#accordion-3">
 														<div class="card-body">
 															<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris
 																condimentum nibh, ut fermentum
 																massa
-																justo sit amet risus. Cras mattis consectetur purus sit amet
+																justo sit amet risus. Cras mattis consectetur purus sit
+																amet
 																fermentum. Praesent commodo
 																cursus
 																magna, vel scelerisque nisl consectetur et. Cum sociis
 																natoque penatibus et magnis dis
-																parturient montes, nascetur ridiculus mus. Donec sed odio
+																parturient montes, nascetur ridiculus mus. Donec sed
+																odio
 																dui. Cras justo odio, dapibus ac
 																facilisis.</p>
 														</div>
@@ -831,23 +895,29 @@
 												</div>
 												<div class="card accordion-item">
 													<div class="card-header" id="accordion-heading-3-6">
-														<button class="collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-3-4"
-															aria-expanded="false" aria-controls="accordion-collapse-3-4">How do I reset my Account
+														<button class="collapsed" data-bs-toggle="collapse"
+															data-bs-target="#accordion-collapse-3-4"
+															aria-expanded="false"
+															aria-controls="accordion-collapse-3-4">How do I reset my
+															Account
 															password?</button>
 													</div>
 													<!-- /.card-header -->
-													<div id="accordion-collapse-3-6" class="collapse" aria-labelledby="accordion-heading-3-4"
+													<div id="accordion-collapse-3-6" class="collapse"
+														aria-labelledby="accordion-heading-3-4"
 														data-bs-target="#accordion-3">
 														<div class="card-body">
 															<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris
 																condimentum nibh, ut fermentum
 																massa
-																justo sit amet risus. Cras mattis consectetur purus sit amet
+																justo sit amet risus. Cras mattis consectetur purus sit
+																amet
 																fermentum. Praesent commodo
 																cursus
 																magna, vel scelerisque nisl consectetur et. Cum sociis
 																natoque penatibus et magnis dis
-																parturient montes, nascetur ridiculus mus. Donec sed odio
+																parturient montes, nascetur ridiculus mus. Donec sed
+																odio
 																dui. Cras justo odio, dapibus ac
 																facilisis.</p>
 														</div>
@@ -868,7 +938,8 @@
 												ligula, eget lacinia
 												odio
 												sem
-												nec elit.Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
+												nec elit.Duis mollis, est non commodo luctus, nisi erat porttitor
+												ligula,
 												eget lacinia odio sem
 												nec
 												elit. Nullam quis risus eget urna mollis ornare.</p>
@@ -885,14 +956,15 @@
 								<div class="container py-14 py-md-16">
 									<div class="row">
 										<div class="col-lg-9 col-xl-8 col-xxl-7 mx-auto mb-8">
-											<h3 class="display-3 mb-3 text-center" style="color: #393d72">Our Preschool in
+											<h3 class="display-3 mb-3 text-center" style="color: #393d72">Our Preschool
+												in
 												Photos</h3>
 										</div>
 										<!-- /column -->
 									</div>
 									<!-- /.row -->
-									<co:template id="latest_photo" name="Latest_Photo" title="Latest Photos" autoselect="true" aid="-1"
-										actions="delete" photo_count="6" />
+									<co:template id="latest_photo" name="Latest_Photo" title="Latest Photos"
+										autoselect="true" aid="-1" actions="delete" photo_count="6" />
 									<!-- /.grid -->
 								</div>
 								<!-- /.container -->
@@ -900,10 +972,10 @@
 						</co:section>
 						<style>
 							@import url(' https://fonts.googleapis.com/css2?family=Fredoka:wght@700');
-							@import url("https://mendelgordon.github.io/chabad-org-preschool-4/assets/css/plugins.css");
-							@import url("https://mendelgordon.github.io/chabad-org-preschool-4/assets/css/style.css");
-							@import url("https://mendelgordon.github.io/chabad-org-preschool-4/assets/css/colors/purple.css");
-							@import url("https://mendelgordon.github.io/chabad-org-preschool-4/assets/css/fonts/urbanist.css");
+							@import url("https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/css/plugins.css");
+							@import url("https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/css/style.css");
+							@import url("https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/css/colors/purple.css");
+							@import url("https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/css/fonts/urbanist.css");
 						</style>
 					</div>
 				</co:template>
@@ -913,8 +985,7 @@
 		<co:template id="FooterSection" name="footer_section" title="Footer Section" type="static" detached="true">
 			<div class="FooterContainer">
 				<co:section id="Footer" name="Footer" title="Footer" actions="edit,delete">
-					<img
-						src="https://mendelgordon.github.io/chabad-org-preschool-4/assets/img/illustrations/blue-wavy-bottom-border.png"
+					<img src="https://mendelgordon.github.io/chabad-org-preschool-4/assets/img/illustrations/blue-wavy-bottom-border.png"
 						alt="" width="100%" height="auto" />
 					<footer class=" text-inverse" style="background: #5674a1; color:#FFF ">
 						<div class="container pt-5 pt-md-5 pb-7">
@@ -922,14 +993,14 @@
 								<div class="col-lg-4">
 									<div class="widget">
 										<h3 class="h2 mb-3 text-white">
-											<co:editable id='FooterHead' name='FooterHead' title='FooterHead' actions='edit,delete,copy'
-												datatype='line'>
+											<co:editable id='FooterHead' name='FooterHead' title='FooterHead'
+												actions='edit,delete,copy' datatype='line'>
 												ABOUT
 											</co:editable>
 										</h3>
 										<p class="lead mb-5">
-											<co:editable id='FooterText' name='FooterText' title='FooterText' actions='edit,delete,copy'
-												datatype='line'>
+											<co:editable id='FooterText' name='FooterText' title='FooterText'
+												actions='edit,delete,copy' datatype='line'>
 												Lorem ipsum dolor sit amet, consec
 												tetur adipisicing elit, sed do eiusmod tempor incididunt ultimam quantum
 											</co:editable>
@@ -938,8 +1009,8 @@
 									<!-- /.widget -->
 								</div>
 								<!-- /column -->
-								<co:template class="chabad_navigator_bar" id="Navigation" name="nagivation" title="Navigation Bar"
-									max_chars="70"></co:template>
+								<co:template class="chabad_navigator_bar" id="Navigation" name="nagivation"
+									title="Navigation Bar" max_chars="70"></co:template>
 							</div>
 							<!--/.row -->
 							<!-- /div -->
@@ -949,8 +1020,8 @@
 					<footer class=" text-inverse" style="background: #061737; color:#FFF ">
 						<div class="container pt-5 pt-md-5 pb-5">
 							<div class="d-md-flex align-items-center justify-content-between">
-								<co:editable id='FooterContact' name='FooterContact' title='FooterContact' actions='edit,delete,copy'
-									datatype='html'>
+								<co:editable id='FooterContact' name='FooterContact' title='FooterContact'
+									actions='edit,delete,copy' datatype='html'>
 									<p class="mb-2 mb-lg-0"><span class="iconsfoot"><i class="uil-home"></i>
 											<<mosad_address>>
 										</span>
@@ -961,8 +1032,8 @@
 									</p>
 								</co:editable>
 								<nav class="nav social social-white text-md-end">
-									<co:editable id='FooterApply' name='FooterApply' title='FooterApply' attribute='href,innertext'
-										actions='edit,delete' tag_only='true'>
+									<co:editable id='FooterApply' name='FooterApply' title='FooterApply'
+										attribute='href,innertext' actions='edit,delete' tag_only='true'>
 										<a href="#" class="btn btn-sm btn-primary rounded-pill"
 											style="background-color:#32afea; border-color:#32afea; ">
 											APPLY NOW</a>
