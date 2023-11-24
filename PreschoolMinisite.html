@@ -10,14 +10,13 @@
 </style>
 <div id="chabad_body_page">
 	<div id="chabad_main_content">
-		<div class="content-wrapper">
-			<header class="wrapper">
+		<div>
+			<header>
 				<div id="chabad_head">
 					<co:template id="HeaderSection" name="header_section" title="Header Section" type="static">
-						<nav
-							class="navbar navbar-expand-lg center-nav transparent position-absolute navbar-dark px-md-10 px-xxl-0">
-							<div class="container flex-lg-row flex-nowrap">
-								<div class="navbar-brand">
+						<nav class="navbar" style="position: absolute;">
+							<div class="container" style="flex-wrap: nowrap;">
+								<div style="margin: 30px;">
 									<a href="#"
 										style="color: white; font-size: clamp(.85rem, 2vw, 1.85rem); font-weight: bold;">
 										<co:section id="ContentHeading" name="content_heading" title="Content Heading"
@@ -41,9 +40,8 @@
 					id="ContentArea" type="static">
 					<div class="chabad_left_column">
 						<co:section id='Section1' name='Section1' title='Section1' actions='edit,delete,copy'>
-							<div class="br-fix overflow-hidden">
-								<div class="wrapper image-wrapper bg-cover bg-image bg-overlay-500"
-									style="position: relative;">
+							<div style="overflow: hidden;">
+								<div style="position: relative;">
 									<co:editable id='Section1Image' name='Section1Image' title='Section1Image'
 										attribute='src' actions='edit,delete' tag_only='true'>
 										<img src="https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/bg26.jpg"
@@ -65,8 +63,8 @@
 															Chabad Preschool Now Open!
 														</h3>
 													</co:editable>
-													<h2 class="h6 text-uppercase ls-xl text-white mb-5"
-														style="animation-name: zoomIn; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 1000ms; animation-direction: normal; animation-fill-mode: both;">
+													<h2 class="h6 text-uppercase text-white mb-5"
+														style="animation-name: zoomIn; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 1000ms; animation-direction: normal; animation-fill-mode: both;letter-spacing: 1px;">
 														<co:editable id='Section1Description' name='Section1Description'
 															title='Section1Description' actions='edit,delete'
 															datatype='line'>
@@ -176,7 +174,7 @@
 										</div>
 										<div class="row gx-md-5 gy-5 text-center">
 											<div class="col-md-6 col-xl-3">
-												<div class="card shadow-lg card-border-bottom border-soft-primary">
+												<div class="card shadow-lg card-border-bottom" style="border-color:#ff4880">
 													<div class="card-bodyf">
 														<img src="https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/icon4.png"
 															class="" alt="" />
@@ -193,7 +191,7 @@
 											</div>
 											<!--/column -->
 											<div class="col-md-6 col-xl-3">
-												<div class="card shadow-lg card-border-bottom border-soft-primary">
+												<div class="card shadow-lg card-border-bottom" style="border-color:#ff4880">
 													<div class="card-bodyf ">
 														<img src="https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/icon5.png"
 															class="" alt="" />
@@ -210,7 +208,7 @@
 											</div>
 											<!--/column -->
 											<div class="col-md-6 col-xl-3">
-												<div class="card shadow-lg card-border-bottom border-soft-primary">
+												<div class="card shadow-lg card-border-bottom" style="border-color:#ff4880">
 													<div class="card-bodyf">
 														<img src="https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/icon6.png"
 															class="" alt="" />
@@ -227,7 +225,7 @@
 											</div>
 											<!--/column -->
 											<div class="col-md-6 col-xl-3">
-												<div class="card shadow-lg card-border-bottom border-soft-primary">
+												<div class="card shadow-lg card-border-bottom" style="border-color:#ff4880">
 													<div class="card-bodyf">
 														<img src="https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/icon7.png"
 															class="" alt="" />
@@ -420,7 +418,7 @@
 										</div>
 										<div class="row gx-md-5 gy-5 text-center">
 											<div class="col-md-6 col-xl-4">
-												<div class="card shadow-lg card-border-bottom border-soft-primary">
+												<div class="card shadow-lg card-border-bottom" style="border-color: #ff4880;">
 													<div class="card-bodyf">
 														<img src="https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/icon1.png"
 															class="" alt="" />
@@ -441,7 +439,7 @@
 											</div>
 											<!--/column -->
 											<div class="col-md-6 col-xl-4">
-												<div class="card shadow-lg card-border-bottom border-soft-primary ">
+												<div class="card shadow-lg card-border-bottom" style="border-color:#ff4880">
 													<div class="card-bodyf">
 														<img src="https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/icon2.png"
 															alt="" />
@@ -462,7 +460,7 @@
 											</div>
 											<!--/column -->
 											<div class="col-md-6 col-xl-4">
-												<div class="card shadow-lg card-border-bottom border-soft-primary">
+												<div class="card shadow-lg card-border-bottom" style="border-color:#ff4880">
 													<div class="card-bodyf">
 														<img src="https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/icon3.png"
 															alt="" />
@@ -912,7 +910,7 @@
 				<co:section id="Footer" name="Footer" title="Footer" actions="edit,delete">
 					<img src="https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/illustrations/blue-wavy-bottom-border.png"
 						alt="" width="100%" height="auto" />
-					<footer class=" text-inverse" style="background: #5674a1; color:#FFF ">
+					<footer style="background: #5674a1; color:#FFF ">
 						<div class="container pt-5 pt-md-5 pb-7">
 							<div class="gy-6 gy-lg-0"
 								style="display: flex;justify-content: space-between;flex-wrap: wrap;">
@@ -943,7 +941,7 @@
 						</div>
 						<!-- /.container -->
 					</footer>
-					<footer class=" text-inverse" style="background: #061737; color:#FFF ">
+					<footer style="background: #061737; color:#FFF ">
 						<div class="container pt-5 pt-md-5 pb-5">
 							<div class="d-md-flex align-items-center justify-content-between">
 								<co:editable id='FooterContact' name='FooterContact' title='FooterContact'
