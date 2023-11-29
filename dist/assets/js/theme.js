@@ -21,6 +21,7 @@ const makeScrollable = (element) => {
 			element.scrollLeft = position.left - e.clientX + position.x;
 		};
 		const mouseUpHandler = () => {
+			e.preventDefault();
 			element.style.cursor = 'grab';
 			element.style.userSelect = '';
 			document.removeEventListener('mousemove', mouseMoveHandler);
