@@ -9,6 +9,7 @@ const makeScrollable = (element) => {
 			x: 0
 		};
 		const mouseDownHandler = (e) => {
+			e.preventDefault();
 			element.style.cursor = 'grabbing';
 			element.style.userSelect = 'none';
 			position.left = element.scrollLeft;
