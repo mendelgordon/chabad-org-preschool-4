@@ -20,8 +20,7 @@ const makeScrollable = (element) => {
 		const mouseMoveHandler = (e) => {
 			element.scrollLeft = position.left - e.clientX + position.x;
 		};
-		const mouseUpHandler = (e) => {
-			e.preventDefault();
+		const mouseUpHandler = () => {
 			element.style.cursor = 'grab';
 			element.style.userSelect = '';
 			document.removeEventListener('mousemove', mouseMoveHandler);
@@ -33,3 +32,9 @@ const makeScrollable = (element) => {
 
 makeScrollable(co_photo_gallery);
 makeScrollable(slider_wrapper);
+
+const photos = document.querySelectorAll('.co_photo_gallery a');
+photos.forEach((photo) => {
+	// remove the link from the image so it can be dragged on desktop
+	photo.removeAttribute('href');
+})
