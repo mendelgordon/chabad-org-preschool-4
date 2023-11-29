@@ -27,7 +27,8 @@
           "user-select",
           "text-size-adjust",
           "-webkit-overflow-scrolling",
-          "scrollbar-width"
+          "scrollbar-width",
+          "scrollbar-color"
         ]
       }
     ],
