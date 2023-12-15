@@ -1,8 +1,8 @@
 const co_photo_gallery = document.querySelector('.co_photo_gallery');
 if (co_photo_gallery) {
-	co_photo_gallery.classList.add('swiper-wrapper');
-	// wrap co_photo_gallery in div with swiper class to make it work with swiper js
 	co_photo_gallery.parentElement.classList.add('swiper');
+	co_photo_gallery.classList.add('swiper-wrapper');
+	co_photo_gallery.querySelectorAll('a').forEach(el => el.classList.add('swiper-slide'));
 }
 
 function createSwiper(selector) {
