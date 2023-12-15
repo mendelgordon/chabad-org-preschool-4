@@ -4,5 +4,11 @@ co_photo_gallery.forEach((gallery) => {
 	gallery.classList.add('swiper');
 })
 
-const swiper = new Swiper('.swiper');
-const swiper2 = new Swiper('.swiper.co_photo_gallery');
+const swiper = new Swiper('.swiper', {
+	centerInsufficientSlides: true,
+	createElements: true
+});
+const swiper2 = new Swiper('.swiper.co_photo_gallery', {
+	centerInsufficientSlides: true,
+	createElements: true
+});
