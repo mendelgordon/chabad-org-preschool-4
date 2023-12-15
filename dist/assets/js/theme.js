@@ -23,6 +23,7 @@ function createSwiper(selector) {
 		spaceBetween: 20,
 		autoHeight: true,
 		slidesOffsetAfter: 40,
+		slidesOffsetBefore: 20,
 	});
 }
 
