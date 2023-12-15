@@ -12,14 +12,15 @@ function createSwiper(selector) {
 		grabCursor: true,
 		pagination: true,
 		breakpoints: {
-			600: {
+			850: {
 				slidesPerView: 2
 			},
-			800: {
+			1100: {
 				slidesPerView: 3
 			}
 		},
 		navigation: true,
+		spaceBetween: 20,
 	});
 }
 
