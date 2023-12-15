@@ -1,16 +1,23 @@
 // make sections scrollable by dragging on the page even on desktop
 const co_photo_gallery = document.querySelectorAll('.co_photo_gallery');
-co_photo_gallery.forEach((gallery) => {
-	gallery.classList.add('swiper');
-})
+co_photo_gallery?.classList.add('swiper');
 
-const swiper = new Swiper('.swiper', {
-	centerInsufficientSlides: true,
-	createElements: true,
-	grabCursor: true
-});
-const swiper2 = new Swiper('.swiper.co_photo_gallery', {
-	centerInsufficientSlides: true,
-	createElements: true,
-	grabCursor: true
-});
+function createSwiper(selector) {
+	return new Swiper(selector, {
+		centerInsufficientSlides: true,
+		createElements: true,
+		grabCursor: true,
+		pagination: true,
+		breakpoints: {
+			600: {
+				slidesPerView: 2
+			},
+			800: {
+				slidesPerView: 3
+			}
+		}
+	});
+}
+
+const swiper = createSwiper('.swiper');
+const swiper2 = createSwiper('.co_photo_gallery');
