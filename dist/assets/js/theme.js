@@ -6,9 +6,11 @@ co_photo_gallery.forEach((gallery) => {
 
 const swiper = new Swiper('.swiper', {
 	centerInsufficientSlides: true,
-	createElements: true
+	createElements: true,
+	grabCursor: true
 });
 const swiper2 = new Swiper('.swiper.co_photo_gallery', {
 	centerInsufficientSlides: true,
-	createElements: true
+	createElements: true,
+	grabCursor: true
 });
