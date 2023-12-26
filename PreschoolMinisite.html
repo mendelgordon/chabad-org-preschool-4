@@ -4,11 +4,11 @@
 			<header>
 				<div id="chabad_head">
 					<co:template id="HeaderSection" name="header_section" title="Header Section" type="static">
-						<nav class="navbar" style="position: absolute;">
-							<div class="container" style="flex-wrap: nowrap;">
+						<nav class="navbar" id="PreschoolNavigation">
+							<div class="container" id="PreschoolNavigationContainer">
 								<div>
-									<a href="#" style="color: white; font-size: clamp(.85rem, 2vw, 1.85rem); font-weight: bold;">
-										<co:section id="ContentHeading" name="content_heading" title="Content Heading" actions="edit">Chabad Preschool</co:section>
+									<a href="#" id="PreschoolTitle">
+										<co:section id="ContentHeading" name="content_heading" title="Content Heading" actions="edit" datatype="line">Chabad Preschool</co:section>
 									</a>
 								</div>
 								<co:template class="chabad_navigator_bar" id="Navigation" name="nagivation" title="Navigation Bar" max_chars="70" use_custom_separator="true"></co:template>
@@ -21,31 +21,25 @@
 				<co:template class="chabad_left_column" title="Content Area 1" actions="edit,delete" name="content_area" id="ContentArea" type="static">
 					<div class="chabad_left_column">
 						<co:section id='Section1' name='Section 1' title='Section 1' actions='edit,delete,copy'>
-							<div style="overflow: hidden;">
-								<div style="position: relative;">
-									<co:editable id='Section1Image' name='Image' title='Image' attribute='src' actions='edit,delete' tag_only='true'>
-										<img src="https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/bg26.jpg" alt="Background" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;" />
-									</co:editable>
-									<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 0;">
-									</div>
-									<div style="background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/illustrations/White-wavy-bottom-border.png);background-position: bottom;background-size: contain;background-repeat: no-repeat; position: relative;">
-										<div class="container pt-10 pt-lg-21 pb-17 pb-lg-19 text-center">
-											<div class="row">
-												<div class="col-md-9 col-lg-8 col-xl-7 col-xxl-6 mx-auto">
-													<co:editable id='Section1Title' name='Title' title='Title' actions='edit,delete' datatype='html'>
-														<h3 class="display-1 fs-54 text-white mb-7" style="color: rgb(21, 112, 6); animation-name: zoomIn; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 500ms; animation-direction: normal; animation-fill-mode: both;">
-															Chabad Preschool Now Open!
-														</h3>
-													</co:editable>
-													<co:editable id='Section1Description' name='Description' title='Description' actions='edit,delete' datatype='line'>
-														<h2 class="h6 text-uppercase text-white mb-5" style="animation-name: zoomIn; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 1000ms; animation-direction: normal; animation-fill-mode: both;letter-spacing: 1px;">
-															We are excited to announce that Chabad Preschool is now open.
-														</h2>
-													</co:editable>
-													<co:editable id='Section1Button' name='Button' title='Button' attribute='href,innertext' actions='edit,delete,copy' tag_only='true'>
-														<a href="/pregister" style="animation-name: zoomIn; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 1500ms; animation-direction: normal; animation-fill-mode: both;background-color:#ff4880; border:2px solid #ff4880; color: white; border-radius: 50rem;font-size: 20px;line-height: 34px;padding: 8px 20px;font-weight: 700;text-wrap: nowrap;display: inline-flex;">Apply Now</a>
-													</co:editable>
-												</div>
+							<div id="PreschoolSection1">
+								<co:editable id='Image' name='Image' title='Image' attribute='src' actions='edit,delete' tag_only='true'>
+									<img src="https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/bg26.jpg" alt="Background" id="PreschoolSection1Image" />
+								</co:editable>
+								<div id="PreschoolSection1Overlay">
+								</div>
+								<div id="PreschoolSection1Content">
+									<div class="container pt-10 pt-lg-21 pb-17 pb-lg-19 text-center">
+										<div class="row">
+											<div class="col-md-9 col-lg-8 col-xl-7 col-xxl-6 mx-auto">
+												<h3 class="display-1 fs-54 text-white mb-7" id="PreschoolSection1Title">
+													<co:editable id='Title' name='Title' title='Title' actions='edit,delete' datatype='html'>Chabad Preschool Now Open!</co:editable>
+												</h3>
+												<h2 class="h6 text-uppercase text-white mb-5" id="PreschoolSection1Description">
+													<co:editable id='Description' name='Description' title='Description' actions='edit,delete' datatype='line'>We are excited to announce that Chabad Preschool is now open.</co:editable>
+												</h2>
+												<co:editable id='Button' name='Button' title='Button' attribute='href,innertext' actions='edit,delete,copy' tag_only='true'>
+													<a href="/pregister" id="PreschoolSection1Button">Apply Now</a>
+												</co:editable>
 											</div>
 										</div>
 									</div>
@@ -53,131 +47,109 @@
 							</div>
 						</co:section>
 						<co:section id='Section2' name='Section 2' title='Section 2' actions='edit,delete,copy'>
-							<div class="wrapper bg-light ">
+							<div id="PreschoolSection2" class="wrapper bg-light">
 								<div class="container pt-10 pt-md-14 pb-8 text-center">
 									<div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
-										<div class="col-lg-5" style="position: relative;aspect-ratio: 1;">
-											<co:editable id='Section2Image' name='Image' title='Image' attribute='src' actions='edit,delete' tag_only='true'>
-												<img src="https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/bg26.jpg" alt="image" style="position: absolute; top: 0; left: 0; width: 100%;height: 100%;object-fit: cover;" />
+										<div class="col-lg-5" id="PreschoolSection2ImageWrapper">
+											<co:editable id='Image' name='Image' title='Image' attribute='src' actions='edit,delete' tag_only='true'>
+												<img src="https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/bg26.jpg" alt="image" id="PreschoolSection2Image" />
 											</co:editable>
-											<img src="https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/i2-mask.png" alt="overlay" style="position: absolute; top: 0; left: 0; width: 100%;height: 100%;object-fit: cover;" />
+											<img src="https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/i2-mask.png" alt="overlay" id="PreschoolSection2Overlay" />
 										</div>
 										<div class="col-md-10 offset-md-1 offset-lg-0 col-lg-7 text-center text-lg-start">
-											<co:editable id='Section2Title' name='Title' title='Title' actions='edit,delete' datatype='html'>
-												<h3 class="display-3 mb-5 mx-md-n5 mx-lg-0" style="color: #28a73c">
-													Welcome to School!
-												</h3>
-											</co:editable>
-											<co:editable id='Section2Description' name='Description' title='Description' actions='edit,delete' datatype='text'>
-												<p class="mb-2">
-													Chabad Preschool offers an early childhood learning experience for 18 month olds through Pre-Kindergarten as well as Mom and Me classes for toddlers. Our core program is from 9am to 12:30pm with options for extended afternoon as well as full day. Our program places the highest priority on ensuring that every student is well prepared for Kindergarten. In addition, the children explores their Jewish heritage through singing and dancing, painting and creating, holiday cooking, story telling and lots of imaginative play. Each class enjoys all of our weekly specials; Drama, Yoga, Hebrew, Dance, Karate and Shabbat sing.
-												</p>
-											</co:editable>
+											<h3 class="display-3 mb-5 mx-md-n5 mx-lg-0" id="PreschoolSection2Title">
+												<co:editable id='Title' name='Title' title='Title' actions='edit,delete' datatype='html'>Welcome to School!</co:editable>
+											</h3>
+											<p class="mb-2">
+												<co:editable id='Description' name='Description' title='Description' actions='edit,delete' datatype='text'>Chabad Preschool offers an early childhood learning experience for 18 month olds through Pre-Kindergarten as well as Mom and Me classes for toddlers. Our core program is from 9am to 12:30pm with options for extended afternoon as well as full day. Our program places the highest priority on ensuring that every student is well prepared for Kindergarten. In addition, the children explores their Jewish heritage through singing and dancing, painting and creating, holiday cooking, story telling and lots of imaginative play. Each class enjoys all of our weekly specials; Drama, Yoga, Hebrew, Dance, Karate and Shabbat sing.</co:editable>
+											</p>
 										</div>
 									</div>
 								</div>
 							</div>
 						</co:section>
 						<co:section id="column_promo" name="Columns" title='Section 3' actions='edit,delete,copy'>
-							<div class="wrapper  " style="background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/bg126.jpg)">
+							<div class="wrapper" id="PreschoolSection3">
 								<div class="container py-14 py-md-16 text-center">
 									<co:section id="Header" name="Header" title="Header" actions="edit,delete,copy">
 										<co:item class="row">
 											<div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-												<co:editable id='Section3Title' name='Title' title='Title' actions='edit,delete,copy' datatype='line'>
-													<h3 class="display-3 mb-10 px-xl-10" style="color: #393d72">
-														Get Started With Our School
-													</h3>
-												</co:editable>
+												<h3 class="display-3 mb-10 px-xl-10" id="PreschoolSection3Title">
+													<co:editable id='Title' name='Title' title='Title' actions='edit,delete,copy' datatype='line'>Get Started With Our School</co:editable>
+												</h3>
 											</div>
 										</co:item>
 									</co:section>
 									<div class="position-relative">
-										<div class="shape rounded-circle bg-soft-blue rellax w-16 h-16" style="bottom: -0.5rem; right: -2.2rem; z-index: 0;">
+										<div class="shape rounded-circle bg-soft-blue rellax w-16 h-16" id="PreschoolSection3Shape1">
 										</div>
-										<div class="shape bg-dot yellow rellax w-16 h-17" style="top: -0.5rem; left: -2.5rem; z-index: 0;">
+										<div class="shape bg-dot yellow rellax w-16 h-17" id="PreschoolSection3Shape2">
 										</div>
 										<div class="row gx-md-5 gy-5 text-center">
 											<co:section id='Promo1' name='Promo 1' title='Promo 1' actions='edit,delete,copy'>
 												<co:item class="col-md-6 col-xl-3">
-													<div class="card shadow-lg card-border-bottom" style="border-color:#ff4880">
+													<div class="card shadow-lg card-border-bottom">
 														<div class="card-bodyf">
 															<co:editable id='Image' name='Image' title='Image' attribute='src' actions='edit,delete' tag_only='true'>
 																<img src="https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/icon4.png" class="" alt="" />
 															</co:editable>
-															<co:editable id='Title' name='Title' title='Title' actions='edit,delete' datatype='line'>
-																<h4 class="mb-1">
-																	Special Education
-																</h4>
-															</co:editable>
-															<co:editable id='Description' name='Description' title='Description' actions='edit,delete' datatype='text'>
-																<p class="mb-2">
-																	Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.
-																</p>
-															</co:editable>
+															<h4 class="mb-1">
+																<co:editable id='Title' name='Title' title='Title' actions='edit,delete' datatype='line'>Special Education</co:editable>
+															</h4>
+															<p class="mb-2">
+																<co:editable id='Description' name='Description' title='Description' actions='edit,delete' datatype='text'>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.</co:editable>
+															</p>
 														</div>
 													</div>
 												</co:item>
 											</co:section>
 											<co:section id='Promo2' name='Promo 2' title='Promo 2' actions='edit,delete,copy'>
 												<co:item class="col-md-6 col-xl-3">
-													<div class="card shadow-lg card-border-bottom" style="border-color:#ff4880">
+													<div class="card shadow-lg card-border-bottom">
 														<div class="card-bodyf ">
 															<co:editable id='Image' name='Image' title='Image' attribute='src' actions='edit,delete' tag_only='true'>
 																<img src="https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/icon5.png" class="" alt="" />
 															</co:editable>
-															<co:editable id='Title' name='Title' title='Title' actions='edit,delete' datatype='line'>
-																<h4 class="mb-1">
-																	Full Day Session
-																</h4>
-															</co:editable>
-															<co:editable id='Description' name='Description' title='Description' actions='edit,delete' datatype='text'>
-																<p class="mb-2">
-																	Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.
-																</p>
-															</co:editable>
+															<h4 class="mb-1">
+																<co:editable id='Title' name='Title' title='Title' actions='edit,delete' datatype='line'>Full Day Session</co:editable>
+															</h4>
+															<p class="mb-2">
+																<co:editable id='Description' name='Description' title='Description' actions='edit,delete' datatype='text'>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.</co:editable>
+															</p>
 														</div>
 													</div>
 												</co:item>
 											</co:section>
 											<co:section id='Promo3' name='Promo 3' title='Promo 3' actions='edit,delete,copy'>
 												<co:item class="col-md-6 col-xl-3">
-													<div class="card shadow-lg card-border-bottom" style="border-color:#ff4880">
+													<div class="card shadow-lg card-border-bottom">
 														<div class="card-bodyf">
 															<co:editable id='Image' name='Image' title='Image' attribute='src' actions='edit,delete' tag_only='true'>
 																<img src="https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/icon6.png" class="" alt="" />
 															</co:editable>
-															<co:editable id='Title' name='Title' title='Title' actions='edit,delete' datatype='line'>
-																<h4 class="mb-1">
-																	Qualified Teachers
-																</h4>
-															</co:editable>
-															<co:editable id='Description' name='Description' title='Description' actions='edit,delete' datatype='text'>
-																<p class="mb-2">
-																	Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.
-																</p>
-															</co:editable>
+															<h4 class="mb-1">
+																<co:editable id='Title' name='Title' title='Title' actions='edit,delete' datatype='line'>Qualified Teachers</co:editable>
+															</h4>
+															<p class="mb-2">
+																<co:editable id='Description' name='Description' title='Description' actions='edit,delete' datatype='text'>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.</co:editable>
+															</p>
 														</div>
 													</div>
 												</co:item>
 											</co:section>
 											<co:section id='Promo4' name='Promo 4' title='Promo 4' actions='edit,delete,copy'>
 												<co:item class="col-md-6 col-xl-3">
-													<div class="card shadow-lg card-border-bottom" style="border-color:#ff4880">
+													<div class="card shadow-lg card-border-bottom">
 														<div class="card-bodyf">
 															<co:editable id='Image' name='Image' title='Image' attribute='src' actions='edit,delete' tag_only='true'>
 																<img src="https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/icon7.png" class="" alt="" />
 															</co:editable>
-															<co:editable id='Title' name='Title' title='Title' actions='edit,delete' datatype='line'>
-																<h4 class="mb-1">
-																	Quality Education
-																</h4>
-															</co:editable>
-															<co:editable id='Description' name='Description' title='Description' actions='edit,delete' datatype='text'>
-																<p class="mb-2">
-																	Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.
-																</p>
-															</co:editable>
+															<h4 class="mb-1">
+																<co:editable id='Title' name='Title' title='Title' actions='edit,delete' datatype='line'>Quality Education</co:editable>
+															</h4>
+															<p class="mb-2">
+																<co:editable id='Description' name='Description' title='Description' actions='edit,delete' datatype='text'>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.</co:editable>
+															</p>
 														</div>
 													</div>
 												</co:item>
@@ -188,21 +160,17 @@
 							</div>
 						</co:section>
 						<co:section id="column_promo" name="Columns" title="Section 4" actions="edit,delete,copy">
-							<div class="wrapper bg-light happy">
+							<div class="wrapper bg-light happy" id="PreschoolSection4">
 								<div class="container py-14 py-md-16">
 									<co:section id="Heading" name="Heading" title="Heading" actions="edit,delete,copy">
 										<co:item class="row text-center">
 											<div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-												<co:editable id='Title' name='Title' title='Title' actions='edit,delete' datatype='line'>
-													<h3 class="display-3 mb-10 px-xl-10" style="color: #7e0f7c">
-														What We Offer
-													</h3>
-												</co:editable>
-												<co:editable id='Description' name='Description' title='Description' actions="edit,delete" datatype="text">
-													<p class=" mb-2 " style="line-height: 1.4;padding-bottom: 50px">
-														At our education center, we provide a variety of benefits and advantages for your kids’ successful education, while allowing your kid to stay fully active, creative and healthy
-													</p>
-												</co:editable>
+												<h3 class="display-3 mb-10 px-xl-10" id="PreschoolSection4Title">
+													<co:editable id='Title' name='Title' title='Title' actions='edit,delete' datatype='line'>What We Offer</co:editable>
+												</h3>
+												<p class="mb-2" id="PreschoolSection4Description">
+													<co:editable id='Description' name='Description' title='Description' actions="edit,delete" datatype="text">At our education center, we provide a variety of benefits and advantages for your kids’ successful education, while allowing your kid to stay fully active, creative and healthy</co:editable>
+												</p>
 											</div>
 										</co:item>
 									</co:section>
@@ -211,16 +179,12 @@
 											<co:item class="col-md-6 col-lg-4 card1">
 												<div class="d-flex card-body">
 													<div>
-														<co:editable id='Title' name='Title' title='Title' actions='edit,delete' datatype='line'>
-															<h4 class="mb-1">
-																Safety First
-															</h4>
-														</co:editable>
-														<co:editable id='Description' name='Description' title='Description' actions='edit,delete' datatype='text'>
-															<p class="mb-0">
-																Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.
-															</p>
-														</co:editable>
+														<h4 class="mb-1">
+															<co:editable id='Title' name='Title' title='Title' actions='edit,delete' datatype='line'>Safety First</co:editable>
+														</h4>
+														<p class="mb-0">
+															<co:editable id='Description' name='Description' title='Description' actions='edit,delete' datatype='text'>Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.</co:editable>
+														</p>
 													</div>
 												</div>
 											</co:item>
@@ -229,16 +193,12 @@
 											<co:item class="col-md-6 col-lg-4 card2">
 												<div class="d-flex  card-body">
 													<div>
-														<co:editable id='Title' name='Title' title='Title' actions='edit,delete' datatype='line'>
-															<h4 class="mb-1">
-																Small Class Size
-															</h4>
-														</co:editable>
-														<co:editable id='Description' name='Description' title='Description' actions='edit,delete' datatype='text'>
-															<p class="mb-0">
-																Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.
-															</p>
-														</co:editable>
+														<h4 class="mb-1">
+															<co:editable id='Title' name='Title' title='Title' actions='edit,delete' datatype='line'>Small Class Size</co:editable>
+														</h4>
+														<p class="mb-0">
+															<co:editable id='Description' name='Description' title='Description' actions='edit,delete' datatype='text'>Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.</co:editable>
+														</p>
 													</div>
 												</div>
 											</co:item>
@@ -247,16 +207,12 @@
 											<co:item class="col-md-6 col-lg-4 card3 ">
 												<div class="d-flex  card-body">
 													<div>
-														<co:editable id='Title' name='Title' title='Title' actions='edit,delete' datatype='line'>
-															<h4 class="mb-1">
-																Certified Teachers
-															</h4>
-														</co:editable>
-														<co:editable id='Description' name='Description' title='Description' actions='edit,delete' datatype='text'>
-															<p class="mb-0">
-																Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.
-															</p>
-														</co:editable>
+														<h4 class="mb-1">
+															<co:editable id='Title' name='Title' title='Title' actions='edit,delete' datatype='line'>Certified Teachers</co:editable>
+														</h4>
+														<p class="mb-0">
+															<co:editable id='Description' name='Description' title='Description' actions='edit,delete' datatype='text'>Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.</co:editable>
+														</p>
 													</div>
 												</div>
 											</co:item>
@@ -265,16 +221,12 @@
 											<co:item class="col-md-6 col-lg-4 card4">
 												<div class="d-flex  card-body">
 													<div>
-														<co:editable id='Title' name='Title' title='Title' actions='edit,delete' datatype='line'>
-															<h4 class="mb-1">
-																Infant Care
-															</h4>
-														</co:editable>
-														<co:editable id='Description' name='Description' title='Description' actions='edit,delete' datatype='text'>
-															<p class="mb-0">
-																Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.
-															</p>
-														</co:editable>
+														<h4 class="mb-1">
+															<co:editable id='Title' name='Title' title='Title' actions='edit,delete' datatype='line'>Infant Care</co:editable>
+														</h4>
+														<p class="mb-0">
+															<co:editable id='Description' name='Description' title='Description' actions='edit,delete' datatype='text'>Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.</co:editable>
+														</p>
 													</div>
 												</div>
 											</co:item>
@@ -283,34 +235,26 @@
 											<co:item class="col-md-6 col-lg-4 card5">
 												<div class="d-flex card-body">
 													<div>
-														<co:editable id='Title' name='Title' title='Title' actions='edit,delete' datatype='line'>
-															<h4 class="mb-1">
-																Creative Lessons
-															</h4>
-														</co:editable>
-														<co:editable id='Description' name='Description' title='Description' actions='edit,delete' datatype='text'>
-															<p class="mb-0">
-																Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.
-															</p>
-														</co:editable>
+														<h4 class="mb-1">
+															<co:editable id='Title' name='Title' title='Title' actions='edit,delete' datatype='line'>Creative Lessons</co:editable>
+														</h4>
+														<p class="mb-0">
+															<co:editable id='Description' name='Description' title='Description' actions='edit,delete' datatype='text'>Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.</co:editable>
+														</p>
 													</div>
 												</div>
 											</co:item>
 										</co:section>
 										<co:section id="Red" name="Red" title="Red" actions="edit,delete,copy">
 											<co:item class="col-md-6 col-lg-4 card6">
-												<div class="d-flex  card-body">
+												<div class="d-flex card-body">
 													<div>
-														<co:editable id='Title' name='Title' title='Title' actions='edit,delete' datatype='line'>
-															<h4 class="mb-1">
-																Happy Environment
-															</h4>
-														</co:editable>
-														<co:editable id='Description' name='Description' title='Description' actions='edit,delete' datatype='text'>
-															<p class="mb-0">
-																Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.
-															</p>
-														</co:editable>
+														<h4 class="mb-1">
+															<co:editable id='Title' name='Title' title='Title' actions='edit,delete' datatype='line'>Happy Environment</co:editable>
+														</h4>
+														<p class="mb-0">
+															<co:editable id='Description' name='Description' title='Description' actions='edit,delete' datatype='text'>Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.</co:editable>
+														</p>
 													</div>
 												</div>
 											</co:item>
@@ -320,110 +264,112 @@
 							</div>
 						</co:section>
 						<co:section id="Section5" name="Section 5" title="Section 5" actions="edit,delete,copy">
-							<div class="wrapper ">
-								<div class="wrapper " style="background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/bg125.jpg)">
-									<div class="container py-17">
-										<div class="row text-center">
-											<div class="col-xl-11 col-xxl-10 mx-auto">
-												<co:editable id='Section5Title' name='Title' title='Title' actions='edit,delete' datatype='line'>
-													<h3 class="display-3 mb-10 px-xl-10" style="color: #393d72">Title 1</h3>
-												</co:editable>
-												<co:editable id='Section5Description' name='Description' title='Description' actions='edit,delete' datatype='html'>
-													<p class=" mb-2 " style="line-height: 1.4;padding-bottom: 50px">At our education center, we provide a variety of benefits and advantages for your kids’ successful education, while allowing your kid to stay fully active, creative and healthy</p>
-												</co:editable>
-											</div>
+							<div class="wrapper" id="PreschoolSection5">
+								<div class="container py-17">
+									<div class="row text-center">
+										<div class="col-xl-11 col-xxl-10 mx-auto">
+											<h3 class="display-3 mb-10 px-xl-10" id="PreschoolSection5Title">
+												<co:editable id='Title' name='Title' title='Title' actions='edit,delete' datatype='line'>Title 1</co:editable>
+											</h3>
+											<co:editable id='Description' name='Description' title='Description' actions='edit,delete' datatype='html'>
+												<p class="mb-2" id="PreschoolSection5Description">At our education center, we provide a variety of benefits and advantages for your kids’ successful education, while allowing your kid to stay fully active, creative and healthy</p>
+											</co:editable>
 										</div>
 									</div>
 								</div>
 							</div>
 						</co:section>
 						<co:section id="Section6" name="Section 6" title="Section 6" actions="edit,delete,copy">
-							<div class="wrapper bg-light">
-								<div class="wrapper bg-light" style="border-radius: 1rem;">
-									<div class="container py-17">
-										<div class="row text-center">
-											<div class="col-xl-11 col-xxl-10 mx-auto">
-												<co:editable id='Section6Title' name='Title' title='Title' actions='edit,delete' datatype='line'>
-													<h3 class="display-3 mb-10 px-xl-10" style="color: #393d72">Title 1</h3>
-												</co:editable>
-												<co:editable id='Section6Description' name='Description' title='Description' actions='edit,delete' datatype='html'>
-													<p class=" mb-2 " style="line-height: 1.4;padding-bottom: 50px">At our education center, we provide a variety of benefits and advantages for your kids’ successful education, while allowing your kid to stay fully active, creative and healthy</p>
-												</co:editable>
-											</div>
+							<div class="wrapper bg-light" id="PreschoolSection6">
+								<div class="container py-17">
+									<div class="row text-center">
+										<div class="col-xl-11 col-xxl-10 mx-auto">
+											<h3 class="display-3 mb-10 px-xl-10" id="PreschoolSection6Title">
+												<co:editable id='Title' name='Title' title='Title' actions='edit,delete' datatype='line'>Title 1</co:editable>
+											</h3>
+											<p class="mb-2" id="PreschoolSection6Description">
+												<co:editable id='Description' name='Description' title='Description' actions='edit,delete' datatype='html'>At our education center, we provide a variety of benefits and advantages for your kids’ successful education, while allowing your kid to stay fully active, creative and healthy</co:editable>
+											</p>
 										</div>
 									</div>
 								</div>
 							</div>
 						</co:section>
 						<co:section id="column_promo" name="Columns" title="Section 7" actions="edit,delete,copy">
-							<div class="wrapper " style="background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/bg126.jpg)">
+							<div class="wrapper" id="PreschoolSection7">
 								<div class="container py-14 py-md-16 text-center">
 									<co:section id="Header" name="Header" title="Header" actions="edit,delete,copy">
 										<co:item class="row">
 											<div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-												<co:editable id='Section7Title' name='Title' title='Title' actions='edit,delete' datatype='line'>
-													<h3 class="display-3 mb-10 px-xl-10" style="color: #393d72">Our Programs</h3>
-												</co:editable>
+												<h3 class="display-3 mb-10 px-xl-10" id="PreschoolSection7Title">
+													<co:editable id='Title' name='Title' title='Title' actions='edit,delete' datatype='line'>Our Programs</co:editable>
+												</h3>
 											</div>
 										</co:item>
 									</co:section>
 									<div class="position-relative">
-										<div class="shape rounded-circle bg-soft-blue rellax w-16 h-16" style="bottom: -0.5rem; right: -2.2rem; z-index: 0;">
+										<div class="shape rounded-circle bg-soft-blue rellax w-16 h-16" id="PreschoolSection7Shape1">
 										</div>
-										<div class="shape bg-dot yellow rellax w-16 h-17" style="top: -0.5rem; left: -2.5rem; z-index: 0;">
+										<div class="shape bg-dot yellow rellax w-16 h-17" id="PreschoolSection7Shape2">
 										</div>
 										<div class="row gx-md-5 gy-5 text-center">
 											<co:section id="One" name="One" title="One" actions="edit,delete,copy">
 												<co:item class="col-md-6 col-xl-4">
-													<div class="card shadow-lg card-border-bottom" style="border-color: #ff4880;">
+													<div class="card shadow-lg card-border-bottom">
 														<div class="card-bodyf">
 															<co:editable id='Image' name='Image' title='Image' attribute='src' actions='edit,delete' tag_only='true'>
 																<img src="https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/icon1.png" class="" alt="" />
 															</co:editable>
-															<co:editable id='Title' name='Title' title='Title' datatype='line'>
-																<h4 class="mb-1">Arts Program</h4>
-															</co:editable>
-															<co:editable id='Description' name='Description' title='Description' datatype='text'>
-																<p class="mb-2">Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.</p>
-															</co:editable>
+															<h4 class="mb-1">
+																<co:editable id='Title' name='Title' title='Title' datatype='line'>Arts Program</co:editable>
+															</h4>
+															<p class="mb-2">
+																<co:editable id='Description' name='Description' title='Description' datatype='text'>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.</co:editable>
+															</p>
 														</div>
 													</div>
 													<co:editable id='Button' name='Button' title='Button' attribute='href,innertext' actions='edit,delete' tag_only='true'>
-														<a href="#" class="btn btn-primaryx2" style="animation-name: zoomIn; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 1500ms; animation-direction: normal; animation-fill-mode: both;border-radius: 50rem;">Learn More</a>
+														<a href="#" class="btn btn-primaryx2">Learn More</a>
 													</co:editable>
 												</co:item>
 											</co:section>
 											<co:section id="Two" name="Two" title="Two" actions="edit,delete,copy">
 												<co:item class="col-md-6 col-xl-4">
-													<div class="card shadow-lg card-border-bottom" style="border-color:#ff4880">
+													<div class="card shadow-lg card-border-bottom">
 														<div class="card-bodyf">
-															<img src="https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/icon2.png" alt="" />
-															<h4 class="mb-1">Jewish Studies</h4>
-															<p class="mb-2">Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.</p>
+															<co:editable id='Image' name='Image' title='Image' attribute='src' actions='edit,delete' tag_only='true'>
+																<img src="https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/icon2.png" alt="" />
+															</co:editable>
+															<h4 class="mb-1">
+																<co:editable id='Title' name='Title' title='Title' datatype='line'>Jewish Studies</co:editable>
+															</h4>
+															<p class="mb-2">
+																<co:editable id='Description' name='Description' title='Description' datatype='text'>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.</co:editable>
+															</p>
 														</div>
 													</div>
 													<co:editable id='Button' name='Button' title='Button' attribute='href,innertext' actions='edit,delete' tag_only='true'>
-														<a href="#" class="btn btn-primaryx" style="animation-name: zoomIn; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 1500ms; animation-direction: normal; animation-fill-mode: both;border-radius: 50rem!important;">Learn More</a>
+														<a href="#" class="btn btn-primaryx">Learn More</a>
 													</co:editable>
 												</co:item>
 											</co:section>
 											<co:section id="Three" name="Three" title="Three" actions="edit,delete,copy">
 												<co:item class="col-md-6 col-xl-4">
-													<div class="card shadow-lg card-border-bottom" style="border-color:#ff4880">
+													<div class="card shadow-lg card-border-bottom">
 														<div class="card-bodyf">
 															<co:editable id='Image' name='Image' title='Image' attribute='src' actions='edit,delete' tag_only='true'>
 																<img src="https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/icon3.png" alt="" />
 															</co:editable>
-															<co:editable id='Title' name='Title' title='Title' datatype='line'>
-																<h4 class="mb-1">Sports Program</h4>
-															</co:editable>
-															<co:editable id='Description' name='Description' title='Description' datatype='text'>
-																<p class="mb-2">Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.</p>
-															</co:editable>
+															<h4 class="mb-1">
+																<co:editable id='Title' name='Title' title='Title' datatype='line'>Sports Program</co:editable>
+															</h4>
+															<p class="mb-2">
+																<co:editable id='Description' name='Description' title='Description' datatype='text'>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.</co:editable>
+															</p>
 														</div>
 													</div>
 													<co:editable id='Button' name='Button' title='Button' attribute='href,innertext' actions='edit,delete' tag_only='true'>
-														<a href="#" class="btn btn-primaryx2" style="animation-name: zoomIn; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 1500ms; animation-direction: normal; animation-fill-mode: both;border-radius: 50rem!important;">Learn More</a>
+														<a href="#" class="btn btn-primaryx2">Learn More</a>
 													</co:editable>
 												</co:item>
 											</co:section>
@@ -433,30 +379,30 @@
 							</div>
 						</co:section>
 						<co:section id="column_promo" name="Columns" title="Testimonials" actions="edit,delete,copy">
-							<div class="wrapper bg-light">
+							<div class="wrapper bg-light" id="Testimonials">
 								<div class="container py-14 py-md-16">
 									<co:section id="Header" name="Header" title="Header" actions="edit,delete,copy">
 										<co:item>
-											<co:editable id='Section8Title' name='Title' title='Title' actions='edit,delete' datatype='line'>
-												<h3 class="display-3 mb-3 text-center" style="color: #92278f">What Parents Say</h3>
-											</co:editable>
+											<h3 class="display-3 mb-3 text-center" id="TestimonialsTitle">
+												<co:editable id='Title' name='Title' title='Title' actions='edit,delete' datatype='line'>What Parents Say</co:editable>
+											</h3>
 										</co:item>
 									</co:section>
 									<p class="lead text-center mb-6 px-md-16 px-lg-0"></p>
 									<div class="position-relative">
-										<div class="shape rounded-circle bg-soft-yellow w-16 h-16" style="bottom: 0.5rem; right: -1.7rem;position: absolute;"></div>
-										<div class="shape bg-dot primary w-16 h-16" style="top: -1rem; left: -1.7rem;position: absolute;">
+										<div class="shape rounded-circle bg-soft-yellow w-16 h-16" id="TestimonialsShape1"></div>
+										<div class="shape bg-dot primary w-16 h-16" id="TestimonialsShape2">
 										</div>
 										<div class="swiper">
 											<div class="slider-wrapper swiper-wrapper">
 												<co:section id="One" name="One" title="One" actions="edit,delete,copy">
 													<co:item class="slide swiper-slide">
-														<div class="card" style="border: 1px solid #b9dd6c">
+														<div class="card" id="TestimonialOne">
 															<div class="card-body">
 																<blockquote class="icon mb-0">
-																	<co:editable id='Quote' name='Quote' title='Quote' datatype='text'>
-																		<p>“Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Cras justo odio dapibus facilisis sociis natoque penatibus.”</p>
-																	</co:editable>
+																	<p>
+																		<co:editable id='Quote' name='Quote' title='Quote' datatype='text'>“Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Cras justo odio dapibus facilisis sociis natoque penatibus.”</co:editable>
+																	</p>
 																</blockquote>
 															</div>
 														</div>
@@ -465,12 +411,12 @@
 																<img src="https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/avatars/te1.jpg" alt="" />
 															</co:editable>
 															<div class="info">
-																<co:editable id='Name' name='Name' title='Name' datatype='line'>
-																	<h5 class="mb-1">Coriss Ambady</h5>
-																</co:editable>
-																<co:editable id='Title' name='Title' title='Title' datatype='line'>
-																	<p class="mb-0">Financial Analyst</p>
-																</co:editable>
+																<h5 class="mb-1">
+																	<co:editable id='Name' name='Name' title='Name' datatype='line'>Coriss Ambady</co:editable>
+																</h5>
+																<p class="mb-0">
+																	<co:editable id='Title' name='Title' title='Title' datatype='line'>Financial Analyst</co:editable>
+																</p>
 															</div>
 														</div>
 													</co:item>
@@ -480,9 +426,9 @@
 														<div class="card">
 															<div class="card-body">
 																<blockquote class="icon mb-0">
-																	<co:editable id='Quote' name='Quote' title='Quote' datatype='text'>
-																		<p>“Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Cras justo odio dapibus facilisis sociis natoque penatibus.”</p>
-																	</co:editable>
+																	<p>
+																		<co:editable id='Quote' name='Quote' title='Quote' datatype='text'>“Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Cras justo odio dapibus facilisis sociis natoque penatibus.”</co:editable>
+																	</p>
 																</blockquote>
 															</div>
 														</div>
@@ -491,12 +437,12 @@
 																<img src="https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/avatars/te2.jpg" alt="" />
 															</co:editable>
 															<div class="info">
-																<co:editable id='Name' name='Name' title='Name' datatype='line'>
-																	<h5 class="mb-1">Cory Zamora</h5>
-																</co:editable>
-																<co:editable id='Title' name='Title' title='Title' datatype='line'>
-																	<p class="mb-0">Marketing Specialist</p>
-																</co:editable>
+																<h5 class="mb-1">
+																	<co:editable id='Name' name='Name' title='Name' datatype='line'>Cory Zamora</co:editable>
+																</h5>
+																<p class="mb-0">
+																	<co:editable id='Title' name='Title' title='Title' datatype='line'>Marketing Specialist</co:editable>
+																</p>
 															</div>
 														</div>
 													</co:item>
@@ -507,9 +453,9 @@
 															<div class="red-triangle"></div>
 															<div class="card-body">
 																<blockquote class="icon mb-0">
-																	<co:editable id='Quote' name='Quote' title='Quote' datatype='text'>
-																		<p>“Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Cras justo odio dapibus facilisis sociis natoque penatibus.”</p>
-																	</co:editable>
+																	<p>
+																		<co:editable id='Quote' name='Quote' title='Quote' datatype='text'>“Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Cras justo odio dapibus facilisis sociis natoque penatibus.”</co:editable>
+																	</p>
 																</blockquote>
 															</div>
 														</div>
@@ -518,12 +464,12 @@
 																<img src="https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/avatars/te3.jpg" alt="" />
 															</co:editable>
 															<div class="info">
-																<co:editable id='Name' name='Name' title='Name' datatype='line'>
-																	<h5 class="mb-1">Nikolas Brooten</h5>
-																</co:editable>
-																<co:editable id='Title' name='Title' title='Title' datatype='line'>
-																	<p class="mb-0">Sales Manager</p>
-																</co:editable>
+																<h5 class="mb-1">
+																	<co:editable id='Name' name='Name' title='Name' datatype='line'>Nikolas Brooten</co:editable>
+																</h5>
+																<p class="mb-0">
+																	<co:editable id='Title' name='Title' title='Title' datatype='line'>Sales Manager</co:editable>
+																</p>
 															</div>
 														</div>
 													</co:item>
@@ -534,9 +480,9 @@
 															<div class="red-triangle"></div>
 															<div class="card-body">
 																<blockquote class="icon mb-0">
-																	<co:editable id='Quote' name='Quote' title='Quote' datatype='text'>
-																		<p>“Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Cras justo odio dapibus facilisis sociis natoque penatibus.”</p>
-																	</co:editable>
+																	<p>
+																		<co:editable id='Quote' name='Quote' title='Quote' datatype='text'>“Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Cras justo odio dapibus facilisis sociis natoque penatibus.”</co:editable>
+																	</p>
 																</blockquote>
 															</div>
 														</div>
@@ -545,12 +491,12 @@
 																<img src="https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/avatars/te4.jpg" alt="" />
 															</co:editable>
 															<div class="info">
-																<co:editable id='Name' name='Name' title='Name' datatype='line'>
-																	<h5 class="mb-1">Coriss Ambady</h5>
-																</co:editable>
-																<co:editable id='Title' name='Title' title='Title' datatype='line'>
-																	<p class="mb-0">Financial Analyst</p>
-																</co:editable>
+																<h5 class="mb-1">
+																	<co:editable id='Name' name='Name' title='Name' datatype='line'>Coriss Ambady</co:editable>
+																</h5>
+																<p class="mb-0">
+																	<co:editable id='Title' name='Title' title='Title' datatype='line'>Financial Analyst</co:editable>
+																</p>
 															</div>
 														</div>
 													</co:item>
@@ -561,9 +507,9 @@
 															<div class="red-triangle"></div>
 															<div class="card-body">
 																<blockquote class="icon mb-0">
-																	<co:editable id='Quote' name='Quote' title='Quote' datatype='text'>
-																		<p>“Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Cras justo odio dapibus facilisis sociis natoque penatibus.”</p>
-																	</co:editable>
+																	<p>
+																		<co:editable id='Quote' name='Quote' title='Quote' datatype='text'>“Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Cras justo odio dapibus facilisis sociis natoque penatibus.”</co:editable>
+																	</p>
 																</blockquote>
 															</div>
 														</div>
@@ -572,12 +518,12 @@
 																<img src="https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/avatars/te5.jpg" alt="" />
 															</co:editable>
 															<div class="info">
-																<co:editable id='Name' name='Name' title='Name' datatype='line'>
-																	<h5 class="mb-1">Jackie Sanders</h5>
-																</co:editable>
-																<co:editable id='Title' name='Title' title='Title' datatype='line'>
-																	<p class="mb-0">Investment Planner</p>
-																</co:editable>
+																<h5 class="mb-1">
+																	<co:editable id='Name' name='Name' title='Name' datatype='line'>Jackie Sanders</co:editable>
+																</h5>
+																<p class="mb-0">
+																	<co:editable id='Title' name='Title' title='Title' datatype='line'>Investment Planner</co:editable>
+																</p>
 															</div>
 														</div>
 													</co:item>
@@ -588,9 +534,9 @@
 															<div class="red-triangle"></div>
 															<div class="card-body">
 																<blockquote class="icon mb-0">
-																	<co:editable id='Quote' name='Quote' title='Quote' datatype='text'>
-																		<p>“Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Cras justo odio dapibus facilisis sociis natoque penatibus.”</p>
-																	</co:editable>
+																	<p>
+																		<co:editable id='Quote' name='Quote' title='Quote' datatype='text'>“Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Cras justo odio dapibus facilisis sociis natoque penatibus.”</co:editable>
+																	</p>
 																</blockquote>
 															</div>
 														</div>
@@ -599,12 +545,12 @@
 																<img src="https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/avatars/te6.jpg" alt="" />
 															</co:editable>
 															<div class="info">
-																<co:editable id='Name' name='Name' title='Name' datatype='line'>
-																	<h5 class="mb-1">Laura Widerski</h5>
-																</co:editable>
-																<co:editable id='Title' name='Title' title='Title' datatype='line'>
-																	<p class="mb-0">Sales Specialist</p>
-																</co:editable>
+																<h5 class="mb-1">
+																	<co:editable id='Name' name='Name' title='Name' datatype='line'>Laura Widerski</co:editable>
+																</h5>
+																<p class="mb-0">
+																	<co:editable id='Title' name='Title' title='Title' datatype='line'>Sales Specialist</co:editable>
+																</p>
 															</div>
 														</div>
 													</co:item>
@@ -616,14 +562,15 @@
 							</div>
 						</co:section>
 						<co:section id="Section10" name="Latest Photos" title="Latest Photos" actions="edit,delete,copy">
-							<div class=" wrapper bg-light">
+							<div class="wrapper bg-light">
 								<div class="container py-14 py-md-16">
-									<co:template id="latest_photo" name="Latest_Photo" title="Our Preschool in Photos" autoselect="true" aid="-1" actions="delete" photo_count="6" />
+									<co:template id="latest_photo" name="Latest_Photo" title="Our Preschool in Photos" autoselect="true" aid="-1" actions="delete" photo_count="8" />
 								</div>
 							</div>
 						</co:section>
 						<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 						<script src="https://preschool-template-6.netlify.app/dist/assets/js/theme.js"></script>
+						<script src="https://preschool-template-6.netlify.app/dist/assets/js/plugins.js"></script>
 						<style>
 							@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@700');
 							@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500');
@@ -632,12 +579,6 @@
 							@import url("https://preschool-template-6.netlify.app/dist/assets/css/fonts/urbanist.css");
 							@import url("https://preschool-template-6.netlify.app/dist/assets/css/style.css");
 							@import url('https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css');
-
-							div[name="co_section"][real_id^="column_promo"] {
-								display: flex;
-								width: 100%;
-								height: fit-content;
-							}
 						</style>
 					</div>
 				</co:template>
@@ -647,28 +588,24 @@
 			<div class="FooterContainer">
 				<co:section id="Footer" name="Footer" title="Footer" actions="edit,delete">
 					<img src="https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/illustrations/blue-wavy-bottom-border.png" alt="" width="100%" height="auto" />
-					<footer style="background: #5674a1; color:#FFF ">
+					<footer id="PreschoolFooterNav">
 						<div class="container pt-5 pt-md-5 pb-7">
-							<div class="gy-6 gy-lg-0" style="display: flex;justify-content: space-between;flex-wrap: wrap;">
+							<div id="PreschoolFooterNavContent" class="gy-6 gy-lg-0">
 								<div class="col-lg-4">
 									<div class="widget">
-										<co:editable id='FooterHead' name='FooterHead' title='FooterHead' actions='edit,delete,copy' datatype='line'>
-											<h3 class="h2 mb-3 text-white">
-												ABOUT
-											</h3>
-										</co:editable>
-										<co:editable id='FooterText' name='FooterText' title='FooterText' actions='edit,delete,copy' datatype='line'>
-											<p class="lead mb-5">
-												Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididunt ultimam quantum
-											</p>
-										</co:editable>
+										<h3 class="h2 mb-3 text-white">
+											<co:editable id='FooterHead' name='FooterHead' title='FooterHead' actions='edit,delete,copy' datatype='line'>ABOUT</co:editable>
+										</h3>
+										<p class="lead mb-5">
+											<co:editable id='FooterText' name='FooterText' title='FooterText' actions='edit,delete,copy' datatype='line'>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididunt ultimam quantum</co:editable>
+										</p>
 									</div>
 								</div>
 								<co:template class="chabad_navigator_bar" id="Navigation" name="nagivation" title="Navigation Bar" max_chars="70" use_custom_separator="true"></co:template>
 							</div>
 						</div>
 					</footer>
-					<footer style="background: #061737; color:#FFF ">
+					<footer id="PreschoolFooter">
 						<div class="container pt-5 pt-md-5 pb-5">
 							<div class="d-md-flex align-items-center justify-content-between">
 								<co:editable id='FooterContact' name='FooterContact' title='FooterContact' actions='edit,delete,copy' datatype='html'>
@@ -683,7 +620,7 @@
 								</co:editable>
 								<nav class="nav social social-white text-md-end">
 									<co:editable id='FooterApply' name='FooterApply' title='FooterApply' attribute='href,innertext' actions='edit,delete' tag_only='true'>
-										<a href="/pregister" style="background-color:#32afea; border:2px solid #32afea; color: white; border-radius: 50rem;font-size: 20px;line-height: 34px;padding: 8px 20px;font-weight: 700;text-wrap: nowrap;">
+										<a href="/pregister" id="PreschoolFooterButton">
 											APPLY NOW</a>
 									</co:editable>
 								</nav>
@@ -695,4 +632,3 @@
 		</co:template>
 	</div>
 </div>
-<script src="https://preschool-template-6.netlify.app/dist/assets/js/plugins.js"></script>
