@@ -23,6 +23,7 @@ function createSwiper(selector) {
 		autoHeight: true,
 		slidesOffsetAfter: 60,
 		slidesOffsetBefore: 20,
+		effect: 'coverflow',
 	});
 }
 
