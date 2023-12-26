@@ -9,18 +9,11 @@ function createSwiper(selector) {
 	if (!document.querySelector(selector)) return console.error(`Swiper selector ${selector} not found`);
 	if (!Swiper) return console.error('Swiper not found');
 	return new Swiper(selector, {
-		createElements: true,
 		grabCursor: true,
 		breakpoints: {
-			0: {
-				slidesPerView: 1.3
-			},
-			850: {
-				slidesPerView: 2
-			},
-			1100: {
-				slidesPerView: 3
-			}
+			0: { slidesPerView: 1.3 },
+			850: { slidesPerView: 2 },
+			1100: { slidesPerView: 3 }
 		},
 		autoHeight: true,
 		effect: 'coverflow',
