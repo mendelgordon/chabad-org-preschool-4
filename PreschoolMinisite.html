@@ -20,7 +20,7 @@
 			<div id="chabad_body_content">
 				<co:template class="chabad_left_column" title="Content Area 1" actions="edit,delete" name="content_area" id="ContentArea" type="static">
 					<div class="chabad_left_column">
-						<co:section id='Section1' name='Section 1' title='Section 1' actions='edit,delete,copy'>
+						<co:section id='Section1' name='Section 1' title='1. Hero Section' actions='edit,delete,copy'>
 							<div id="PreschoolSection1">
 								<co:editable id='Image' name='Image' title='Image' attribute='src' actions='edit,delete' tag_only='true'>
 									<img src="https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/bg26.jpg" alt="Background" id="PreschoolSection1Image" />
@@ -46,7 +46,7 @@
 								</div>
 							</div>
 						</co:section>
-						<co:section id='Section2' name='Section 2' title='Section 2' actions='edit,delete,copy'>
+						<co:section id='Section2' name='Section 2' title='2. Text and Image' actions='edit,delete,copy'>
 							<div id="PreschoolSection2" class="wrapper bg-light">
 								<div class="container pt-10 pt-md-14 pb-8 text-center">
 									<div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
@@ -68,7 +68,7 @@
 								</div>
 							</div>
 						</co:section>
-						<co:section id="column_promo" name="Columns" title='Section 3' actions='edit,delete,copy'>
+						<co:section id="column_promoA" name="Columns" title='3. White Cards' actions='edit,delete,copy'>
 							<div class="wrapper" id="PreschoolSection3">
 								<div class="container py-14 py-md-16 text-center">
 									<co:section id="Header" name="Header" title="Header" actions="edit,delete,copy">
@@ -159,7 +159,7 @@
 								</div>
 							</div>
 						</co:section>
-						<co:section id="column_promo" name="Columns" title="Section 4" actions="edit,delete,copy">
+						<co:section id="column_promoB" name="Columns" title="4. Colored Cards" actions="edit,delete,copy">
 							<div class="wrapper bg-light happy" id="PreschoolSection4">
 								<div class="container py-14 py-md-16">
 									<co:section id="Heading" name="Heading" title="Heading" actions="edit,delete,copy">
@@ -263,7 +263,7 @@
 								</div>
 							</div>
 						</co:section>
-						<co:section id="Section5" name="Section 5" title="Section 5" actions="edit,delete,copy">
+						<co:section id="Section5" name="Section 5" title="5. Custom (Grey)" actions="edit,delete,copy">
 							<div class="wrapper" id="PreschoolSection5">
 								<div class="container py-17">
 									<div class="row text-center">
@@ -279,7 +279,7 @@
 								</div>
 							</div>
 						</co:section>
-						<co:section id="Section6" name="Section 6" title="Section 6" actions="edit,delete,copy">
+						<co:section id="Section6" name="Section 6" title="6. Custom (White)" actions="edit,delete,copy">
 							<div class="wrapper bg-light" id="PreschoolSection6">
 								<div class="container py-17">
 									<div class="row text-center">
@@ -295,7 +295,7 @@
 								</div>
 							</div>
 						</co:section>
-						<co:section id="column_promo" name="Columns" title="Section 7" actions="edit,delete,copy">
+						<co:section id="column_promoC" name="Columns" title="7. Cards with Buttons" actions="edit,delete,copy">
 							<div class="wrapper" id="PreschoolSection7">
 								<div class="container py-14 py-md-16 text-center">
 									<co:section id="Header" name="Header" title="Header" actions="edit,delete,copy">
@@ -378,8 +378,8 @@
 								</div>
 							</div>
 						</co:section>
-						<co:section id="column_promo" name="Columns" title="Testimonials" actions="edit,delete,copy">
-							<div class="wrapper bg-light" id="Testimonials">
+						<co:section id="column_promoD" name="Columns" title="8. Testimonials" actions="edit,delete,copy">
+							<div class="wrapper" id="Testimonials">
 								<div class="container py-14 py-md-16">
 									<co:section id="Header" name="Header" title="Header" actions="edit,delete,copy">
 										<co:item>
@@ -561,7 +561,7 @@
 								</div>
 							</div>
 						</co:section>
-						<co:section id="Section10" name="Latest Photos" title="Latest Photos" actions="edit,delete,copy">
+						<co:section id="Section10" name="Latest Photos" title="9. Latest Photos" actions="edit,delete,copy">
 							<div class="wrapper bg-light">
 								<div class="container py-14 py-md-16">
 									<co:template id="latest_photo" name="Latest_Photo" title="Our Preschool in Photos" autoselect="true" aid="-1" actions="delete" photo_count="8" />
@@ -601,7 +601,7 @@
 										</p>
 									</div>
 								</div>
-								<co:template class="chabad_navigator_bar" id="Navigation" name="nagivation" title="Navigation Bar" max_chars="70" use_custom_separator="true"></co:template>
+								<co:template class="chabad_navigator_bar" id="NavigationFooter" name="nagivation" title="Navigation Bar" max_chars="70" use_custom_separator="true"></co:template>
 							</div>
 						</div>
 					</footer>
@@ -610,12 +610,12 @@
 							<div class="d-md-flex align-items-center justify-content-between">
 								<co:editable id='FooterContact' name='FooterContact' title='FooterContact' actions='edit,delete,copy' datatype='html'>
 									<p class="mb-2 mb-lg-0"><span class="iconsfoot"><i class="uil-home"></i>
-											<<mosad_address>>
+											[[mosad_address]]
 										</span>
 										<span class="iconsfoot"><i class="uil-phone"></i>
-											<<mosad_phone>>
+											[[mosad_phone]]
 										</span> <span class="iconsfoot"><i class="uil-envelope-add"></i>
-											<<mosad-director_primary_email_address>></span>
+											[[mosad-director_primary_email_address]]</span>
 									</p>
 								</co:editable>
 								<nav class="nav social social-white text-md-end">
