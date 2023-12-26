@@ -35,6 +35,10 @@ function createSwiper(selector, reverse) {
 		speed: 1000,
 		loop: true,
 		loopAddBlankSlides: true,
+		pagination: {
+			dynamicBullets: true,
+			dynamicMainBullets: 3,
+		},
 	});
 }
 
