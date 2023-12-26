@@ -24,7 +24,9 @@ function createSwiper(selector, reverse) {
 		slidesOffsetAfter: 60,
 		slidesOffsetBefore: 20,
 		effect: 'coverflow',
-		slideShadows: false,
+		coverflowEffect: {
+			slideShadows: false,
+		},
 		reverseDirection: reverse,
 	});
 }
