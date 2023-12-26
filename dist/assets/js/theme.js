@@ -12,7 +12,7 @@ function createSwiper(selector, reverse) {
 		grabCursor: true,
 		breakpoints: {
 			0: {
-				slidesPerView: 1.5
+				slidesPerView: 1.3
 			},
 			850: {
 				slidesPerView: 2
@@ -22,7 +22,7 @@ function createSwiper(selector, reverse) {
 			}
 		},
 		autoplay: {
-			delay: 1000,
+			delay: 0,
 			reverseDirection: reverse,
 		},
 		spaceBetween: 20,
@@ -35,6 +35,8 @@ function createSwiper(selector, reverse) {
 		},
 		speed: 1000,
 		pagination: true,
+		freeMode: true,
+		loop: true,
 	});
 }
 
