@@ -19,7 +19,7 @@ function createSwiper(selector, reverse) {
 			}
 		},
 		autoplay: {
-			delay: 0,
+			delay: 1000,
 		},
 		spaceBetween: 20,
 		autoHeight: true,
