@@ -28,7 +28,6 @@ function createSwiper(selector) {
 			scale: 0.9,
 			rotate: 0,
 		},
-		speed: 10000,
 		pagination: {
 			clickable: true,
 		},
