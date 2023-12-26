@@ -7,6 +7,7 @@ if (co_photo_gallery) {
 
 function createSwiper(selector) {
 	if (!document.querySelector(selector)) return console.error(`Swiper selector ${selector} not found`);
+	if (!Swiper) return console.error('Swiper not found');
 	return new Swiper(selector, {
 		createElements: true,
 		grabCursor: true,
@@ -30,6 +31,7 @@ function createSwiper(selector) {
 		},
 		pagination: {
 			clickable: true,
+			el: `${selector} .swiper-pagination`,
 		},
 		loop: true,
 	});
