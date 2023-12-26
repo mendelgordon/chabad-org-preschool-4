@@ -28,7 +28,8 @@ function createSwiper(selector, reverse) {
 		effect: 'coverflow',
 		coverflowEffect: {
 			slideShadows: false,
-			depth: 50,
+			depth: 20,
+			rotate: 0,
 		},
 		reverseDirection: reverse,
 		speed: 1000,
