@@ -33,7 +33,7 @@ function createSwiper(selector, reverse) {
 			depth: 50,
 			rotate: 0,
 		},
-		speed: 1000,
+		speed: 4000,
 		pagination: true,
 		freeMode: true,
 		loop: true,
