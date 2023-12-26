@@ -37,7 +37,7 @@ function createSwiper(selector, reverse) {
 		loopAddBlankSlides: true,
 		pagination: {
 			dynamicBullets: true,
-			dynamicMainBullets: 3,
+			el: '.swiper-pagination',
 		},
 	});
 }
