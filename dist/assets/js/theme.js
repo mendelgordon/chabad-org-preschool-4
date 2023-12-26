@@ -26,12 +26,13 @@ function createSwiper(selector) {
 		effect: 'coverflow',
 		coverflowEffect: {
 			slideShadows: false,
-			scale: 0.8,
+			scale: 0.9,
 			rotate: 0,
-			stretch: 10
 		},
 		speed: 10000,
-		pagination: { clickable: true },
+		pagination: {
+			clickable: true,
+		},
 		freeMode: true,
 		loop: true,
 	});
