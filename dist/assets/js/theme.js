@@ -33,7 +33,6 @@ function createSwiper(selector, reverse) {
 			rotate: 0,
 		},
 		speed: 1000,
-		centeredSlides: true,
 		loop: true,
 		loopAddBlankSlides: true,
 	});
