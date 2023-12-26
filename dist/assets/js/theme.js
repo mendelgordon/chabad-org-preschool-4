@@ -32,7 +32,6 @@ function createSwiper(selector) {
 		pagination: {
 			clickable: true,
 		},
-		freeMode: true,
 		loop: true,
 	});
 }
