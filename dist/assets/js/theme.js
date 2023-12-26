@@ -12,7 +12,7 @@ function createSwiper(selector, reverse) {
 		grabCursor: true,
 		breakpoints: {
 			0: {
-				slidesPerView: 1.2
+				slidesPerView: 1.5
 			},
 			850: {
 				slidesPerView: 2
