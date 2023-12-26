@@ -10,7 +10,6 @@ function createSwiper(selector) {
 		centerInsufficientSlides: true,
 		createElements: true,
 		grabCursor: true,
-		pagination: true,
 		breakpoints: {
 			850: {
 				slidesPerView: 2
@@ -19,7 +18,7 @@ function createSwiper(selector) {
 				slidesPerView: 3
 			}
 		},
-		navigation: true,
+		autoplay: true,
 		spaceBetween: 20,
 		autoHeight: true,
 		slidesOffsetAfter: 60,
