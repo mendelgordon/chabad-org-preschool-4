@@ -18,7 +18,9 @@ function createSwiper(selector, reverse) {
 				slidesPerView: 3
 			}
 		},
-		autoplay: true,
+		autoplay: {
+			delay: 1000,
+		},
 		spaceBetween: 20,
 		autoHeight: true,
 		slidesOffsetAfter: 60,
@@ -26,8 +28,10 @@ function createSwiper(selector, reverse) {
 		effect: 'coverflow',
 		coverflowEffect: {
 			slideShadows: false,
+			depth: 50,
 		},
 		reverseDirection: reverse,
+		speed: 1000,
 	});
 }
 
