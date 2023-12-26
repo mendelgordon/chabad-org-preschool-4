@@ -8,7 +8,6 @@ if (co_photo_gallery) {
 function createSwiper(selector, reverse) {
 	if (!document.querySelector(selector)) return console.error(`Swiper selector ${selector} not found`);
 	return new Swiper(selector, {
-		centerInsufficientSlides: true,
 		createElements: true,
 		grabCursor: true,
 		breakpoints: {
