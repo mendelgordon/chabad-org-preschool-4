@@ -29,10 +29,7 @@ function createSwiper(selector) {
 			scale: 0.9,
 			rotate: 0,
 		},
-		pagination: {
-			clickable: true,
-			dynamicBullets: true,
-		},
+		pagination: true,
 		loop: true,
 	});
 }
