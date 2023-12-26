@@ -21,7 +21,6 @@ function createSwiper(selector) {
 				slidesPerView: 3
 			}
 		},
-		spaceBetween: 20,
 		autoHeight: true,
 		effect: 'coverflow',
 		coverflowEffect: {
