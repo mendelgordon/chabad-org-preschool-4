@@ -30,7 +30,6 @@ function createSwiper(selector) {
 			rotate: 0,
 		},
 		pagination: {
-			el: `${selector} .swiper-pagination`,
 			clickable: true,
 			dynamicBullets: true,
 		},
