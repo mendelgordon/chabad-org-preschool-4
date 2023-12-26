@@ -24,6 +24,7 @@ function createSwiper(selector) {
 		slidesOffsetAfter: 60,
 		slidesOffsetBefore: 20,
 		effect: 'coverflow',
+		slideShadows: false,
 	});
 }
 
