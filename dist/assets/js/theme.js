@@ -5,7 +5,7 @@ if (co_photo_gallery) {
 	co_photo_gallery.querySelectorAll('a').forEach(el => el.classList.add('swiper-slide'));
 }
 
-function createSwiper(selector, reverse, slides) {
+function createSwiper(selector, reverse) {
 	if (!document.querySelector(selector)) return console.error(`Swiper selector ${selector} not found`);
 	return new Swiper(selector, {
 		centerInsufficientSlides: true,
@@ -13,7 +13,7 @@ function createSwiper(selector, reverse, slides) {
 		grabCursor: true,
 		breakpoints: {
 			0: {
-				slidesPerView: slides || 1
+				slidesPerView: 1.2
 			},
 			850: {
 				slidesPerView: 2
@@ -28,8 +28,6 @@ function createSwiper(selector, reverse, slides) {
 		},
 		spaceBetween: 20,
 		autoHeight: true,
-		slidesOffsetAfter: 60,
-		slidesOffsetBefore: 20,
 		effect: 'coverflow',
 		coverflowEffect: {
 			slideShadows: false,
@@ -37,11 +35,9 @@ function createSwiper(selector, reverse, slides) {
 			rotate: 0,
 		},
 		speed: 1000,
-		loop: true,
-		loopAddBlankSlides: true,
 		pagination: true,
 	});
 }
 
-const swiper = createSwiper('.swiper', false, 1);
-const swiper2 = createSwiper('.co_photo_gallery_gradient', true, 2);
+const swiper = createSwiper('.swiper', false);
+const swiper2 = createSwiper('.co_photo_gallery_gradient', true);
