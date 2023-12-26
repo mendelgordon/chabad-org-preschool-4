@@ -34,6 +34,8 @@ function createSwiper(selector, reverse) {
 		},
 		speed: 1000,
 		centeredSlides: true,
+		loop: true,
+		loopAddBlankSlides: true,
 	});
 }
 
