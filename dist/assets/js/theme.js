@@ -29,7 +29,6 @@ function createSwiper(selector) {
 			scale: 0.9,
 			rotate: 0,
 		},
-		pagination: true,
 		loop: true,
 	});
 }
