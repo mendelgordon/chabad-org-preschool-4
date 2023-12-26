@@ -26,7 +26,7 @@ function createSwiper(selector) {
 		effect: 'coverflow',
 		coverflowEffect: {
 			slideShadows: false,
-			scale: 2,
+			scale: 0.8,
 			rotate: 0,
 			stretch: 10
 		},
