@@ -20,6 +20,7 @@ function createSwiper(selector, reverse) {
 		},
 		autoplay: {
 			delay: 1000,
+			reverseDirection: reverse,
 		},
 		spaceBetween: 20,
 		autoHeight: true,
@@ -31,7 +32,6 @@ function createSwiper(selector, reverse) {
 			depth: 20,
 			rotate: 0,
 		},
-		reverseDirection: reverse,
 		speed: 1000,
 	});
 }
