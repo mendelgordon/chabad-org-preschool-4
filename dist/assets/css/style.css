@@ -451,20 +451,17 @@ div#co_photo_gallery .co_photo_gallery_footer a {
 	float: none;
 	text-align: center;
 	padding-top: 30px;
+	background-color: #ffae00;
+	border: solid 2px #ffae00;
+	display: inline-block;
+	color: #fff;
+	border-radius: 1000px;
+	font-size: 20px;
+	padding: 8px 20px;
 
-	& a {
-		background-color: #ffae00;
-		border: solid 2px #ffae00;
-		display: inline-block;
-		color: #fff;
-		border-radius: 1000px;
-		font-size: 20px;
-		padding: 8px 20px;
-
-		&:hover {
-			transform: translateY(-3px);
-			box-shadow: 0 5px 15px rgba(30, 34, 40, 0.15);
-		}
+	&:hover {
+		transform: translateY(-3px);
+		box-shadow: 0 5px 15px rgba(30, 34, 40, 0.15);
 	}
 }
 
