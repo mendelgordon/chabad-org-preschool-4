@@ -10,6 +10,10 @@
 	display: none;
 }
 
+#co_content_container {
+	font-size: 20px;
+}
+
 #chabad_body_page {
 	.btn {
 		--btn-padding-x: 24px;
