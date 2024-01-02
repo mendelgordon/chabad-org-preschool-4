@@ -1319,27 +1319,6 @@ body.mobile {
 			}
 
 			margin-bottom: 10px;
-
-			& i {
-				font-family: Unicons;
-				font-style: normal;
-				font-weight: 400;
-				font-variant: normal;
-				text-transform: none;
-				-webkit-font-smoothing: antialiased;
-			}
-
-			.uil-home:before {
-				content: "\eb6d";
-			}
-
-			.uil-phone:before {
-				content: "\ec51";
-			}
-
-			.uil-envelope-add:before {
-				content: "\eaaf";
-			}
 		}
 	}
 
