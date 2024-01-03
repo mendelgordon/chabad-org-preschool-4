@@ -9,7 +9,7 @@ const swiperEl1 = document.querySelector('#Testimonials .swiper');
 const swiperEl2 = document.querySelector('.co_photo_gallery_gradient');
 
 if (swiperEl1 && Swiper) {
-	var swiper1 = createSwiper(swiperEl1, {
+	var swiper1 = new Swiper(swiperEl1, {
 		grabCursor: true,
 		breakpoints: {
 			0: { slidesPerView: 1.3 },
@@ -33,7 +33,7 @@ if (swiperEl1 && Swiper) {
 }
 
 if (swiperEl2 && Swiper) {
-	var swiper2 = createSwiper(swiperEl2, {
+	var swiper2 = new Swiper(swiperEl2, {
 		grabCursor: true,
 		breakpoints: {
 			0: { slidesPerView: 1.3 },
