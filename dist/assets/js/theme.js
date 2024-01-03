@@ -20,12 +20,12 @@ if (swiperEl1 && Swiper) {
 			1100: { slidesPerView: 3 }
 		},
 		autoHeight: true,
-		/* effect: 'coverflow',
+		effect: 'coverflow',
 		coverflowEffect: {
 			slideShadows: false,
 			scale: 0.9,
 			rotate: 0,
-		}, */
+		},
 		loop: true,
 		centeredSlides: true,
 		navigation: {
@@ -44,12 +44,12 @@ if (swiperEl2 && Swiper) {
 			1100: { slidesPerView: 3 }
 		},
 		autoHeight: true,
-		/* effect: 'coverflow',
+		effect: 'coverflow',
 		coverflowEffect: {
 			slideShadows: false,
 			scale: 0.9,
 			rotate: 0,
-		}, */
+		},
 		loop: true,
 		centeredSlides: true,
 		navigation: {
