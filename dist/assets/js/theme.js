@@ -1,6 +1,9 @@
 const co_photo_gallery = document.querySelector('.co_photo_gallery');
 if (co_photo_gallery) {
-	co_photo_gallery.parentElement.classList.add('swiper');
+	const parentElement = co_photo_gallery.parentElement;
+	const navigationButtons = '<div class="swiper-button-next"></div><div class="swiper-button-prev"></div>';
+	parentElement.classList.add('swiper');
+	parentElement.insertAdjacentHTML('afterend', navigationButtons);
 	co_photo_gallery.classList.add('swiper-wrapper');
 	co_photo_gallery.querySelectorAll('a').forEach(el => el.classList.add('swiper-slide'));
 }
@@ -50,8 +53,8 @@ if (swiperEl2 && Swiper) {
 		loop: true,
 		centeredSlides: true,
 		navigation: {
-			nextEl: '.co_photo_gallery_gradient .swiper-button-next',
-			prevEl: '.co_photo_gallery_gradient .swiper-button-prev',
+			nextEl: '#PreschoolLatestPhotos .swiper-button-next',
+			prevEl: '#PreschoolLatestPhotos .swiper-button-prev',
 		}
 	});
 }
