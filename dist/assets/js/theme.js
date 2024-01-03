@@ -19,7 +19,7 @@ if (swiperEl1 && Swiper) {
 		autoHeight: true,
 		effect: 'coverflow',
 		coverflowEffect: {
-			slideShadows: true,
+			slideShadows: false,
 			scale: 0.9,
 			rotate: 0,
 		},
@@ -43,7 +43,7 @@ if (swiperEl2 && Swiper) {
 		autoHeight: true,
 		effect: 'coverflow',
 		coverflowEffect: {
-			slideShadows: true,
+			slideShadows: false,
 			scale: 0.9,
 			rotate: 0,
 		},
