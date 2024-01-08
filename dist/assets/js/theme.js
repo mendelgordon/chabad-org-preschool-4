@@ -15,7 +15,7 @@ if (swiperEl1 && Swiper) {
 	var swiper1 = new Swiper(swiperEl1, {
 		grabCursor: true,
 		breakpoints: {
-			0: { slidesPerView: 1 },
+			0: { slidesPerView: 1.1 },
 			850: { slidesPerView: 2 },
 			1100: { slidesPerView: 3 }
 		},
@@ -39,7 +39,7 @@ if (swiperEl2 && Swiper) {
 	var swiper2 = new Swiper(swiperEl2, {
 		grabCursor: true,
 		breakpoints: {
-			0: { slidesPerView: 1 },
+			0: { slidesPerView: 1.1 },
 			850: { slidesPerView: 2 },
 			1100: { slidesPerView: 3 }
 		},
