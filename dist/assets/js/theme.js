@@ -27,7 +27,6 @@ if (swiperEl1 && Swiper) {
 			rotate: 0,
 		},
 		loop: true,
-		centeredSlides: true,
 		navigation: {
 			nextEl: '#Testimonials .swiper-button-next',
 			prevEl: '#Testimonials .swiper-button-prev',
@@ -51,7 +50,6 @@ if (swiperEl2 && Swiper) {
 			rotate: 0,
 		},
 		loop: true,
-		centeredSlides: true,
 		navigation: {
 			nextEl: '#PreschoolLatestPhotos .swiper-button-next',
 			prevEl: '#PreschoolLatestPhotos .swiper-button-prev',
