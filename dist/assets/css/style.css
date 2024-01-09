@@ -1359,3 +1359,84 @@ div[name=co_section][real_id^=column_promo] {
   padding: 0;
   margin: 0;
 }
+#chabad_body_page:has(.chabad_text_head) div#chabad_main_content,
+#chabad_body_page:has(.chabad_text_head) div#chabad_body_content {
+  width: 100%;
+}
+#chabad_body_page:has(.chabad_text_head) #chabad_head {
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#chabad_body_page:has(.chabad_text_head) #chabad_head .chabad_logo {
+  color: white;
+}
+#chabad_body_page:has(.chabad_text_head) #chabad_head > div {
+  display: inline-flex;
+  width: auto;
+}
+#chabad_body_page:has(.chabad_text_head) #content_banner {
+  position: relative;
+}
+#chabad_body_page:has(.chabad_text_head) #content_banner::after {
+  background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/illustrations/White-wavy-bottom-border.png);
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+#chabad_body_page:has(.chabad_text_head) #content_banner .chabad_image_banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+#chabad_body_page:has(.chabad_text_head) .chabad_banner_content .chabad_image_banner {
+  max-height: 800px;
+}
+#chabad_body_page:has(.chabad_text_head) .chabad_banner_content .chabad_text_banner {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+#chabad_body_page:has(.chabad_text_head) .chabad_welcome {
+  color: white;
+  font-size: 70px;
+  font-weight: 600;
+  font-family: Fredoka, Helvetica, Arial, sans-serif;
+  line-height: 1.2;
+  letter-spacing: -0.2px;
+  margin-bottom: 35px;
+  animation-name: zoomIn;
+  animation-duration: 700ms;
+  animation-timing-function: ease;
+  animation-delay: 500ms;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+#chabad_body_page:has(.chabad_text_head) .chabad_text_banner_description {
+  animation-name: zoomIn;
+  animation-duration: 700ms;
+  animation-timing-function: ease;
+  animation-delay: 1000ms;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  letter-spacing: 1px;
+  font-size: 23px;
+  line-height: 1.55;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
