@@ -9,16 +9,12 @@
 		<co:template id="HeaderSection" name="header_section" title="Header Section" type="static" detached="true">
 			<co:section id="HeaderInner" name="Header" title="1. Header">
 				<div id="chabad_head">
-					<nav class="navbar" id="PreschoolNavigation">
-						<div class="preschool-container" id="PreschoolNavigationContainer">
-							<div>
-								<a href="#" id="PreschoolTitle">
-									<co:editable id="PreschoolName" name="PreschoolName" title="1. Preschool Name" actions="edit" datatype="line">Chabad Preschool</co:editable>
-								</a>
-							</div>
-							<co:template class="chabad_navigator_bar" id="Navigation" name="nagivation" title="2. Navigation Bar" max_chars="70" use_custom_separator="true"></co:template>
-						</div>
-					</nav>
+					<div class="preschool-container">
+						<a href="#" id="PreschoolTitle">
+							<co:editable id="PreschoolName" name="PreschoolName" title="1. Preschool Name" actions="edit" datatype="line">Chabad Preschool</co:editable>
+						</a>
+						<co:template class="chabad_navigator_bar" id="Navigation" name="nagivation" title="2. Navigation Bar" max_chars="70" use_custom_separator="true"></co:template>
+					</div>
 				</div>
 			</co:section>
 		</co:template>
