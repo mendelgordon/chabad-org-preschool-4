@@ -484,12 +484,10 @@ body.mobile #chabad_body_page #chabad_head .preschool-container {
   justify-content: center;
   padding: 0;
 }
-body.mobile #chabad_body_page #chabad_head .preschool-container > div {
+body.mobile #chabad_body_page #chabad_head .preschool-container > a {
   width: 100%;
   text-align: center;
   margin: 0 !important;
-}
-body.mobile #chabad_body_page #chabad_head .preschool-container > div a {
   color: black !important;
 }
 body.mobile.cco_templateless_page #chabad_body_page .bh {
