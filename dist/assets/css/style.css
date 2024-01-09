@@ -1224,7 +1224,7 @@ body,
 }
 
 /* if there are photos, show it with display block so it doesn't have a white space under it */
-#chabad_main_content:has(#PreschoolLatestPhotos .preschool-container:has(div)) #wavy-bottom-border {
+#chabad_main_content:has(#PreschoolLatestPhotos .preschool-container div) #wavy-bottom-border {
   display: block;
 }
 
