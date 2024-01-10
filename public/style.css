@@ -1421,6 +1421,9 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
 }
+#chabad_body_page:has(.chabad_text_head) .chabad_banner_content {
+  min-height: 500px;
+}
 #chabad_body_page:has(.chabad_text_head) .chabad_banner_content .chabad_image_banner {
   max-height: 800px;
 }
