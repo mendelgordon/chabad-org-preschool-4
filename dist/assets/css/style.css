@@ -1538,6 +1538,12 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
     padding-inline: 50px;
   }
 }
+#chabad_body_page:has(.chabad_text_head) .big_title:empty,
+#chabad_body_page:has(.chabad_text_head) .medium_title:empty,
+#chabad_body_page:has(.chabad_text_head) .chabad_updates_head div:empty,
+#chabad_body_page:has(.chabad_text_head) .chabad_box_text_head:empty {
+  display: none;
+}
 #chabad_body_page:has(.chabad_text_head) .chabad_text_box div,
 #chabad_body_page:has(.chabad_text_head) .chabad_updates_text div,
 #chabad_body_page:has(.chabad_text_head) .chabad_box_text_comment div {

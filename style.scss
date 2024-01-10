@@ -1630,6 +1630,9 @@ body.mobile #chabad_body_page:has(.chabad_text_head) {
 		@media (min-width: 1200px) {
 			padding-inline: 50px;
 		}
+		&:empty {
+			display: none;
+		}
 	}
 	.chabad_text_box div,
 	.chabad_updates_text div,
