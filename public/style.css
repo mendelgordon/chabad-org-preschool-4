@@ -1503,7 +1503,7 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
   content: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/PreschoolStockBackground.jpg);
 }
 #chabad_body_page:has(.chabad_text_head) .chabad_image_banner:not(:has(img)) {
-  content: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/StockLegosWithOverlay.jpg);
+  content: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/StockLegosWithGreyOverlay.jpg);
   position: absolute;
   bottom: 0;
   width: 100%;
