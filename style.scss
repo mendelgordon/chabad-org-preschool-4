@@ -472,7 +472,7 @@ body:not(.mobile) #chabad_body_page {
 div#chabad_body_content,
 body.mobile div#chabad_body_content,
 body.mobile div#co_photo_gallery .co_photo_gallery_body {
-	padding: 0;
+	padding: 0 !important;
 }
 
 div#ContentArea,
@@ -1453,6 +1453,19 @@ div[name="co_section"][real_id^="column_promo"] {
 }
 
 /* styles for backwards compatibility */
+body:not(.mobile) #chabad_head {
+	padding: 20px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	.chabad_logo {
+		color: white;
+	}
+	> div {
+		display: inline-flex;
+		width: auto;
+	}
+}
 #chabad_body_page:has(.chabad_text_head) {
 	/* hide the old subtitle from the header */
 	.chabad_text_head {
@@ -1479,19 +1492,6 @@ div[name="co_section"][real_id^="column_promo"] {
 	div#chabad_main_content,
 	div#chabad_body_content {
 		width: 100%;
-	}
-	#chabad_head {
-		padding: 20px;
-		display: flex;
-		justify-content: space-evenly;
-		align-items: center;
-		.chabad_logo {
-			color: white;
-		}
-		> div {
-			display: inline-flex;
-			width: auto;
-		}
 	}
 	#content_banner {
 		position: relative;
