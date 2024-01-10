@@ -1339,7 +1339,7 @@ div[name=co_section][real_id^=column_promo] {
   }
 }
 /* styles for backwards compatibility */
-body.section_root:has(.chabad_content_head) #chabad_left_colum:not(:has(> #content_banner:first-child)) {
+body.section_root:has(.chabad_content_head) #chabad_left_colum:not(:has(.chabad_image_banner img)) {
   border-top: 110px solid #12b0d1;
   padding-top: 50px;
 }
