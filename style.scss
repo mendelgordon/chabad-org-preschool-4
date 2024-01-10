@@ -1456,7 +1456,7 @@ div[name="co_section"][real_id^="column_promo"] {
 body:not(.mobile) #chabad_body_page:has(.chabad_text_head) #chabad_head {
 	padding: 20px;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	align-items: center;
 	.chabad_logo {
 		color: white;
