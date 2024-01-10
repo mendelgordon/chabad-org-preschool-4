@@ -1563,7 +1563,6 @@ div[name="co_section"][real_id^="column_promo"] {
 	{
 		content: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/PreschoolStockBackground.jpg);
 	}
-	/* styling for first custom section - will use styles from preschool section 6 */
 	#content_banner ~ div,
 	#chabad_right_colum > div {
 		@media (min-width: 576px) {
@@ -1589,5 +1588,34 @@ div[name="co_section"][real_id^="column_promo"] {
 		width: 100%;
 		margin-inline: auto;
 		padding: 40px 15px;
+		min-height: 350px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		@media (min-width: 1200px) {
+			width: 91%;
+			flex: 0 0 auto;
+		}
+
+		@media (min-width: 1400px) {
+			width: 83%;
+		}
+	}
+	/* styling for first custom section - will use styles from preschool section 6 */
+	.big_title {
+		font-size: 50px;
+		font-weight: 700;
+		font-family: Fredoka, Helvetica, Arial, sans-serif;
+		color: #393d72;
+		text-align: center;
+		margin-bottom: 40px;
+		@media (min-width: 1200px) {
+			padding-inline: 50px;
+		}
+	}
+	.chabad_text_box {
+		line-height: 1.6;
+		font-size: 17px;
 	}
 }

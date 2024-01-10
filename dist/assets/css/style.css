@@ -1449,6 +1449,10 @@ div[name=co_section][real_id^=column_promo] {
   width: 100%;
   margin-inline: auto;
   padding: 40px 15px;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 @media (min-width: 576px) {
   #chabad_body_page:has(.chabad_text_head) #content_banner ~ div,
@@ -1479,6 +1483,36 @@ div[name=co_section][real_id^=column_promo] {
   #chabad_body_page:has(.chabad_text_head) #chabad_right_colum > div {
     max-width: 1320px;
   }
+}
+@media (min-width: 1200px) {
+  #chabad_body_page:has(.chabad_text_head) #content_banner ~ div,
+  #chabad_body_page:has(.chabad_text_head) #chabad_right_colum > div {
+    width: 91%;
+    flex: 0 0 auto;
+  }
+}
+@media (min-width: 1400px) {
+  #chabad_body_page:has(.chabad_text_head) #content_banner ~ div,
+  #chabad_body_page:has(.chabad_text_head) #chabad_right_colum > div {
+    width: 83%;
+  }
+}
+#chabad_body_page:has(.chabad_text_head) .big_title {
+  font-size: 50px;
+  font-weight: 700;
+  font-family: Fredoka, Helvetica, Arial, sans-serif;
+  color: #393d72;
+  text-align: center;
+  margin-bottom: 40px;
+}
+@media (min-width: 1200px) {
+  #chabad_body_page:has(.chabad_text_head) .big_title {
+    padding-inline: 50px;
+  }
+}
+#chabad_body_page:has(.chabad_text_head) .chabad_text_box {
+  line-height: 1.6;
+  font-size: 17px;
 }
 
 /*# sourceMappingURL=style.css.map */
