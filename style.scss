@@ -1595,7 +1595,7 @@ div[name="co_section"][real_id^="column_promo"] {
 	}
 	.big_title,
 	.medium_title,
-	.chabad_updates_head,
+	.chabad_updates_head div,
 	.chabad_box_text_head {
 		font-size: 50px;
 		font-weight: 700;
@@ -1662,7 +1662,7 @@ div[name="co_section"][real_id^="column_promo"] {
 			width: 120px;
 		}
 	}
-	#co_calendar {
+	#chabad_right_colum #co_calendar {
 		display: none;
 		// we don't have a design for this from the designer, so we're hiding it for now
 	}
