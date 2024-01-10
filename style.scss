@@ -1489,15 +1489,12 @@ body.mobile #chabad_body_page:has(.chabad_text_head) {
 		display: none;
 	}
 	/* remove the old spacing and make everything full width */
-	div#chabad_right_colum {
-		float: none;
-		margin: 0;
-		width: 100%;
-	}
+	div#chabad_right_colum,
+	.content_page_full,
 	div#ContentArea {
 		float: none;
-		width: 100%;
 		margin: 0;
+		width: 100%;
 	}
 	.body_wrapper.clearfix.co_body {
 		padding: 0;
