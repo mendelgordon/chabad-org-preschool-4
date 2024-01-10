@@ -1445,7 +1445,7 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
 }
 @media (max-width: 600px) {
   #chabad_body_page:has(.chabad_text_head) .chabad_welcome {
-    font-size: 40px;
+    font-size: 50px;
   }
 }
 #chabad_body_page:has(.chabad_text_head) .chabad_text_banner_description {
@@ -1527,6 +1527,7 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
   #chabad_body_page:has(.chabad_text_head) .chabad_updates_head div,
   #chabad_body_page:has(.chabad_text_head) .chabad_box_text_head {
     font-size: 35px;
+    text-align: left;
   }
 }
 @media (min-width: 1200px) {
