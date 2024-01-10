@@ -1339,7 +1339,7 @@ div[name=co_section][real_id^=column_promo] {
   }
 }
 /* styles for backwards compatibility */
-body.section_root:has(.chabad_content_head) #chabad_left_colum:not(:has(.chabad_image_banner img)) {
+body.section_root:has(.chabad_content_head) #chabad_left_colum:not(:has(.chabad_image_banner)) {
   border-top: 110px solid #12b0d1;
   padding-top: 50px;
 }
@@ -1494,8 +1494,14 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(30, 34, 40, 0.15);
 }
-#chabad_body_page:has(.chabad_text_head) img[src="https://w2.chabad.org/images/shluchim/minisites/themes/preschool/preschool_banner_image.jpg"] {
+#chabad_body_page:has(.chabad_text_head) img[src="https://w2.chabad.org/images/shluchim/minisites/themes/preschool/preschool_banner_image.jpg"],
+#chabad_body_page:has(.chabad_text_head) .chabad_image_banner:not(:has(img)) {
   content: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/PreschoolStockBackground.jpg);
+}
+#chabad_body_page:has(.chabad_text_head) .chabad_image_banner:not(:has(img)) {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 #chabad_body_page:has(.chabad_text_head) .chabad_box_content_body,
 #chabad_body_page:has(.chabad_text_head) .content_box_custom,
