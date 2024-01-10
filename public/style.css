@@ -1499,11 +1499,11 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(30, 34, 40, 0.15);
 }
-#chabad_body_page:has(.chabad_text_head) img[src="https://w2.chabad.org/images/shluchim/minisites/themes/preschool/preschool_banner_image.jpg"],
-#chabad_body_page:has(.chabad_text_head) .chabad_image_banner:not(:has(img)) {
+#chabad_body_page:has(.chabad_text_head) img[src="https://w2.chabad.org/images/shluchim/minisites/themes/preschool/preschool_banner_image.jpg"] {
   content: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/PreschoolStockBackground.jpg);
 }
 #chabad_body_page:has(.chabad_text_head) .chabad_image_banner:not(:has(img)) {
+  content: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/StockLegosWithOverlay.jpg);
   position: absolute;
   bottom: 0;
   width: 100%;
