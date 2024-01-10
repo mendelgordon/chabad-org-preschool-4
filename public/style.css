@@ -34,6 +34,7 @@ html:has(link[href*=template5]) header.article-header.cf {
 }
 html:has(link[href*=template5]) .article_index .row {
   display: flex;
+  justify-content: center;
 }
 html:has(link[href*=template5]) #content div#BodyContainer.wrapper {
   width: 100%;
