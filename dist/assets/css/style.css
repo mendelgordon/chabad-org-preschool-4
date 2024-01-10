@@ -1350,11 +1350,12 @@ body:not(.mobile) #chabad_head > div {
 }
 
 body.mobile .chabad_image_banner {
-  min-height: 800px;
+  min-height: 600px;
 }
 body.mobile .chabad_image_banner img {
   object-fit: cover;
-  height: 800px;
+  height: 100%;
+  position: absolute;
 }
 body.mobile div#chabad_head .chabad_logo :is(a, div, a div) {
   width: 100%;
