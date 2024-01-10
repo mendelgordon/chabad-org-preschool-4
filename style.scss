@@ -1733,6 +1733,9 @@ body.mobile #chabad_body_page:has(.chabad_text_head) {
 		// we don't have a design for this from the designer, so we're hiding it for now
 	}
 }
+body:has(#cco_body > #photos > .photo[data-img="0"]) #chabad_right_colum #co_photo_gallery {
+	display: none;
+}
 .set-direction-to-content {
 	text-align: center;
 }
