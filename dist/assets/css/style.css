@@ -1443,6 +1443,11 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
   animation-direction: normal;
   animation-fill-mode: both;
 }
+@media (max-width: 600px) {
+  #chabad_body_page:has(.chabad_text_head) .chabad_welcome {
+    font-size: 40px;
+  }
+}
 #chabad_body_page:has(.chabad_text_head) .chabad_text_banner_description {
   animation-name: zoomIn;
   animation-duration: 700ms;
@@ -1515,6 +1520,14 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
   color: #393d72;
   text-align: center;
   margin-bottom: 40px;
+}
+@media (max-width: 600px) {
+  #chabad_body_page:has(.chabad_text_head) .big_title,
+  #chabad_body_page:has(.chabad_text_head) .medium_title,
+  #chabad_body_page:has(.chabad_text_head) .chabad_updates_head div,
+  #chabad_body_page:has(.chabad_text_head) .chabad_box_text_head {
+    font-size: 35px;
+  }
 }
 @media (min-width: 1200px) {
   #chabad_body_page:has(.chabad_text_head) .big_title,

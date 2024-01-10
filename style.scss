@@ -1550,6 +1550,9 @@ body.mobile #chabad_body_page:has(.chabad_text_head) {
 	.chabad_welcome {
 		color: white;
 		font-size: 70px;
+		@media (max-width: 600px) {
+			font-size: 40px;
+		}
 		font-weight: 600;
 		font-family: Fredoka, Helvetica, Arial, sans-serif;
 		line-height: 1.2;
@@ -1615,6 +1618,9 @@ body.mobile #chabad_body_page:has(.chabad_text_head) {
 	.chabad_updates_head div,
 	.chabad_box_text_head {
 		font-size: 50px;
+		@media (max-width: 600px) {
+			font-size: 35px;
+		}
 		font-weight: 700;
 		font-family: Fredoka, Helvetica, Arial, sans-serif;
 		color: #393d72;
