@@ -287,7 +287,7 @@ html:not(:has(link#k[href*="sites6"], link#k[href*="template5"])) .article_index
 			font-family: "Fredoka", Helvetica, Arial, "sans-serif";
 			text-align: center;
 			font-size: 70px;
-			body.mobile & {
+			@media (max-width: 700px) {
 				font-size: 40px;
 			}
 		}
