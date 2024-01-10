@@ -1633,6 +1633,9 @@ body.mobile #chabad_body_page:has(.chabad_text_head) {
 		flex-direction: column;
 		justify-content: center;
 	}
+	div#chabad_right_colum > div {
+		margin-block: 0;
+	}
 	.big_title,
 	.medium_title,
 	.chabad_updates_head div,

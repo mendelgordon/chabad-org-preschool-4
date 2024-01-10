@@ -1532,6 +1532,9 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
     padding-inline: calc((100% - 1320px) / 2);
   }
 }
+#chabad_body_page:has(.chabad_text_head) div#chabad_right_colum > div {
+  margin-block: 0;
+}
 #chabad_body_page:has(.chabad_text_head) .big_title,
 #chabad_body_page:has(.chabad_text_head) .medium_title,
 #chabad_body_page:has(.chabad_text_head) .chabad_updates_head div,
