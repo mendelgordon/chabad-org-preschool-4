@@ -1673,7 +1673,7 @@ body:has(#cco_body > #photos > .photo[data-img="0"]) #chabad_right_colum #co_pho
   text-align: center;
 }
 
-body:has(#MoreInSection) .co_section {
+body:has(#MoreInSection, .article_index_container) .co_section {
   display: none !important;
 }
 
