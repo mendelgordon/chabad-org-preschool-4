@@ -1728,5 +1728,5 @@ body.mobile #chabad_body_page:has(.chabad_text_head) {
 	text-align: center;
 }
 body:has(#MoreInSection) .co_section {
-	display: none;
+	display: none !important;
 }
