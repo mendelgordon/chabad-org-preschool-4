@@ -1598,6 +1598,10 @@ body.mobile #chabad_body_page:has(.chabad_text_head) {
 		text-wrap: nowrap;
 		display: inline-flex;
 		margin-inline: auto;
+		&:hover {
+			transform: translateY(-3px);
+			box-shadow: 0 5px 15px rgba(30, 34, 40, 0.15);
+		}
 	}
 	img[src="https://w2.chabad.org/images/shluchim/minisites/themes/preschool/preschool_banner_image.jpg"]
 	{

@@ -1484,6 +1484,10 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
   display: inline-flex;
   margin-inline: auto;
 }
+#chabad_body_page:has(.chabad_text_head) .chabad_more_button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(30, 34, 40, 0.15);
+}
 #chabad_body_page:has(.chabad_text_head) img[src="https://w2.chabad.org/images/shluchim/minisites/themes/preschool/preschool_banner_image.jpg"] {
   content: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/PreschoolStockBackground.jpg);
 }
