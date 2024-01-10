@@ -1638,4 +1638,8 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
   display: none;
 }
 
+.set-direction-to-content {
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */
