@@ -1401,6 +1401,7 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
 }
 #chabad_body_page:has(.chabad_text_head) #content_banner {
   position: relative;
+  min-height: 500px;
 }
 #chabad_body_page:has(.chabad_text_head) #content_banner::after {
   background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/illustrations/White-wavy-bottom-border.png);
@@ -1421,13 +1422,10 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
 }
-#chabad_body_page:has(.chabad_text_head) .chabad_banner_content {
-  min-height: 500px;
-}
-#chabad_body_page:has(.chabad_text_head) .chabad_banner_content .chabad_image_banner {
+#chabad_body_page:has(.chabad_text_head) #content_banner .chabad_image_banner {
   max-height: 800px;
 }
-#chabad_body_page:has(.chabad_text_head) .chabad_banner_content .chabad_text_banner {
+#chabad_body_page:has(.chabad_text_head) #content_banner .chabad_text_banner {
   position: absolute;
   top: 0;
   width: 100%;
@@ -1471,6 +1469,10 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
   color: white;
   text-transform: uppercase;
   margin-bottom: 25px;
+}
+#chabad_body_page:has(.chabad_text_head) .chabad_text_banner_description p {
+  color: inherit;
+  font-size: inherit;
 }
 #chabad_body_page:has(.chabad_text_head) .chabad_more_button {
   animation-name: zoomIn;
