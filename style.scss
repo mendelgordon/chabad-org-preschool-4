@@ -1561,6 +1561,7 @@ body.mobile #chabad_body_page:has(.chabad_text_head) {
 		animation-delay: 500ms;
 		animation-direction: normal;
 		animation-fill-mode: both;
+		text-transform: capitalize;
 	}
 	.chabad_text_banner_description {
 		animation-name: zoomIn;
@@ -1593,6 +1594,7 @@ body.mobile #chabad_body_page:has(.chabad_text_head) {
 		font-weight: 700;
 		text-wrap: nowrap;
 		display: inline-flex;
+		margin-inline: auto;
 	}
 	img[src="https://w2.chabad.org/images/shluchim/minisites/themes/preschool/preschool_banner_image.jpg"]
 	{
