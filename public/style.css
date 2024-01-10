@@ -510,7 +510,7 @@ body.mobile .FooterContainer a {
   margin-top: 50px !important;
   padding-inline: 10px !important;
 }
-.section_branch #co_body_container .co_body.article-body {
+.section_branch #co_body_container .co_body.article-body:not(*) {
   min-height: 300px;
 }
 

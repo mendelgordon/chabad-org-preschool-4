@@ -584,7 +584,7 @@ body.mobile {
 	margin-inline: auto !important;
 	margin-top: 50px !important;
 	padding-inline: 10px !important;
-	.co_body.article-body {
+	.co_body.article-body:not(*) {
 		min-height: 300px;
 	}
 }
