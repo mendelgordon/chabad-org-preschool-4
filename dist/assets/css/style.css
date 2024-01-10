@@ -1524,13 +1524,34 @@ div[name=co_section][real_id^=column_promo] {
   font-size: 17px;
 }
 #chabad_body_page:has(.chabad_text_head) .chabad_box_content_second {
-  background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/bg125.jpg);
+  background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/bg126.jpg);
 }
 #chabad_body_page:has(.chabad_text_head) .co_photo_gallery {
   text-align: center;
 }
 #chabad_body_page:has(.chabad_text_head) .co_photo_gallery_footer a {
   float: none !important;
+}
+#chabad_body_page:has(.chabad_text_head) .content_box_custom::before {
+  bottom: 10px;
+  right: 44px;
+  z-index: 0;
+  position: relative;
+  background-color: rgb(237, 242, 252);
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+}
+#chabad_body_page:has(.chabad_text_head) .content_box_custom::after {
+  top: 10px;
+  left: 50px;
+  z-index: 0;
+  position: relative;
+  background-image: radial-gradient(#fab758 2px, transparent 2.5px);
+  background-size: 15px 15px;
+  opacity: 0.5;
+  height: 140px;
+  width: 120px;
 }
 
 /*# sourceMappingURL=style.css.map */
