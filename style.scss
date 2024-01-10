@@ -1629,6 +1629,7 @@ div[name="co_section"][real_id^="column_promo"] {
 		float: none !important;
 	}
 	.content_box_custom {
+		position: relative;
 		&::before {
 			content: "";
 			bottom: 10px;
