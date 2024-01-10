@@ -1440,3 +1440,6 @@ div[name=co_section][real_id^=column_promo] {
   text-transform: uppercase;
   margin-bottom: 25px;
 }
+#chabad_body_page:has(.chabad_text_head) img[src="https://w2.chabad.org/images/shluchim/minisites/themes/preschool/preschool_banner_image.jpg"] {
+  content: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/PreschoolStockBackground.jpg);
+}
