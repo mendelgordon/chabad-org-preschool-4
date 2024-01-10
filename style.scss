@@ -1470,7 +1470,8 @@ body.mobile {
 	.chabad_image_banner {
 		min-height: 800px;
 	}
-	div#chabad_head .chabad_logo div {
+	div#chabad_head .chabad_logo div,
+	div#chabad_head .chabad_logo a {
 		width: 100%;
 		text-align: center;
 		color: black;
