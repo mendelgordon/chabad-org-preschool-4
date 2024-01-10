@@ -1598,6 +1598,8 @@ body.mobile #chabad_body_page:has(.chabad_text_head) {
 		text-wrap: nowrap;
 		display: inline-flex;
 		margin-inline: auto;
+		z-index: 1;
+		float: none;
 		&:hover {
 			transform: translateY(-3px);
 			box-shadow: 0 5px 15px rgba(30, 34, 40, 0.15);

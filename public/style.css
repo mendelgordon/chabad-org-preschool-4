@@ -1483,6 +1483,8 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
   text-wrap: nowrap;
   display: inline-flex;
   margin-inline: auto;
+  z-index: 1;
+  float: none;
 }
 #chabad_body_page:has(.chabad_text_head) .chabad_more_button:hover {
   transform: translateY(-3px);
