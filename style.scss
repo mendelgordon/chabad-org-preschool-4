@@ -1634,6 +1634,12 @@ body.mobile #chabad_body_page:has(.chabad_text_head) {
 			display: none;
 		}
 	}
+	.chabad_updates_head,
+	.co_calendar_head,
+	.co_photo_gallery_head,
+	.co_section_head {
+		padding: 0 !important;
+	}
 	.chabad_text_box div,
 	.chabad_updates_text div,
 	.chabad_box_text_comment div {
