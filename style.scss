@@ -1567,27 +1567,26 @@ div[name="co_section"][real_id^="column_promo"] {
 	.content_box_custom,
 	#chabad_right_colum > div {
 		@media (min-width: 576px) {
-			max-width: 540px;
+			padding-inline: calc((100% - 540px) / 2);
 		}
 
 		@media (min-width: 768px) {
-			max-width: 720px;
+			padding-inline: calc((100% - 720px) / 2);
 		}
 
 		@media (min-width: 992px) {
-			max-width: 960px;
+			padding-inline: calc((100% - 960px) / 2);
 		}
 
 		@media (min-width: 1200px) {
-			max-width: 1140px;
+			padding-inline: calc((100% - 1140px) / 2);
 		}
 
 		@media (min-width: 1400px) {
-			max-width: 1320px;
+			padding-inline: calc((100% - 1320px) / 2);
 		}
 
 		width: 100%;
-		margin-inline: auto;
 		padding: 40px 15px;
 		min-height: 350px;
 		display: flex;
@@ -1595,12 +1594,14 @@ div[name="co_section"][real_id^="column_promo"] {
 		justify-content: center;
 
 		@media (min-width: 1200px) {
-			width: 91%;
+			--width: calc(91% * 1200px);
+			padding-inline: calc((100% - var(--width)) / 2);
 			flex: 0 0 auto;
 		}
 
 		@media (min-width: 1400px) {
-			width: 83%;
+			--width: calc(83% * 1400px);
+			padding-inline: calc((100% - var(--width)) / 2);
 		}
 	}
 	.big_title,
@@ -1630,6 +1631,7 @@ div[name="co_section"][real_id^="column_promo"] {
 	}
 	.content_box_custom {
 		position: relative;
+		text-align: center;
 		&::before {
 			content: "";
 			position: absolute;
