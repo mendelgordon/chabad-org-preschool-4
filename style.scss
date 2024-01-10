@@ -1635,9 +1635,9 @@ div[name="co_section"][real_id^="column_promo"] {
 		position: relative;
 		&::before {
 			content: "";
-			bottom: 10px;
+			bottom: 50px;
 			right: 200px;
-			z-index: 0;
+			z-index: -1;
 			position: absolute;
 			background-color: rgb(237, 242, 252);
 			border-radius: 50%;
@@ -1646,9 +1646,9 @@ div[name="co_section"][real_id^="column_promo"] {
 		}
 		&::after {
 			content: "";
-			top: 10px;
+			top: 50px;
 			left: 200px;
-			z-index: 0;
+			z-index: -1;
 			position: absolute;
 			background-image: radial-gradient(#fab758 2px, transparent 2.5px);
 			background-size: 15px 15px;
