@@ -1339,6 +1339,11 @@ div[name=co_section][real_id^=column_promo] {
   }
 }
 /* styles for backwards compatibility */
+body.section_root:has(.chabad_content_head) #chabad_left_colum:not(:has(> #content_banner:first-child)) {
+  border-top: 110px solid #12b0d1;
+  padding-top: 50px;
+}
+
 body:not(.mobile) #chabad_body_page:has(.chabad_text_head) #chabad_head {
   padding: 20px;
   display: flex;
