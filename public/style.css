@@ -35,6 +35,9 @@ html:has(link[href*=template5]) header.article-header.cf {
 html:has(link[href*=template5]) .article_index .row {
   display: flex;
 }
+html:has(link[href*=template5]) #content div#BodyContainer.wrapper {
+  width: 100%;
+}
 
 /* only use these styles for the index page when the template 5 and sites 6 templates aren't being used */
 html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index {
