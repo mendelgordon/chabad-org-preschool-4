@@ -1335,29 +1335,29 @@ div[name=co_section][real_id^=column_promo] {
   }
 }
 /* styles for backwards compatibility */
-body:not(.mobile) #chabad_head {
+body:not(.mobile) #chabad_body_page:has(.chabad_text_head) #chabad_head {
   padding: 20px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-body:not(.mobile) #chabad_head .chabad_logo {
+body:not(.mobile) #chabad_body_page:has(.chabad_text_head) #chabad_head .chabad_logo {
   color: white;
 }
-body:not(.mobile) #chabad_head > div {
+body:not(.mobile) #chabad_body_page:has(.chabad_text_head) #chabad_head > div {
   display: inline-flex;
   width: auto;
 }
 
-body.mobile .chabad_image_banner {
+body.mobile #chabad_body_page:has(.chabad_text_head) .chabad_image_banner {
   min-height: 600px;
 }
-body.mobile .chabad_image_banner img {
+body.mobile #chabad_body_page:has(.chabad_text_head) .chabad_image_banner img {
   object-fit: cover;
   height: 100%;
   position: absolute;
 }
-body.mobile div#chabad_head .chabad_logo :is(a, div, a div) {
+body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_logo :is(a, div, a div) {
   width: 100%;
   text-align: center;
   color: black;
