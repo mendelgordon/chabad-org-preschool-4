@@ -1497,7 +1497,8 @@ div[name=co_section][real_id^=column_promo] {
     width: 83%;
   }
 }
-#chabad_body_page:has(.chabad_text_head) .big_title {
+#chabad_body_page:has(.chabad_text_head) .big_title,
+#chabad_body_page:has(.chabad_text_head) .medium_title {
   font-size: 50px;
   font-weight: 700;
   font-family: Fredoka, Helvetica, Arial, sans-serif;
@@ -1506,7 +1507,8 @@ div[name=co_section][real_id^=column_promo] {
   margin-bottom: 40px;
 }
 @media (min-width: 1200px) {
-  #chabad_body_page:has(.chabad_text_head) .big_title {
+  #chabad_body_page:has(.chabad_text_head) .big_title,
+  #chabad_body_page:has(.chabad_text_head) .medium_title {
     padding-inline: 50px;
   }
 }

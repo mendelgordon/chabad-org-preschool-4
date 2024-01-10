@@ -1603,7 +1603,8 @@ div[name="co_section"][real_id^="column_promo"] {
 		}
 	}
 	/* styling for first custom section - will use styles from preschool section 6 */
-	.big_title {
+	.big_title,
+	.medium_title {
 		font-size: 50px;
 		font-weight: 700;
 		font-family: Fredoka, Helvetica, Arial, sans-serif;
