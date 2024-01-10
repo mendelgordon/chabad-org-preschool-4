@@ -1356,8 +1356,7 @@ body.mobile .chabad_image_banner img {
   object-fit: cover;
   height: 800px;
 }
-body.mobile div#chabad_head .chabad_logo div,
-body.mobile div#chabad_head .chabad_logo a {
+body.mobile div#chabad_head .chabad_logo :is(a, div, a div) {
   width: 100%;
   text-align: center;
   color: black;
