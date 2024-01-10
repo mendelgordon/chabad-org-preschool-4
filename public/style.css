@@ -1646,6 +1646,9 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
   display: none;
 }
 
+body:has(#cco_body > #photos > .photo[data-img="0"]) #cco_body > #photos {
+  min-height: 300px;
+}
 body:has(#cco_body > #photos > .photo[data-img="0"]) #chabad_right_colum #co_photo_gallery {
   display: none;
 }
