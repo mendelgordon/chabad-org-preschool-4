@@ -285,8 +285,11 @@ html:not(:has(link#k[href*="sites6"], link#k[href*="template5"])) .article_index
 		.article-header__title {
 			color: #343f52 !important;
 			font-family: "Fredoka", Helvetica, Arial, "sans-serif";
-			font-size: 70px;
 			text-align: center;
+			font-size: 70px;
+			body.mobile & {
+				font-size: 40px;
+			}
 		}
 	}
 

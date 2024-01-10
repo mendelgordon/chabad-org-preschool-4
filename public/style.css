@@ -251,8 +251,11 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
 #chabad_body_page .master-content-wrapper .article-header__title {
   color: #343f52 !important;
   font-family: "Fredoka", Helvetica, Arial, "sans-serif";
-  font-size: 70px;
   text-align: center;
+  font-size: 70px;
+}
+body.mobile #chabad_body_page .master-content-wrapper .article-header__title {
+  font-size: 40px;
 }
 #chabad_body_page .card-border-bottom::after {
   border-bottom-width: 6px;
