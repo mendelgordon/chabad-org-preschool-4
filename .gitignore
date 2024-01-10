@@ -1,9 +1,11 @@
 node_modules/
 
-# Ignore everything in the src + dev folders
+# Ignore everything in the src folder
 /src
-/dev
 
 # Ignore all .json and .js in the root
 *.json
 /*.js
+
+# Ignore the scss file
+*.scss
