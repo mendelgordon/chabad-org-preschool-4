@@ -1537,6 +1537,18 @@ div[name=co_section][real_id^=column_promo] {
 }
 #chabad_body_page:has(.chabad_text_head) .content_box_custom::before {
   content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/bg125.jpg);
+}
+#chabad_body_page:has(.chabad_text_head) #co_photo_gallery {
+  position: relative;
+}
+#chabad_body_page:has(.chabad_text_head) #co_photo_gallery::before {
+  content: "";
   bottom: 10px;
   right: 44px;
   z-index: 0;
@@ -1546,7 +1558,7 @@ div[name=co_section][real_id^=column_promo] {
   height: 120px;
   width: 120px;
 }
-#chabad_body_page:has(.chabad_text_head) .content_box_custom::after {
+#chabad_body_page:has(.chabad_text_head) #co_photo_gallery::after {
   content: "";
   top: 10px;
   left: 50px;

@@ -1632,6 +1632,18 @@ div[name="co_section"][real_id^="column_promo"] {
 		position: relative;
 		&::before {
 			content: "";
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/bg125.jpg);
+		}
+	}
+	#co_photo_gallery {
+		position: relative;
+		&::before {
+			content: "";
 			bottom: 10px;
 			right: 44px;
 			z-index: 0;
