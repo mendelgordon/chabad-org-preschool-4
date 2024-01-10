@@ -1338,7 +1338,6 @@ div[name=co_section][real_id^=column_promo] {
 #chabad_body_page:has(.chabad_text_head) {
   /* hide the old subtitle from the header */
   /* remove the old spacing and make everything full width */
-  /* styling for first custom section - will use styles from preschool section 6 */
 }
 #chabad_body_page:has(.chabad_text_head) .chabad_text_head {
   display: none;
@@ -1515,6 +1514,9 @@ div[name=co_section][real_id^=column_promo] {
 #chabad_body_page:has(.chabad_text_head) .chabad_text_box div {
   line-height: 1.6;
   font-size: 17px;
+}
+#chabad_body_page:has(.chabad_text_head) .chabad_box_content_second {
+  background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/bg125.jpg);
 }
 
 /*# sourceMappingURL=style.css.map */

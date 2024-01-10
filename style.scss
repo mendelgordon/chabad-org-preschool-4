@@ -1602,7 +1602,6 @@ div[name="co_section"][real_id^="column_promo"] {
 			width: 83%;
 		}
 	}
-	/* styling for first custom section - will use styles from preschool section 6 */
 	.big_title,
 	.medium_title {
 		font-size: 50px;
@@ -1618,5 +1617,8 @@ div[name="co_section"][real_id^="column_promo"] {
 	.chabad_text_box div {
 		line-height: 1.6;
 		font-size: 17px;
+	}
+	.chabad_box_content_second {
+		background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/bg125.jpg);
 	}
 }
