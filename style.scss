@@ -578,8 +578,8 @@ body.mobile {
 
 .section_branch #co_body_container {
 	max-width: min(1320px, 100%);
-	margin-inline: auto;
-	margin-top: 50px;
+	margin-inline: auto !important;
+	margin-top: 50px !important;
 	padding-inline: 10px !important;
 	.co_body.article-body {
 		min-height: 300px;
