@@ -1489,7 +1489,9 @@ div[name=co_section][real_id^=column_promo] {
   }
 }
 #chabad_body_page:has(.chabad_text_head) .big_title,
-#chabad_body_page:has(.chabad_text_head) .medium_title {
+#chabad_body_page:has(.chabad_text_head) .medium_title,
+#chabad_body_page:has(.chabad_text_head) .chabad_updates_head,
+#chabad_body_page:has(.chabad_text_head) .chabad_box_text_head {
   font-size: 50px;
   font-weight: 700;
   font-family: Fredoka, Helvetica, Arial, sans-serif;
@@ -1499,11 +1501,15 @@ div[name=co_section][real_id^=column_promo] {
 }
 @media (min-width: 1200px) {
   #chabad_body_page:has(.chabad_text_head) .big_title,
-  #chabad_body_page:has(.chabad_text_head) .medium_title {
+  #chabad_body_page:has(.chabad_text_head) .medium_title,
+  #chabad_body_page:has(.chabad_text_head) .chabad_updates_head,
+  #chabad_body_page:has(.chabad_text_head) .chabad_box_text_head {
     padding-inline: 50px;
   }
 }
-#chabad_body_page:has(.chabad_text_head) .chabad_text_box div {
+#chabad_body_page:has(.chabad_text_head) .chabad_text_box div,
+#chabad_body_page:has(.chabad_text_head) .chabad_updates_text div,
+#chabad_body_page:has(.chabad_text_head) .chabad_box_text_comment div {
   line-height: 1.6;
   font-size: 17px;
 }
@@ -1554,6 +1560,9 @@ div[name=co_section][real_id^=column_promo] {
   opacity: 0.5;
   height: 140px;
   width: 120px;
+}
+#chabad_body_page:has(.chabad_text_head) #co_calendar {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
