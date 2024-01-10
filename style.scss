@@ -1466,6 +1466,18 @@ body:not(.mobile) #chabad_head {
 		width: auto;
 	}
 }
+body.mobile {
+	.chabad_image_banner {
+		height: 800px;
+	}
+	div#chabad_head .chabad_logo div {
+		width: 100%;
+		text-align: center;
+		color: black;
+		font-size: clamp(17px, 2vw, 37px);
+		font-weight: bold;
+	}
+}
 #chabad_body_page:has(.chabad_text_head) {
 	/* hide the old subtitle from the header */
 	.chabad_text_head {
