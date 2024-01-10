@@ -1533,6 +1533,7 @@ div[name=co_section][real_id^=column_promo] {
   float: none !important;
 }
 #chabad_body_page:has(.chabad_text_head) .content_box_custom::before {
+  content: "";
   bottom: 10px;
   right: 44px;
   z-index: 0;
@@ -1543,6 +1544,7 @@ div[name=co_section][real_id^=column_promo] {
   width: 120px;
 }
 #chabad_body_page:has(.chabad_text_head) .content_box_custom::after {
+  content: "";
   top: 10px;
   left: 50px;
   z-index: 0;
