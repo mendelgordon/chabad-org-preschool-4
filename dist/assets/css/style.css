@@ -1513,7 +1513,8 @@ div[name=co_section][real_id^=column_promo] {
   line-height: 1.6;
   font-size: 17px;
 }
-#chabad_body_page:has(.chabad_text_head) .chabad_box_content_second {
+#chabad_body_page:has(.chabad_text_head) .chabad_box_content_second,
+#chabad_body_page:has(.chabad_text_head) #chabad_updates {
   background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/bg126.jpg);
 }
 #chabad_body_page:has(.chabad_text_head) .co_photo_gallery {
