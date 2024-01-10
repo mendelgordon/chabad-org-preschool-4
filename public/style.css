@@ -1515,53 +1515,49 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
 }
 #chabad_body_page:has(.chabad_text_head) .chabad_box_content_body,
 #chabad_body_page:has(.chabad_text_head) .content_box_custom,
-#chabad_body_page:has(.chabad_text_head) #chabad_right_colum > div {
+#chabad_body_page:has(.chabad_text_head) #chabad_right_colum > *:not(:empty) {
   width: 100%;
   padding: 40px 15px;
   min-height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 @media (min-width: 576px) {
   #chabad_body_page:has(.chabad_text_head) .chabad_box_content_body,
   #chabad_body_page:has(.chabad_text_head) .content_box_custom,
-  #chabad_body_page:has(.chabad_text_head) #chabad_right_colum > div {
+  #chabad_body_page:has(.chabad_text_head) #chabad_right_colum > *:not(:empty) {
     padding-inline: calc((100% - 540px) / 2);
   }
 }
 @media (min-width: 768px) {
   #chabad_body_page:has(.chabad_text_head) .chabad_box_content_body,
   #chabad_body_page:has(.chabad_text_head) .content_box_custom,
-  #chabad_body_page:has(.chabad_text_head) #chabad_right_colum > div {
+  #chabad_body_page:has(.chabad_text_head) #chabad_right_colum > *:not(:empty) {
     padding-inline: calc((100% - 720px) / 2);
   }
 }
 @media (min-width: 992px) {
   #chabad_body_page:has(.chabad_text_head) .chabad_box_content_body,
   #chabad_body_page:has(.chabad_text_head) .content_box_custom,
-  #chabad_body_page:has(.chabad_text_head) #chabad_right_colum > div {
+  #chabad_body_page:has(.chabad_text_head) #chabad_right_colum > *:not(:empty) {
     padding-inline: calc((100% - 960px) / 2);
   }
 }
 @media (min-width: 1200px) {
   #chabad_body_page:has(.chabad_text_head) .chabad_box_content_body,
   #chabad_body_page:has(.chabad_text_head) .content_box_custom,
-  #chabad_body_page:has(.chabad_text_head) #chabad_right_colum > div {
+  #chabad_body_page:has(.chabad_text_head) #chabad_right_colum > *:not(:empty) {
     padding-inline: calc((100% - 1140px) / 2);
   }
 }
 @media (min-width: 1400px) {
   #chabad_body_page:has(.chabad_text_head) .chabad_box_content_body,
   #chabad_body_page:has(.chabad_text_head) .content_box_custom,
-  #chabad_body_page:has(.chabad_text_head) #chabad_right_colum > div {
+  #chabad_body_page:has(.chabad_text_head) #chabad_right_colum > *:not(:empty) {
     padding-inline: calc((100% - 1320px) / 2);
   }
-}
-html:has(link#k[href*=template5]) #chabad_body_page:has(.chabad_text_head) .chabad_box_content_body,
-html:has(link#k[href*=template5]) #chabad_body_page:has(.chabad_text_head) .content_box_custom,
-html:has(link#k[href*=template5]) #chabad_body_page:has(.chabad_text_head) #chabad_right_colum > div {
-  align-items: center;
 }
 #chabad_body_page:has(.chabad_text_head) div#chabad_right_colum > div {
   margin-block: 0;
