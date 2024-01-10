@@ -1544,6 +1544,9 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
 #chabad_body_page:has(.chabad_text_head) .chabad_box_text_head:empty {
   display: none;
 }
+#chabad_body_page:has(.chabad_text_head) .chabad_updates_head div {
+  padding-inline: 10px;
+}
 #chabad_body_page:has(.chabad_text_head) .chabad_updates_head,
 #chabad_body_page:has(.chabad_text_head) .co_calendar_head,
 #chabad_body_page:has(.chabad_text_head) .co_photo_gallery_head,
