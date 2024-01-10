@@ -1595,13 +1595,13 @@ div[name="co_section"][real_id^="column_promo"] {
 
 		@media (min-width: 1200px) {
 			--width: calc(91% * 1200px);
-			padding-inline: calc((100% - var(--width)) / 2);
+			padding-inline: calc(var(--width) / 2);
 			flex: 0 0 auto;
 		}
 
 		@media (min-width: 1400px) {
 			--width: calc(83% * 1400px);
-			padding-inline: calc((100% - var(--width)) / 2);
+			padding-inline: calc(var(--width) / 2);
 		}
 	}
 	.big_title,
