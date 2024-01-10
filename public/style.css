@@ -1642,4 +1642,8 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
   text-align: center;
 }
 
+body:has(#MoreInSection) .co_section {
+  display: none;
+}
+
 /*# sourceMappingURL=style.css.map */
