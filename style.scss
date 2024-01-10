@@ -1576,6 +1576,24 @@ body.mobile #chabad_body_page:has(.chabad_text_head) {
 		text-transform: uppercase;
 		margin-bottom: 25px;
 	}
+	.chabad_more_button {
+		animation-name: zoomIn;
+		animation-duration: 700ms;
+		animation-timing-function: ease;
+		animation-delay: 1500ms;
+		animation-direction: normal;
+		animation-fill-mode: both;
+		background-color: #ff4880;
+		border: 2px solid #ff4880;
+		color: white;
+		border-radius: 1000px;
+		font-size: 20px;
+		line-height: 34px;
+		padding: 8px 20px;
+		font-weight: 700;
+		text-wrap: nowrap;
+		display: inline-flex;
+	}
 	img[src="https://w2.chabad.org/images/shluchim/minisites/themes/preschool/preschool_banner_image.jpg"]
 	{
 		content: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/PreschoolStockBackground.jpg);
