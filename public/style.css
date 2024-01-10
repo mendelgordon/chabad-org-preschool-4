@@ -1515,7 +1515,7 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
 }
 #chabad_body_page:has(.chabad_text_head) .chabad_box_content_body,
 #chabad_body_page:has(.chabad_text_head) .content_box_custom,
-#chabad_body_page:has(.chabad_text_head) #chabad_right_colum > *:not(:empty) {
+#chabad_body_page:has(.chabad_text_head) #chabad_right_colum > :is(#chabad_updates, #co_photo_gallery, #co_calendar, #co_section, #chabad_box_text):not(:empty) {
   width: 100%;
   padding: 40px 15px;
   min-height: 350px;
@@ -1527,35 +1527,35 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
 @media (min-width: 576px) {
   #chabad_body_page:has(.chabad_text_head) .chabad_box_content_body,
   #chabad_body_page:has(.chabad_text_head) .content_box_custom,
-  #chabad_body_page:has(.chabad_text_head) #chabad_right_colum > *:not(:empty) {
+  #chabad_body_page:has(.chabad_text_head) #chabad_right_colum > :is(#chabad_updates, #co_photo_gallery, #co_calendar, #co_section, #chabad_box_text):not(:empty) {
     padding-inline: calc((100% - 540px) / 2);
   }
 }
 @media (min-width: 768px) {
   #chabad_body_page:has(.chabad_text_head) .chabad_box_content_body,
   #chabad_body_page:has(.chabad_text_head) .content_box_custom,
-  #chabad_body_page:has(.chabad_text_head) #chabad_right_colum > *:not(:empty) {
+  #chabad_body_page:has(.chabad_text_head) #chabad_right_colum > :is(#chabad_updates, #co_photo_gallery, #co_calendar, #co_section, #chabad_box_text):not(:empty) {
     padding-inline: calc((100% - 720px) / 2);
   }
 }
 @media (min-width: 992px) {
   #chabad_body_page:has(.chabad_text_head) .chabad_box_content_body,
   #chabad_body_page:has(.chabad_text_head) .content_box_custom,
-  #chabad_body_page:has(.chabad_text_head) #chabad_right_colum > *:not(:empty) {
+  #chabad_body_page:has(.chabad_text_head) #chabad_right_colum > :is(#chabad_updates, #co_photo_gallery, #co_calendar, #co_section, #chabad_box_text):not(:empty) {
     padding-inline: calc((100% - 960px) / 2);
   }
 }
 @media (min-width: 1200px) {
   #chabad_body_page:has(.chabad_text_head) .chabad_box_content_body,
   #chabad_body_page:has(.chabad_text_head) .content_box_custom,
-  #chabad_body_page:has(.chabad_text_head) #chabad_right_colum > *:not(:empty) {
+  #chabad_body_page:has(.chabad_text_head) #chabad_right_colum > :is(#chabad_updates, #co_photo_gallery, #co_calendar, #co_section, #chabad_box_text):not(:empty) {
     padding-inline: calc((100% - 1140px) / 2);
   }
 }
 @media (min-width: 1400px) {
   #chabad_body_page:has(.chabad_text_head) .chabad_box_content_body,
   #chabad_body_page:has(.chabad_text_head) .content_box_custom,
-  #chabad_body_page:has(.chabad_text_head) #chabad_right_colum > *:not(:empty) {
+  #chabad_body_page:has(.chabad_text_head) #chabad_right_colum > :is(#chabad_updates, #co_photo_gallery, #co_calendar, #co_section, #chabad_box_text):not(:empty) {
     padding-inline: calc((100% - 1320px) / 2);
   }
 }
