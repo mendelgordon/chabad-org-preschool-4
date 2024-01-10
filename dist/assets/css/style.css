@@ -1352,6 +1352,10 @@ body:not(.mobile) #chabad_head > div {
 body.mobile .chabad_image_banner {
   min-height: 800px;
 }
+body.mobile .chabad_image_banner img {
+  object-fit: cover;
+  height: 800px;
+}
 body.mobile div#chabad_head .chabad_logo div,
 body.mobile div#chabad_head .chabad_logo a {
   width: 100%;
