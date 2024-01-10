@@ -1468,7 +1468,7 @@ body:not(.mobile) #chabad_head {
 }
 body.mobile {
 	.chabad_image_banner {
-		height: 800px;
+		min-height: 800px;
 	}
 	div#chabad_head .chabad_logo div {
 		width: 100%;
