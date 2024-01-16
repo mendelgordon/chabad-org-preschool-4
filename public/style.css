@@ -1336,6 +1336,7 @@ body:not(.mobile) #chabad_body_page:has(.chabad_text_head) #chabad_head .chabad_
 body:not(.mobile) #chabad_body_page:has(.chabad_text_head) #chabad_head > div {
   display: inline-flex;
   width: auto;
+  height: auto;
 }
 
 body.mobile #chabad_body_page:has(.chabad_text_head) .chabad_image_banner {
