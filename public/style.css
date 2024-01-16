@@ -1520,7 +1520,7 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
 #chabad_body_page:has(.chabad_text_head) div#chabad_right_colum > div {
   margin-block: 0;
 }
-#chabad_body_page:has(.chabad_text_head) :is(.big_title, .medium_title, .chabad_updates_head div, .chabad_box_text_head, .co_section_head) {
+#chabad_body_page:has(.chabad_text_head) :is(.big_title, .medium_title, .chabad_updates_head div, .chabad_box_text_head, .co_section_head, .co_calendar_head) {
   font-size: 50px;
   font-weight: 700;
   font-family: Fredoka, Helvetica, Arial, sans-serif;
@@ -1529,17 +1529,17 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
   margin-bottom: 40px;
 }
 @media (max-width: 600px) {
-  #chabad_body_page:has(.chabad_text_head) :is(.big_title, .medium_title, .chabad_updates_head div, .chabad_box_text_head, .co_section_head) {
+  #chabad_body_page:has(.chabad_text_head) :is(.big_title, .medium_title, .chabad_updates_head div, .chabad_box_text_head, .co_section_head, .co_calendar_head) {
     font-size: 35px;
     text-align: left;
   }
 }
 @media (min-width: 1200px) {
-  #chabad_body_page:has(.chabad_text_head) :is(.big_title, .medium_title, .chabad_updates_head div, .chabad_box_text_head, .co_section_head) {
+  #chabad_body_page:has(.chabad_text_head) :is(.big_title, .medium_title, .chabad_updates_head div, .chabad_box_text_head, .co_section_head, .co_calendar_head) {
     padding-inline: 50px;
   }
 }
-#chabad_body_page:has(.chabad_text_head) :is(.big_title, .medium_title, .chabad_updates_head div, .chabad_box_text_head, .co_section_head):empty {
+#chabad_body_page:has(.chabad_text_head) :is(.big_title, .medium_title, .chabad_updates_head div, .chabad_box_text_head, .co_section_head, .co_calendar_head):empty {
   display: none;
 }
 #chabad_body_page:has(.chabad_text_head) .chabad_updates_head div {
