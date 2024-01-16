@@ -1345,11 +1345,6 @@ body:not(.mobile) #chabad_body_page:has(.chabad_text_head) #chabad_head > div {
 body.mobile #chabad_body_page:has(.chabad_text_head) .chabad_image_banner {
   min-height: 600px;
 }
-body.mobile #chabad_body_page:has(.chabad_text_head) .chabad_image_banner img {
-  object-fit: cover;
-  height: 100%;
-  position: absolute;
-}
 body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_logo :is(a, div, a div) {
   width: 100%;
   text-align: center;
@@ -1378,6 +1373,11 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
 }
 #chabad_body_page:has(.chabad_text_head) :is(div#chabad_main_content, div#chabad_body_content) {
   width: 100%;
+}
+#chabad_body_page:has(.chabad_text_head) .chabad_image_banner img {
+  object-fit: cover;
+  height: 100%;
+  position: absolute;
 }
 #chabad_body_page:has(.chabad_text_head) #content_banner {
   position: relative;
