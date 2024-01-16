@@ -1403,7 +1403,7 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
   background: rgba(0, 0, 0, 0.5);
 }
 #chabad_body_page:has(.chabad_text_head) #content_banner .chabad_text_banner {
-  position: relative;
+  position: absolute;
   top: 0;
   width: 100%;
   text-align: center;
