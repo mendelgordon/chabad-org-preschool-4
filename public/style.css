@@ -10,9 +10,12 @@
   padding-top: 0;
 }
 
-/* .g960.footer {
-	display: none;
-} */
+.g960.footer,
+#BodyContainer {
+  max-width: 100%;
+  margin: 0;
+}
+
 #co_content_container {
   font-size: 17px;
   color: #60697b;
