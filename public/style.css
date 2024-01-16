@@ -136,8 +136,7 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
   font-size: 50px;
   text-align: center;
 }
-#chabad_body_page .btn-primaryx,
-#chabad_body_page .btn-primaryx2 {
+#chabad_body_page :is(.btn-primaryx, .btn-primaryx2) {
   font-size: 20px;
   margin-top: -35px;
   --btn-padding-x: 28px !important;
@@ -156,8 +155,7 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
   --btn-hover-border-color: #9a8fff;
   --btn-active-border-color: #9a8fff;
 }
-#chabad_body_page .swiper-slide,
-#chabad_body_page .card {
+#chabad_body_page :is(.swiper-slide, .card) {
   position: relative;
 }
 #chabad_body_page .blockquote-details {
@@ -191,22 +189,18 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
 #chabad_body_page .form-check-input {
   flex-shrink: initial;
 }
-#chabad_body_page .co_photo_gallery,
-#chabad_body_page .slider-wrapper {
+#chabad_body_page :is(.co_photo_gallery, .slider-wrapper) {
   padding: 20px;
 }
-#chabad_body_page .co_photo_gallery_body,
-#chabad_body_page #PreschoolSection8ContentWrapper {
+#chabad_body_page :is(.co_photo_gallery_body, #PreschoolSection8ContentWrapper) {
   position: relative;
   width: 100%;
   padding: 0 40px !important;
 }
-#chabad_body_page .co_photo_gallery_body .swiper-button-prev,
-#chabad_body_page #PreschoolSection8ContentWrapper .swiper-button-prev {
+#chabad_body_page :is(.co_photo_gallery_body, #PreschoolSection8ContentWrapper) .swiper-button-prev {
   left: 0;
 }
-#chabad_body_page .co_photo_gallery_body .swiper-button-next,
-#chabad_body_page #PreschoolSection8ContentWrapper .swiper-button-next {
+#chabad_body_page :is(.co_photo_gallery_body, #PreschoolSection8ContentWrapper) .swiper-button-next {
   right: 0;
 }
 #chabad_body_page .slider-wrapper .slide {
@@ -279,9 +273,7 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
   text-decoration: none;
 }
 
-body:not(.mobile) #chabad_body_page {
-  /* General Styling for the Navbar */
-}
+/* General Styling for the Navbar */
 body:not(.mobile) #chabad_body_page #chabad_head .preschool-container {
   padding: 20px;
 }
@@ -348,9 +340,7 @@ body:not(.mobile) #chabad_body_page #chabad_head .navi .item .item {
     position: static;
     box-shadow: none;
   }
-  body:not(.mobile) #chabad_body_page #chabad_head .navi .parent:hover + .sub_menu,
-  body:not(.mobile) #chabad_body_page #chabad_head .navi .item:hover > .sub_menu,
-  body:not(.mobile) #chabad_body_page #chabad_head .navi .item:hover .item {
+  body:not(.mobile) #chabad_body_page #chabad_head .navi :is(.parent:hover + .sub_menu, .item:hover > .sub_menu, .item:hover .item) {
     display: block;
   }
   body:not(.mobile) #chabad_body_page #chabad_head .navi:hover > .item {
@@ -372,8 +362,7 @@ body:not(.mobile) #chabad_body_page #navigation .navi {
   flex-wrap: wrap;
   font-size: 17px;
 }
-body:not(.mobile) #chabad_body_page #navigation .navi li,
-body:not(.mobile) #chabad_body_page #navigation .navi a {
+body:not(.mobile) #chabad_body_page #navigation .navi :is(li, a) {
   float: none;
 }
 body:not(.mobile) #chabad_body_page #navigation .navi a {
@@ -411,16 +400,11 @@ body:not(.mobile) #chabad_body_page .FooterContainer #menu .parent {
   letter-spacing: 0.5px;
 }
 
-div#chabad_body_content,
-body.mobile div#chabad_body_content,
-body.mobile div#co_photo_gallery .co_photo_gallery_body {
+:is(div#chabad_body_content, body.mobile div#chabad_body_content, body.mobile div#co_photo_gallery .co_photo_gallery_body) {
   padding: 0 !important;
 }
 
-div#ContentArea,
-div#chabad_main_content,
-div#chabad_body_content,
-.cco_templatelates_content {
+:is(div#ContentArea, div#chabad_main_content, div#chabad_body_content, .cco_templatelates_content) {
   margin: 0;
   width: 100%;
   float: none;
@@ -515,11 +499,7 @@ body.mobile .FooterContainer a {
   min-height: 300px;
 }
 
-.co_body .content p,
-.co_body .content li,
-.co_body .content .form-all li,
-html body.cco_body p,
-.form-all {
+:is(.co_body .content p, .co_body .content li, .co_body .content .form-all li, html body.cco_body p, .form-all) {
   color: #343333;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
@@ -529,9 +509,7 @@ html body.cco_body p,
   border: 0;
 }
 
-body,
-.cco_templateless_template,
-.cco_templateless_template a {
+:is(body, .cco_templateless_template, .cco_templateless_template a) {
   background: #f9f9f9;
   color: black;
   font-family: "Open Sans", sans-serif;
@@ -1376,17 +1354,10 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
   font-weight: bold;
 }
 
-#chabad_body_page:has(.chabad_text_head) {
-  /* hide the old subtitle from the header */
-  /* remove the old spacing and make everything full width */
-  /* Make the calendar events a regular size font (overriding the 12px being set by the global style sheet) */
-}
 #chabad_body_page:has(.chabad_text_head) .chabad_text_head {
   display: none;
 }
-#chabad_body_page:has(.chabad_text_head) div#chabad_right_colum,
-#chabad_body_page:has(.chabad_text_head) .content_page_full,
-#chabad_body_page:has(.chabad_text_head) div#ContentArea {
+#chabad_body_page:has(.chabad_text_head) :is(div#chabad_right_colum, .content_page_full, div#ContentArea) {
   float: none;
   margin: 0;
   width: 100%;
@@ -1398,8 +1369,7 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
   padding: 0;
   margin: 0;
 }
-#chabad_body_page:has(.chabad_text_head) div#chabad_main_content,
-#chabad_body_page:has(.chabad_text_head) div#chabad_body_content {
+#chabad_body_page:has(.chabad_text_head) :is(div#chabad_main_content, div#chabad_body_content) {
   width: 100%;
 }
 #chabad_body_page:has(.chabad_text_head) #content_banner {
@@ -1512,9 +1482,7 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
   bottom: 0;
   width: 100%;
 }
-#chabad_body_page:has(.chabad_text_head) .chabad_box_content_body,
-#chabad_body_page:has(.chabad_text_head) .content_box_custom,
-#chabad_body_page:has(.chabad_text_head) #chabad_right_colum > :is(#chabad_updates, #co_photo_gallery, #co_calendar, #co_section, #chabad_box_text):not(:empty) {
+#chabad_body_page:has(.chabad_text_head) :is(.chabad_box_content_body, .content_box_custom, #chabad_right_colum > :is(#chabad_updates, #co_photo_gallery, #co_calendar, #co_section, #chabad_box_text):not(:empty)) {
   width: 100%;
   padding: 40px 15px;
   min-height: 350px;
@@ -1524,48 +1492,34 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
   align-items: center;
 }
 @media (min-width: 576px) {
-  #chabad_body_page:has(.chabad_text_head) .chabad_box_content_body,
-  #chabad_body_page:has(.chabad_text_head) .content_box_custom,
-  #chabad_body_page:has(.chabad_text_head) #chabad_right_colum > :is(#chabad_updates, #co_photo_gallery, #co_calendar, #co_section, #chabad_box_text):not(:empty) {
+  #chabad_body_page:has(.chabad_text_head) :is(.chabad_box_content_body, .content_box_custom, #chabad_right_colum > :is(#chabad_updates, #co_photo_gallery, #co_calendar, #co_section, #chabad_box_text):not(:empty)) {
     padding-inline: calc((100% - 540px) / 2);
   }
 }
 @media (min-width: 768px) {
-  #chabad_body_page:has(.chabad_text_head) .chabad_box_content_body,
-  #chabad_body_page:has(.chabad_text_head) .content_box_custom,
-  #chabad_body_page:has(.chabad_text_head) #chabad_right_colum > :is(#chabad_updates, #co_photo_gallery, #co_calendar, #co_section, #chabad_box_text):not(:empty) {
+  #chabad_body_page:has(.chabad_text_head) :is(.chabad_box_content_body, .content_box_custom, #chabad_right_colum > :is(#chabad_updates, #co_photo_gallery, #co_calendar, #co_section, #chabad_box_text):not(:empty)) {
     padding-inline: calc((100% - 720px) / 2);
   }
 }
 @media (min-width: 992px) {
-  #chabad_body_page:has(.chabad_text_head) .chabad_box_content_body,
-  #chabad_body_page:has(.chabad_text_head) .content_box_custom,
-  #chabad_body_page:has(.chabad_text_head) #chabad_right_colum > :is(#chabad_updates, #co_photo_gallery, #co_calendar, #co_section, #chabad_box_text):not(:empty) {
+  #chabad_body_page:has(.chabad_text_head) :is(.chabad_box_content_body, .content_box_custom, #chabad_right_colum > :is(#chabad_updates, #co_photo_gallery, #co_calendar, #co_section, #chabad_box_text):not(:empty)) {
     padding-inline: calc((100% - 960px) / 2);
   }
 }
 @media (min-width: 1200px) {
-  #chabad_body_page:has(.chabad_text_head) .chabad_box_content_body,
-  #chabad_body_page:has(.chabad_text_head) .content_box_custom,
-  #chabad_body_page:has(.chabad_text_head) #chabad_right_colum > :is(#chabad_updates, #co_photo_gallery, #co_calendar, #co_section, #chabad_box_text):not(:empty) {
+  #chabad_body_page:has(.chabad_text_head) :is(.chabad_box_content_body, .content_box_custom, #chabad_right_colum > :is(#chabad_updates, #co_photo_gallery, #co_calendar, #co_section, #chabad_box_text):not(:empty)) {
     padding-inline: calc((100% - 1140px) / 2);
   }
 }
 @media (min-width: 1400px) {
-  #chabad_body_page:has(.chabad_text_head) .chabad_box_content_body,
-  #chabad_body_page:has(.chabad_text_head) .content_box_custom,
-  #chabad_body_page:has(.chabad_text_head) #chabad_right_colum > :is(#chabad_updates, #co_photo_gallery, #co_calendar, #co_section, #chabad_box_text):not(:empty) {
+  #chabad_body_page:has(.chabad_text_head) :is(.chabad_box_content_body, .content_box_custom, #chabad_right_colum > :is(#chabad_updates, #co_photo_gallery, #co_calendar, #co_section, #chabad_box_text):not(:empty)) {
     padding-inline: calc((100% - 1320px) / 2);
   }
 }
 #chabad_body_page:has(.chabad_text_head) div#chabad_right_colum > div {
   margin-block: 0;
 }
-#chabad_body_page:has(.chabad_text_head) .big_title,
-#chabad_body_page:has(.chabad_text_head) .medium_title,
-#chabad_body_page:has(.chabad_text_head) .chabad_updates_head div,
-#chabad_body_page:has(.chabad_text_head) .chabad_box_text_head,
-#chabad_body_page:has(.chabad_text_head) .co_section_head {
+#chabad_body_page:has(.chabad_text_head) :is(.big_title, .medium_title, .chabad_updates_head div, .chabad_box_text_head, .co_section_head) {
   font-size: 50px;
   font-weight: 700;
   font-family: Fredoka, Helvetica, Arial, sans-serif;
@@ -1574,48 +1528,30 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
   margin-bottom: 40px;
 }
 @media (max-width: 600px) {
-  #chabad_body_page:has(.chabad_text_head) .big_title,
-  #chabad_body_page:has(.chabad_text_head) .medium_title,
-  #chabad_body_page:has(.chabad_text_head) .chabad_updates_head div,
-  #chabad_body_page:has(.chabad_text_head) .chabad_box_text_head,
-  #chabad_body_page:has(.chabad_text_head) .co_section_head {
+  #chabad_body_page:has(.chabad_text_head) :is(.big_title, .medium_title, .chabad_updates_head div, .chabad_box_text_head, .co_section_head) {
     font-size: 35px;
     text-align: left;
   }
 }
 @media (min-width: 1200px) {
-  #chabad_body_page:has(.chabad_text_head) .big_title,
-  #chabad_body_page:has(.chabad_text_head) .medium_title,
-  #chabad_body_page:has(.chabad_text_head) .chabad_updates_head div,
-  #chabad_body_page:has(.chabad_text_head) .chabad_box_text_head,
-  #chabad_body_page:has(.chabad_text_head) .co_section_head {
+  #chabad_body_page:has(.chabad_text_head) :is(.big_title, .medium_title, .chabad_updates_head div, .chabad_box_text_head, .co_section_head) {
     padding-inline: 50px;
   }
 }
-#chabad_body_page:has(.chabad_text_head) .big_title:empty,
-#chabad_body_page:has(.chabad_text_head) .medium_title:empty,
-#chabad_body_page:has(.chabad_text_head) .chabad_updates_head div:empty,
-#chabad_body_page:has(.chabad_text_head) .chabad_box_text_head:empty,
-#chabad_body_page:has(.chabad_text_head) .co_section_head:empty {
+#chabad_body_page:has(.chabad_text_head) :is(.big_title, .medium_title, .chabad_updates_head div, .chabad_box_text_head, .co_section_head):empty {
   display: none;
 }
 #chabad_body_page:has(.chabad_text_head) .chabad_updates_head div {
   padding-inline: 10px;
 }
-#chabad_body_page:has(.chabad_text_head) .chabad_updates_head,
-#chabad_body_page:has(.chabad_text_head) .co_calendar_head,
-#chabad_body_page:has(.chabad_text_head) .co_photo_gallery_head,
-#chabad_body_page:has(.chabad_text_head) .co_section_head {
+#chabad_body_page:has(.chabad_text_head) :is(.chabad_updates_head, .co_calendar_head, .co_photo_gallery_head, .co_section_head) {
   padding: 0 !important;
 }
-#chabad_body_page:has(.chabad_text_head) .chabad_text_box div,
-#chabad_body_page:has(.chabad_text_head) .chabad_updates_text div,
-#chabad_body_page:has(.chabad_text_head) .chabad_box_text_comment div {
+#chabad_body_page:has(.chabad_text_head) :is(.chabad_text_box div, .chabad_updates_text div, .chabad_box_text_comment div) {
   line-height: 1.6;
   font-size: 17px;
 }
-#chabad_body_page:has(.chabad_text_head) .chabad_box_content_second,
-#chabad_body_page:has(.chabad_text_head) #chabad_updates {
+#chabad_body_page:has(.chabad_text_head) :is(.chabad_box_content_second, #chabad_updates) {
   background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/bg126.jpg);
 }
 #chabad_body_page:has(.chabad_text_head) .co_photo_gallery {
