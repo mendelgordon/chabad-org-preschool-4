@@ -1379,6 +1379,7 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
 #chabad_body_page:has(.chabad_text_head) {
   /* hide the old subtitle from the header */
   /* remove the old spacing and make everything full width */
+  /* Make the calendar events a regular size font (overriding the 12px being set by the global style sheet) */
 }
 #chabad_body_page:has(.chabad_text_head) .chabad_text_head {
   display: none;
@@ -1662,8 +1663,8 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
   height: 140px;
   width: 120px;
 }
-#chabad_body_page:has(.chabad_text_head) #chabad_right_colum #co_calendar {
-  display: none;
+#chabad_body_page:has(.chabad_text_head) #chabad_right_colum [class$=body] {
+  font-size: inherit;
 }
 
 body:has(#cco_body > #photos > .photo[data-img="0"]) #cco_body > #photos {
