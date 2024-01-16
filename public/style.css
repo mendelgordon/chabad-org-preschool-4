@@ -1355,6 +1355,9 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
   font-weight: bold;
 }
 
+#chabad_body_page:has(.chabad_text_head) td.chabad_logo :is(div, a, h1) {
+  font-size: inherit;
+}
 #chabad_body_page:has(.chabad_text_head) .chabad_text_head {
   display: none;
 }
