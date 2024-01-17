@@ -291,6 +291,7 @@ body:not(.mobile) #chabad_body_page #chabad_head .navi .sub_menu {
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   backdrop-filter: blur(60px);
+  top: auto;
 }
 body:not(.mobile) #chabad_body_page #chabad_head .navi .item .item {
   padding: 10px;
