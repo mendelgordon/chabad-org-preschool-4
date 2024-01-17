@@ -287,7 +287,6 @@ body:not(.mobile) #chabad_body_page #chabad_head .preschool-container {
 }
 body:not(.mobile) #chabad_body_page #chabad_head .navi {
   height: unset;
-  /* Show submenus on hover */
 }
 body:not(.mobile) #chabad_body_page #chabad_head .navi a {
   font-family: "Open Sans", sans-serif;
@@ -300,15 +299,15 @@ body:not(.mobile) #chabad_body_page #chabad_head .navi .sub_menu {
   margin: 0;
   font-size: 15px;
   text-align: left;
-  list-style: none;
-  border-radius: 5px;
+  overflow: clip;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 body:not(.mobile) #chabad_body_page #chabad_head .navi .parent:hover .sub_menu {
   display: block;
 }
 body:not(.mobile) #chabad_body_page #chabad_head .navi .item {
   position: relative;
-  /* Needed to position submenus */
   width: max-content;
 }
 body:not(.mobile) #chabad_body_page #chabad_head .navi .item .arrow::after {
