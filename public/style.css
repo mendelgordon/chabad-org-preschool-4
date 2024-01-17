@@ -314,10 +314,6 @@ body:not(.mobile) #chabad_body_page #navigation .navi :is(li, a) {
 body:not(.mobile) #chabad_body_page #navigation .navi a {
   font-size: 17px;
   color: white;
-  padding-left: 0;
-}
-body:not(.mobile) #chabad_body_page #navigation .navi .parent {
-  font-weight: bold;
 }
 body:not(.mobile) #chabad_body_page .FooterContainer #menu {
   height: unset;
