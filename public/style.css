@@ -280,6 +280,11 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
 body:not(.mobile) #chabad_body_page #chabad_head .preschool-container {
   padding: 20px;
 }
+@media (min-width: 576px) {
+  body:not(.mobile) #chabad_body_page #chabad_head .preschool-container {
+    max-width: 100%;
+  }
+}
 body:not(.mobile) #chabad_body_page #chabad_head .navi {
   height: unset;
   /* Show submenus on hover */
