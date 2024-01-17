@@ -303,11 +303,6 @@ body:not(.mobile) #chabad_body_page #chabad_head .navi .sub_menu {
   list-style: none;
   border-radius: 5px;
 }
-@media screen and (min-width: 1100px) {
-  body:not(.mobile) #chabad_body_page #chabad_head .navi .sub_menu ul {
-    padding-inline: 20px;
-  }
-}
 body:not(.mobile) #chabad_body_page #chabad_head .navi .parent:hover .sub_menu {
   display: block;
 }
