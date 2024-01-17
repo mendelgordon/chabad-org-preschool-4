@@ -279,7 +279,7 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
 /* General Styling for the Navbar */
 body:not(.mobile) #chabad_body_page #chabad_head .preschool-container {
   padding: 20px;
-  max-width: 100% !important;
+  max-width: 100%;
 }
 body:not(.mobile) #chabad_body_page #chabad_head .navi {
   height: unset;
@@ -1146,6 +1146,7 @@ body.mobile .FooterContainer a {
   color: white;
 }
 #PreschoolFooterNav .preschool-container {
+  max-width: 100%;
   padding-top: 25px;
   padding-bottom: 35px;
 }
