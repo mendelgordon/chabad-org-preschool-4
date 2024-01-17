@@ -320,22 +320,6 @@ body:not(.mobile) #chabad_body_page #chabad_head .navi > .item .item {
   padding: 10px;
   backdrop-filter: blur(60px);
 }
-@media screen and (max-width: 1100px) {
-  body:not(.mobile) #chabad_body_page #chabad_head .navi .sub_menu {
-    display: none;
-    box-shadow: none;
-  }
-  body:not(.mobile) #chabad_body_page #chabad_head .navi .parent:hover .sub_menu {
-    display: block;
-  }
-  body:not(.mobile) #chabad_body_page #chabad_head .navi:hover > .item {
-    display: block;
-    width: unset;
-  }
-  body:not(.mobile) #chabad_body_page #chabad_head .navi:hover > .item.arrow:hover {
-    height: auto;
-  }
-}
 body:not(.mobile) #chabad_body_page #navigation {
   width: initial;
   height: initial;
