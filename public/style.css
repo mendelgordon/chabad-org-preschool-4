@@ -279,11 +279,7 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
 /* General Styling for the Navbar */
 body:not(.mobile) #chabad_body_page #chabad_head .preschool-container {
   padding: 20px;
-}
-@media (576px <= width <= 1400px) {
-  body:not(.mobile) #chabad_body_page #chabad_head .preschool-container {
-    max-width: 100%;
-  }
+  max-width: 100% !important;
 }
 body:not(.mobile) #chabad_body_page #chabad_head .navi {
   height: unset;
@@ -509,7 +505,7 @@ body.mobile .FooterContainer a {
   flex-wrap: nowrap;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 #chabad_head .preschool-container #PreschoolTitle {
   color: white;
