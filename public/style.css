@@ -338,11 +338,12 @@ body:not(.mobile) #chabad_body_page #chabad_head .navi .item .item {
 }
 body:not(.mobile) #chabad_body_page #navigation {
   width: initial;
+  height: initial;
 }
 body:not(.mobile) #chabad_body_page #navigation .navi {
   list-style-type: none;
   padding: 0;
-  gap: 10px;
+  column-gap: 10px;
   display: flex;
   flex-wrap: wrap;
   font-size: 17px;
