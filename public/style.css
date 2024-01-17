@@ -315,9 +315,6 @@ body:not(.mobile) #chabad_body_page #navigation .navi a {
   font-size: 17px;
   color: white;
 }
-body:not(.mobile) #chabad_body_page .FooterContainer #menu {
-  height: unset;
-}
 @media screen and (min-width: 1100px) {
   body:not(.mobile) #chabad_body_page .FooterContainer #menu {
     gap: 20px;
