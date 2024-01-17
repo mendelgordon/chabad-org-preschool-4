@@ -294,7 +294,6 @@ body:not(.mobile) #chabad_body_page #chabad_head .navi a {
 }
 body:not(.mobile) #chabad_body_page #chabad_head .navi .sub_menu {
   position: absolute;
-  left: -10px;
   z-index: 10;
   display: none;
   padding: 0;
@@ -323,8 +322,9 @@ body:not(.mobile) #chabad_body_page #chabad_head .navi .item .arrow::after {
   font-size: 10px;
 }
 body:not(.mobile) #chabad_body_page #chabad_head .navi .item .item {
-  padding-block: 10px;
+  padding: 10px;
   backdrop-filter: blur(60px);
+  border-radius: 5px;
 }
 @media screen and (max-width: 1100px) {
   body:not(.mobile) #chabad_body_page #chabad_head .navi .sub_menu {
