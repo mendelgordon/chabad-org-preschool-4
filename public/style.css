@@ -280,7 +280,7 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
 body:not(.mobile) #chabad_body_page #chabad_head .preschool-container {
   padding: 20px;
 }
-@media (576px <= width <= 1000px) {
+@media (576px <= width <= 1400px) {
   body:not(.mobile) #chabad_body_page #chabad_head .preschool-container {
     max-width: 100%;
   }
