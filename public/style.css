@@ -292,27 +292,12 @@ body:not(.mobile) #chabad_body_page #chabad_head .navi a {
   font-family: "Open Sans", sans-serif;
 }
 body:not(.mobile) #chabad_body_page #chabad_head .navi .sub_menu {
-  position: absolute;
-  z-index: 10;
-  display: none;
-  padding: 0;
-  margin: 0;
-  font-size: 15px;
-  text-align: left;
-  overflow: clip;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
-}
-body:not(.mobile) #chabad_body_page #chabad_head .navi .parent:hover .sub_menu {
-  display: block;
-}
-body:not(.mobile) #chabad_body_page #chabad_head .navi .item:has(.item) {
-  position: relative;
-  width: max-content;
-}
-body:not(.mobile) #chabad_body_page #chabad_head .navi .item:has(.item) .item {
-  padding: 10px;
   backdrop-filter: blur(60px);
+}
+body:not(.mobile) #chabad_body_page #chabad_head .navi .item .item {
+  padding: 10px;
 }
 body:not(.mobile) #chabad_body_page #navigation {
   width: initial;
