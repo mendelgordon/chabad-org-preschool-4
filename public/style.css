@@ -306,17 +306,17 @@ body:not(.mobile) #chabad_body_page #chabad_head .navi .sub_menu {
 body:not(.mobile) #chabad_body_page #chabad_head .navi .parent:hover .sub_menu {
   display: block;
 }
-body:not(.mobile) #chabad_body_page #chabad_head .navi .item {
+body:not(.mobile) #chabad_body_page #chabad_head .navi > .item {
   position: relative;
   width: max-content;
 }
-body:not(.mobile) #chabad_body_page #chabad_head .navi .item .arrow::after {
+body:not(.mobile) #chabad_body_page #chabad_head .navi > .item .arrow::after {
   content: "▼";
   display: inline-block;
   margin-left: 10px;
   font-size: 10px;
 }
-body:not(.mobile) #chabad_body_page #chabad_head .navi .item .item {
+body:not(.mobile) #chabad_body_page #chabad_head .navi > .item .item {
   padding: 10px;
   backdrop-filter: blur(60px);
 }
