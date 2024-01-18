@@ -100,7 +100,6 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
   --btn-bg: transparent;
   --btn-border-color: transparent;
   --btn-hover-border-color: transparent;
-  display: inline-block;
   padding: var(--btn-padding-y) var(--btn-padding-x);
   font-size: 16px;
   font-weight: 700;
@@ -112,7 +111,6 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
   cursor: pointer;
   user-select: none;
   border: 2px solid var(--btn-border-color);
-  border-radius: 8px;
   background-color: var(--btn-bg);
   box-shadow: unset;
   transition: all 0.2s ease-in-out;
@@ -253,7 +251,6 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
   }
 }
 #chabad_body_page .card-border-bottom::after {
-  border-bottom-width: 6px;
   bottom: 0;
   right: 0;
   left: 0;
