@@ -94,6 +94,13 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
   z-index: -1;
 }
 
+#chabad_body_page :is(.btn, .chabad_welcome, .chabad_more_button, .chabad_text_banner_description) {
+  animation-name: zoomIn;
+  animation-duration: 700ms;
+  animation-timing-function: ease;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
 #chabad_body_page .btn {
   --btn-padding-x: 24px;
   --btn-padding-y: 10px;
@@ -120,12 +127,7 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
   transform: translateY(0);
   letter-spacing: -0.2px;
   position: relative;
-  animation-name: zoomIn;
-  animation-duration: 700ms;
-  animation-timing-function: ease;
   animation-delay: 1500ms;
-  animation-direction: normal;
-  animation-fill-mode: both;
   border-radius: 1000px !important;
 }
 #chabad_body_page .display-3 {
@@ -1343,12 +1345,7 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
   line-height: 1.2;
   letter-spacing: -0.2px;
   margin-bottom: 35px;
-  animation-name: zoomIn;
-  animation-duration: 700ms;
-  animation-timing-function: ease;
   animation-delay: 500ms;
-  animation-direction: normal;
-  animation-fill-mode: both;
   text-transform: capitalize;
 }
 @media (max-width: 600px) {
@@ -1357,12 +1354,7 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
   }
 }
 #chabad_body_page:has(.chabad_text_head) .chabad_text_banner_description {
-  animation-name: zoomIn;
-  animation-duration: 700ms;
-  animation-timing-function: ease;
   animation-delay: 1000ms;
-  animation-direction: normal;
-  animation-fill-mode: both;
   letter-spacing: 1px;
   font-size: 23px;
   line-height: 1.55;
@@ -1375,12 +1367,7 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
   font-size: inherit;
 }
 #chabad_body_page:has(.chabad_text_head) .chabad_more_button {
-  animation-name: zoomIn;
-  animation-duration: 700ms;
-  animation-timing-function: ease;
   animation-delay: 1500ms;
-  animation-direction: normal;
-  animation-fill-mode: both;
   background-color: #ff4880;
   border: 2px solid #ff4880;
   color: white;
