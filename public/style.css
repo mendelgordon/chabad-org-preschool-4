@@ -312,7 +312,7 @@ body:not(.mobile) #chabad_body_page #navigation .navi a {
   font-size: 17px;
   color: white;
 }
-body:not(.mobile) #chabad_body_page .FooterContainer #menu .navi {
+body:not(.mobile) #chabad_body_page .FooterContainer #menu {
   height: unset;
 }
 body:not(.mobile) #chabad_body_page .FooterContainer #menu .sub_menu a {
