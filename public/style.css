@@ -1390,6 +1390,7 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
   position: absolute;
   inset: 0;
   max-height: 100%;
+  width: 100%;
 }
 #chabad_body_page:has(.chabad_text_head) :is(.chabad_box_content_body, .content_box_custom, #chabad_right_colum > :is(#chabad_updates, #co_photo_gallery, #co_calendar, #co_section, #chabad_box_text):not(:empty)) {
   width: 100%;
