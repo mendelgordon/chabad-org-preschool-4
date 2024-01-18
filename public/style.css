@@ -130,10 +130,6 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
   animation-fill-mode: both;
   border-radius: 1000px !important;
 }
-#chabad_body_page .btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(30, 34, 40, 0.15);
-}
 #chabad_body_page .display-3 {
   font-family: "Fredoka", Helvetica, Arial, "sans-serif";
   font-size: 50px;
@@ -369,10 +365,6 @@ div#co_photo_gallery .co_photo_gallery_footer a {
   border-radius: 1000px;
   font-size: 20px;
   padding: 8px 20px;
-}
-div#co_photo_gallery .co_photo_gallery_footer a:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(30, 34, 40, 0.15);
 }
 
 .co_photo_gallery a img {
@@ -626,10 +618,6 @@ body.mobile .FooterContainer a {
   font-weight: 700;
   text-wrap: nowrap;
   display: inline-flex;
-}
-#PreschoolSection1 #PreschoolSection1Content #PreschoolSection1Button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(30, 34, 40, 0.15);
 }
 
 #PreschoolSection2 .preschool-container {
@@ -1230,6 +1218,11 @@ body.mobile .FooterContainer a {
   }
 }
 
+:is(#PreschoolFooterButton, .chabad_more_button, #chabad_body_page .btn, .co_photo_gallery_footer a, #PreschoolSection1Button):hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(30, 34, 40, 0.15);
+}
+
 div[name=co_section][real_id^=column_promo] {
   display: flex;
   width: 100%;
@@ -1404,10 +1397,6 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
   margin-inline: auto;
   z-index: 1;
   float: none;
-}
-#chabad_body_page:has(.chabad_text_head) .chabad_more_button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(30, 34, 40, 0.15);
 }
 #chabad_body_page:has(.chabad_text_head) img[src="https://w2.chabad.org/images/shluchim/minisites/themes/preschool/preschool_banner_image.jpg"] {
   content: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/PreschoolStockBackground.jpg);
