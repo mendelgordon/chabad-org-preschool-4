@@ -94,6 +94,39 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
   z-index: -1;
 }
 
+/* Main grid layout for header and content */
+#chabad_main_content {
+  display: grid;
+}
+
+#chabad_head,
+#chabad_main_content :has(#content_banner, #PreschoolSection1Overlay) {
+  display: grid !important;
+  grid-template-rows: subgrid;
+  grid-column: 1;
+}
+
+#chabad_main_content :has(#content_banner, #PreschoolSection1) {
+  grid-row: 1/99;
+}
+
+#chabad_head,
+#chabad_left_colum > :nth-child(1),
+#PreschoolSection1,
+#PreschoolSection1 :is(img, #PreschoolSection1Content, #PreschoolSection1Overlay) {
+  grid-row: 1;
+}
+
+#chabad_left_colum > :nth-child(2),
+#PreschoolSection1 + :nth-child(2) {
+  grid-row: 2;
+}
+
+#chabad_head {
+  z-index: 1;
+  align-items: start;
+}
+
 #chabad_body_page :is(.btn, .chabad_welcome, .chabad_more_button, .chabad_text_banner_description) {
   animation-name: zoomIn;
   animation-duration: 700ms;
@@ -379,12 +412,6 @@ body.mobile #chabad_body_page h2 {
   line-height: normal;
   font-size: 20px;
 }
-body.mobile #chabad_body_page .pb-17 {
-  padding-bottom: 80px !important;
-}
-body.mobile #chabad_body_page .py-17 {
-  padding-block: 80px !important;
-}
 body.mobile #chabad_body_page #chabad_head {
   position: initial !important;
   background: #f9f9f9;
@@ -486,8 +513,6 @@ body.mobile .FooterContainer a {
 }
 
 #chabad_head {
-  position: absolute;
-  width: 100% !important;
   z-index: 9;
 }
 #chabad_head .preschool-container {
@@ -503,22 +528,12 @@ body.mobile .FooterContainer a {
   font-weight: bold;
 }
 
-#PreschoolSection1 {
-  overflow: hidden;
-  position: relative;
-}
 #PreschoolSection1 #PreschoolSection1Image {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 #PreschoolSection1 #PreschoolSection1Overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
@@ -528,7 +543,6 @@ body.mobile .FooterContainer a {
   background-position: bottom;
   background-size: contain;
   background-repeat: no-repeat;
-  position: relative;
 }
 #PreschoolSection1 #PreschoolSection1Content .preschool-container {
   text-align: center;
@@ -1301,10 +1315,9 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
 #chabad_body_page:has(.chabad_text_head) .chabad_image_banner img {
   object-fit: cover;
   height: 100%;
-  position: absolute;
+  width: 100%;
 }
 #chabad_body_page:has(.chabad_text_head) #content_banner {
-  position: relative;
   min-height: 500px;
 }
 #chabad_body_page:has(.chabad_text_head) #content_banner::after {
@@ -1314,21 +1327,14 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
-  position: absolute;
-  top: 0;
 }
 #chabad_body_page:has(.chabad_text_head) #content_banner .chabad_image_banner::after {
   content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
 }
 #chabad_body_page:has(.chabad_text_head) #content_banner .chabad_text_banner {
-  position: absolute;
-  top: 0;
   width: 100%;
   text-align: center;
   display: flex;
@@ -1387,9 +1393,7 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
 }
 #chabad_body_page:has(.chabad_text_head) .chabad_image_banner:not(:has(img)) {
   content: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/StockLegosWithGreyOverlay.jpg);
-  position: absolute;
-  inset: 0;
-  max-height: 100%;
+  height: 100%;
   width: 100%;
 }
 #chabad_body_page:has(.chabad_text_head) :is(.chabad_box_content_body, .content_box_custom, #chabad_right_colum > :is(#chabad_updates, #co_photo_gallery, #co_calendar, #co_section, #chabad_box_text):not(:empty)) {
