@@ -1333,10 +1333,11 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
   content: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/PreschoolStockBackground.jpg);
 }
 #chabad_body_page:has(.chabad_text_head) .chabad_image_banner:not(:has(img)) {
-  content: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/StockLegosWithGreyOverlay.jpg);
+  content: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/PreschoolStockBackground.jpg);
   height: 100%;
   width: 100%;
   max-height: unset;
+  filter: brightness(0.5);
 }
 #chabad_body_page:has(.chabad_text_head) :is(.chabad_box_content_body, .content_box_custom, #chabad_right_colum > :is(#chabad_updates, #co_photo_gallery, #co_calendar, #co_section, #chabad_box_text):not(:empty)) {
   width: 100%;
