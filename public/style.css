@@ -125,6 +125,11 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
   grid-row: 1/99;
 }
 
+#chabad_head {
+  z-index: 1;
+  align-items: start;
+}
+
 #chabad_head,
 #chabad_left_colum > :nth-child(1),
 .chabad_image_banner,
@@ -142,18 +147,23 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
   grid-row: 2;
 }
 
-#chabad_head {
-  z-index: 1;
-  align-items: start;
+#wavy-bottom-border {
+  grid-column: full-width;
+}
+
+.content-area-parent,
+#chabad_head,
+footer {
+  grid-column: full-width;
+}
+.content-area-parent > *,
+#chabad_head > *,
+footer > * {
+  grid-column: content;
 }
 
 #chabad_body_page {
   container-type: inline-size;
-}
-#chabad_body_page .content-area-parent > *,
-#chabad_body_page #chabad_head > *,
-#chabad_body_page footer {
-  grid-column: content;
 }
 #chabad_body_page :is(.btn, .chabad_welcome, .chabad_more_button, .chabad_text_banner_description) {
   animation-name: zoomIn;
