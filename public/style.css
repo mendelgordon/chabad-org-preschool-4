@@ -129,6 +129,7 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
 #chabad_left_colum > :nth-child(1),
 .chabad_image_banner,
 #chabad_banner_text,
+#content_banner::after,
 #PreschoolSection1,
 #PreschoolSection1 > :is(img, div) {
   grid-column: full-width;
@@ -137,6 +138,7 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
 
 #chabad_left_colum > :nth-child(2),
 #PreschoolSection1 + :nth-child(2) {
+  grid-column: full-width;
   grid-row: 2;
 }
 
