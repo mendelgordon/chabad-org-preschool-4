@@ -309,6 +309,9 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
 }
 
 /* General Styling for the Navbar */
+body:not(.mobile) #chabad_body_page {
+  container-type: inline-size;
+}
 body:not(.mobile) #chabad_body_page #chabad_head .preschool-container {
   padding: 20px;
   max-width: 100%;
@@ -333,12 +336,22 @@ body:not(.mobile) #chabad_body_page #navigation {
   height: initial;
 }
 body:not(.mobile) #chabad_body_page #navigation .navi {
-  column-gap: 10px;
   display: flex;
   flex-wrap: wrap;
 }
+@container (min-width: 992px) {
+  body:not(.mobile) #chabad_body_page #navigation .navi {
+    column-gap: 10px;
+  }
+}
+@container (max-width: 991px) {
+  body:not(.mobile) #chabad_body_page #navigation .navi {
+    row-gap: 10px;
+  }
+}
 body:not(.mobile) #chabad_body_page #navigation .navi :is(li, a) {
   float: none;
+  line-height: normal;
 }
 body:not(.mobile) #chabad_body_page #navigation .navi a {
   font-size: 17px;
