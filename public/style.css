@@ -328,7 +328,7 @@ body:not(.mobile) #chabad_body_page #chabad_head .navi .sub_menu {
   backdrop-filter: blur(60px);
   top: auto;
 }
-body:not(.mobile) #chabad_body_page #chabad_head .navi .item .item {
+body:not(.mobile) #chabad_body_page #chabad_head .navi .item .item a {
   padding: 10px;
 }
 body:not(.mobile) #chabad_body_page #navigation {
