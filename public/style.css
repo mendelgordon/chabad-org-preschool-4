@@ -138,27 +138,32 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
   container-type: inline-size;
 }
 @container (min-width: 576px) {
-  #chabad_body_page #chabad_main_content {
+  #chabad_body_page .content-area-parent,
+  #chabad_body_page #chabad_head {
     padding-inline: calc((100% - 540px) / 2);
   }
 }
 @container (min-width: 768px) {
-  #chabad_body_page #chabad_main_content {
+  #chabad_body_page .content-area-parent,
+  #chabad_body_page #chabad_head {
     padding-inline: calc((100% - 720px) / 2);
   }
 }
 @container (min-width: 992px) {
-  #chabad_body_page #chabad_main_content {
+  #chabad_body_page .content-area-parent,
+  #chabad_body_page #chabad_head {
     padding-inline: calc((100% - 960px) / 2);
   }
 }
 @container (min-width: 1200px) {
-  #chabad_body_page #chabad_main_content {
+  #chabad_body_page .content-area-parent,
+  #chabad_body_page #chabad_head {
     padding-inline: calc((100% - 1140px) / 2);
   }
 }
 @container (min-width: 1400px) {
-  #chabad_body_page #chabad_main_content {
+  #chabad_body_page .content-area-parent,
+  #chabad_body_page #chabad_head {
     padding-inline: calc((100% - 1320px) / 2);
   }
 }
