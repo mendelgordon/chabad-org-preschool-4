@@ -148,35 +148,9 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
 #chabad_body_page {
   container-type: inline-size;
 }
-@container (min-width: 576px) {
-  #chabad_body_page .content-area-parent,
-  #chabad_body_page #chabad_head {
-    padding-inline: calc((100% - 540px) / 2);
-  }
-}
-@container (min-width: 768px) {
-  #chabad_body_page .content-area-parent,
-  #chabad_body_page #chabad_head {
-    padding-inline: calc((100% - 720px) / 2);
-  }
-}
-@container (min-width: 992px) {
-  #chabad_body_page .content-area-parent,
-  #chabad_body_page #chabad_head {
-    padding-inline: calc((100% - 960px) / 2);
-  }
-}
-@container (min-width: 1200px) {
-  #chabad_body_page .content-area-parent,
-  #chabad_body_page #chabad_head {
-    padding-inline: calc((100% - 1140px) / 2);
-  }
-}
-@container (min-width: 1400px) {
-  #chabad_body_page .content-area-parent,
-  #chabad_body_page #chabad_head {
-    padding-inline: calc((100% - 1320px) / 2);
-  }
+#chabad_body_page .content-area-parent > *,
+#chabad_body_page #chabad_head > * {
+  grid-column: content;
 }
 #chabad_body_page :is(.btn, .chabad_welcome, .chabad_more_button, .chabad_text_banner_description) {
   animation-name: zoomIn;
@@ -576,30 +550,6 @@ body.mobile .FooterContainer a {
     padding-bottom: 180px;
   }
 }
-#PreschoolSection1 #PreschoolSection1Content .preschool-row-inner {
-  margin-inline: auto;
-}
-@container (min-width: 768px) {
-  #PreschoolSection1 #PreschoolSection1Content .preschool-row-inner {
-    width: 75%;
-    flex: 0 0 auto;
-  }
-}
-@container (min-width: 992px) {
-  #PreschoolSection1 #PreschoolSection1Content .preschool-row-inner {
-    width: 66%;
-  }
-}
-@container (min-width: 1200px) {
-  #PreschoolSection1 #PreschoolSection1Content .preschool-row-inner {
-    width: 58%;
-  }
-}
-@container (min-width: 1400px) {
-  #PreschoolSection1 #PreschoolSection1Content .preschool-row-inner {
-    width: 50%;
-  }
-}
 #PreschoolSection1 #PreschoolSection1Content #PreschoolSection1Title {
   color: white;
   font-size: 70px;
@@ -757,9 +707,6 @@ body.mobile .FooterContainer a {
 #PreschoolSection3 {
   background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/bg126.jpg);
 }
-#PreschoolSection3 #PreschoolSection3TitleWrapper {
-  margin-inline: auto;
-}
 @container (min-width: 768px) {
   #PreschoolSection3 #PreschoolSection3TitleWrapper {
     width: 83%;
@@ -839,9 +786,6 @@ body.mobile .FooterContainer a {
 
 #PreschoolSection4 .preschool-row.coitem {
   text-align: center;
-}
-#PreschoolSection4 #PreschoolSection4HeaderWrapper {
-  margin-inline: auto;
 }
 @container (min-width: 768px) {
   #PreschoolSection4 #PreschoolSection4HeaderWrapper {
@@ -939,7 +883,6 @@ body.mobile .FooterContainer a {
 }
 
 .preschool-custom-section {
-  margin-inline: auto;
   min-height: 350px;
   display: flex;
   flex-direction: column;
@@ -976,9 +919,6 @@ body.mobile .FooterContainer a {
 
 #PreschoolSection7 {
   background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/bg126.jpg);
-}
-#PreschoolSection7 #PreschoolSection7HeaderWrapper {
-  margin-inline: auto;
 }
 @container (min-width: 768px) {
   #PreschoolSection7 #PreschoolSection7HeaderWrapper {
@@ -1383,7 +1323,6 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
   font-weight: 700;
   text-wrap: nowrap;
   display: inline-flex;
-  margin-inline: auto;
   z-index: 1;
   float: none;
 }
