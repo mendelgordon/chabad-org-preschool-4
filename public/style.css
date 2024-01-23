@@ -312,7 +312,7 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
   text-align: center;
   font-size: 70px;
 }
-@media (max-width: 700px) {
+@container (max-width: 700px) {
   #chabad_body_page .master-content-wrapper .article-header__title {
     font-size: 40px;
   }
@@ -557,7 +557,7 @@ body.mobile .FooterContainer a {
   padding-top: 100px;
   padding-bottom: 140px;
 }
-@media (min-width: 992px) {
+@container (min-width: 992px) {
   html:not(:has(link#k[href*=template5])) #PreschoolSection1 #PreschoolSection1Content {
     padding-top: 250px;
     padding-bottom: 180px;
@@ -566,23 +566,23 @@ body.mobile .FooterContainer a {
 #PreschoolSection1 #PreschoolSection1Content .preschool-row-inner {
   margin-inline: auto;
 }
-@media (min-width: 768px) {
+@container (min-width: 768px) {
   #PreschoolSection1 #PreschoolSection1Content .preschool-row-inner {
     width: 75%;
     flex: 0 0 auto;
   }
 }
-@media (min-width: 992px) {
+@container (min-width: 992px) {
   #PreschoolSection1 #PreschoolSection1Content .preschool-row-inner {
     width: 66%;
   }
 }
-@media (min-width: 1200px) {
+@container (min-width: 1200px) {
   #PreschoolSection1 #PreschoolSection1Content .preschool-row-inner {
     width: 58%;
   }
 }
-@media (min-width: 1400px) {
+@container (min-width: 1400px) {
   #PreschoolSection1 #PreschoolSection1Content .preschool-row-inner {
     width: 50%;
   }
@@ -602,7 +602,7 @@ body.mobile .FooterContainer a {
   animation-direction: normal;
   animation-fill-mode: both;
 }
-@media (max-width: 600px) {
+@container (max-width: 600px) {
   #PreschoolSection1 #PreschoolSection1Content #PreschoolSection1Title {
     font-size: 50px;
     letter-spacing: normal;
@@ -644,7 +644,7 @@ body.mobile .FooterContainer a {
 #PreschoolSection2 {
   text-align: center;
 }
-@media (min-width: 768px) {
+@container (min-width: 768px) {
   #PreschoolSection2 {
     padding-top: 70px;
   }
@@ -653,12 +653,12 @@ body.mobile .FooterContainer a {
   align-items: center;
   --gutter-y: 50px;
 }
-@media (min-width: 992px) {
+@container (min-width: 992px) {
   html:not(:has(link#k[href*=template5])) #PreschoolSection2 .preschool-row {
     --gutter-x: 40px;
   }
 }
-@media (min-width: 1200px) {
+@container (min-width: 1200px) {
   html:not(:has(link#k[href*=template5])) #PreschoolSection2 .preschool-row {
     --gutter-x: 70px;
   }
@@ -666,7 +666,7 @@ body.mobile .FooterContainer a {
 #PreschoolSection2 #PreschoolSection2ImageWrapper {
   aspect-ratio: 1;
 }
-@media (min-width: 992px) {
+@container (min-width: 992px) {
   #PreschoolSection2 #PreschoolSection2ImageWrapper {
     flex: 0 0 auto;
     width: 41%;
@@ -684,14 +684,14 @@ body.mobile .FooterContainer a {
 #PreschoolSection2 #PreschoolSection2ContentWrapper {
   text-align: center;
 }
-@media (min-width: 768px) {
+@container (min-width: 768px) {
   #PreschoolSection2 #PreschoolSection2ContentWrapper {
     flex: 0 0 auto;
     margin-left: 8%;
     width: 83%;
   }
 }
-@media (min-width: 992px) {
+@container (min-width: 992px) {
   #PreschoolSection2 #PreschoolSection2ContentWrapper {
     text-align: left;
     margin-left: 0;
@@ -703,13 +703,13 @@ body.mobile .FooterContainer a {
   line-height: 1.25;
   margin-bottom: 25px;
 }
-@media (min-width: 768px) {
+@container (min-width: 768px) {
   #PreschoolSection2 h3 {
     text-align: left !important;
     margin-inline: 25px;
   }
 }
-@media (min-width: 992px) {
+@container (min-width: 992px) {
   #PreschoolSection2 h3 {
     margin-inline: 0;
   }
@@ -747,13 +747,13 @@ body.mobile .FooterContainer a {
 #PreschoolSection3 #PreschoolSection3TitleWrapper {
   margin-inline: auto;
 }
-@media (min-width: 768px) {
+@container (min-width: 768px) {
   #PreschoolSection3 #PreschoolSection3TitleWrapper {
     width: 83%;
     flex: 0 0 auto;
   }
 }
-@media (min-width: 992px) {
+@container (min-width: 992px) {
   #PreschoolSection3 #PreschoolSection3TitleWrapper {
     width: 66%;
   }
@@ -768,18 +768,18 @@ body.mobile .FooterContainer a {
   text-align: center;
   --gutter-y: 25px;
 }
-@media (min-width: 768px) {
+@container (min-width: 768px) {
   #PreschoolSection3 .preschool-row {
     --gutter-x: 25px;
   }
 }
-@media (min-width: 768px) {
+@container (min-width: 768px) {
   #PreschoolSection3 .preschool-row .coitem {
     width: 50%;
     flex: 0 0 auto;
   }
 }
-@media (min-width: 1200px) {
+@container (min-width: 1200px) {
   #PreschoolSection3 .preschool-row .coitem {
     width: 25%;
   }
@@ -831,13 +831,13 @@ body.mobile .FooterContainer a {
 #PreschoolSection4 #PreschoolSection4HeaderWrapper {
   margin-inline: auto;
 }
-@media (min-width: 768px) {
+@container (min-width: 768px) {
   #PreschoolSection4 #PreschoolSection4HeaderWrapper {
     width: 83%;
     flex: 0 0 auto;
   }
 }
-@media (min-width: 992px) {
+@container (min-width: 992px) {
   #PreschoolSection4 #PreschoolSection4HeaderWrapper {
     width: 66%;
   }
@@ -851,12 +851,12 @@ body.mobile .FooterContainer a {
   padding-bottom: 50px;
   margin-bottom: 10px;
 }
-@media (min-width: 992px) {
+@container (min-width: 992px) {
   #PreschoolSection4 #PreschoolSection4ContentWrapper {
     --gutter-x: 40px;
   }
 }
-@media (min-width: 1200px) {
+@container (min-width: 1200px) {
   #PreschoolSection4 #PreschoolSection4ContentWrapper {
     --gutter-x: 70px;
   }
@@ -868,13 +868,13 @@ body.mobile .FooterContainer a {
   padding: 3%;
   text-align: center;
 }
-@media (min-width: 768px) {
+@container (min-width: 768px) {
   #PreschoolSection4 .preschool-section-4-card {
     width: 50%;
     flex: 0 0 auto;
   }
 }
-@media (min-width: 992px) {
+@container (min-width: 992px) {
   #PreschoolSection4 .preschool-section-4-card {
     width: 33.3333333333%;
   }
@@ -933,13 +933,13 @@ body.mobile .FooterContainer a {
   flex-direction: column;
   justify-content: center;
 }
-@media (min-width: 1200px) {
+@container (min-width: 1200px) {
   .preschool-custom-section {
     width: 91%;
     flex: 0 0 auto;
   }
 }
-@media (min-width: 1400px) {
+@container (min-width: 1400px) {
   .preschool-custom-section {
     width: 83%;
   }
@@ -948,7 +948,7 @@ body.mobile .FooterContainer a {
 .preschool-title-spacing {
   margin-bottom: 40px;
 }
-@media (min-width: 1200px) {
+@container (min-width: 1200px) {
   .preschool-title-spacing {
     padding-inline: 50px;
   }
@@ -968,13 +968,13 @@ body.mobile .FooterContainer a {
 #PreschoolSection7 #PreschoolSection7HeaderWrapper {
   margin-inline: auto;
 }
-@media (min-width: 768px) {
+@container (min-width: 768px) {
   #PreschoolSection7 #PreschoolSection7HeaderWrapper {
     width: 83%;
     flex: 0 0 auto;
   }
 }
-@media (min-width: 992px) {
+@container (min-width: 992px) {
   #PreschoolSection7 #PreschoolSection7HeaderWrapper {
     width: 66%;
   }
@@ -987,18 +987,18 @@ body.mobile .FooterContainer a {
   --gutter-y: 25px;
   justify-content: center;
 }
-@media (min-width: 768px) {
+@container (min-width: 768px) {
   #PreschoolSection7 .preschool-row {
     --gutter-x: 25px;
   }
 }
-@media (min-width: 768px) {
+@container (min-width: 768px) {
   #PreschoolSection7 .preschool-row .coitem {
     width: 50%;
     flex: 0 0 auto;
   }
 }
-@media (min-width: 1200px) {
+@container (min-width: 1200px) {
   #PreschoolSection7 .preschool-row .coitem {
     width: 33%;
   }
@@ -1130,7 +1130,7 @@ body.mobile .FooterContainer a {
 #Testimonials .blockquote-details .info .fonts {
   margin-bottom: 0;
 }
-@media (max-width: 767px) {
+@container (max-width: 767px) {
   #Testimonials .card-body {
     padding: 10px;
   }
@@ -1160,7 +1160,7 @@ body.mobile .FooterContainer a {
   background: #5674a1;
   color: white;
 }
-@media (min-width: 992px) {
+@container (min-width: 992px) {
   #PreschoolFooterNav #PreschoolFooterNavInner {
     flex: 0 0 auto;
     width: 33.33333333%;
@@ -1196,7 +1196,7 @@ body.mobile .FooterContainer a {
   justify-content: space-between;
   align-items: center;
 }
-@media (min-width: 768px) {
+@container (min-width: 768px) {
   #PreschoolFooter #PreschoolFooterContent {
     display: flex;
   }
@@ -1204,7 +1204,7 @@ body.mobile .FooterContainer a {
 #PreschoolFooter #PreschoolFooterContent .fonts {
   margin-bottom: 10px;
 }
-@media (min-width: 992px) {
+@container (min-width: 992px) {
   #PreschoolFooter #PreschoolFooterContent .fonts {
     margin-bottom: 0;
   }
@@ -1213,7 +1213,7 @@ body.mobile .FooterContainer a {
   display: flex;
   flex-wrap: wrap;
 }
-@media (min-width: 768px) {
+@container (min-width: 768px) {
   #PreschoolFooter nav {
     text-align: right;
   }
@@ -1229,7 +1229,7 @@ body.mobile .FooterContainer a {
   font-weight: 700;
   text-wrap: nowrap;
 }
-@media (min-width: 768px) {
+@container (min-width: 768px) {
   #PreschoolFooter #PreschoolFooterButton {
     margin: 0 0 0 14px;
   }
@@ -1357,7 +1357,7 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
   animation-delay: 500ms;
   text-transform: capitalize;
 }
-@media (max-width: 600px) {
+@container (max-width: 600px) {
   #chabad_body_page:has(.chabad_text_head) .chabad_welcome {
     font-size: 50px;
   }
@@ -1409,31 +1409,6 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
   justify-content: center;
   align-items: center;
 }
-@media (min-width: 576px) {
-  #chabad_body_page:has(.chabad_text_head) :is(.chabad_box_content_body, .content_box_custom, #chabad_right_colum > :is(#chabad_updates, #co_photo_gallery, #co_calendar, #co_section, #chabad_box_text):not(:empty)) {
-    padding-inline: calc((100% - 540px) / 2);
-  }
-}
-@media (min-width: 768px) {
-  #chabad_body_page:has(.chabad_text_head) :is(.chabad_box_content_body, .content_box_custom, #chabad_right_colum > :is(#chabad_updates, #co_photo_gallery, #co_calendar, #co_section, #chabad_box_text):not(:empty)) {
-    padding-inline: calc((100% - 720px) / 2);
-  }
-}
-@media (min-width: 992px) {
-  #chabad_body_page:has(.chabad_text_head) :is(.chabad_box_content_body, .content_box_custom, #chabad_right_colum > :is(#chabad_updates, #co_photo_gallery, #co_calendar, #co_section, #chabad_box_text):not(:empty)) {
-    padding-inline: calc((100% - 960px) / 2);
-  }
-}
-@media (min-width: 1200px) {
-  #chabad_body_page:has(.chabad_text_head) :is(.chabad_box_content_body, .content_box_custom, #chabad_right_colum > :is(#chabad_updates, #co_photo_gallery, #co_calendar, #co_section, #chabad_box_text):not(:empty)) {
-    padding-inline: calc((100% - 1140px) / 2);
-  }
-}
-@media (min-width: 1400px) {
-  #chabad_body_page:has(.chabad_text_head) :is(.chabad_box_content_body, .content_box_custom, #chabad_right_colum > :is(#chabad_updates, #co_photo_gallery, #co_calendar, #co_section, #chabad_box_text):not(:empty)) {
-    padding-inline: calc((100% - 1320px) / 2);
-  }
-}
 #chabad_body_page:has(.chabad_text_head) div#chabad_right_colum > div {
   margin-block: 0;
 }
@@ -1445,13 +1420,13 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
   text-align: center;
   margin-bottom: 40px;
 }
-@media (max-width: 600px) {
+@container (max-width: 600px) {
   #chabad_body_page:has(.chabad_text_head) :is(.big_title, .medium_title, .chabad_updates_head div, .chabad_box_text_head, .co_section_head, .co_calendar_head) {
     font-size: 35px;
     text-align: left;
   }
 }
-@media (min-width: 1200px) {
+@container (min-width: 1200px) {
   #chabad_body_page:has(.chabad_text_head) :is(.big_title, .medium_title, .chabad_updates_head div, .chabad_box_text_head, .co_section_head, .co_calendar_head) {
     padding-inline: 50px;
   }
