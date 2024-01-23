@@ -99,11 +99,17 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
   display: grid;
 }
 #chabad_main_content * {
+  /* Fixes a bug where the grid items would be too wide */
   min-width: 0;
+  /* Help prevent overflow of long words/names/URLs */
+  overflow-wrap: break-word;
+  /* Not supported for all languages */
+  hyphens: auto;
+  text-wrap: pretty;
 }
 
 #chabad_head,
-#chabad_main_content :has(.chabad_image_banner, #PreschoolSection1Overlay) {
+#chabad_main_content :has(.chabad_image_banner, #PreschoolSection1Content) {
   display: grid;
   grid-template-rows: subgrid;
   grid-column: 1;
@@ -116,7 +122,6 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
 #chabad_head,
 #chabad_left_colum > :nth-child(1),
 .chabad_image_banner,
-.chabad_image_banner::after,
 #chabad_banner_text,
 #PreschoolSection1,
 #PreschoolSection1 > :is(img, div) {
@@ -186,7 +191,6 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
   line-height: 1.7;
   color: #60697b;
   text-align: center;
-  white-space: nowrap;
   vertical-align: middle;
   cursor: pointer;
   user-select: none;
@@ -207,6 +211,7 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
   font-family: "Fredoka", Helvetica, Arial, "sans-serif";
   font-size: 50px;
   text-align: center;
+  text-wrap: balance;
 }
 #chabad_body_page :is(.btn-primaryx, .btn-primaryx2) {
   font-size: 20px;
@@ -547,9 +552,7 @@ body.mobile .FooterContainer a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-#PreschoolSection1 #PreschoolSection1Overlay {
-  background: rgba(0, 0, 0, 0.5);
+  filter: brightness(0.5);
 }
 #PreschoolSection1 #PreschoolSection1Content {
   background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/illustrations/White-wavy-bottom-border.png);
@@ -559,6 +562,7 @@ body.mobile .FooterContainer a {
   text-align: center;
   padding-top: 100px;
   padding-bottom: 140px;
+  z-index: 1;
 }
 @container (min-width: 992px) {
   html:not(:has(link#k[href*=template5])) #PreschoolSection1 #PreschoolSection1Content {
@@ -792,7 +796,6 @@ body.mobile .FooterContainer a {
   color: inherit;
   border-color: #ff4880;
   box-shadow: 0 5px 35px rgba(30, 34, 40, 0.07);
-  word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
   border-radius: 8px;
@@ -1011,7 +1014,6 @@ body.mobile .FooterContainer a {
   color: inherit;
   border-color: #ff4880;
   box-shadow: 0 5px 35px rgba(30, 34, 40, 0.07);
-  word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
   border-radius: 8px;
@@ -1087,7 +1089,6 @@ body.mobile .FooterContainer a {
 #Testimonials .card {
   border: 0;
   color: inherit;
-  word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
   border-radius: 8px;
@@ -1312,6 +1313,7 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
   object-fit: cover;
   height: 100%;
   width: 100%;
+  filter: brightness(0.5);
 }
 #chabad_body_page:has(.chabad_text_head) #content_banner {
   min-height: 500px;
@@ -1323,13 +1325,7 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
-}
-#chabad_body_page:has(.chabad_text_head) #content_banner .chabad_image_banner::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 #chabad_body_page:has(.chabad_text_head) #content_banner .chabad_text_banner {
   width: 100%;
