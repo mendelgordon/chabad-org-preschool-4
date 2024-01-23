@@ -114,7 +114,7 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
 }
 
 #chabad_head,
-#chabad_main_content :has(.chabad_image_banner, #PreschoolSection1Content) {
+#chabad_main_content :has(.chabad_image_banner, #PreschoolSection1Content, footer) {
   display: grid;
   grid-template-rows: subgrid;
   grid-template-columns: subgrid;
@@ -149,7 +149,8 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
   container-type: inline-size;
 }
 #chabad_body_page .content-area-parent > *,
-#chabad_body_page #chabad_head > * {
+#chabad_body_page #chabad_head > *,
+#chabad_body_page footer {
   grid-column: content;
 }
 #chabad_body_page :is(.btn, .chabad_welcome, .chabad_more_button, .chabad_text_banner_description) {
