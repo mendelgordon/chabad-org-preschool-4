@@ -100,8 +100,7 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
 }
 
 #chabad_head,
-.chabad_image_content,
-#chabad_main_content :has(#content_banner, #PreschoolSection1Overlay) {
+#chabad_main_content :has(.chabad_image_banner, #PreschoolSection1Overlay) {
   display: grid;
   grid-template-rows: subgrid;
   grid-column: 1;
