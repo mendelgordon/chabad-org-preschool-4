@@ -159,6 +159,10 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
 #chabad_body_page {
   container-type: inline-size;
 }
+#chabad_body_page img {
+  max-width: 100%;
+  height: auto;
+}
 #chabad_body_page :is(.btn, .chabad_welcome, .chabad_more_button, .chabad_text_banner_description) {
   animation-name: zoomIn;
   animation-duration: 700ms;
