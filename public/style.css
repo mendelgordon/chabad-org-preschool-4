@@ -101,7 +101,7 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
 
 #chabad_head,
 #chabad_main_content :has(#content_banner, #PreschoolSection1Overlay) {
-  display: grid !important;
+  display: grid;
   grid-template-rows: subgrid;
   grid-column: 1;
 }
@@ -113,7 +113,8 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
 #chabad_head,
 #chabad_left_colum > :nth-child(1),
 #PreschoolSection1,
-#PreschoolSection1 :is(img, #PreschoolSection1Content, #PreschoolSection1Overlay) {
+#PreschoolSection1 > :is(img, div) {
+  grid-column: 1;
   grid-row: 1;
 }
 
