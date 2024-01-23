@@ -98,6 +98,9 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
 #chabad_main_content {
   display: grid;
 }
+#chabad_main_content * {
+  min-width: 0;
+}
 
 #chabad_head,
 #chabad_main_content :has(.chabad_image_banner, #PreschoolSection1Overlay) {
@@ -525,11 +528,8 @@ body.mobile .FooterContainer a {
 }
 
 #chabad_head {
-  z-index: 9;
-  position: relative;
   flex-wrap: nowrap;
   display: flex;
-  align-items: center;
   justify-content: space-evenly;
 }
 #chabad_head #PreschoolTitle {
@@ -544,8 +544,6 @@ body.mobile .FooterContainer a {
   object-fit: cover;
 }
 #PreschoolSection1 #PreschoolSection1Overlay {
-  width: 100%;
-  height: 100%;
   background: rgba(0, 0, 0, 0.5);
 }
 #PreschoolSection1 #PreschoolSection1Content {
@@ -1269,17 +1267,8 @@ body.section_root:has(.chabad_content_head) #chabad_left_colum:not(:has(.chabad_
   padding-top: 50px;
 }
 
-body:not(.mobile) #chabad_body_page:has(.chabad_text_head) #chabad_head {
-  display: flex;
-  justify-content: space-around;
-}
 body:not(.mobile) #chabad_body_page:has(.chabad_text_head) #chabad_head .chabad_logo {
   color: white;
-}
-body:not(.mobile) #chabad_body_page:has(.chabad_text_head) #chabad_head > div {
-  display: inline-flex;
-  width: auto;
-  height: auto;
 }
 
 body.mobile #chabad_body_page:has(.chabad_text_head) .chabad_image_banner {
