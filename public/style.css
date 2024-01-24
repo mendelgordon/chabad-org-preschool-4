@@ -106,7 +106,6 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
 #chabad_main_content * {
   min-width: 0;
   overflow-wrap: break-word;
-  hyphens: auto;
   text-wrap: pretty;
 }
 
@@ -162,9 +161,8 @@ img[src$="White-wavy-bottom-border.png"] {
   z-index: 0;
 }
 
-#chabad_left_colum > :nth-child(2),
-#PreschoolSection1 + :nth-child(2) {
-  grid-row: 4;
+#chabad_left_colum > :nth-child(2) {
+  grid-column: content;
 }
 
 #wavy-bottom-border {
