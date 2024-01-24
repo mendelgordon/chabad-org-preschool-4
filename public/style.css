@@ -119,7 +119,7 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
 }
 
 #chabad_main_content :has(#content_banner, #PreschoolSection1) {
-  grid-row: 1/-1;
+  grid-row: 1/99;
 }
 
 #chabad_head {
