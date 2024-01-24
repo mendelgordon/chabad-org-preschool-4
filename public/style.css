@@ -110,7 +110,6 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
   text-wrap: pretty;
 }
 
-#chabad_head,
 #chabad_main_content :has(.chabad_image_banner, #PreschoolSection1, footer),
 #chabad_main_content footer {
   display: grid;
