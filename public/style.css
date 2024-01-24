@@ -131,21 +131,39 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
 #chabad_left_colum > :nth-child(1),
 .chabad_image_banner,
 #PreschoolSection1,
-#PreschoolSection1 img {
+#PreschoolSection1Image {
   grid-column: full-width;
-  grid-row: 1/3;
+  grid-row: 1/5;
 }
 
-#chabad_banner_text,
-#PreschoolSection1 img ~ *:not(img) {
+#chabad_banner_text {
   grid-column: content;
   grid-row: 2;
 }
 
-#chabad_banner::after,
-img[src$="White-wavy-bottom-border.png"] {
+#PreschoolSection1Title {
+  grid-column: content;
+  grid-row: 2;
+}
+
+#PreschoolSection1Description {
+  grid-column: content;
+  grid-row: 3;
+}
+
+#PreschoolSection1Button {
+  grid-column: content;
+  grid-row: 4;
+}
+
+#chabad_banner::after {
   grid-column: full-width;
   grid-row: 3;
+}
+
+img[src$="White-wavy-bottom-border.png"] {
+  grid-column: full-width;
+  grid-row: 5;
 }
 
 #chabad_left_colum > :nth-child(2),
