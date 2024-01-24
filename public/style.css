@@ -551,7 +551,7 @@ body.mobile .FooterContainer a {
 #chabad_head {
   flex-wrap: nowrap;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 #chabad_head #PreschoolTitle {
   color: white;
@@ -618,11 +618,11 @@ body.mobile .FooterContainer a {
   grid-column: content;
   container-type: inline-size;
   text-align: center;
-  display: grid;
-  gap: 25px;
 }
 @container (min-width: 850px) {
   #PreschoolSection2 {
+    display: grid;
+    gap: 25px;
     grid-template-columns: 2fr 3fr;
   }
   #PreschoolSection2 img {
