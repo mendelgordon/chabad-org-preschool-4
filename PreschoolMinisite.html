@@ -18,20 +18,22 @@
 		</co:template>
 		<div id="chabad_body_content">
 			<co:template class="chabad_left_column" title="Content Area" actions="edit,delete" name="content_area" id="ContentArea" type="static">
-				<co:section id="Section1" name="Section 1" title="1. Hero Section" actions="edit,delete,copy">
+				<co:section id="Section1" name="Section 1" title="1. Hero Section" actions="edit,copy">
 					<div id="PreschoolSection1">
-						<co:editable id="Image" name="Image" title="1. Image" attribute="src" actions="edit,delete" tag_only="true">
+						<co:editable id="Image" name="Image" title="1. Image" attribute="src" actions="edit" tag_only="true">
 							<img src="https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/PreschoolStockBackground.jpg" alt="Background" id="PreschoolSection1Image" />
 						</co:editable>
-						<h3 id="PreschoolSection1Title">
-							<co:editable id="Title" name="Title" title="2. Title" actions="edit,delete" datatype="html">Chabad Preschool Now Open!</co:editable>
-						</h3>
-						<h2 class="fonts" id="PreschoolSection1Description">
-							<co:editable id="Description" name="Description" title="3. Description" actions="edit,delete" datatype="line">We are excited to announce that Chabad Preschool is now open.</co:editable>
-						</h2>
-						<co:editable id="Button" name="Button" title="4. Button" attribute="href,innertext" actions="edit,delete,copy" tag_only="true">
-							<a href="/pregister" id="PreschoolSection1Button">Apply Now</a>
-						</co:editable>
+						<div id="PreschoolSection1Text">
+							<h3 id="PreschoolSection1Title">
+								<co:editable id="Title" name="Title" title="2. Title" actions="edit,delete" datatype="html">Chabad Preschool Now Open!</co:editable>
+							</h3>
+							<h2 class="fonts" id="PreschoolSection1Description">
+								<co:editable id="Description" name="Description" title="3. Description" actions="edit,delete" datatype="line">We are excited to announce that Chabad Preschool is now open.</co:editable>
+							</h2>
+							<co:editable id="Button" name="Button" title="4. Button" attribute="href,innertext" actions="edit,delete,copy" tag_only="true">
+								<a href="/pregister" id="PreschoolSection1Button">Apply Now</a>
+							</co:editable>
+						</div>
 						<img src="https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/illustrations/White-wavy-bottom-border.png" alt="" />
 					</div>
 				</co:section>
