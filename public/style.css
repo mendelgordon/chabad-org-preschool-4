@@ -163,7 +163,6 @@ img[src$="White-wavy-bottom-border.png"] {
 
 #chabad_left_colum > :nth-child(2),
 #PreschoolSection1 + :nth-child(2) {
-  grid-column: full-width;
   grid-row: 4;
 }
 
@@ -614,17 +613,14 @@ body.mobile .FooterContainer a {
 }
 
 #PreschoolSection2 {
+  padding-block: 50px;
+  grid-column: content;
   container-type: inline-size;
   text-align: center;
   display: grid;
   gap: 25px;
 }
-@container (min-width: 768px) {
-  #PreschoolSection2 {
-    padding-top: 70px;
-  }
-}
-@container (min-width: 500px) {
+@container (min-width: 850px) {
   #PreschoolSection2 {
     grid-template-columns: 2fr 3fr;
   }
@@ -633,10 +629,12 @@ body.mobile .FooterContainer a {
   }
   #PreschoolSection2 h3 {
     grid-area: 1/2/2/3;
-    text-align: left;
+    align-self: end;
+    justify-self: left;
   }
   #PreschoolSection2 .fonts {
     grid-area: 2/2/3/3;
+    text-align: left;
   }
 }
 #PreschoolSection2 img {
