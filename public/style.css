@@ -148,6 +148,8 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
   align-items: center;
   align-content: center;
   gap: 20px;
+  max-width: 800px;
+  place-self: center;
 }
 
 #chabad_banner::after,
@@ -606,6 +608,7 @@ body.mobile .FooterContainer a {
 #PreschoolSection1 img[src$="White-wavy-bottom-border.png"] {
   width: 100%;
   display: block;
+  padding-top: 20px;
 }
 
 #PreschoolSection2 {
