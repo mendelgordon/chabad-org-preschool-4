@@ -614,6 +614,7 @@ body.mobile .FooterContainer a {
 
 #PreschoolSection2 {
   text-align: center;
+  display: flex;
 }
 @container (min-width: 768px) {
   #PreschoolSection2 {
@@ -1230,7 +1231,7 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
   height: auto;
   width: 100%;
   display: block;
-  aspect-ratio: 3199/122;
+  aspect-ratio: 3199/126;
 }
 #chabad_body_page:has(.chabad_text_head) #content_banner .chabad_text_banner {
   width: 100%;
