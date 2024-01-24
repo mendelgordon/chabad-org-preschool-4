@@ -151,6 +151,7 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
   gap: 20px;
   max-width: 800px;
   place-self: center;
+  margin-block: 50px;
 }
 
 #content_banner::after,
