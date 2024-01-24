@@ -110,7 +110,7 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
   text-wrap: pretty;
 }
 
-#chabad_main_content :has(.chabad_image_content, img[src$="White-wavy-bottom-border.png"], footer),
+#chabad_main_content :has(.chabad_image_banner, img[src$="White-wavy-bottom-border.png"], footer),
 #chabad_main_content footer {
   display: grid;
   grid-template-rows: subgrid;
@@ -1226,7 +1226,6 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
   content: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/illustrations/White-wavy-bottom-border.png);
   height: auto;
   width: 100%;
-  z-index: 1;
   display: block;
 }
 #chabad_body_page:has(.chabad_text_head) #content_banner .chabad_text_banner {
