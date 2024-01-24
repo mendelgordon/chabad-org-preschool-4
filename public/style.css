@@ -166,10 +166,14 @@ img[src$="White-wavy-bottom-border.png"] {
   grid-row: 5;
 }
 
-#chabad_left_colum > :nth-child(2),
-#PreschoolSection1 + :nth-child(2) {
+#chabad_left_colum > :nth-child(2) {
   grid-column: full-width;
   grid-row: 4;
+}
+
+#PreschoolSection1 + :nth-child(2) {
+  grid-column: full-width;
+  grid-row: 6;
 }
 
 #wavy-bottom-border {
