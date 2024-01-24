@@ -617,7 +617,6 @@ body.mobile .FooterContainer a {
   container-type: inline-size;
   text-align: center;
   display: grid;
-  gap: 25px;
   place-items: center;
 }
 @container (min-width: 850px) {
@@ -644,12 +643,14 @@ body.mobile .FooterContainer a {
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: contain;
+  margin: 25px;
 }
 #PreschoolSection2 h3 {
   color: #28a73c;
+  margin: 25px;
 }
 #PreschoolSection2 .fonts {
-  margin-bottom: 10px;
+  margin: 25px;
 }
 
 .preschool-shape-1 {
