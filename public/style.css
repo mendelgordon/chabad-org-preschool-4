@@ -642,6 +642,7 @@ body.mobile .FooterContainer a {
   aspect-ratio: 1;
   width: auto;
   height: 100%;
+  max-height: 518px;
   object-fit: cover;
   mask-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/Section2ImageMask.png);
   mask-repeat: no-repeat;
