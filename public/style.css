@@ -1223,10 +1223,14 @@ body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_log
   min-height: 500px;
 }
 #chabad_body_page:has(.chabad_text_head) #content_banner::after {
-  content: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/illustrations/White-wavy-bottom-border.png);
+  background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/illustrations/White-wavy-bottom-border.png);
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
   height: auto;
   width: 100%;
   display: block;
+  aspect-ratio: 3199/122;
 }
 #chabad_body_page:has(.chabad_text_head) #content_banner .chabad_text_banner {
   width: 100%;
