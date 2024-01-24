@@ -1,17 +1,1411 @@
-/* Error: Undefined variable.
- *     ,
- * 117 | #chabad_main_content :has(#{$hero-image-container-on-old-minisites}, #PreschoolSection1, footer),
- *     |                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *     '
- *   public/style.scss 117:29  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a     \2577 \a 117 \2502  #chabad_main_content :has(#{$hero-image-container-on-old-minisites}, #PreschoolSection1, footer),\a     \2502                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a     \2575 \a   public/style.scss 117:29  root stylesheet";
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap");
+/* page tools seem to stay even if you choose to hide them so here they get set to stay hidden always */
+.page-tools-sidebar {
+  display: none;
 }
+
+.co_content_container {
+  padding-top: 0;
+}
+
+.g960.footer,
+#BodyContainer {
+  max-width: 100%;
+  margin: auto;
+}
+
+#co_content_container {
+  font-size: 17px;
+  color: #60697b;
+}
+
+.fonts {
+  line-height: 1.6;
+}
+
+#BodyContainer .no-hero-image #co_content_container .master-content-wrapper.master-content-wrapper {
+  background-color: #12b0d1 !important;
+}
+
+/* only apply this style when the template 5 template is being used */
+html:has(link[href*=template5]) header.article-header.cf {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+html:has(link[href*=template5]) .article_index .row {
+  display: flex;
+  justify-content: center;
+}
+
+/* only use these styles for the index page when the template 5 and sites 6 templates aren't being used */
+html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index.clearfix::after {
+  display: none;
+}
+html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index .row {
+  margin: 0;
+  position: relative;
+  width: 250px;
+  height: 150px;
+}
+html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index .item {
+  background: none;
+  padding: 0;
+}
+html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index .title {
+  padding: 0;
+  text-align: center;
+}
+html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index .title a {
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  transition: all 0.3s;
+  font-size: 18px;
+  background-color: rgba(120, 120, 120, 0.6);
+}
+html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index .title a:hover {
+  background: rgba(49, 124, 184, 0.6);
+}
+html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Main grid layout for header and content */
+#chabad_main_content {
+  --padding-inline: 1rem;
+  --content-max-width: 1320px;
+  --breakout-max-width: 1360px;
+  --breakout-size: calc((var(--breakout-max-width) - var(--content-max-width)) / 2);
+  display: grid;
+  grid-template-columns: [full-width-start] minmax(var(--padding-inline), 1fr) [breakout-start] minmax(0, var(--breakout-size)) [content-start] min(100% - var(--padding-inline) * 2, var(--content-max-width)) [content-end] minmax(0, var(--breakout-size)) [breakout-end] minmax(var(--padding-inline), 1fr) [full-width-end];
+}
+#chabad_main_content * {
+  min-width: 0;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  text-wrap: pretty;
+}
+
+#chabad_head,
+#chabad_main_content :has(.chabad_image_banner, #PreschoolSection1, footer),
+#chabad_main_content footer {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-template-columns: subgrid;
+  grid-column: full-width;
+}
+
+#chabad_main_content :has(#content_banner, #PreschoolSection1) {
+  grid-row: 1/-1;
+}
+
+#chabad_head {
+  z-index: 1;
+  grid-column: content;
+  grid-row: 1;
+}
+
+#chabad_left_colum > :nth-child(1),
+.chabad_image_banner,
+#PreschoolSection1,
+#PreschoolSection1 img {
+  grid-column: full-width;
+  grid-row: 1;
+}
+
+#chabad_banner_text,
+#PreschoolSection1 div {
+  grid-column: content;
+  grid-row: 2;
+}
+
+#chabad_banner::after,
+img[src$="White-wavy-bottom-border.png"] {
+  grid-column: full-width;
+  grid-row: 3;
+}
+
+#chabad_left_colum > :nth-child(2),
+#PreschoolSection1 + :nth-child(2) {
+  grid-column: full-width;
+  grid-row: 4;
+}
+
+#wavy-bottom-border {
+  grid-column: full-width;
+}
+
+:where(.content-area-parent, #chabad_head, footer) > * {
+  grid-column: content;
+}
+
+#chabad_body_page {
+  container-type: inline-size;
+}
+#chabad_body_page img {
+  max-width: 100%;
+  height: auto;
+}
+#chabad_body_page :is(.btn, .chabad_welcome, .chabad_more_button, .chabad_text_banner_description) {
+  animation-name: zoomIn;
+  animation-duration: 700ms;
+  animation-timing-function: ease;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+#chabad_body_page .btn {
+  --btn-padding-x: 24px;
+  --btn-padding-y: 10px;
+  --btn-bg: transparent;
+  --btn-border-color: transparent;
+  --btn-hover-border-color: transparent;
+  padding: var(--btn-padding-y) var(--btn-padding-x);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.7;
+  color: #60697b;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border: 2px solid var(--btn-border-color);
+  background-color: var(--btn-bg);
+  box-shadow: unset;
+  transition: all 0.2s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(0);
+  letter-spacing: -0.2px;
+  position: relative;
+  animation-delay: 1500ms;
+  border-radius: 1000px !important;
+}
+#chabad_body_page .display-3 {
+  font-family: "Fredoka", Helvetica, Arial, "sans-serif";
+  font-size: 50px;
+  text-align: center;
+  text-wrap: balance;
+}
+#chabad_body_page :is(.btn-primaryx, .btn-primaryx2) {
+  font-size: 20px;
+  margin-top: -35px;
+  --btn-padding-x: 28px !important;
+  --btn-padding-y: 20px !important;
+  --btn-bg: #fff;
+  --btn-hover-bg: #fff;
+  --btn-active-bg: #fff;
+}
+#chabad_body_page .btn-primaryx {
+  --btn-border-color: #fff;
+  --btn-hover-border-color: #fff;
+  --btn-active-border-color: #fff;
+}
+#chabad_body_page .btn-primaryx2 {
+  --btn-border-color: #9a8fff;
+  --btn-hover-border-color: #9a8fff;
+  --btn-active-border-color: #9a8fff;
+}
+#chabad_body_page :is(.swiper-slide, .card) {
+  position: relative;
+}
+#chabad_body_page .blockquote-details {
+  margin-top: 20px;
+}
+#chabad_body_page .card-body {
+  flex: 1 1 auto;
+  padding: var(--card-spacer-y) var(--card-spacer-x);
+  color: var(--card-color);
+}
+#chabad_body_page .card-bodyf {
+  flex: 1 1 auto;
+  padding: var(--card-spacer-y) var(--card-spacer-x);
+  color: var(--card-color);
+  text-align: center;
+}
+#chabad_body_page .card-bodyf:hover {
+  background: #ff4880;
+}
+#chabad_body_page .card-bodyf:hover, #chabad_body_page .card-bodyf:hover h4 {
+  color: #fff;
+  border-radius: 7px;
+}
+#chabad_body_page .iconsfoot {
+  margin-right: 15px !important;
+}
+#chabad_body_page .iconsfoot i {
+  margin-right: 5px;
+  color: #32afea;
+}
+#chabad_body_page .form-check-input {
+  flex-shrink: initial;
+}
+#chabad_body_page :is(.co_photo_gallery, .slider-wrapper) {
+  padding: 20px;
+}
+#chabad_body_page :is(.co_photo_gallery_body, #Testimonials) {
+  position: relative;
+  width: 100%;
+  padding: 0 40px !important;
+}
+#chabad_body_page :is(.co_photo_gallery_body, #Testimonials) .swiper-button-prev {
+  left: 0;
+}
+#chabad_body_page :is(.co_photo_gallery_body, #Testimonials) .swiper-button-next {
+  right: 0;
+}
+#chabad_body_page .slider-wrapper .slide {
+  border-radius: 5px;
+}
+#chabad_body_page .slider-wrapper .card {
+  padding: 20px;
+}
+#chabad_body_page .slider-wrapper .blockquote-details img {
+  border-radius: 50%;
+  width: 70px;
+  margin-right: 15px;
+}
+#chabad_body_page .co_photo_gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 1;
+  border-radius: 5px;
+}
+#chabad_body_page .co_photo_gallery_head div {
+  color: #393d72;
+  font-size: 50px;
+  font-family: Fredoka, Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  line-height: 1.25;
+  text-align: center;
+  padding-bottom: 20px;
+}
+#chabad_body_page .bh {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+#chabad_body_page .master-content-wrapper {
+  background-image: linear-gradient(0deg, rgb(117, 197, 221) 0%, rgb(18, 176, 209) 100%);
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#chabad_body_page .master-content-wrapper .article-header__title {
+  color: #343f52 !important;
+  font-family: "Fredoka", Helvetica, Arial, "sans-serif";
+  text-align: center;
+  font-size: 70px;
+}
+@container (max-width: 700px) {
+  #chabad_body_page .master-content-wrapper .article-header__title {
+    font-size: 40px;
+  }
+}
+#chabad_body_page .card-border-bottom::after {
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-bottom-width: 4px;
+  border-top-width: 4px;
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-bottom-color: inherit;
+  border-top-color: transparent;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  content: "";
+  position: absolute;
+}
+#chabad_body_page a:hover {
+  text-decoration: none;
+}
+
+/* General Styling for the Navbar */
+body:not(.mobile) #chabad_body_page #chabad_head {
+  padding: 20px;
+  max-width: 100%;
+  height: fit-content;
+}
+body:not(.mobile) #chabad_body_page #chabad_head .navi {
+  height: unset;
+}
+body:not(.mobile) #chabad_body_page #chabad_head .navi a {
+  font-family: "Open Sans", sans-serif;
+}
+body:not(.mobile) #chabad_body_page #chabad_head .navi .sub_menu {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  backdrop-filter: blur(60px);
+  top: auto;
+}
+body:not(.mobile) #chabad_body_page #chabad_head .navi .item .item a {
+  padding: 10px;
+}
+body:not(.mobile) #chabad_body_page #navigation {
+  width: initial;
+  height: initial;
+}
+body:not(.mobile) #chabad_body_page #navigation .navi {
+  display: flex;
+  flex-wrap: wrap;
+}
+@container (min-width: 992px) {
+  body:not(.mobile) #chabad_body_page #navigation .navi {
+    column-gap: 10px;
+  }
+}
+@container (max-width: 991px) {
+  body:not(.mobile) #chabad_body_page #navigation .navi {
+    row-gap: 10px;
+  }
+}
+body:not(.mobile) #chabad_body_page #navigation .navi :is(li, a) {
+  float: none;
+  line-height: normal;
+}
+body:not(.mobile) #chabad_body_page #navigation .navi a {
+  font-size: 17px;
+  color: white;
+}
+body:not(.mobile) #chabad_body_page .FooterContainer #menu {
+  height: unset;
+}
+body:not(.mobile) #chabad_body_page .FooterContainer #menu .sub_menu a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+body:not(.mobile) #chabad_body_page .FooterContainer #menu ul {
+  padding: 0;
+}
+body:not(.mobile) #chabad_body_page .FooterContainer #menu .parent {
+  font-family: "Fredoka", Helvetica, Arial, "sans-serif";
+  margin-bottom: 10px;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+
+:is(div#chabad_body_content, body.mobile div#chabad_body_content, body.mobile div#co_photo_gallery .co_photo_gallery_body) {
+  padding: 0 !important;
+}
+
+:is(div#ContentArea, div#chabad_main_content, div#chabad_body_content, .cco_templatelates_content) {
+  margin: 0;
+  width: 100%;
+  float: none;
+}
+
+.body_wrapper.clearfix.co_body {
+  width: 100%;
+  padding: 0;
+}
+
+div#co_body_container {
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0;
+}
+
+#header.on-scroll {
+  position: absolute !important;
+}
+
+div#co_photo_gallery .co_photo_gallery_footer {
+  text-align: center;
+}
+div#co_photo_gallery .co_photo_gallery_footer a {
+  float: none;
+  text-align: center;
+  padding-top: 30px;
+  background-color: #ffae00;
+  border: solid 2px #ffae00;
+  display: inline-block;
+  color: #fff;
+  border-radius: 1000px;
+  font-size: 20px;
+  padding: 8px 20px;
+}
+
+.co_photo_gallery a img {
+  overflow: revert;
+}
+
+body.mobile #chabad_body_page .display-1 {
+  font-size: 40px !important;
+  margin-top: 35px;
+}
+body.mobile #chabad_body_page h2 {
+  letter-spacing: normal !important;
+  line-height: normal;
+  font-size: 20px;
+}
+body.mobile #chabad_body_page #chabad_head {
+  position: initial !important;
+  background: #f9f9f9;
+}
+body.mobile #chabad_body_page #chabad_head {
+  flex-wrap: wrap !important;
+  flex-direction: column-reverse;
+  justify-content: center;
+  padding: 0;
+}
+body.mobile #chabad_body_page #chabad_head > a {
+  width: 100%;
+  text-align: center;
+  margin: 0 !important;
+  color: black !important;
+}
+body.mobile.cco_templateless_page #chabad_body_page .bh {
+  top: -6px;
+  right: 10px;
+  z-index: 10;
+}
+body.mobile .FooterContainer a {
+  color: white;
+}
+
+.section_branch #co_body_container {
+  max-width: min(1320px, 100%);
+  margin-inline: auto !important;
+  margin-top: 50px !important;
+  padding-inline: 10px !important;
+}
+.section_branch #co_body_container .co_body.article-body:not(*) {
+  min-height: 300px;
+}
+
+:is(.co_body .content p, .co_body .content li, .co_body .content .form-all li, html body.cco_body p, .form-all) {
+  color: #343333;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+.form-line {
+  border: 0;
+}
+
+:is(body, .cco_templateless_template, .cco_templateless_template a) {
+  background: #f9f9f9;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+}
+
+.preschool-row {
+  display: flex;
+  flex-wrap: wrap;
+  --gutter-x: 30px;
+  --gutter-y: 0;
+  margin-top: calc(-1 * var(--gutter-y));
+  margin-right: calc(-0.5 * var(--gutter-x));
+  margin-left: calc(-0.5 * var(--gutter-x));
+}
+.preschool-row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--gutter-x) * 0.5);
+  padding-left: calc(var(--gutter-x) * 0.5);
+  margin-top: var(--gutter-y);
+}
+
+#chabad_head {
+  flex-wrap: nowrap;
+  display: flex;
+  justify-content: space-evenly;
+}
+#chabad_head #PreschoolTitle {
+  color: white;
+  font-size: clamp(17px, 2vw, 37px);
+  font-weight: bold;
+}
+
+#PreschoolSection1 {
+  text-align: center;
+}
+#PreschoolSection1 #PreschoolSection1Image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.5);
+}
+#PreschoolSection1 #PreschoolSection1Title {
+  color: white;
+  font-size: 70px;
+  font-weight: 600;
+  font-family: Fredoka, Helvetica, Arial, sans-serif;
+  line-height: 1.2;
+  letter-spacing: -0.2px;
+  margin-bottom: 35px;
+  animation-name: zoomIn;
+  animation-duration: 700ms;
+  animation-timing-function: ease;
+  animation-delay: 500ms;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+@container (max-width: 600px) {
+  #PreschoolSection1 #PreschoolSection1Title {
+    font-size: 50px;
+    letter-spacing: normal;
+  }
+}
+#PreschoolSection1 #PreschoolSection1Description {
+  animation-name: zoomIn;
+  animation-duration: 700ms;
+  animation-timing-function: ease;
+  animation-delay: 1000ms;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  letter-spacing: 1px;
+  font-size: 23px;
+  line-height: 1.55;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+#PreschoolSection1 #PreschoolSection1Button {
+  animation-name: zoomIn;
+  animation-duration: 700ms;
+  animation-timing-function: ease;
+  animation-delay: 1500ms;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  background-color: #ff4880;
+  border: 2px solid #ff4880;
+  color: white;
+  border-radius: 1000px;
+  font-size: 20px;
+  line-height: 34px;
+  padding: 8px 20px;
+  font-weight: 700;
+  text-wrap: nowrap;
+  z-index: 1;
+  display: inline-flex;
+}
+#PreschoolSection1 img[src$="White-wavy-bottom-border.png"] {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#PreschoolSection2 {
+  text-align: center;
+}
+@container (min-width: 768px) {
+  #PreschoolSection2 {
+    padding-top: 70px;
+  }
+}
+#PreschoolSection2 img {
+  aspect-ratio: 1;
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  mask-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/Section2ImageMask.png);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+}
+@container (min-width: 992px) {
+  #PreschoolSection2 img {
+    flex: 0 0 auto;
+    width: 41%;
+  }
+}
+#PreschoolSection2 h3 {
+  color: #28a73c;
+  line-height: 1.25;
+  margin-bottom: 25px;
+}
+@container (min-width: 768px) {
+  #PreschoolSection2 h3 {
+    text-align: left !important;
+    margin-inline: 25px;
+  }
+}
+@container (min-width: 992px) {
+  #PreschoolSection2 h3 {
+    margin-inline: 0;
+  }
+}
+#PreschoolSection2 .fonts {
+  margin-bottom: 10px;
+}
+
+.preschool-shape-1 {
+  bottom: -10px;
+  right: -44px;
+  z-index: 0;
+  position: absolute;
+  background-color: rgb(237, 242, 252);
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+}
+:has(.preschool-shape-1) {
+  position: relative;
+}
+
+.preschool-shape-2 {
+  top: -10px;
+  left: -50px;
+  z-index: 0;
+  position: absolute;
+  background-image: radial-gradient(#fab758 2px, transparent 2.5px);
+  background-size: 15px 15px;
+  opacity: 0.5;
+  height: 140px;
+  width: 120px;
+}
+:has(.preschool-shape-2) {
+  position: relative;
+}
+
+#PreschoolSection3 {
+  background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/bg126.jpg);
+  text-align: center;
+  --gutter-y: 25px;
+}
+#PreschoolSection3 h3 {
+  line-height: 1.25;
+}
+@container (min-width: 768px) {
+  #PreschoolSection3 h3 {
+    width: 83%;
+    flex: 0 0 auto;
+  }
+}
+@container (min-width: 992px) {
+  #PreschoolSection3 h3 {
+    width: 66%;
+  }
+}
+@container (min-width: 768px) {
+  #PreschoolSection3 {
+    --gutter-x: 25px;
+  }
+}
+@container (min-width: 768px) {
+  #PreschoolSection3 .coitem {
+    width: 50%;
+    flex: 0 0 auto;
+  }
+}
+@container (min-width: 1200px) {
+  #PreschoolSection3 .coitem {
+    width: 25%;
+  }
+}
+#PreschoolSection3 .card {
+  border: 0;
+  color: inherit;
+  border-color: #ff4880;
+  box-shadow: 0 5px 35px rgba(30, 34, 40, 0.07);
+  background-color: #fff;
+  background-clip: border-box;
+  border-radius: 8px;
+  --card-spacer-y: 40px;
+  --card-spacer-x: 40px;
+}
+#PreschoolSection3 .card::after {
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-bottom-width: 6px;
+  border-top-width: 2px;
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-bottom-color: inherit;
+  border-top-color: transparent;
+  border-bottom-left-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+  content: "";
+  position: absolute;
+}
+#PreschoolSection3 .card h4 {
+  font-weight: 600;
+  font-family: Fredoka, Helvetica, Arial, sans-serif;
+  margin-bottom: 5px;
+  line-height: 1.45;
+  margin-top: 0;
+  color: #343f52;
+  letter-spacing: -0.2px;
+  font-size: 19px;
+}
+#PreschoolSection3 .card .fonts {
+  margin-bottom: 10px;
+}
+
+#PreschoolSection4 {
+  text-align: center;
+}
+#PreschoolSection4 h3 {
+  color: #7e0f7c;
+  line-height: 1.25;
+}
+#PreschoolSection4 .fonts {
+  line-height: 1.4;
+  padding-bottom: 50px;
+  margin-bottom: 10px;
+}
+@container (min-width: 768px) {
+  #PreschoolSection4 .fonts {
+    width: 83%;
+    flex: 0 0 auto;
+  }
+}
+@container (min-width: 992px) {
+  #PreschoolSection4 .fonts {
+    width: 66%;
+  }
+}
+#PreschoolSection4 .preschool-section-4-card {
+  background: var(--color);
+  color: #fff;
+  padding: 3%;
+}
+@container (min-width: 768px) {
+  #PreschoolSection4 .preschool-section-4-card {
+    width: 50%;
+  }
+}
+@container (min-width: 992px) {
+  #PreschoolSection4 .preschool-section-4-card {
+    width: 33.3333333333%;
+  }
+}
+#PreschoolSection4 .preschool-section-4-card:hover {
+  background: var(--color-hover);
+  color: #fff;
+}
+#PreschoolSection4 .preschool-section-4-card h4 {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  font-family: Fredoka, Helvetica, Arial, sans-serif;
+  margin-bottom: 5px;
+  line-height: 1.45;
+  margin-top: 0;
+  letter-spacing: -0.2px;
+}
+#PreschoolSection4 .preschool-section-4-card .fonts {
+  margin-bottom: 0;
+}
+#PreschoolSection4 .card1 {
+  --color: #3ab764;
+  --color-hover: #1d6e39;
+}
+#PreschoolSection4 .card2 {
+  --color: #fc5172;
+  --color-hover: #832739;
+}
+#PreschoolSection4 .card3 {
+  --color: #e7b338;
+  --color-hover: #a0740c;
+}
+#PreschoolSection4 .card4 {
+  --color: #e668b3;
+  --color-hover: #873164;
+}
+#PreschoolSection4 .card5 {
+  --color: #45a2bc;
+  --color-hover: #1a5b6d;
+}
+#PreschoolSection4 .card6 {
+  --color: #e4613c;
+  --color-hover: #b13816;
+}
+
+.preschool-custom-section {
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@container (min-width: 1200px) {
+  .preschool-custom-section {
+    width: 91%;
+  }
+}
+@container (min-width: 1400px) {
+  .preschool-custom-section {
+    width: 83%;
+  }
+}
+
+.preschool-title-spacing {
+  margin-bottom: 40px;
+}
+@container (min-width: 1200px) {
+  .preschool-title-spacing {
+    padding-inline: 50px;
+  }
+}
+
+.preschool-blue-color {
+  color: #393d72;
+}
+
+#PreschoolSection5 {
+  background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/bg125.jpg);
+}
+
+#PreschoolSection7 {
+  background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/bg126.jpg);
+}
+@container (min-width: 768px) {
+  #PreschoolSection7 #PreschoolSection7HeaderWrapper {
+    width: 83%;
+    flex: 0 0 auto;
+  }
+}
+@container (min-width: 992px) {
+  #PreschoolSection7 #PreschoolSection7HeaderWrapper {
+    width: 66%;
+  }
+}
+#PreschoolSection7 #PreschoolSection7ContentWrapper {
+  position: relative;
+}
+#PreschoolSection7 .preschool-row {
+  text-align: center;
+  --gutter-y: 25px;
+  justify-content: center;
+}
+@container (min-width: 768px) {
+  #PreschoolSection7 .preschool-row {
+    --gutter-x: 25px;
+  }
+}
+@container (min-width: 768px) {
+  #PreschoolSection7 .preschool-row .coitem {
+    width: 50%;
+    flex: 0 0 auto;
+  }
+}
+@container (min-width: 1200px) {
+  #PreschoolSection7 .preschool-row .coitem {
+    width: 33%;
+  }
+}
+#PreschoolSection7 .card {
+  border: 0;
+  color: inherit;
+  border-color: #ff4880;
+  box-shadow: 0 5px 35px rgba(30, 34, 40, 0.07);
+  background-color: #fff;
+  background-clip: border-box;
+  border-radius: 8px;
+  --card-spacer-y: 40px;
+  --card-spacer-x: 40px;
+}
+#PreschoolSection7 .card::after {
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-bottom-width: 6px;
+  border-top-width: 2px;
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-bottom-color: inherit;
+  border-top-color: transparent;
+  border-bottom-left-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+  content: "";
+  position: absolute;
+}
+#PreschoolSection7 .card h4 {
+  font-weight: 600;
+  font-family: Fredoka, Helvetica, Arial, sans-serif;
+  margin-bottom: 5px;
+  line-height: 1.45;
+  margin-top: 0;
+  color: #343f52;
+  letter-spacing: -0.2px;
+  font-size: 19px;
+}
+#PreschoolSection7 .card .fonts {
+  margin-bottom: 10px;
+}
+
+#Testimonials {
+  background-color: #eff6fe !important;
+  --swiper-navigation-color: #92278f;
+}
+#Testimonials #TestimonialsTitle {
+  color: #92278f;
+}
+#Testimonials #TestimonialsShape1 {
+  bottom: -10px;
+  right: -34px;
+  position: absolute;
+  background-color: #fff8ee;
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+}
+#Testimonials #TestimonialsShape2 {
+  top: -20px;
+  left: -34px;
+  position: absolute;
+  background-image: radial-gradient(#3f78e0 2px, transparent 2.5px);
+  background-size: 15px 15px;
+  opacity: 0.5;
+  height: 120px;
+  width: 120px;
+}
+#Testimonials .card-body:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-top: 20px solid red;
+  margin: 10px;
+  content: "";
+}
+#Testimonials .card {
+  border: 0;
+  color: inherit;
+  background-color: #fff;
+  background-clip: border-box;
+  border-radius: 8px;
+  --card-spacer-y: 40px;
+  --card-spacer-x: 40px;
+}
+#Testimonials blockquote.icon {
+  position: relative;
+  border: 0;
+  padding: 0;
+  font-size: 17px;
+  line-height: 1.7;
+  font-weight: 500;
+  margin: 0;
+}
+#Testimonials blockquote.icon:before {
+  content: "”";
+  position: absolute;
+  top: -30px;
+  left: -18px;
+  color: rgba(52, 63, 82, 0.05);
+  font-size: 200px;
+  line-height: 1;
+  z-index: 1;
+}
+#Testimonials .blockquote-details {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+#Testimonials .blockquote-details .info {
+  padding-left: 20px;
+}
+#Testimonials .blockquote-details .info h5 {
+  line-height: 1.5;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #343f52;
+  font-size: 19px;
+  letter-spacing: 0.3px;
+  font-family: Fredoka, Helvetica, Arial, sans-serif;
+}
+#Testimonials .blockquote-details .info .fonts {
+  margin-bottom: 0;
+}
+@container (max-width: 767px) {
+  #Testimonials .card-body {
+    padding: 10px;
+  }
+}
+
+#PreschoolLatestPhotos {
+  --swiper-navigation-color: #393d72;
+}
+#PreschoolLatestPhotos:not(:has(div)) {
+  padding: 0 !important;
+}
+
+/* hide the wavy bottom border if there are no photos, so that it doesn't show up with a white background right after the other color */
+#wavy-bottom-border {
+  display: none;
+}
+
+/* if there are photos, show it with display block so it doesn't have a white space under it */
+#chabad_main_content:has(#PreschoolLatestPhotos div) #wavy-bottom-border {
+  display: block;
+}
+
+#PreschoolFooterNav {
+  max-width: 100%;
+  padding-top: 25px;
+  padding-bottom: 35px;
+  background: #5674a1;
+  color: white;
+}
+@container (min-width: 992px) {
+  #PreschoolFooterNav #PreschoolFooterNavInner {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+}
+#PreschoolFooterNav #PreschoolFooterNavInner h3 {
+  font-size: 23px;
+  font-weight: 600;
+  font-family: Fredoka, Helvetica, Arial, sans-serif;
+  line-height: 1.35;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: white;
+  letter-spacing: 1px;
+}
+#PreschoolFooterNav #PreschoolFooterNavInner .fonts {
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: 500;
+}
+#PreschoolFooterNav #PreschoolFooterNavContent {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+#PreschoolFooter {
+  padding-block: 25px;
+  background: #061737;
+  color: #fff;
+}
+#PreschoolFooter #PreschoolFooterContent {
+  justify-content: space-between;
+  align-items: center;
+}
+@container (min-width: 768px) {
+  #PreschoolFooter #PreschoolFooterContent {
+    display: flex;
+  }
+}
+#PreschoolFooter #PreschoolFooterContent .fonts {
+  margin-bottom: 10px;
+}
+@container (min-width: 992px) {
+  #PreschoolFooter #PreschoolFooterContent .fonts {
+    margin-bottom: 0;
+  }
+}
+#PreschoolFooter nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+@container (min-width: 768px) {
+  #PreschoolFooter nav {
+    text-align: right;
+  }
+}
+#PreschoolFooter #PreschoolFooterButton {
+  background-color: #32afea;
+  border: 2px solid #32afea;
+  color: white;
+  border-radius: 1000px;
+  font-size: 20px;
+  line-height: 34px;
+  padding: 8px 20px;
+  font-weight: 700;
+  text-wrap: nowrap;
+}
+@container (min-width: 768px) {
+  #PreschoolFooter #PreschoolFooterButton {
+    margin: 0 0 0 14px;
+  }
+}
+
+:is(#PreschoolFooterButton, .chabad_more_button, #chabad_body_page .btn, .co_photo_gallery_footer a, #PreschoolSection1Button):hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(30, 34, 40, 0.15);
+}
+
+div[name=co_section][real_id^=column_promo] {
+  display: flex;
+  width: 100%;
+  height: auto;
+  height: fit-content;
+}
+
+.ContentItem[real_name=Header] {
+  height: 90px;
+  background: silver;
+  margin-bottom: -15px;
+  width: 685px;
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+/* styles for backwards compatibility */
+body.section_root:has(.chabad_content_head) #chabad_left_colum:not(:has(.chabad_image_banner)) {
+  border-top: 110px solid #12b0d1;
+  padding-top: 50px;
+}
+
+body:not(.mobile) #chabad_body_page:has(.chabad_text_head) #chabad_head .chabad_logo {
+  color: white;
+}
+
+body.mobile #chabad_body_page:has(.chabad_text_head) .chabad_image_banner {
+  min-height: 600px;
+}
+body.mobile #chabad_body_page:has(.chabad_text_head) div#chabad_head .chabad_logo :is(a, div, a div) {
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: clamp(17px, 2vw, 37px);
+  font-weight: bold;
+}
+
+#chabad_body_page:has(.chabad_text_head) td.chabad_logo :is(div, a, h1) {
+  font-size: inherit;
+}
+#chabad_body_page:has(.chabad_text_head) .chabad_text_head {
+  display: none;
+}
+#chabad_body_page:has(.chabad_text_head) :is(div#chabad_right_colum, .content_page_full, div#ContentArea) {
+  float: none;
+  margin: 0;
+  width: 100%;
+}
+#chabad_body_page:has(.chabad_text_head) .body_wrapper.clearfix.co_body {
+  padding: 0;
+}
+#chabad_body_page:has(.chabad_text_head) div#co_body_container {
+  padding: 0;
+  margin: 0;
+}
+#chabad_body_page:has(.chabad_text_head) :is(div#chabad_main_content, div#chabad_body_content) {
+  width: 100%;
+}
+#chabad_body_page:has(.chabad_text_head) .chabad_image_banner img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  filter: brightness(0.5);
+}
+#chabad_body_page:has(.chabad_text_head) #content_banner {
+  min-height: 500px;
+}
+#chabad_body_page:has(.chabad_text_head) #content_banner::after {
+  background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/illustrations/White-wavy-bottom-border.png);
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+#chabad_body_page:has(.chabad_text_head) #content_banner .chabad_text_banner {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+#chabad_body_page:has(.chabad_text_head) .chabad_welcome {
+  color: white;
+  font-size: 70px;
+  font-weight: 600;
+  font-family: Fredoka, Helvetica, Arial, sans-serif;
+  line-height: 1.2;
+  letter-spacing: -0.2px;
+  margin-bottom: 35px;
+  animation-delay: 500ms;
+  text-transform: capitalize;
+}
+@container (max-width: 600px) {
+  #chabad_body_page:has(.chabad_text_head) .chabad_welcome {
+    font-size: 50px;
+  }
+}
+#chabad_body_page:has(.chabad_text_head) .chabad_text_banner_description {
+  animation-delay: 1000ms;
+  letter-spacing: 1px;
+  font-size: 23px;
+  line-height: 1.55;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+#chabad_body_page:has(.chabad_text_head) .chabad_text_banner_description p {
+  color: inherit;
+  font-size: inherit;
+}
+#chabad_body_page:has(.chabad_text_head) .chabad_more_button {
+  animation-delay: 1500ms;
+  background-color: #ff4880;
+  border: 2px solid #ff4880;
+  color: white;
+  border-radius: 1000px;
+  font-size: 20px;
+  line-height: 34px;
+  padding: 8px 20px;
+  font-weight: 700;
+  text-wrap: nowrap;
+  display: inline-flex;
+  z-index: 1;
+  float: none;
+}
+#chabad_body_page:has(.chabad_text_head) img[src="https://w2.chabad.org/images/shluchim/minisites/themes/preschool/preschool_banner_image.jpg"] {
+  content: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/PreschoolStockBackground.jpg);
+}
+#chabad_body_page:has(.chabad_text_head) .chabad_image_banner:not(:has(img)) {
+  content: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/PreschoolStockBackground.jpg);
+  height: 100%;
+  width: 100%;
+  max-height: unset;
+  filter: brightness(0.5);
+}
+#chabad_body_page:has(.chabad_text_head) :is(.chabad_box_content_body, .content_box_custom, #chabad_right_colum > :is(#chabad_updates, #co_photo_gallery, #co_calendar, #co_section, #chabad_box_text):not(:empty)) {
+  width: 100%;
+  padding: 40px 15px;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#chabad_body_page:has(.chabad_text_head) div#chabad_right_colum > div {
+  margin-block: 0;
+}
+#chabad_body_page:has(.chabad_text_head) :is(.big_title, .medium_title, .chabad_updates_head div, .chabad_box_text_head, .co_section_head, .co_calendar_head) {
+  font-size: 50px;
+  font-weight: 700;
+  font-family: Fredoka, Helvetica, Arial, sans-serif;
+  color: #393d72;
+  text-align: center;
+  margin-bottom: 40px;
+}
+@container (max-width: 600px) {
+  #chabad_body_page:has(.chabad_text_head) :is(.big_title, .medium_title, .chabad_updates_head div, .chabad_box_text_head, .co_section_head, .co_calendar_head) {
+    font-size: 35px;
+    text-align: left;
+  }
+}
+@container (min-width: 1200px) {
+  #chabad_body_page:has(.chabad_text_head) :is(.big_title, .medium_title, .chabad_updates_head div, .chabad_box_text_head, .co_section_head, .co_calendar_head) {
+    padding-inline: 50px;
+  }
+}
+#chabad_body_page:has(.chabad_text_head) :is(.big_title, .medium_title, .chabad_updates_head div, .chabad_box_text_head, .co_section_head, .co_calendar_head):empty {
+  display: none;
+}
+#chabad_body_page:has(.chabad_text_head) .chabad_updates_head div {
+  padding-inline: 10px;
+}
+#chabad_body_page:has(.chabad_text_head) :is(.chabad_updates_head, .co_calendar_head, .co_photo_gallery_head, .co_section_head) {
+  padding: 0 !important;
+}
+#chabad_body_page:has(.chabad_text_head) :is(.chabad_text_box div, .chabad_updates_text div, .chabad_box_text_comment div) {
+  line-height: 1.6;
+  font-size: 17px;
+}
+#chabad_body_page:has(.chabad_text_head) :is(.chabad_box_content_second, #chabad_updates) {
+  background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/bg126.jpg);
+}
+#chabad_body_page:has(.chabad_text_head) .co_photo_gallery {
+  text-align: center;
+}
+#chabad_body_page:has(.chabad_text_head) .co_photo_gallery_footer a {
+  float: none !important;
+}
+#chabad_body_page:has(.chabad_text_head) .content_box_custom {
+  position: relative;
+}
+#chabad_body_page:has(.chabad_text_head) .content_box_custom::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/bg125.jpg);
+  z-index: -1;
+}
+#chabad_body_page:has(.chabad_text_head) #co_photo_gallery {
+  position: relative;
+}
+#chabad_body_page:has(.chabad_text_head) #co_photo_gallery::before {
+  content: "";
+  bottom: 50px;
+  right: 15%;
+  z-index: -1;
+  position: absolute;
+  background-color: rgb(237, 242, 252);
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+}
+#chabad_body_page:has(.chabad_text_head) #co_photo_gallery::after {
+  content: "";
+  top: 50px;
+  left: 15%;
+  z-index: -1;
+  position: absolute;
+  background-image: radial-gradient(#fab758 2px, transparent 2.5px);
+  background-size: 15px 15px;
+  opacity: 0.5;
+  height: 140px;
+  width: 120px;
+}
+#chabad_body_page:has(.chabad_text_head) #chabad_right_colum [class$=body] {
+  font-size: inherit;
+}
+
+body:has(#cco_body > #photos > .photo[data-img="0"]) #cco_body > #photos {
+  min-height: 150px;
+}
+body:has(#cco_body > #photos > .photo[data-img="0"]) #chabad_right_colum #co_photo_gallery {
+  display: none;
+}
+
+.set-direction-to-content {
+  text-align: center;
+}
+
+body:has(#MoreInSection, .article_index_container) .co_section {
+  display: none !important;
+}
+
+/*# sourceMappingURL=style.css.map */
