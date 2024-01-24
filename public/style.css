@@ -616,13 +616,11 @@ body.mobile .FooterContainer a {
   grid-column: content;
   container-type: inline-size;
   text-align: center;
+  display: grid;
+  gap: 25px;
+  place-items: center;
 }
 @container (min-width: 850px) {
-  #PreschoolSection2 {
-    display: grid;
-    gap: 25px;
-    grid-template-columns: 2fr 3fr;
-  }
   #PreschoolSection2 img {
     grid-area: 1/1/3/2;
   }
