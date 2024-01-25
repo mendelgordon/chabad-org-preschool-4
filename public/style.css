@@ -647,7 +647,7 @@ body.mobile footer a {
   height: 120px;
   width: 120px;
 }
-:has(.preschool-shape-1) {
+:has(> .preschool-shape-1) {
   position: relative;
 }
 
@@ -662,7 +662,7 @@ body.mobile footer a {
   height: 140px;
   width: 120px;
 }
-:has(.preschool-shape-2) {
+:has(> .preschool-shape-2) {
   position: relative;
 }
 
