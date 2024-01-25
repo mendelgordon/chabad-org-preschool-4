@@ -1058,7 +1058,7 @@ body.mobile footer a {
 }
 #PreschoolFooterNav > div:first-child {
   display: grid;
-  grid-template-columns: about blank nav;
+  grid-template-columns: [about-start] 1fr [about-end] 1fr [nav-start] 1fr [nav-end];
 }
 #PreschoolFooterNav > div:first-child h3 {
   font-size: 23px;
@@ -1093,7 +1093,7 @@ body.mobile footer a {
 @container (min-width: 768px) {
   #PreschoolFooter > div:first-child {
     display: grid;
-    grid-template-columns: about nav;
+    grid-template-columns: [about-start] 1fr [about-end nav-start] 1fr [nav-end];
   }
 }
 #PreschoolFooter > div:first-child .fonts {
