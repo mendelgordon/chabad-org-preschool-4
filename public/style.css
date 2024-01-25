@@ -487,7 +487,6 @@ body.mobile #chabad_body_page #chabad_head {
 }
 body.mobile #chabad_body_page #chabad_head {
   flex-wrap: wrap !important;
-  flex-direction: column-reverse;
   justify-content: center;
   padding: 0;
 }
@@ -534,7 +533,7 @@ body.mobile footer a {
 
 #chabad_head {
   flex-wrap: nowrap;
-  display: flex;
+  display: flex !important;
   justify-content: space-between;
 }
 #chabad_head #PreschoolTitle {
