@@ -1067,7 +1067,7 @@ body.mobile footer a {
   #PreschoolFooterNav > div:first-child > :last-child {
     grid-column: nav;
     justify-self: end;
-    grid-row: 1/-1;
+    grid-row: 1/3;
   }
 }
 #PreschoolFooterNav > div:first-child h3 {
