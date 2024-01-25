@@ -845,8 +845,10 @@ body.mobile .FooterContainer a {
 .preschool-custom-section {
   min-height: 350px;
   padding-block: 40px;
+  grid-column: content;
   display: grid;
   grid-template-columns: subgrid;
+  align-content: center;
 }
 .preschool-custom-section > * {
   margin-inline: auto;
@@ -881,45 +883,37 @@ body.mobile .FooterContainer a {
   grid-column: full-width;
 }
 
-#PreschoolSection6 {
-  grid-column: content;
-}
-
 #PreschoolSection7 {
+  text-align: center;
   background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/bg126.jpg);
+  grid-column: full-width;
+  padding: 40px 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#PreschoolSection7 > :first-child {
+  width: 100%;
 }
 @container (min-width: 768px) {
-  #PreschoolSection7 #PreschoolSection7HeaderWrapper {
+  #PreschoolSection7 h3 {
     width: 83%;
-    flex: 0 0 auto;
   }
 }
 @container (min-width: 992px) {
-  #PreschoolSection7 #PreschoolSection7HeaderWrapper {
+  #PreschoolSection7 h3 {
     width: 66%;
   }
 }
-#PreschoolSection7 #PreschoolSection7ContentWrapper {
-  position: relative;
-}
-#PreschoolSection7 .preschool-row {
-  text-align: center;
-  --gutter-y: 25px;
+#PreschoolSection7 #PreschoolSection7Cards {
   justify-content: center;
 }
 @container (min-width: 768px) {
-  #PreschoolSection7 .preschool-row {
-    --gutter-x: 25px;
-  }
-}
-@container (min-width: 768px) {
-  #PreschoolSection7 .preschool-row .coitem {
+  #PreschoolSection7 .coitem {
     width: 50%;
-    flex: 0 0 auto;
   }
 }
 @container (min-width: 1200px) {
-  #PreschoolSection7 .preschool-row .coitem {
+  #PreschoolSection7 .coitem {
     width: 33%;
   }
 }
