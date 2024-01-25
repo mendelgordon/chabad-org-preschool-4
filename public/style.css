@@ -961,6 +961,7 @@ body.mobile .FooterContainer a {
 
 #Testimonials {
   grid-column: full-width;
+  padding: 40px 15px;
   display: grid;
   grid-template-columns: subgrid;
   background-color: #eff6fe !important;
