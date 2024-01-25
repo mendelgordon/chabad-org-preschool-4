@@ -1066,6 +1066,8 @@ body.mobile footer a {
   }
   #PreschoolFooterNav > div:first-child > :last-child {
     grid-column: nav;
+    justify-self: end;
+    grid-row: 1/-1;
   }
 }
 #PreschoolFooterNav > div:first-child h3 {
@@ -1073,14 +1075,11 @@ body.mobile footer a {
   font-weight: 600;
   font-family: Fredoka, Helvetica, Arial, sans-serif;
   line-height: 1.35;
-  margin-top: 0;
-  margin-bottom: 15px;
   color: white;
   letter-spacing: 1px;
   grid-column: 1;
 }
 #PreschoolFooterNav > div:first-child .fonts {
-  margin-bottom: 25px;
   font-size: 18px;
   font-weight: 500;
   grid-column: 1;
@@ -1102,12 +1101,11 @@ body.mobile footer a {
   }
 }
 #PreschoolFooter > div:first-child .fonts {
-  margin-bottom: 10px;
   grid-column: about;
 }
 #PreschoolFooter nav {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row-reverse;
   grid-column: nav;
 }
 @container (min-width: 768px) {
