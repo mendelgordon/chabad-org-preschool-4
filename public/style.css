@@ -169,7 +169,7 @@ img[src$="White-wavy-bottom-border.png"] {
   grid-column: full-width;
 }
 
-:where(.content-area-parent, #chabad_head, footer) > * {
+:where(.content-area-parent, #chabad_head, footer) > *:not(#PreschoolSection1) {
   padding-block: 50px;
   grid-column: content;
 }
@@ -370,6 +370,7 @@ body:not(.mobile) #chabad_body_page #chabad_head .navi {
 body:not(.mobile) #chabad_body_page #chabad_head .navi a {
   font-family: "Open Sans", sans-serif;
   padding-inline: 10px;
+  background: unset;
 }
 body:not(.mobile) #chabad_body_page #chabad_head .navi a.parent.arrow::after {
   content: " ↓";
