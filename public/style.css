@@ -758,24 +758,29 @@ body.mobile .FooterContainer a {
 
 #PreschoolSection4 {
   text-align: center;
+  grid-column: breakout;
+  padding: 40px 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#PreschoolSection4 > :first-child {
+  width: 100%;
 }
 #PreschoolSection4 h3 {
   color: #7e0f7c;
-  line-height: 1.25;
 }
-#PreschoolSection4 .fonts {
+#PreschoolSection4 #PreschoolSection4Description {
   line-height: 1.4;
-  padding-bottom: 50px;
-  margin-bottom: 10px;
+  padding-bottom: 40px;
+  margin-inline: auto;
 }
 @container (min-width: 768px) {
-  #PreschoolSection4 .fonts {
+  #PreschoolSection4 #PreschoolSection4Description {
     width: 83%;
-    flex: 0 0 auto;
   }
 }
 @container (min-width: 992px) {
-  #PreschoolSection4 .fonts {
+  #PreschoolSection4 #PreschoolSection4Description {
     width: 66%;
   }
 }
