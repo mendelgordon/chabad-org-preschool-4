@@ -492,7 +492,7 @@ body.mobile #chabad_body_page #chabad_head {
 body.mobile #chabad_body_page #chabad_head {
   flex-wrap: wrap !important;
   justify-content: center;
-  padding: 0;
+  padding: 5px;
 }
 body.mobile #chabad_body_page #chabad_head > a {
   width: 100%;
