@@ -1058,6 +1058,7 @@ body.mobile footer a {
 }
 #PreschoolFooterNav > div:first-child {
   display: grid;
+  align-items: center;
   gap: 25px;
 }
 @container (min-width: 768px) {
