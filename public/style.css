@@ -687,16 +687,21 @@ body.mobile .FooterContainer a {
   background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/bg126.jpg);
   display: grid;
   grid-template-columns: subgrid;
-  gap: 25px;
   padding: 40px 15px;
   grid-column: full-width;
   text-align: center;
+}
+#PreschoolSection3 > :first-child {
+  grid-column: content;
 }
 #PreschoolSection3 #PreschoolSection3Cards {
   grid-column: content;
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
+}
+#PreschoolSection3 h3 {
+  margin-inline: auto;
 }
 @container (min-width: 768px) {
   #PreschoolSection3 h3 {
