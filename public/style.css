@@ -914,15 +914,8 @@ body.mobile .FooterContainer a {
   gap: 25px;
   justify-content: center;
 }
-@container (min-width: 768px) {
-  #PreschoolSection7 .coitem {
-    width: 50%;
-  }
-}
-@container (min-width: 1200px) {
-  #PreschoolSection7 .coitem {
-    width: 33%;
-  }
+#PreschoolSection7 .coitem {
+  flex: 1 1 300px;
 }
 #PreschoolSection7 .card {
   border: 0;
