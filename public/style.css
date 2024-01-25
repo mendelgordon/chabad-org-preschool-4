@@ -277,15 +277,15 @@ img[src$="White-wavy-bottom-border.png"] {
 #chabad_body_page :is(.co_photo_gallery, .slider-wrapper) {
   padding: 20px;
 }
-#chabad_body_page :is(.co_photo_gallery_body, #Testimonials) {
+#chabad_body_page :is(.co_photo_gallery_body, #TestimonialSlides) {
   position: relative;
   width: 100%;
-  padding: 0 40px !important;
+  padding-inline: 40px !important;
 }
-#chabad_body_page :is(.co_photo_gallery_body, #Testimonials) .swiper-button-prev {
+#chabad_body_page :is(.co_photo_gallery_body, #TestimonialSlides) .swiper-button-prev {
   left: 0;
 }
-#chabad_body_page :is(.co_photo_gallery_body, #Testimonials) .swiper-button-next {
+#chabad_body_page :is(.co_photo_gallery_body, #TestimonialSlides) .swiper-button-next {
   right: 0;
 }
 #chabad_body_page .slider-wrapper .slide {
@@ -369,6 +369,9 @@ body:not(.mobile) #chabad_body_page #chabad_head .navi {
 body:not(.mobile) #chabad_body_page #chabad_head .navi a {
   font-family: "Open Sans", sans-serif;
   padding-inline: 10px;
+}
+body:not(.mobile) #chabad_body_page #chabad_head .navi a.parent::after {
+  content: " ↓";
 }
 body:not(.mobile) #chabad_body_page #chabad_head .navi .sub_menu {
   border-bottom-right-radius: 10px;
@@ -478,7 +481,6 @@ body.mobile #chabad_body_page h2 {
   font-size: 20px;
 }
 body.mobile #chabad_body_page #chabad_head {
-  position: initial !important;
   background: #f9f9f9;
 }
 body.mobile #chabad_body_page #chabad_head {
@@ -958,8 +960,14 @@ body.mobile .FooterContainer a {
 }
 
 #Testimonials {
+  grid-column: full-width;
+  display: grid;
+  grid-template-columns: subgrid;
   background-color: #eff6fe !important;
   --swiper-navigation-color: #92278f;
+}
+#Testimonials > * {
+  grid-column: content;
 }
 #Testimonials #TestimonialsTitle {
   color: #92278f;
