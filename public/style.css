@@ -410,18 +410,18 @@ body:not(.mobile) #chabad_body_page #navigation .navi a {
   font-size: 17px;
   color: white;
 }
-body:not(.mobile) #chabad_body_page .FooterContainer #menu {
+body:not(.mobile) #chabad_body_page footer #menu {
   height: unset;
 }
-body:not(.mobile) #chabad_body_page .FooterContainer #menu .sub_menu a {
+body:not(.mobile) #chabad_body_page footer #menu .sub_menu a {
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
   font-weight: 500;
 }
-body:not(.mobile) #chabad_body_page .FooterContainer #menu ul {
+body:not(.mobile) #chabad_body_page footer #menu ul {
   padding: 0;
 }
-body:not(.mobile) #chabad_body_page .FooterContainer #menu .parent {
+body:not(.mobile) #chabad_body_page footer #menu .parent {
   font-family: "Fredoka", Helvetica, Arial, "sans-serif";
   margin-bottom: 10px;
   font-size: 20px;
@@ -502,7 +502,7 @@ body.mobile.cco_templateless_page #chabad_body_page .bh {
   right: 10px;
   z-index: 10;
 }
-body.mobile .FooterContainer a {
+body.mobile footer a {
   color: white;
 }
 
@@ -1051,19 +1051,16 @@ body.mobile .FooterContainer a {
 }
 
 #PreschoolFooterNav {
-  max-width: 100%;
   padding-top: 25px;
   padding-bottom: 35px;
   background: #5674a1;
   color: white;
 }
-@container (min-width: 992px) {
-  #PreschoolFooterNav #PreschoolFooterNavInner {
-    flex: 0 0 auto;
-    width: 33.33333333%;
-  }
+#PreschoolFooterNav > div:first-child {
+  display: grid;
+  grid-template-columns: about blank nav;
 }
-#PreschoolFooterNav #PreschoolFooterNavInner h3 {
+#PreschoolFooterNav > div:first-child h3 {
   font-size: 23px;
   font-weight: 600;
   font-family: Fredoka, Helvetica, Arial, sans-serif;
@@ -1072,16 +1069,16 @@ body.mobile .FooterContainer a {
   margin-bottom: 15px;
   color: white;
   letter-spacing: 1px;
+  grid-column: about;
 }
-#PreschoolFooterNav #PreschoolFooterNavInner .fonts {
+#PreschoolFooterNav > div:first-child .fonts {
   margin-bottom: 25px;
   font-size: 18px;
   font-weight: 500;
+  grid-column: about;
 }
-#PreschoolFooterNav #PreschoolFooterNavContent {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+#PreschoolFooterNav > div:first-child > :last-child {
+  grid-column: nav;
 }
 
 #PreschoolFooter {
@@ -1089,26 +1086,24 @@ body.mobile .FooterContainer a {
   background: #061737;
   color: #fff;
 }
-#PreschoolFooter #PreschoolFooterContent {
+#PreschoolFooter > div:first-child {
   justify-content: space-between;
   align-items: center;
 }
 @container (min-width: 768px) {
-  #PreschoolFooter #PreschoolFooterContent {
-    display: flex;
+  #PreschoolFooter > div:first-child {
+    display: grid;
+    grid-template-columns: about nav;
   }
 }
-#PreschoolFooter #PreschoolFooterContent .fonts {
+#PreschoolFooter > div:first-child .fonts {
   margin-bottom: 10px;
-}
-@container (min-width: 992px) {
-  #PreschoolFooter #PreschoolFooterContent .fonts {
-    margin-bottom: 0;
-  }
+  grid-column: about;
 }
 #PreschoolFooter nav {
   display: flex;
   flex-wrap: wrap;
+  grid-column: nav;
 }
 @container (min-width: 768px) {
   #PreschoolFooter nav {
