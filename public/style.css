@@ -1058,7 +1058,15 @@ body.mobile footer a {
 }
 #PreschoolFooterNav > div:first-child {
   display: grid;
-  grid-template-columns: [about-start] 1fr [about-end] 1fr [nav-start] 1fr [nav-end];
+  gap: 25px;
+}
+@container (min-width: 768px) {
+  #PreschoolFooterNav > div:first-child {
+    grid-template-columns: [about-start] 1fr [about-end nav-start] 2fr [nav-end];
+  }
+  #PreschoolFooterNav > div:first-child > :last-child {
+    grid-column: nav;
+  }
 }
 #PreschoolFooterNav > div:first-child h3 {
   font-size: 23px;
@@ -1069,16 +1077,13 @@ body.mobile footer a {
   margin-bottom: 15px;
   color: white;
   letter-spacing: 1px;
-  grid-column: about;
+  grid-column: 1;
 }
 #PreschoolFooterNav > div:first-child .fonts {
   margin-bottom: 25px;
   font-size: 18px;
   font-weight: 500;
-  grid-column: about;
-}
-#PreschoolFooterNav > div:first-child > :last-child {
-  grid-column: nav;
+  grid-column: 1;
 }
 
 #PreschoolFooter {
@@ -1093,7 +1098,7 @@ body.mobile footer a {
 @container (min-width: 768px) {
   #PreschoolFooter > div:first-child {
     display: grid;
-    grid-template-columns: [about-start] 1fr [about-end nav-start] 1fr [nav-end];
+    grid-template-columns: [about-start] 2fr [about-end nav-start] 1fr [nav-end];
   }
 }
 #PreschoolFooter > div:first-child .fonts {
@@ -1119,12 +1124,6 @@ body.mobile footer a {
   line-height: 34px;
   padding: 8px 20px;
   font-weight: 700;
-  text-wrap: nowrap;
-}
-@container (min-width: 768px) {
-  #PreschoolFooter #PreschoolFooterButton {
-    margin: 0 0 0 14px;
-  }
 }
 
 :is(#PreschoolFooterButton, .chabad_more_button, #chabad_body_page .btn, .co_photo_gallery_footer a, #PreschoolSection1Button):hover {
