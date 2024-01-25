@@ -96,7 +96,7 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
 
 /* Main grid layout for header and content */
 #chabad_main_content {
-  --padding-inline: 1rem;
+  --padding-inline: 16px;
   --content-max-width: 1320px;
   --breakout-max-width: 1360px;
   --breakout-size: calc((var(--breakout-max-width) - var(--content-max-width)) / 2);
@@ -170,6 +170,7 @@ img[src$="White-wavy-bottom-border.png"] {
 }
 
 :where(.content-area-parent, #chabad_head, footer) > * {
+  padding-block: 50px;
   grid-column: content;
 }
 
@@ -530,24 +531,6 @@ body.mobile .FooterContainer a {
   font-family: "Open Sans", sans-serif;
 }
 
-.preschool-row {
-  display: flex;
-  flex-wrap: wrap;
-  --gutter-x: 30px;
-  --gutter-y: 0;
-  margin-top: calc(-1 * var(--gutter-y));
-  margin-right: calc(-0.5 * var(--gutter-x));
-  margin-left: calc(-0.5 * var(--gutter-x));
-}
-.preschool-row > * {
-  flex-shrink: 0;
-  width: 100%;
-  max-width: 100%;
-  padding-right: calc(var(--gutter-x) * 0.5);
-  padding-left: calc(var(--gutter-x) * 0.5);
-  margin-top: var(--gutter-y);
-}
-
 #chabad_head {
   flex-wrap: nowrap;
   display: flex;
@@ -568,9 +551,7 @@ body.mobile .FooterContainer a {
   object-fit: cover;
   filter: brightness(0.5);
 }
-#PreschoolSection1 #PreschoolSection1Title,
-#PreschoolSection1 #PreschoolSection1Description,
-#PreschoolSection1 #PreschoolSection1Button {
+#PreschoolSection1 :is(#PreschoolSection1Title, #PreschoolSection1Description, #PreschoolSection1Button) {
   animation-name: zoomIn;
   animation-duration: 700ms;
   animation-timing-function: ease;
@@ -614,7 +595,6 @@ body.mobile .FooterContainer a {
 }
 
 #PreschoolSection2 {
-  padding-block: 50px;
   grid-column: content;
   container-type: inline-size;
   text-align: center;
@@ -689,7 +669,6 @@ body.mobile .FooterContainer a {
   background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/bg126.jpg);
   display: grid;
   grid-template-columns: subgrid;
-  padding: 40px 15px;
   grid-column: full-width;
   text-align: center;
 }
@@ -761,7 +740,6 @@ body.mobile .FooterContainer a {
 #PreschoolSection4 {
   text-align: center;
   grid-column: breakout;
-  padding: 40px 15px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -846,7 +824,6 @@ body.mobile .FooterContainer a {
 
 .preschool-custom-section {
   min-height: 350px;
-  padding-block: 40px;
   grid-column: content;
   display: grid;
   grid-template-columns: subgrid;
@@ -889,7 +866,6 @@ body.mobile .FooterContainer a {
   text-align: center;
   background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/bg126.jpg);
   grid-column: full-width;
-  padding: 40px 15px;
   display: grid;
   grid-template-columns: subgrid;
 }
@@ -961,7 +937,6 @@ body.mobile .FooterContainer a {
 
 #Testimonials {
   grid-column: full-width;
-  padding: 40px 15px;
   display: grid;
   grid-template-columns: subgrid;
   background-color: #eff6fe !important;
