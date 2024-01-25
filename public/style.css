@@ -1113,6 +1113,7 @@ body.mobile footer a {
   padding: 10px 20px;
   font-weight: 700;
   max-width: fit-content;
+  justify-self: end;
 }
 @container (max-width: 768px) {
   #PreschoolFooter #PreschoolFooterButton {
