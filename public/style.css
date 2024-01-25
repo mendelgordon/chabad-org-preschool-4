@@ -1091,38 +1091,33 @@ body.mobile footer a {
   background: #061737;
   color: #fff;
 }
-#PreschoolFooter > div:first-child {
-  justify-content: space-between;
-  align-items: center;
-}
 @container (min-width: 768px) {
   #PreschoolFooter > div:first-child {
     display: grid;
     grid-template-columns: [about-start] 2fr [about-end nav-start] 1fr [nav-end];
+    justify-content: space-between;
+    align-items: center;
   }
-}
-#PreschoolFooter > div:first-child .fonts {
-  grid-column: about;
-}
-#PreschoolFooter nav {
-  display: flex;
-  flex-direction: row-reverse;
-  grid-column: nav;
-}
-@container (min-width: 768px) {
-  #PreschoolFooter nav {
-    text-align: right;
+  #PreschoolFooter > div:first-child .fonts {
+    grid-column: about;
   }
 }
 #PreschoolFooter #PreschoolFooterButton {
+  display: block;
+  grid-column: nav;
   background-color: #32afea;
-  border: 2px solid #32afea;
   color: white;
   border-radius: 1000px;
   font-size: 20px;
   line-height: 34px;
-  padding: 8px 20px;
+  padding: 10px 20px;
   font-weight: 700;
+}
+@container (max-width: 768px) {
+  #PreschoolFooter #PreschoolFooterButton {
+    margin-top: 25px;
+    margin-inline: auto;
+  }
 }
 
 :is(#PreschoolFooterButton, .chabad_more_button, #chabad_body_page .btn, .co_photo_gallery_footer a, #PreschoolSection1Button):hover {
