@@ -161,6 +161,10 @@ img[src$="White-wavy-bottom-border.png"] {
   z-index: 0;
 }
 
+.mobile #chabad_head {
+  grid-column: full-width;
+}
+
 :where(#chabad_left_colum > :nth-child(2), :is(#chabad_head, footer) > *) {
   grid-column: content;
 }
