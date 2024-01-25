@@ -844,17 +844,21 @@ body.mobile .FooterContainer a {
 
 .preschool-custom-section {
   min-height: 350px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding-block: 40px;
+  display: grid;
+  grid-template-columns: subgrid;
+}
+.preschool-custom-section > * {
+  margin-inline: auto;
+  grid-column: content;
 }
 @container (min-width: 1200px) {
-  .preschool-custom-section {
+  .preschool-custom-section > * {
     width: 91%;
   }
 }
 @container (min-width: 1400px) {
-  .preschool-custom-section {
+  .preschool-custom-section > * {
     width: 83%;
   }
 }
@@ -874,6 +878,11 @@ body.mobile .FooterContainer a {
 
 #PreschoolSection5 {
   background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/bg125.jpg);
+  grid-column: full-width;
+}
+
+#PreschoolSection6 {
+  grid-column: content;
 }
 
 #PreschoolSection7 {
