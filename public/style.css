@@ -371,7 +371,7 @@ body:not(.mobile) #chabad_body_page #chabad_head .navi a {
   font-family: "Open Sans", sans-serif;
   padding-inline: 10px;
 }
-body:not(.mobile) #chabad_body_page #chabad_head .navi a.parent::after {
+body:not(.mobile) #chabad_body_page #chabad_head .navi a.parent.arrow::after {
   content: " ↓";
 }
 body:not(.mobile) #chabad_body_page #chabad_head .navi .sub_menu {
