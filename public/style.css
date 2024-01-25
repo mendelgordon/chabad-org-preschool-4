@@ -891,6 +891,9 @@ body.mobile .FooterContainer a {
   display: grid;
   grid-template-columns: subgrid;
 }
+#PreschoolSection7 > :first-child {
+  grid-column: content;
+}
 #PreschoolSection7 h3 {
   margin-inline: auto;
 }
