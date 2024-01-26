@@ -129,6 +129,7 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
 
 .section_root #chabad_main_content:not(:has(#content_banner:first-child)) #chabad_head {
   background-color: #12b0d1;
+  margin-bottom: 50px;
 }
 
 #chabad_head {
