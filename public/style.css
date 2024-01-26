@@ -1069,6 +1069,7 @@ body.mobile footer a {
 /* if there are photos, show it with display block so it doesn't have a white space under it */
 :is(#chabad_main_content:has(#PreschoolLatestPhotos div), .section_branch) #wavy-bottom-border {
   display: block;
+  padding-top: 50px;
 }
 
 #PreschoolFooterNav {
