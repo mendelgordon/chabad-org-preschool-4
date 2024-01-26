@@ -1395,7 +1395,7 @@ div#chabad_head .chabad_logo :is(a, div, a div) {
   text-align: center;
 }
 
-:is(body:has(#MoreInSection, .article_index_container) .co_section, img[src$="/bh.gif"]) {
+:is(body:has(#MoreInSection, .article_index_container) .co_section, img[src$="/bh.gif"], .content3:has(script)) {
   display: none;
 }
 
