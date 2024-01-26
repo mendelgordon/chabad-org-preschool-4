@@ -520,7 +520,7 @@ body.mobile footer a {
   color: white;
 }
 
-.section_branch .body_wrapper {
+.section_branch :is(.body_wrapper, #co_body_container) {
   grid-row: 3/99;
   grid-column: content;
 }
