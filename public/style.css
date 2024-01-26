@@ -1194,7 +1194,7 @@ body:not(.mobile) #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) 
 
 .chabad_image_banner {
   min-height: 500px;
-  max-height: unset;
+  max-height: max(30vmax, 800px) !important;
 }
 
 body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#chabad_head .chabad_logo :is(a, div, a div) {
