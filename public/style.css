@@ -1393,7 +1393,7 @@ body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#ch
   font-size: inherit;
 }
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_right_colum {
-  grid-template-rows: auto;
+  grid-row: 100;
 }
 
 body:has(#cco_body > #photos > .photo[data-img="0"]) #cco_body > #photos {
