@@ -1251,6 +1251,11 @@ body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#ch
   aspect-ratio: 3199/122;
   margin-bottom: -1px;
 }
+@container (max-width: 600px) {
+  #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #content_banner:first-child::after {
+    width: 105%;
+  }
+}
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #content_banner .chabad_text_banner {
   width: 100%;
   display: flex;
