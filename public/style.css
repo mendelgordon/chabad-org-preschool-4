@@ -111,7 +111,7 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
   text-wrap: pretty;
 }
 
-#chabad_main_content :has(.chabad_image_banner, img[src$="White-wavy-bottom-border.png"], #co_body_container, #chabad_right_colum, header.article-header, footer),
+#chabad_main_content :has(.chabad_image_banner, img[src$="White-wavy-bottom-border.png"], #co_body_container, #chabad_right_colum, #chabad_left_colum, header.article-header, footer),
 :is(#chabad_main_content footer, #chabad_right_colum) {
   display: grid;
   grid-template-rows: subgrid;
