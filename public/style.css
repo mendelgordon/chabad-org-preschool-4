@@ -123,6 +123,16 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
   grid-row: 1/99;
 }
 
+:is(#chabad_main_content :has(#chabad_left_colum), #chabad_left_colum) {
+  grid-row: 2/99;
+}
+
+.section_root #chabad_main_content:not(:has(#content_banner:first-child)) #chabad_head {
+  background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/PreschoolStockBackground.jpg);
+  background-size: cover;
+  filter: brightness(0.5);
+}
+
 #chabad_head {
   z-index: 1;
   grid-column: content;
@@ -1179,11 +1189,6 @@ div[name=co_section][real_id^=column_promo] {
   }
 }
 /* styles for backwards compatibility */
-body.section_root #chabad_left_colum:not(:has(.chabad_image_banner)) {
-  border-top: 110px solid #12b0d1;
-  padding-top: 50px;
-}
-
 body:not(.mobile) #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_head .chabad_logo {
   color: white;
 }
