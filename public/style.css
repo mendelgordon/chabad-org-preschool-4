@@ -1173,9 +1173,11 @@ body:not(.mobile) #chabad_body_page:has(#chabad_left_colum) #chabad_head .chabad
   color: white;
 }
 
-body.mobile #chabad_body_page:has(#chabad_left_colum) .chabad_image_banner {
-  min-height: 600px;
+.chabad_image_banner {
+  min-height: 500px;
+  max-height: unset;
 }
+
 body.mobile #chabad_body_page:has(#chabad_left_colum) div#chabad_head .chabad_logo :is(a, div, a div) {
   width: 100%;
   color: black;
@@ -1280,7 +1282,6 @@ body.mobile #chabad_body_page:has(#chabad_left_colum) div#chabad_head .chabad_lo
 #chabad_body_page:has(#chabad_left_colum) .chabad_image_banner:not(:has(img)) {
   height: 100%;
   width: 100%;
-  max-height: unset;
   filter: brightness(0.5);
 }
 #chabad_body_page:has(#chabad_left_colum) :is(.chabad_box_content_body, .content_box_custom, #chabad_right_colum > :is(#chabad_updates, #co_photo_gallery, #co_calendar, #co_section, #chabad_box_text):not(:empty)) {
