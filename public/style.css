@@ -1326,6 +1326,12 @@ body.mobile #chabad_body_page:has(#chabad_left_colum) div#chabad_head .chabad_lo
 #chabad_body_page:has(#chabad_left_colum) .co_photo_gallery_footer a {
   float: none !important;
 }
+#chabad_body_page:has(#chabad_left_colum) :is(#chabad_left_colum, #chabad_right_colum) > :where(:nth-child(4n+3)) {
+  background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/bg126.jpg);
+}
+#chabad_body_page:has(#chabad_left_colum) :is(#chabad_left_colum, #chabad_right_colum) > :where(:nth-child(4n+5)) {
+  background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/bg125.jpg);
+}
 #chabad_body_page:has(#chabad_left_colum) :is(#chabad_left_colum, #chabad_right_colum) > *:not(:where(#content_banner)) {
   grid-column: content;
   background: none;
@@ -1338,12 +1344,6 @@ body.mobile #chabad_body_page:has(#chabad_left_colum) div#chabad_head .chabad_lo
 }
 #chabad_body_page:has(#chabad_left_colum) :is(#chabad_left_colum, #chabad_right_colum) > *:has(*):not(#content_banner) > * {
   grid-column: content;
-}
-#chabad_body_page:has(#chabad_left_colum) :is(#chabad_left_colum, #chabad_right_colum) > :where(:nth-child(4n+3)) {
-  background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/bg126.jpg);
-}
-#chabad_body_page:has(#chabad_left_colum) :is(#chabad_left_colum, #chabad_right_colum) > :where(:nth-child(4n+5)) {
-  background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/bg125.jpg);
 }
 #chabad_body_page:has(#chabad_left_colum) :is(#chabad_left_colum, #chabad_right_colum) :is(#chabad_left_colum, #chabad_right_colum) > :nth-child(4n+4) {
   position: relative;
