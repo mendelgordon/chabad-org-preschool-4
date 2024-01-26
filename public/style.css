@@ -501,8 +501,9 @@ body.mobile #chabad_body_page #chabad_head {
   background: #f9f9f9;
 }
 body.mobile #chabad_body_page #chabad_head {
-  flex-wrap: wrap !important;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 5px;
 }
 body.mobile #chabad_body_page #chabad_head > a {
