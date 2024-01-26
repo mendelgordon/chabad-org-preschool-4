@@ -123,7 +123,7 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
   grid-row: 1/99;
 }
 
-:is(#chabad_main_content :has(#chabad_left_colum), #chabad_left_colum) {
+:is(#chabad_main_content :has(#chabad_left_colum), #chabad_left_colum):not(:has(#content_banner:first-child)) {
   grid-row: 2/99;
 }
 
