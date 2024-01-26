@@ -505,6 +505,7 @@ body.mobile #chabad_body_page #chabad_head {
   justify-content: center;
   align-items: center;
   padding: 5px;
+  height: fit-content;
 }
 body.mobile #chabad_body_page #chabad_head > a {
   width: 100%;
