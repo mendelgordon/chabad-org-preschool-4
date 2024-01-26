@@ -350,6 +350,9 @@ img {
   text-align: center;
   font-size: 70px;
 }
+.mobile #chabad_body_page .master-content-wrapper .article-header__title {
+  margin-top: 40px;
+}
 @container (max-width: 700px) {
   #chabad_body_page .master-content-wrapper .article-header__title {
     font-size: 40px;
