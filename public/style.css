@@ -128,7 +128,7 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
 }
 
 .master-content-wrapper {
-  grid-template-rows: auto;
+  grid-template-rows: auto !important;
   grid-row: 1/3;
 }
 
