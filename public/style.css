@@ -518,6 +518,9 @@ body.mobile.cco_templateless_page #chabad_body_page .bh {
 body.mobile footer a {
   color: white;
 }
+body.mobile .footer_hr {
+  height: 1px;
+}
 
 .section_branch #chabad_head {
   z-index: 2;
