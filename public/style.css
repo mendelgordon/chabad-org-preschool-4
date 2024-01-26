@@ -618,8 +618,13 @@ body.mobile .footer_hr {
   z-index: 1;
 }
 #PreschoolSection1 img[src$="White-wavy-bottom-border.png"] {
-  margin-bottom: -10px;
+  margin-bottom: -1px;
   padding-top: 20px;
+}
+@container (min-width: 1500px) {
+  #PreschoolSection1 img[src$="White-wavy-bottom-border.png"] {
+    margin-bottom: -10px;
+  }
 }
 
 #PreschoolSection2 {
