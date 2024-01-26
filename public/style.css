@@ -344,14 +344,14 @@ img {
   align-items: center;
   justify-content: center;
 }
+.mobile #chabad_body_page .master-content-wrapper .article-header {
+  margin-block: 40px;
+}
 #chabad_body_page .master-content-wrapper .article-header__title {
   color: #343f52 !important;
   font-family: "Fredoka", Helvetica, Arial, "sans-serif";
   text-align: center;
   font-size: 70px;
-}
-.mobile #chabad_body_page .master-content-wrapper .article-header__title {
-  margin-top: 40px;
 }
 @container (max-width: 700px) {
   #chabad_body_page .master-content-wrapper .article-header__title {
