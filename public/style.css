@@ -582,8 +582,9 @@ body.mobile footer a {
   justify-content: space-between;
 }
 @container (max-width: 600px) {
-  #chabad_head {
+  body::not(.mobile) #chabad_head {
     flex-wrap: wrap;
+    gap: 20px;
   }
 }
 #chabad_head #PreschoolTitle {
