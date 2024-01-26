@@ -581,6 +581,11 @@ body.mobile footer a {
   display: flex !important;
   justify-content: space-between;
 }
+@container (max-width: 600px) {
+  #chabad_head {
+    flex-wrap: wrap;
+  }
+}
 #chabad_head #PreschoolTitle {
   color: white;
   font-size: clamp(17px, 2vw, 37px);
