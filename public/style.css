@@ -520,6 +520,9 @@ body.mobile footer a {
   color: white;
 }
 
+.section_branch #chabad_head {
+  z-index: 2;
+}
 .section_branch :is(.body_wrapper, #co_body_container) {
   grid-row: 3;
   grid-column: content;
