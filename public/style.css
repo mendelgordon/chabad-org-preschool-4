@@ -198,17 +198,17 @@ img {
   height: auto;
 }
 
-#chabad_body_page {
+:where(#chabad_body_page) {
   container-type: inline-size;
 }
-#chabad_body_page :is(.btn, .chabad_welcome, .chabad_more_button, .chabad_text_banner_description) {
+:where(#chabad_body_page) :is(.btn, .chabad_welcome, .chabad_more_button, .chabad_text_banner_description) {
   animation-name: zoomIn;
   animation-duration: 700ms;
   animation-timing-function: ease;
   animation-direction: normal;
   animation-fill-mode: both;
 }
-#chabad_body_page .btn {
+:where(#chabad_body_page) .btn {
   --btn-padding-x: 24px;
   --btn-padding-y: 10px;
   --btn-bg: transparent;
@@ -235,12 +235,12 @@ img {
   animation-delay: 1500ms;
   border-radius: 1000px !important;
 }
-#chabad_body_page .display-3 {
+:where(#chabad_body_page) .display-3 {
   font-family: "Fredoka", Helvetica, Arial, "sans-serif";
   font-size: 50px;
   text-wrap: balance;
 }
-#chabad_body_page :is(.btn-primaryx, .btn-primaryx2) {
+:where(#chabad_body_page) :is(.btn-primaryx, .btn-primaryx2) {
   font-size: 20px;
   margin-top: -35px;
   --btn-padding-x: 28px !important;
@@ -249,82 +249,82 @@ img {
   --btn-hover-bg: #fff;
   --btn-active-bg: #fff;
 }
-#chabad_body_page .btn-primaryx {
+:where(#chabad_body_page) .btn-primaryx {
   --btn-border-color: #fff;
   --btn-hover-border-color: #fff;
   --btn-active-border-color: #fff;
 }
-#chabad_body_page .btn-primaryx2 {
+:where(#chabad_body_page) .btn-primaryx2 {
   --btn-border-color: #9a8fff;
   --btn-hover-border-color: #9a8fff;
   --btn-active-border-color: #9a8fff;
 }
-#chabad_body_page :is(.swiper-slide, .card) {
+:where(#chabad_body_page) :is(.swiper-slide, .card) {
   position: relative;
 }
-#chabad_body_page .blockquote-details {
+:where(#chabad_body_page) .blockquote-details {
   margin-top: 20px;
 }
-#chabad_body_page .card-body {
+:where(#chabad_body_page) .card-body {
   flex: 1 1 auto;
   padding: var(--card-spacer-y) var(--card-spacer-x);
   color: var(--card-color);
 }
-#chabad_body_page .card-bodyf {
+:where(#chabad_body_page) .card-bodyf {
   flex: 1 1 auto;
   padding: var(--card-spacer-y) var(--card-spacer-x);
   color: var(--card-color);
 }
-#chabad_body_page .card-bodyf:hover {
+:where(#chabad_body_page) .card-bodyf:hover {
   background: #ff4880;
 }
-#chabad_body_page .card-bodyf:hover, #chabad_body_page .card-bodyf:hover h4 {
+:where(#chabad_body_page) .card-bodyf:hover, :where(#chabad_body_page) .card-bodyf:hover h4 {
   color: #fff;
   border-radius: 7px;
 }
-#chabad_body_page .iconsfoot {
+:where(#chabad_body_page) .iconsfoot {
   margin-right: 15px !important;
 }
-#chabad_body_page .iconsfoot i {
+:where(#chabad_body_page) .iconsfoot i {
   margin-right: 5px;
   color: #32afea;
 }
-#chabad_body_page .form-check-input {
+:where(#chabad_body_page) .form-check-input {
   flex-shrink: initial;
 }
-#chabad_body_page :is(.co_photo_gallery, .slider-wrapper) {
+:where(#chabad_body_page) :is(.co_photo_gallery, .slider-wrapper) {
   padding: 20px;
 }
-#chabad_body_page :is(.co_photo_gallery_body, #TestimonialSlides) {
+:where(#chabad_body_page) :is(.co_photo_gallery_body, #TestimonialSlides) {
   position: relative;
   width: 100%;
   padding-inline: 40px !important;
 }
-#chabad_body_page :is(.co_photo_gallery_body, #TestimonialSlides) .swiper-button-prev {
+:where(#chabad_body_page) :is(.co_photo_gallery_body, #TestimonialSlides) .swiper-button-prev {
   left: 0;
 }
-#chabad_body_page :is(.co_photo_gallery_body, #TestimonialSlides) .swiper-button-next {
+:where(#chabad_body_page) :is(.co_photo_gallery_body, #TestimonialSlides) .swiper-button-next {
   right: 0;
 }
-#chabad_body_page .slider-wrapper .slide {
+:where(#chabad_body_page) .slider-wrapper .slide {
   border-radius: 5px;
 }
-#chabad_body_page .slider-wrapper .card {
+:where(#chabad_body_page) .slider-wrapper .card {
   padding: 20px;
 }
-#chabad_body_page .slider-wrapper .blockquote-details img {
+:where(#chabad_body_page) .slider-wrapper .blockquote-details img {
   border-radius: 50%;
   width: 70px;
   margin-right: 15px;
 }
-#chabad_body_page .co_photo_gallery img {
+:where(#chabad_body_page) .co_photo_gallery img {
   width: 100%;
   height: auto;
   object-fit: cover;
   aspect-ratio: 1;
   border-radius: 5px;
 }
-#chabad_body_page .co_photo_gallery_head div {
+:where(#chabad_body_page) .co_photo_gallery_head div {
   color: #393d72;
   font-size: 50px;
   font-family: Fredoka, Helvetica, Arial, sans-serif;
@@ -332,30 +332,30 @@ img {
   line-height: 1.25;
   padding-bottom: 20px;
 }
-#chabad_body_page .bh {
+:where(#chabad_body_page) .bh {
   position: absolute;
   top: 30px;
   right: 30px;
 }
-#chabad_body_page .master-content-wrapper {
+:where(#chabad_body_page) .master-content-wrapper {
   background-image: linear-gradient(0deg, rgb(117, 197, 221) 0%, rgb(18, 176, 209) 100%);
   height: 300px;
   z-index: 0;
 }
-.mobile #chabad_body_page .master-content-wrapper {
+.mobile :where(#chabad_body_page) .master-content-wrapper {
   grid-row: 2;
 }
-#chabad_body_page .master-content-wrapper .article-header__title {
+:where(#chabad_body_page) .master-content-wrapper .article-header__title {
   color: #343f52 !important;
   font-family: "Fredoka", Helvetica, Arial, "sans-serif";
   font-size: 70px;
 }
 @container (max-width: 700px) {
-  #chabad_body_page .master-content-wrapper .article-header__title {
+  :where(#chabad_body_page) .master-content-wrapper .article-header__title {
     font-size: 40px;
   }
 }
-#chabad_body_page .card-border-bottom::after {
+:where(#chabad_body_page) .card-border-bottom::after {
   bottom: 0;
   right: 0;
   left: 0;
@@ -370,7 +370,7 @@ img {
   content: "";
   position: absolute;
 }
-#chabad_body_page a:hover {
+:where(#chabad_body_page) a:hover {
   text-decoration: none;
 }
 
@@ -1387,7 +1387,7 @@ div#chabad_head .chabad_logo :is(a, div, a div) {
   text-align: center;
 }
 
-body:has(#MoreInSection, .article_index_container) .co_section {
+:where(body:has(#MoreInSection, .article_index_container) .co_section, img[src$="/bh.gif"]) {
   display: none !important;
 }
 
