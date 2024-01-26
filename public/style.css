@@ -25,10 +25,6 @@
   line-height: 1.6;
 }
 
-.master-content-wrapper {
-  grid-row: 1/3;
-}
-
 #BodyContainer .no-hero-image #co_content_container .master-content-wrapper.master-content-wrapper {
   background-color: #12b0d1 !important;
 }
@@ -346,9 +342,6 @@ img {
 #chabad_body_page .master-content-wrapper {
   background-image: linear-gradient(0deg, rgb(117, 197, 221) 0%, rgb(18, 176, 209) 100%);
   height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .mobile #chabad_body_page .master-content-wrapper {
   grid-row: 2;
