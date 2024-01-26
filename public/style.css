@@ -1239,7 +1239,8 @@ body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#ch
   background-repeat: no-repeat;
   background-size: contain;
   width: 102%;
-  aspect-ratio: 3199/126;
+  aspect-ratio: 3199/122;
+  margin-bottom: -1px;
 }
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #content_banner .chabad_text_banner {
   width: 100%;
