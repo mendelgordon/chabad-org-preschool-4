@@ -128,9 +128,7 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
 }
 
 .section_root #chabad_main_content:not(:has(#content_banner:first-child)) #chabad_head {
-  background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/PreschoolStockBackground.jpg);
-  background-size: cover;
-  filter: brightness(0.5);
+  background-color: #12b0d1;
 }
 
 #chabad_head {
