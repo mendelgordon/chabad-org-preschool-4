@@ -1425,4 +1425,8 @@ div#chabad_head .chabad_logo :is(a, div, a div) {
   display: none;
 }
 
+.chabad_announce {
+  overflow: visible;
+}
+
 /*# sourceMappingURL=style.css.map */
