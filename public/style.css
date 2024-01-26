@@ -1387,8 +1387,8 @@ div#chabad_head .chabad_logo :is(a, div, a div) {
   text-align: center;
 }
 
-:where(body:has(#MoreInSection, .article_index_container) .co_section, img[src$="/bh.gif"]) {
-  display: none !important;
+:is(body:has(#MoreInSection, .article_index_container) .co_section, img[src$="/bh.gif"]) {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
