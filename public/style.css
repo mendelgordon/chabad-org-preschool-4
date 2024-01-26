@@ -1292,8 +1292,7 @@ body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#ch
   z-index: 1;
   float: none;
 }
-#chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) img[src~=preschool_banner_image],
-#chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) .chabad_image_banner:not(:has(img)) {
+#chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) :is(img[src*="preschool_banner_image.jpg"], .chabad_image_banner:not(:has(img))) {
   content: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/PreschoolStockBackground.jpg);
   object-fit: cover;
 }
