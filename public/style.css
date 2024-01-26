@@ -1346,17 +1346,7 @@ body.mobile #chabad_body_page:has(#chabad_left_colum) div#chabad_head .chabad_lo
   background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/bg126.jpg);
 }
 #chabad_body_page:has(#chabad_left_colum) :is(#chabad_left_colum, #chabad_right_colum) > :nth-child(4n+5) {
-  position: relative;
-}
-#chabad_body_page:has(#chabad_left_colum) :is(#chabad_left_colum, #chabad_right_colum) > :nth-child(4n+5)::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
   background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/bg125.jpg);
-  z-index: -1;
 }
 #chabad_body_page:has(#chabad_left_colum) :is(#chabad_left_colum, #chabad_right_colum) :is(#chabad_left_colum, #chabad_right_colum) > :nth-child(4n+4) {
   position: relative;
