@@ -521,10 +521,15 @@ body.mobile footer a {
 }
 
 .section_branch :is(.body_wrapper, #co_body_container) {
-  grid-row: 3/99;
+  grid-row: 3;
   grid-column: content;
 }
-
+.section_branch #wavy-bottom-border {
+  grid-row: 4;
+}
+.section_branch #PreschoolFooterNav {
+  grid-row: 5;
+}
 .section_branch #co_body_container {
   margin-top: 50px !important;
 }
