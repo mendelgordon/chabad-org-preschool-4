@@ -203,17 +203,17 @@ img {
   height: auto;
 }
 
-:where(#chabad_body_page) {
+#chabad_body_page {
   container-type: inline-size;
 }
-:where(#chabad_body_page) :is(.btn, .chabad_welcome, .chabad_more_button, .chabad_text_banner_description) {
+#chabad_body_page :is(.btn, .chabad_welcome, .chabad_more_button, .chabad_text_banner_description) {
   animation-name: zoomIn;
   animation-duration: 700ms;
   animation-timing-function: ease;
   animation-direction: normal;
   animation-fill-mode: both;
 }
-:where(#chabad_body_page) .btn {
+#chabad_body_page .btn {
   --btn-padding-x: 24px;
   --btn-padding-y: 10px;
   --btn-bg: transparent;
@@ -240,12 +240,12 @@ img {
   animation-delay: 1500ms;
   border-radius: 1000px !important;
 }
-:where(#chabad_body_page) .display-3 {
+#chabad_body_page .display-3 {
   font-family: "Fredoka", Helvetica, Arial, "sans-serif";
   font-size: 50px;
   text-wrap: balance;
 }
-:where(#chabad_body_page) :is(.btn-primaryx, .btn-primaryx2) {
+#chabad_body_page :is(.btn-primaryx, .btn-primaryx2) {
   font-size: 20px;
   margin-top: -35px;
   --btn-padding-x: 28px !important;
@@ -254,82 +254,82 @@ img {
   --btn-hover-bg: #fff;
   --btn-active-bg: #fff;
 }
-:where(#chabad_body_page) .btn-primaryx {
+#chabad_body_page .btn-primaryx {
   --btn-border-color: #fff;
   --btn-hover-border-color: #fff;
   --btn-active-border-color: #fff;
 }
-:where(#chabad_body_page) .btn-primaryx2 {
+#chabad_body_page .btn-primaryx2 {
   --btn-border-color: #9a8fff;
   --btn-hover-border-color: #9a8fff;
   --btn-active-border-color: #9a8fff;
 }
-:where(#chabad_body_page) :is(.swiper-slide, .card) {
+#chabad_body_page :is(.swiper-slide, .card) {
   position: relative;
 }
-:where(#chabad_body_page) .blockquote-details {
+#chabad_body_page .blockquote-details {
   margin-top: 20px;
 }
-:where(#chabad_body_page) .card-body {
+#chabad_body_page .card-body {
   flex: 1 1 auto;
   padding: var(--card-spacer-y) var(--card-spacer-x);
   color: var(--card-color);
 }
-:where(#chabad_body_page) .card-bodyf {
+#chabad_body_page .card-bodyf {
   flex: 1 1 auto;
   padding: var(--card-spacer-y) var(--card-spacer-x);
   color: var(--card-color);
 }
-:where(#chabad_body_page) .card-bodyf:hover {
+#chabad_body_page .card-bodyf:hover {
   background: #ff4880;
 }
-:where(#chabad_body_page) .card-bodyf:hover, :where(#chabad_body_page) .card-bodyf:hover h4 {
+#chabad_body_page .card-bodyf:hover, #chabad_body_page .card-bodyf:hover h4 {
   color: #fff;
   border-radius: 7px;
 }
-:where(#chabad_body_page) .iconsfoot {
+#chabad_body_page .iconsfoot {
   margin-right: 15px !important;
 }
-:where(#chabad_body_page) .iconsfoot i {
+#chabad_body_page .iconsfoot i {
   margin-right: 5px;
   color: #32afea;
 }
-:where(#chabad_body_page) .form-check-input {
+#chabad_body_page .form-check-input {
   flex-shrink: initial;
 }
-:where(#chabad_body_page) :is(.co_photo_gallery, .slider-wrapper) {
+#chabad_body_page :is(.co_photo_gallery, .slider-wrapper) {
   padding: 20px;
 }
-:where(#chabad_body_page) :is(.co_photo_gallery_body, #TestimonialSlides) {
+#chabad_body_page :is(.co_photo_gallery_body, #TestimonialSlides) {
   position: relative;
   width: 100%;
   padding-inline: 40px !important;
 }
-:where(#chabad_body_page) :is(.co_photo_gallery_body, #TestimonialSlides) .swiper-button-prev {
+#chabad_body_page :is(.co_photo_gallery_body, #TestimonialSlides) .swiper-button-prev {
   left: 0;
 }
-:where(#chabad_body_page) :is(.co_photo_gallery_body, #TestimonialSlides) .swiper-button-next {
+#chabad_body_page :is(.co_photo_gallery_body, #TestimonialSlides) .swiper-button-next {
   right: 0;
 }
-:where(#chabad_body_page) .slider-wrapper .slide {
+#chabad_body_page .slider-wrapper .slide {
   border-radius: 5px;
 }
-:where(#chabad_body_page) .slider-wrapper .card {
+#chabad_body_page .slider-wrapper .card {
   padding: 20px;
 }
-:where(#chabad_body_page) .slider-wrapper .blockquote-details img {
+#chabad_body_page .slider-wrapper .blockquote-details img {
   border-radius: 50%;
   width: 70px;
   margin-right: 15px;
 }
-:where(#chabad_body_page) .co_photo_gallery img {
+#chabad_body_page .co_photo_gallery img {
   width: 100%;
   height: auto;
   object-fit: cover;
   aspect-ratio: 1;
   border-radius: 5px;
 }
-:where(#chabad_body_page) .co_photo_gallery_head div {
+#chabad_body_page .co_photo_gallery_head div {
   color: #393d72;
   font-size: 50px;
   font-family: Fredoka, Helvetica, Arial, sans-serif;
@@ -337,31 +337,31 @@ img {
   line-height: 1.25;
   padding-bottom: 20px;
 }
-:where(#chabad_body_page) .bh {
+#chabad_body_page .bh {
   position: absolute;
   top: 30px;
   right: 30px;
 }
-:where(#chabad_body_page) .master-content-wrapper {
+#chabad_body_page .master-content-wrapper {
   background-image: linear-gradient(0deg, rgb(117, 197, 221) 0%, rgb(18, 176, 209) 100%);
   min-height: 300px;
   z-index: 0;
 }
-.mobile :where(#chabad_body_page) .master-content-wrapper {
+.mobile #chabad_body_page .master-content-wrapper {
   grid-row: 2;
   padding-block: 35px;
 }
-:where(#chabad_body_page) .master-content-wrapper .article-header__title {
+#chabad_body_page .master-content-wrapper .article-header__title {
   color: #343f52 !important;
   font-family: "Fredoka", Helvetica, Arial, "sans-serif";
   font-size: 70px;
 }
 @container (max-width: 700px) {
-  :where(#chabad_body_page) .master-content-wrapper .article-header__title {
+  #chabad_body_page .master-content-wrapper .article-header__title {
     font-size: 40px;
   }
 }
-:where(#chabad_body_page) .card-border-bottom::after {
+#chabad_body_page .card-border-bottom::after {
   bottom: 0;
   right: 0;
   left: 0;
@@ -376,7 +376,7 @@ img {
   content: "";
   position: absolute;
 }
-:where(#chabad_body_page) a:hover {
+#chabad_body_page a:hover {
   text-decoration: none;
 }
 
@@ -618,8 +618,7 @@ body.mobile .footer_hr {
   z-index: 1;
 }
 #PreschoolSection1 img[src$="White-wavy-bottom-border.png"] {
-  width: 100%;
-  display: block;
+  margin-bottom: -1px;
   padding-top: 20px;
 }
 
@@ -1228,12 +1227,9 @@ body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#ch
 }
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #content_banner::after {
   background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/illustrations/White-wavy-bottom-border.png);
-  background-position: bottom;
+  margin-bottom: -1px;
   background-size: contain;
-  background-repeat: no-repeat;
-  height: auto;
-  width: 100%;
-  display: block;
+  width: 102%;
   aspect-ratio: 3199/126;
 }
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #content_banner .chabad_text_banner {
