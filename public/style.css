@@ -1376,19 +1376,19 @@ body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#ch
   grid-column: content;
 }
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_left_colum > :nth-child(4n+3):has(*),
-#chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_right_colum > :nth-child(0n+1):has(*) {
+#chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_right_colum > :nth-child(4n+1):has(*) {
   background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/bg126.jpg);
 }
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_left_colum > :nth-child(4n+5):has(*),
-#chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_right_colum > :nth-child(0n+3):has(*) {
+#chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_right_colum > :nth-child(4n+3):has(*) {
   background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/bg125.jpg);
 }
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_left_colum > :nth-child(4n+4),
-#chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_right_colum > :nth-child(0n+2) {
+#chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_right_colum > :nth-child(4n+2) {
   position: relative;
 }
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_left_colum > :nth-child(4n+4)::before,
-#chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_right_colum > :nth-child(0n+2)::before {
+#chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_right_colum > :nth-child(4n+2)::before {
   content: "";
   bottom: 50px;
   right: 15%;
@@ -1400,7 +1400,7 @@ body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#ch
   width: 120px;
 }
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_left_colum > :nth-child(4n+4)::after,
-#chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_right_colum > :nth-child(0n+2)::after {
+#chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_right_colum > :nth-child(4n+2)::after {
   content: "";
   top: 50px;
   left: 15%;
