@@ -1214,7 +1214,8 @@ body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#ch
 }
 
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) td.chabad_logo :is(div, a, h1) {
-  font-size: inherit;
+  font-size: clamp(17px, 2vw, 37px);
+  font-weight: bold;
 }
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) .chabad_text_head {
   display: none;
