@@ -96,28 +96,49 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
   z-index: -1;
 }
 
-/* body.noselect {
-	.chabad_left_column {
-		h3 {
-			line-height: normal;
-			div {
-				line-height: normal;
-				font-size: inherit;
-			}
-		}
-		#PreschoolSection1 {
-			display: grid;
-			> * {
-				grid-row: 1;
-				grid-column: 1;
-			}
-		}
-	}
-	.ContentItem[name="co_section"],
-	.ContentItem[name="co_template"] {
-		flex: 1 1 400px;
-	}
-} */
+body.noselect .chabad_left_column h3 {
+  line-height: normal;
+}
+body.noselect .chabad_left_column h3 div {
+  line-height: normal;
+  font-size: inherit;
+}
+body.noselect .chabad_left_column #PreschoolSection1 {
+  display: grid;
+}
+body.noselect .chabad_left_column #PreschoolSection1 > * {
+  grid-row: 1;
+  grid-column: 1;
+}
+body.noselect .chabad_left_column #TestimonialSlides {
+  width: 88% !important;
+  overflow: hidden;
+}
+body.noselect .chabad_left_column #TestimonialSlides .swiper {
+  overflow: auto;
+}
+body.noselect .chabad_left_column .ContentItem[name=co_section],
+body.noselect .chabad_left_column .ContentItem[name=co_template] {
+  flex: 1 1 400px;
+  display: grid;
+}
+body.noselect .chabad_left_column .ContentItem[name=co_section] > *,
+body.noselect .chabad_left_column .ContentItem[name=co_template] > * {
+  grid-column: 1;
+}
+body.noselect .chabad_left_column .ContentItem[real_name=Header] {
+  height: unset;
+  background: unset;
+  margin: unset;
+}
+body.noselect .chabad_left_column a:-webkit-any-link {
+  text-decoration: none;
+}
+
+#Co_ContentEditor_div {
+  height: max(500px, 100vh - 300px);
+}
+
 #chabad_main_content {
   --padding-inline: 16px;
   --content-max-width: 1320px;
@@ -152,9 +173,6 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
 .section_root #chabad_main_content:not(:has(#content_banner:first-child, #PreschoolSection1Image)) #chabad_head {
   background-color: #12b0d1;
   margin-bottom: 50px;
-}
-.section_root #chabad_main_content:not(:has(#content_banner:first-child, #PreschoolSection1Image)) #chabad_head .sub_menu {
-  background-color: #12b0d1;
 }
 
 #chabad_head {
