@@ -395,6 +395,7 @@ img {
 /* General Styling for the Navbar */
 body:not(.mobile) #chabad_body_page .chabad_navigator_bar ul li {
   z-index: initial;
+  border: 0;
 }
 body:not(.mobile) #chabad_body_page #chabad_head {
   padding: 20px;
