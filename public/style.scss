@@ -116,7 +116,7 @@ html:not(:has(link#k[href*="sites6"], link#k[href*="template5"])) .article_index
 	}
 }
 #chabad_main_content :has(#{$hero-image-container-level-one-on-old-minisites}, img[src$="White-wavy-bottom-border.png"], #co_body_container, #chabad_right_colum, #chabad_left_colum, header.article-header, footer),
-:is(#chabad_main_content footer, #chabad_right_colum, #chabad_left_colum) {
+#chabad_main_content :is(footer, #chabad_right_colum, #chabad_left_colum) {
 	display: grid;
 	grid-template-rows: subgrid;
 	grid-template-columns: subgrid;
