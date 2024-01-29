@@ -1446,4 +1446,8 @@ div#chabad_head .chabad_logo :is(a, div, a div) {
   font-family: inherit;
 }
 
+body.sites-article #header {
+  border-bottom: none;
+}
+
 /*# sourceMappingURL=style.css.map */
