@@ -95,7 +95,8 @@ html:not(:has(link#k[href*="sites6"], link#k[href*="template5"])) .article_index
 	}
 }
 /* Main grid layout for header and content */
-#chabad_main_content {
+#chabad_main_content,
+#Co_ContentEditor_Container {
 	--padding-inline: 16px;
 	--content-max-width: 1320px;
 	--breakout-max-width: 1360px;
@@ -115,7 +116,7 @@ html:not(:has(link#k[href*="sites6"], link#k[href*="template5"])) .article_index
 		text-wrap: pretty;
 	}
 }
-#chabad_main_content :has(#{$hero-image-container-level-one-on-old-minisites}, img[src$="White-wavy-bottom-border.png"], #co_body_container, #chabad_right_colum, #chabad_left_colum, header.article-header, footer),
+:is(#chabad_main_content, #Co_ContentEditor_Container) :has(#{$hero-image-container-level-one-on-old-minisites}, img[src$="White-wavy-bottom-border.png"], #co_body_container, #chabad_right_colum, #chabad_left_colum, header.article-header, footer),
 :is(#chabad_main_content footer, #chabad_right_colum, #chabad_left_colum) {
 	display: grid;
 	grid-template-rows: subgrid;
