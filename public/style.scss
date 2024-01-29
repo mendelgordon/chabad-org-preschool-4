@@ -543,7 +543,7 @@ body.mobile {
 		grid-row: 5;
 	}
 	#co_body_container {
-		margin-top: 50px !important;
+		margin-block: 50px !important;
 		.co_body.article-body:not(*) {
 			min-height: 300px;
 		}
