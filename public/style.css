@@ -565,6 +565,9 @@ body.mobile footer a {
 .section_branch #co_body_container .co_body.article-body:not(*) {
   min-height: 300px;
 }
+.section_branch #chabad_right_colum {
+  display: none;
+}
 
 :is(.co_body .content p, .co_body .content li, .co_body .content .form-all li, html body.cco_body p, .form-all) {
   color: #343333;
@@ -1427,9 +1430,6 @@ body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#ch
 
 body:has(#cco_body > #photos > .photo[data-img="0"]) #cco_body > #photos {
   min-height: 150px;
-}
-body:has(#cco_body > #photos > .photo[data-img="0"]) #chabad_right_colum #co_photo_gallery {
-  display: none;
 }
 
 :where(.set-direction-to-content, .co_photo_gallery, .co_photo_gallery_head div, div#co_photo_gallery .co_photo_gallery_footer, div#co_photo_gallery .co_photo_gallery_footer a, .chabad_text_banner, #PreschoolSection7, .preschool-section-4-card h4, #PreschoolSection4, #PreschoolSection3, #PreschoolSection2, #PreschoolSection1, body.mobile #chabad_head a, .article-header__title, .card-bodyf, .display-3, .btn),
