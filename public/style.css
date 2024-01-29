@@ -127,11 +127,11 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
   grid-row: 2/99;
 }
 
-.section_root #chabad_main_content:not(:has(#content_banner:first-child)) #chabad_head {
+.section_root #chabad_main_content:not(:has(#content_banner:first-child, #PreschoolSection1Image)) #chabad_head {
   background-color: #12b0d1;
   margin-bottom: 50px;
 }
-.section_root #chabad_main_content:not(:has(#content_banner:first-child)) #chabad_head .sub_menu {
+.section_root #chabad_main_content:not(:has(#content_banner:first-child, #PreschoolSection1Image)) #chabad_head .sub_menu {
   background-color: #12b0d1;
 }
 
