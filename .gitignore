@@ -6,6 +6,3 @@ node_modules/
 # Ignore all .json and .js in the root
 *.json
 /*.js
-
-# Ignore the scss file
-*.scss
