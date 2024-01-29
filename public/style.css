@@ -135,10 +135,6 @@ body.noselect .chabad_left_column a:-webkit-any-link {
   text-decoration: none;
 }
 
-#Co_ContentEditor_div {
-  height: max(500px, 100vh - 300px);
-}
-
 #chabad_main_content {
   --padding-inline: 16px;
   --content-max-width: 1320px;
