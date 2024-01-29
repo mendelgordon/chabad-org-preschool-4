@@ -131,7 +131,7 @@ body.noselect .chabad_left_column .ContentItem[name=co_template] {
 }
 body.noselect .chabad_left_column .ContentItem[name=co_section] > *,
 body.noselect .chabad_left_column .ContentItem[name=co_template] > * {
-  grid-column: 1;
+  grid-column: 1 !important;
 }
 body.noselect .chabad_left_column .ContentItem[real_name=Header] {
   height: unset;

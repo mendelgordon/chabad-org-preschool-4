@@ -129,7 +129,7 @@ body.noselect {
 			flex: 1 1 400px;
 			display: grid;
 			> * {
-				grid-column: 1;
+				grid-column: 1 !important;
 			}
 		}
 		.ContentItem[real_name="Header"] {
