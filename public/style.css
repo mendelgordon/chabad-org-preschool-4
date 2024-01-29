@@ -96,6 +96,13 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
   z-index: -1;
 }
 
+body.noselect #Co_ContentEditor_Container {
+  padding: 0;
+}
+body.noselect div.chabad_left_colum,
+body.noselect div.chabad_left_column {
+  width: 100%;
+}
 body.noselect .chabad_left_column h3 {
   line-height: normal;
 }
