@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap");
 /* page tools seem to stay even if you choose to hide them so here they get set to stay hidden always */
 .page-tools-sidebar {
@@ -1339,7 +1339,6 @@ body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#ch
 @container (max-width: 600px) {
   #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) :is(.big_title, .medium_title, .chabad_updates_head div, .chabad_box_text_head, .co_section_head, .co_calendar_head) {
     font-size: 35px;
-    text-align: left;
   }
 }
 @container (min-width: 1200px) {
