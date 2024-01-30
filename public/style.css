@@ -120,7 +120,7 @@ body.noselect .chabad_left_column #PreschoolSection7Cards > div {
   flex: 1 1 250px;
 }
 body.noselect .chabad_left_column #PreschoolSection4 > :first-child {
-  flex-shrink: 0;
+  min-width: 100%;
 }
 body.noselect .chabad_left_column #PreschoolSection4 .preschool-section-4-card {
   width: auto;
