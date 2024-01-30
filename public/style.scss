@@ -165,13 +165,17 @@ body.noselect {
 #chabad_main_content :has(#{$hero-image-container-level-one-on-old-minisites}, img[src$="White-wavy-bottom-border.png"], #co_body_container, #chabad_right_colum, #chabad_left_colum, header.article-header, footer),
 #chabad_main_content :is(footer, #chabad_right_colum, #chabad_left_colum) {
 	display: grid;
-	grid-template-rows: subgrid;
-	grid-template-columns: subgrid;
-	grid-column: full-width;
+	@supports (grid-template-rows: subgrid) {
+		grid-template-rows: subgrid;
+		grid-template-columns: subgrid;
+		grid-column: full-width;
+	}
 }
-#chabad_main_content :has(#content_banner, #PreschoolSection1, #co_body_container) {
-	// Content areas should fill the entire height of the page
-	grid-row: 1/99;
+@supports (grid-template-rows: subgrid) {
+	#chabad_main_content :has(#content_banner, #PreschoolSection1, #co_body_container) {
+		// Content areas should fill the entire height of the page
+		grid-row: 1/99;
+	}
 }
 #chabad_main_content :has(#chabad_left_colum),
 #chabad_left_colum {
@@ -186,7 +190,9 @@ body.noselect {
 #chabad_head {
 	// Header should overlap the first row of content
 	z-index: 1;
-	grid-column: content;
+	@supports (grid-template-rows: subgrid) {
+		grid-column: content;
+	}
 	grid-row: 1;
 }
 .master-content-wrapper {
@@ -197,7 +203,9 @@ body.noselect {
 }
 header.article-header {
 	grid-row: 2;
-	grid-column: content;
+	@supports (grid-template-rows: subgrid) {
+		grid-column: content;
+	}
 	.mobile & {
 		margin-bottom: 0;
 	}
@@ -207,12 +215,16 @@ header.article-header {
 #{$hero-image-container-level-two-on-old-minisites},
 #PreschoolSection1,
 #PreschoolSection1Image {
-	grid-column: full-width;
+	@supports (grid-template-rows: subgrid) {
+		grid-column: full-width;
+	}
 	grid-row: 1/4;
 }
 #{$hero-text-wrapper-on-old-minisites},
 #PreschoolSection1Text {
-	grid-column: content;
+	@supports (grid-template-rows: subgrid) {
+		grid-column: content;
+	}
 	grid-row: 2;
 }
 #PreschoolSection1Text {
@@ -227,26 +239,36 @@ header.article-header {
 }
 #{$hero-bottom-border-on-old-minisites},
 img[src$="White-wavy-bottom-border.png"] {
-	grid-column: full-width;
+	@supports (grid-template-rows: subgrid) {
+		grid-column: full-width;
+	}
 	grid-row: 3;
 	align-self: end;
 	z-index: 0;
 }
 .mobile #chabad_head {
-	grid-column: full-width;
+	@supports (grid-template-rows: subgrid) {
+		grid-column: full-width;
+	}
 	> * {
 		width: 100%;
 	}
 }
 :where(#chabad_left_colum > :nth-child(2), :is(#chabad_head, footer) > *) {
-	grid-column: content;
+	@supports (grid-template-rows: subgrid) {
+		grid-column: content;
+	}
 }
 #wavy-bottom-border {
-	grid-column: full-width;
+	@supports (grid-template-rows: subgrid) {
+		grid-column: full-width;
+	}
 }
 :where(.content-area-parent:has(#PreschoolSection1)) > *:not(#PreschoolSection1) {
 	padding-block: 50px;
-	grid-column: content;
+	@supports (grid-template-rows: subgrid) {
+		grid-column: content;
+	}
 }
 img {
 	max-width: 100%;
@@ -278,6 +300,7 @@ img {
 		color: #60697b;
 		vertical-align: middle;
 		cursor: pointer;
+		-webkit-user-select: none;
 		user-select: none;
 		border: 2px solid var(--btn-border-color);
 		background-color: var(--btn-bg);
@@ -296,7 +319,10 @@ img {
 		font-family: "Fredoka", Helvetica, Arial, "sans-serif";
 		font-size: 50px;
 		text-wrap: balance;
-		backdrop-filter: blur(1px);
+		@supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
+			-webkit-backdrop-filter: blur(1px);
+			backdrop-filter: blur(1px);
+		}
 	}
 	.btn-primaryx,
 	.btn-primaryx2 {
@@ -447,7 +473,10 @@ body:not(.mobile) #chabad_body_page {
 	#chabad_head {
 		padding: 20px;
 		max-width: 100%;
-		height: fit-content;
+		height: auto;
+		@supports (height: fit-content) {
+			height: fit-content;
+		}
 	}
 	#chabad_head .navi {
 		height: unset;
@@ -570,7 +599,10 @@ body.mobile {
 			justify-content: center;
 			align-items: center;
 			padding: 5px;
-			height: fit-content;
+			height: auto;
+			@supports (height: fit-content) {
+				height: fit-content;
+			}
 			> a {
 				width: 100%;
 				margin: 0 !important;
@@ -597,7 +629,9 @@ body.mobile {
 	.body_wrapper,
 	#co_body_container {
 		grid-row: 3;
-		grid-column: content;
+		@supports (grid-template-rows: subgrid) {
+			grid-column: content;
+		}
 	}
 	#wavy-bottom-border {
 		grid-row: 4;
@@ -705,7 +739,9 @@ body,
 	}
 }
 #PreschoolSection2 {
-	grid-column: content;
+	@supports (grid-template-rows: subgrid) {
+		grid-column: content;
+	}
 	container-type: inline-size;
 	display: grid;
 	place-items: center;
@@ -730,8 +766,11 @@ body,
 		height: 100%;
 		max-height: 518px;
 		object-fit: cover;
+		-webkit-mask-repeat: no-repeat;
 		mask-repeat: no-repeat;
+		-webkit-mask-position: center;
 		mask-position: center;
+		-webkit-mask-size: contain;
 		mask-size: contain;
 		margin: 25px;
 	}
@@ -773,17 +812,21 @@ body,
 #PreschoolSection3 {
 	background-image: url(https://www.chabadone.org/images/Shluchim/minisites/themes/preschool2/photos/bg126.jpg);
 	display: grid;
-	grid-template-columns: subgrid;
-	> :first-child {
-		grid-column: content;
+	@supports (grid-template-rows: subgrid) {
+		grid-template-columns: subgrid;
+		grid-column: full-width;
+		> :first-child {
+			grid-column: content;
+		}
 	}
 	#PreschoolSection3Cards {
-		grid-column: content;
+		@supports (grid-template-rows: subgrid) {
+			grid-column: content;
+		}
 		display: flex;
 		flex-wrap: wrap;
 		gap: 25px;
 	}
-	grid-column: full-width;
 	h3 {
 		margin-inline: auto;
 		@container (min-width: 768px) {
@@ -837,7 +880,9 @@ body,
 	}
 }
 #PreschoolSection4 {
-	grid-column: breakout;
+	@supports (grid-template-rows: subgrid) {
+		grid-column: breakout;
+	}
 	display: flex;
 	flex-wrap: wrap;
 	> :first-child {
@@ -912,13 +957,17 @@ body,
 }
 .preschool-custom-section {
 	min-height: 350px;
-	grid-column: content;
 	display: grid;
-	grid-template-columns: subgrid;
+	@supports (grid-template-rows: subgrid) {
+		grid-template-columns: subgrid;
+		grid-column: content;
+	}
 	align-content: center;
 	> * {
 		margin-inline: auto;
-		grid-column: content;
+		@supports (grid-template-rows: subgrid) {
+			grid-column: content;
+		}
 		@container (min-width: 1200px) {
 			width: 91%;
 		}
@@ -938,15 +987,19 @@ body,
 }
 #PreschoolSection5 {
 	background-image: url(https://www.chabadone.org/images/Shluchim/minisites/themes/preschool2/photos/bg125.jpg);
-	grid-column: full-width;
+	@supports (grid-template-rows: subgrid) {
+		grid-column: full-width;
+	}
 }
 #PreschoolSection7 {
 	background-image: url(https://www.chabadone.org/images/Shluchim/minisites/themes/preschool2/photos/bg126.jpg);
-	grid-column: full-width;
 	display: grid;
-	grid-template-columns: subgrid;
-	> :first-child {
-		grid-column: content;
+	@supports (grid-template-rows: subgrid) {
+		grid-column: full-width;
+		grid-template-columns: subgrid;
+		> :first-child {
+			grid-column: content;
+		}
 	}
 	h3 {
 		margin-inline: auto;
@@ -958,7 +1011,9 @@ body,
 		}
 	}
 	#PreschoolSection7Cards {
-		grid-column: content;
+		@supports (grid-template-rows: subgrid) {
+			grid-column: content;
+		}
 		display: flex;
 		flex-wrap: wrap;
 		gap: 25px;
@@ -1008,11 +1063,13 @@ body,
 	}
 }
 #Testimonials {
-	grid-column: full-width;
 	display: grid;
-	grid-template-columns: subgrid;
-	> * {
-		grid-column: content;
+	@supports (grid-template-rows: subgrid) {
+		grid-column: full-width;
+		grid-template-columns: subgrid;
+		> * {
+			grid-column: content;
+		}
 	}
 	background-color: #eff6fe !important;
 	--swiper-navigation-color: #92278f;
@@ -1179,6 +1236,7 @@ body,
 		line-height: 34px;
 		padding: 10px 20px;
 		font-weight: 700;
+		max-width: -moz-fit-content;
 		max-width: fit-content;
 		justify-self: end;
 		@container (max-width: 768px) {
@@ -1201,7 +1259,9 @@ div[name="co_section"][real_id^="column_promo"] {
 	display: flex;
 	width: 100%;
 	height: auto;
-	height: fit-content;
+	@supports (height: fit-content) {
+		height: fit-content;
+	}
 }
 .ContentItem[real_name="Header"] {
 	height: 90px;
@@ -1366,7 +1426,10 @@ body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#ch
 			font-size: 35px;
 		}
 		max-width: 800px;
-		backdrop-filter: blur(1px);
+		@supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
+			-webkit-backdrop-filter: blur(1px);
+			backdrop-filter: blur(1px);
+		}
 		margin-inline: auto;
 		font-size: 50px;
 		font-weight: 700;
@@ -1408,10 +1471,12 @@ body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#ch
 		> *:has(*):not(#content_banner) {
 			grid-column: full-width;
 			display: grid;
-			grid-template-columns: subgrid;
 			grid-template-rows: auto;
-			> * {
-				grid-column: content;
+			@supports (grid-template-rows: subgrid) {
+				grid-template-columns: subgrid;
+				> * {
+					grid-column: content;
+				}
 			}
 		}
 	}
@@ -1577,7 +1642,9 @@ body.sites-article #header {
 .swiper-css-mode {
 	> .swiper-wrapper {
 		overflow: auto;
-		scrollbar-width: none; /* For Firefox */
+		@supports (scrollbar-width: none) {
+			scrollbar-width: none; /* For Firefox */
+		}
 		-ms-overflow-style: none; /* For Internet Explorer and Edge */
 		&::-webkit-scrollbar {
 			display: none;
@@ -1612,7 +1679,9 @@ body.sites-article #header {
 		}
 		> .swiper-wrapper > .swiper-slide {
 			scroll-snap-align: center center;
-			scroll-snap-stop: always;
+			@supports (scroll-snap-stop: always) {
+				scroll-snap-stop: always;
+			}
 		}
 	}
 	&.swiper-centered.swiper-horizontal {
