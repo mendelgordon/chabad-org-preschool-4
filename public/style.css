@@ -792,7 +792,7 @@ body,
   height: 100%;
   max-height: 518px;
   object-fit: cover;
-  mask-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/Section2ImageMask.png);
+  mask-image: url(https://www.chabadone.org/images/Shluchim/minisites/themes/preschool2/img/photos/Section2ImageMask.png);
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: contain;
@@ -836,7 +836,7 @@ body,
 }
 
 #PreschoolSection3 {
-  background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/bg126.jpg);
+  background-image: url(https://www.chabadone.org/images/Shluchim/minisites/themes/preschool2/img/photos/bg126.jpg);
   display: grid;
   grid-template-columns: subgrid;
   grid-column: full-width;
@@ -1025,12 +1025,12 @@ body,
 }
 
 #PreschoolSection5 {
-  background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/bg125.jpg);
+  background-image: url(https://www.chabadone.org/images/Shluchim/minisites/themes/preschool2/img/photos/bg125.jpg);
   grid-column: full-width;
 }
 
 #PreschoolSection7 {
-  background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/bg126.jpg);
+  background-image: url(https://www.chabadone.org/images/Shluchim/minisites/themes/preschool2/img/photos/bg126.jpg);
   grid-column: full-width;
   display: grid;
   grid-template-columns: subgrid;
@@ -1380,7 +1380,7 @@ body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#ch
   grid-column: content;
 }
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #content_banner:first-child::after {
-  background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/illustrations/White-wavy-bottom-border.png);
+  background-image: url(https://www.chabadone.org/images/Shluchim/minisites/themes/preschool2/img/illustrations/White-wavy-bottom-border.png);
   background-repeat: round no-repeat;
   background-size: contain;
   width: 100%;
@@ -1440,7 +1440,7 @@ body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#ch
 }
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) img[src*="preschool_banner_image.jpg"],
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) .chabad_image_banner:not(:has(img)) {
-  content: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/PreschoolStockBackground.jpg);
+  content: url(https://mendelgordon.github.io/images/Shluchim/minisites/themes/preschool2/img/photos/PreschoolStockBackground.jpg);
   object-fit: cover;
 }
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) .chabad_image_banner:not(:has(img)) {
@@ -1542,11 +1542,11 @@ body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#ch
 }
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_left_colum > :nth-child(4n+3):has(*),
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_right_colum > :nth-child(4n+1):has(*) {
-  background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/bg126.jpg);
+  background-image: url(https://www.chabadone.org/images/Shluchim/minisites/themes/preschool2/img/photos/bg126.jpg);
 }
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_left_colum > :nth-child(4n+5):has(*),
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_right_colum > :nth-child(4n+3):has(*) {
-  background-image: url(https://mendelgordon.github.io/chabad-org-preschool-4/dist/assets/img/photos/bg125.jpg);
+  background-image: url(https://www.chabadone.org/images/Shluchim/minisites/themes/preschool2/img/photos/bg125.jpg);
 }
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_left_colum > :nth-child(4n+4),
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_right_colum > :nth-child(4n+2) {
