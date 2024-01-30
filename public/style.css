@@ -117,12 +117,23 @@ body.noselect .chabad_left_column #PreschoolSection1 > * {
   grid-row: 1;
   grid-column: 1;
 }
+body.noselect .chabad_left_column #PreschoolSection3Cards > div,
+body.noselect .chabad_left_column #PreschoolSection7Cards > div {
+  flex: 1 1 250px;
+}
 body.noselect .chabad_left_column #TestimonialSlides {
   width: 88% !important;
   overflow: hidden;
 }
 body.noselect .chabad_left_column #TestimonialSlides .swiper {
   overflow: auto;
+}
+body.noselect .chabad_left_column #TestimonialSlides .card-body {
+  padding: 0;
+}
+body.noselect .chabad_left_column #TestimonialSlides .slider-wrapper .card {
+  padding: 2px;
+  margin: 2px;
 }
 body.noselect .chabad_left_column .ContentItem[name=co_section],
 body.noselect .chabad_left_column .ContentItem[name=co_template] {

@@ -117,11 +117,24 @@ body.noselect {
 				grid-column: 1;
 			}
 		}
+		#PreschoolSection3Cards,
+		#PreschoolSection7Cards {
+			> div {
+				flex: 1 1 250px;
+			}
+		}
 		#TestimonialSlides {
 			width: 88% !important;
 			overflow: hidden;
 			.swiper {
 				overflow: auto;
+			}
+			.card-body {
+				padding: 0;
+			}
+			.slider-wrapper .card {
+				padding: 2px;
+				margin: 2px;
 			}
 		}
 		.ContentItem[name="co_section"],
