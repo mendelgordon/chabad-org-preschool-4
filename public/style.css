@@ -309,6 +309,7 @@ img {
   font-family: "Fredoka", Helvetica, Arial, "sans-serif";
   font-size: 50px;
   text-wrap: balance;
+  backdrop-filter: blur(1px);
 }
 #chabad_body_page .btn-primaryx,
 #chabad_body_page .btn-primaryx2,
@@ -1465,6 +1466,7 @@ body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#ch
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) .co_section_head,
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) .co_calendar_head {
   max-width: 800px;
+  backdrop-filter: blur(1px);
   margin-inline: auto;
   font-size: 50px;
   font-weight: 700;

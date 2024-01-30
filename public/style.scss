@@ -296,6 +296,7 @@ img {
 		font-family: "Fredoka", Helvetica, Arial, "sans-serif";
 		font-size: 50px;
 		text-wrap: balance;
+		backdrop-filter: blur(1px);
 	}
 	.btn-primaryx,
 	.btn-primaryx2 {
@@ -1366,6 +1367,7 @@ body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#ch
 			font-size: 35px;
 		}
 		max-width: 800px;
+		backdrop-filter: blur(1px);
 		margin-inline: auto;
 		font-size: 50px;
 		font-weight: 700;
