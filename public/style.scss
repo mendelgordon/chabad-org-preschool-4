@@ -124,8 +124,13 @@ body.noselect {
 				flex: 1 1 250px;
 			}
 		}
-		#PreschoolSection4 .preschool-section-4-card {
-			width: auto;
+		#PreschoolSection4 {
+			> :first-child {
+				flex-shrink: 0;
+			}
+			.preschool-section-4-card {
+				width: auto;
+			}
 		}
 		#TestimonialSlides {
 			width: 88% !important;
@@ -137,9 +142,9 @@ body.noselect {
 				padding: 0;
 			}
 			.slider-wrapper .card {
-				padding: 5px;
-				margin-inline: 5px;
-				min-width: 200px;
+				padding: 10px;
+				margin-inline: 10px;
+				min-width: 300px;
 			}
 		}
 		.ContentItem[name="co_section"],

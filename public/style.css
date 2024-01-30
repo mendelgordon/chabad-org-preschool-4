@@ -122,6 +122,9 @@ body.noselect .chabad_left_column #PreschoolSection4 > div,
 body.noselect .chabad_left_column #PreschoolSection7Cards > div {
   flex: 1 1 250px;
 }
+body.noselect .chabad_left_column #PreschoolSection4 > :first-child {
+  flex-shrink: 0;
+}
 body.noselect .chabad_left_column #PreschoolSection4 .preschool-section-4-card {
   width: auto;
 }
@@ -136,9 +139,9 @@ body.noselect .chabad_left_column #TestimonialSlides .card-body {
   padding: 0;
 }
 body.noselect .chabad_left_column #TestimonialSlides .slider-wrapper .card {
-  padding: 5px;
-  margin-inline: 5px;
-  min-width: 200px;
+  padding: 10px;
+  margin-inline: 10px;
+  min-width: 300px;
 }
 body.noselect .chabad_left_column .ContentItem[name=co_section],
 body.noselect .chabad_left_column .ContentItem[name=co_template] {
