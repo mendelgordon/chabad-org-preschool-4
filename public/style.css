@@ -126,7 +126,7 @@ body.noselect .chabad_left_column #TestimonialSlides .swiper {
 }
 body.noselect .chabad_left_column .ContentItem[name=co_section],
 body.noselect .chabad_left_column .ContentItem[name=co_template] {
-  flex: 1 1 400px;
+  flex: 1 1 500px;
   display: grid;
 }
 body.noselect .chabad_left_column .ContentItem[name=co_section] > *,
