@@ -122,6 +122,9 @@ body.noselect .chabad_left_column #PreschoolSection4 > div,
 body.noselect .chabad_left_column #PreschoolSection7Cards > div {
   flex: 1 1 250px;
 }
+body.noselect .chabad_left_column .preschool-section-4-card {
+  width: auto;
+}
 body.noselect .chabad_left_column #TestimonialSlides {
   width: 88% !important;
   overflow: hidden;
