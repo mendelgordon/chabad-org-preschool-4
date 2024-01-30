@@ -133,8 +133,9 @@ body.noselect {
 				padding: 0;
 			}
 			.slider-wrapper .card {
-				padding: 2px;
-				margin: 2px;
+				padding: 5px;
+				margin-inline: 5px;
+				min-width: 200px;
 			}
 		}
 		.ContentItem[name="co_section"],

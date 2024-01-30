@@ -132,8 +132,9 @@ body.noselect .chabad_left_column #TestimonialSlides .card-body {
   padding: 0;
 }
 body.noselect .chabad_left_column #TestimonialSlides .slider-wrapper .card {
-  padding: 2px;
-  margin: 2px;
+  padding: 5px;
+  margin-inline: 5px;
+  min-width: 200px;
 }
 body.noselect .chabad_left_column .ContentItem[name=co_section],
 body.noselect .chabad_left_column .ContentItem[name=co_template] {
