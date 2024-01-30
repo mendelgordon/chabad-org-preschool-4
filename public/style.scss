@@ -812,7 +812,7 @@ body,
 	width: 120px;
 }
 #PreschoolSection3 {
-	background-image: url(https://www.chabadone.org/images/Shluchim/minisites/themes/preschool2/photos/bg126.jpg);
+	background-image: url(https://w2.chabad.org/images/Shluchim/minisites/themes/preschool2/photos/bg126.jpg);
 	display: grid;
 	@supports (grid-template-rows: subgrid) {
 		grid-template-columns: subgrid;
@@ -988,13 +988,13 @@ body,
 	color: #393d72;
 }
 #PreschoolSection5 {
-	background-image: url(https://www.chabadone.org/images/Shluchim/minisites/themes/preschool2/photos/bg125.jpg);
+	background-image: url(https://w2.chabad.org/images/Shluchim/minisites/themes/preschool2/photos/bg125.jpg);
 	@supports (grid-template-rows: subgrid) {
 		grid-column: full-width;
 	}
 }
 #PreschoolSection7 {
-	background-image: url(https://www.chabadone.org/images/Shluchim/minisites/themes/preschool2/photos/bg126.jpg);
+	background-image: url(https://w2.chabad.org/images/Shluchim/minisites/themes/preschool2/photos/bg126.jpg);
 	display: grid;
 	@supports (grid-template-rows: subgrid) {
 		grid-column: full-width;
@@ -1339,7 +1339,7 @@ body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#ch
 			grid-column: content;
 		}
 		&:first-child::after {
-			background-image: url(https://www.chabadone.org/images/Shluchim/minisites/themes/preschool2/illustrations/White-wavy-bottom-border.png);
+			background-image: url(https://w2.chabad.org/images/Shluchim/minisites/themes/preschool2/illustrations/White-wavy-bottom-border.png);
 			background-repeat: round no-repeat;
 			background-size: contain;
 			width: 100%;
@@ -1484,11 +1484,11 @@ body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#ch
 	}
 	#chabad_left_colum > :nth-child(4n + 3):has(*),
 	#chabad_right_colum > :nth-child(4n + 1):has(*) {
-		background-image: url(https://www.chabadone.org/images/Shluchim/minisites/themes/preschool2/photos/bg126.jpg);
+		background-image: url(https://w2.chabad.org/images/Shluchim/minisites/themes/preschool2/photos/bg126.jpg);
 	}
 	#chabad_left_colum > :nth-child(4n + 5):has(*),
 	#chabad_right_colum > :nth-child(4n + 3):has(*) {
-		background-image: url(https://www.chabadone.org/images/Shluchim/minisites/themes/preschool2/photos/bg125.jpg);
+		background-image: url(https://w2.chabad.org/images/Shluchim/minisites/themes/preschool2/photos/bg125.jpg);
 	}
 	#chabad_left_colum > :nth-child(4n + 4),
 	#chabad_right_colum > :nth-child(4n + 2) {
