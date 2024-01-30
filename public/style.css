@@ -134,9 +134,9 @@ body.noselect .chabad_left_column .ContentItem[name=co_template] > * {
   grid-column: 1 !important;
 }
 body.noselect .chabad_left_column .ContentItem[real_name=Header] {
-  height: unset;
+  height: auto;
   background: unset;
-  margin: unset;
+  margin: auto;
 }
 body.noselect .chabad_left_column a:-webkit-any-link {
   text-decoration: none;
