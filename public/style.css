@@ -154,6 +154,9 @@ body.noselect .chabad_left_column .ContentItem[real_name=Header] {
   background: unset;
   margin: auto;
 }
+body.noselect .chabad_left_column .ContentItem[real_id=Image] {
+  width: auto !important;
+}
 body.noselect .chabad_left_column a:-webkit-any-link {
   text-decoration: none;
 }

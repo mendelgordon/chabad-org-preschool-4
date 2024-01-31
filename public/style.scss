@@ -157,6 +157,9 @@ body.noselect {
 			background: unset;
 			margin: auto;
 		}
+		.ContentItem[real_id="Image"] {
+			width: auto !important;
+		}
 		a:-webkit-any-link {
 			text-decoration: none;
 		}
