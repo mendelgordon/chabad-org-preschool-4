@@ -95,6 +95,9 @@ html:not(:has(link#k[href*="sites6"], link#k[href*="template5"])) .article_index
 	}
 }
 body.noselect {
+	* {
+		box-sizing: border-box;
+	}
 	div.chabad_left_colum,
 	div.chabad_left_column {
 		width: 100%;
