@@ -176,13 +176,17 @@ body.noselect .chabad_left_column a:-webkit-any-link {
   text-wrap: pretty;
 }
 
-#chabad_main_content :has(.chabad_image_banner, img[src$="White-wavy-bottom-border.png"], #co_body_container, #chabad_right_colum, #chabad_left_colum, .content-area-parent, header.article-header, footer),
-#chabad_main_content :is(footer, #chabad_right_colum, #chabad_left_colum, .content-area-parent) {
+#chabad_main_content :has(.chabad_image_banner, img[src$="White-wavy-bottom-border.png"], #co_body_container, #chabad_right_colum, #chabad_left_colum, header.article-header, footer),
+#chabad_main_content :is(footer, #chabad_right_colum, #chabad_left_colum),
+.section_root #chabad_main_content :has(.content-area-parent),
+.section_root #chabad_main_content .content-area-parent {
   display: grid;
 }
 @supports (grid-template-rows: subgrid) {
-  #chabad_main_content :has(.chabad_image_banner, img[src$="White-wavy-bottom-border.png"], #co_body_container, #chabad_right_colum, #chabad_left_colum, .content-area-parent, header.article-header, footer),
-  #chabad_main_content :is(footer, #chabad_right_colum, #chabad_left_colum, .content-area-parent) {
+  #chabad_main_content :has(.chabad_image_banner, img[src$="White-wavy-bottom-border.png"], #co_body_container, #chabad_right_colum, #chabad_left_colum, header.article-header, footer),
+  #chabad_main_content :is(footer, #chabad_right_colum, #chabad_left_colum),
+  .section_root #chabad_main_content :has(.content-area-parent),
+  .section_root #chabad_main_content .content-area-parent {
     grid-template-rows: subgrid;
     grid-template-columns: subgrid;
     grid-column: full-width;
@@ -191,6 +195,10 @@ body.noselect .chabad_left_column a:-webkit-any-link {
 
 @supports (grid-template-rows: subgrid) {
   #chabad_main_content :has(#content_banner, #PreschoolSection1, #co_body_container) {
+    grid-row: 1/99;
+  }
+  .section_root #chabad_main_content :has(.content-area-parent),
+  .section_root #chabad_main_content .content-area-parent {
     grid-row: 1/99;
   }
 }
