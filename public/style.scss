@@ -186,8 +186,8 @@ body.noselect {
 		text-wrap: pretty;
 	}
 }
-#chabad_main_content :has(#{$hero-image-container-level-one-on-old-minisites}, img[src$="White-wavy-bottom-border.png"], #co_body_container, #chabad_right_colum, #chabad_left_colum, header.article-header, footer),
-#chabad_main_content :is(footer, #chabad_right_colum, #chabad_left_colum) {
+#chabad_main_content :has(#{$hero-image-container-level-one-on-old-minisites}, img[src$="White-wavy-bottom-border.png"], #co_body_container, #chabad_right_colum, #chabad_left_colum, .content-area-parent, header.article-header, footer),
+#chabad_main_content :is(footer, #chabad_right_colum, #chabad_left_colum, .content-area-parent) {
 	display: grid;
 	@supports (grid-template-rows: subgrid) {
 		grid-template-rows: subgrid;
