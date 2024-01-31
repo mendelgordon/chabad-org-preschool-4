@@ -1087,32 +1087,32 @@ body,
   margin-bottom: 0;
 }
 #PreschoolSection4 .preschool-section-4-card:nth-of-type(6n + 1),
-#PreschoolSection4 div[real_id=Card]:nth-of-type(6n + 1) {
+#PreschoolSection4 div[real_id=Card]:nth-of-type(6n + 1) .preschool-section-4-card {
   --color: #3ab764;
   --color-hover: #1d6e39;
 }
 #PreschoolSection4 .preschool-section-4-card:nth-of-type(6n + 2),
-#PreschoolSection4 div[real_id=Card]:nth-of-type(6n + 2) {
+#PreschoolSection4 div[real_id=Card]:nth-of-type(6n + 2) .preschool-section-4-card {
   --color: #fc5172;
   --color-hover: #832739;
 }
 #PreschoolSection4 .preschool-section-4-card:nth-of-type(6n + 3),
-#PreschoolSection4 div[real_id=Card]:nth-of-type(6n + 3) {
+#PreschoolSection4 div[real_id=Card]:nth-of-type(6n + 3) .preschool-section-4-card {
   --color: #e7b338;
   --color-hover: #a0740c;
 }
 #PreschoolSection4 .preschool-section-4-card:nth-of-type(6n + 4),
-#PreschoolSection4 div[real_id=Card]:nth-of-type(6n + 4) {
+#PreschoolSection4 div[real_id=Card]:nth-of-type(6n + 4) .preschool-section-4-card {
   --color: #e668b3;
   --color-hover: #873164;
 }
 #PreschoolSection4 .preschool-section-4-card:nth-of-type(6n + 5),
-#PreschoolSection4 div[real_id=Card]:nth-of-type(6n + 5) {
+#PreschoolSection4 div[real_id=Card]:nth-of-type(6n + 5) .preschool-section-4-card {
   --color: #45a2bc;
   --color-hover: #1a5b6d;
 }
 #PreschoolSection4 .preschool-section-4-card:nth-of-type(6n + 6),
-#PreschoolSection4 div[real_id=Card]:nth-of-type(6n + 6) {
+#PreschoolSection4 div[real_id=Card]:nth-of-type(6n + 6) .preschool-section-4-card {
   --color: #e4613c;
   --color-hover: #b13816;
 }
