@@ -963,27 +963,27 @@ body,
 			margin-bottom: 0;
 		}
 	}
-	.card1 {
+	.preschool-section-4-card:nth-of-type(6n + 1) {
 		--color: #3ab764;
 		--color-hover: #1d6e39;
 	}
-	.card2 {
+	.preschool-section-4-card:nth-of-type(6n + 2) {
 		--color: #fc5172;
 		--color-hover: #832739;
 	}
-	.card3 {
+	.preschool-section-4-card:nth-of-type(6n + 3) {
 		--color: #e7b338;
 		--color-hover: #a0740c;
 	}
-	.card4 {
+	.preschool-section-4-card:nth-of-type(6n + 4) {
 		--color: #e668b3;
 		--color-hover: #873164;
 	}
-	.card5 {
+	.preschool-section-4-card:nth-of-type(6n + 5) {
 		--color: #45a2bc;
 		--color-hover: #1a5b6d;
 	}
-	.card6 {
+	.preschool-section-4-card:nth-of-type(6n + 6) {
 		--color: #e4613c;
 		--color-hover: #b13816;
 	}
