@@ -114,6 +114,13 @@ body.noselect {
 				grid-column: 1;
 			}
 		}
+		#PreschoolSection2 {
+			display: flex !important;
+			flex-direction: column;
+			* {
+				align-self: center !important;
+			}
+		}
 		#PreschoolSection3Cards,
 		#PreschoolSection4,
 		#PreschoolSection7Cards {
@@ -963,29 +970,32 @@ body,
 			margin-bottom: 0;
 		}
 	}
-	.preschool-section-4-card:nth-of-type(6n + 1) {
-		--color: #3ab764;
-		--color-hover: #1d6e39;
-	}
-	.preschool-section-4-card:nth-of-type(6n + 2) {
-		--color: #fc5172;
-		--color-hover: #832739;
-	}
-	.preschool-section-4-card:nth-of-type(6n + 3) {
-		--color: #e7b338;
-		--color-hover: #a0740c;
-	}
-	.preschool-section-4-card:nth-of-type(6n + 4) {
-		--color: #e668b3;
-		--color-hover: #873164;
-	}
-	.preschool-section-4-card:nth-of-type(6n + 5) {
-		--color: #45a2bc;
-		--color-hover: #1a5b6d;
-	}
-	.preschool-section-4-card:nth-of-type(6n + 6) {
-		--color: #e4613c;
-		--color-hover: #b13816;
+	.preschool-section-4-card,
+	div[real_id="Card"] {
+		&:nth-of-type(6n + 1) {
+			--color: #3ab764;
+			--color-hover: #1d6e39;
+		}
+		&:nth-of-type(6n + 2) {
+			--color: #fc5172;
+			--color-hover: #832739;
+		}
+		&:nth-of-type(6n + 3) {
+			--color: #e7b338;
+			--color-hover: #a0740c;
+		}
+		&:nth-of-type(6n + 4) {
+			--color: #e668b3;
+			--color-hover: #873164;
+		}
+		&:nth-of-type(6n + 5) {
+			--color: #45a2bc;
+			--color-hover: #1a5b6d;
+		}
+		&:nth-of-type(6n + 6) {
+			--color: #e4613c;
+			--color-hover: #b13816;
+		}
 	}
 }
 .preschool-custom-section {

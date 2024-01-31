@@ -114,6 +114,13 @@ body.noselect .chabad_left_column #PreschoolSection1 > * {
   grid-row: 1;
   grid-column: 1;
 }
+body.noselect .chabad_left_column #PreschoolSection2 {
+  display: flex !important;
+  flex-direction: column;
+}
+body.noselect .chabad_left_column #PreschoolSection2 * {
+  align-self: center !important;
+}
 body.noselect .chabad_left_column #PreschoolSection3Cards > div,
 body.noselect .chabad_left_column #PreschoolSection4 > div,
 body.noselect .chabad_left_column #PreschoolSection7Cards > div {
@@ -1076,27 +1083,33 @@ body,
 #PreschoolSection4 .preschool-section-4-card .fonts {
   margin-bottom: 0;
 }
-#PreschoolSection4 .preschool-section-4-card:nth-of-type(6n + 1) {
+#PreschoolSection4 .preschool-section-4-card:nth-of-type(6n + 1),
+#PreschoolSection4 div[real_id=Card]:nth-of-type(6n + 1) {
   --color: #3ab764;
   --color-hover: #1d6e39;
 }
-#PreschoolSection4 .preschool-section-4-card:nth-of-type(6n + 2) {
+#PreschoolSection4 .preschool-section-4-card:nth-of-type(6n + 2),
+#PreschoolSection4 div[real_id=Card]:nth-of-type(6n + 2) {
   --color: #fc5172;
   --color-hover: #832739;
 }
-#PreschoolSection4 .preschool-section-4-card:nth-of-type(6n + 3) {
+#PreschoolSection4 .preschool-section-4-card:nth-of-type(6n + 3),
+#PreschoolSection4 div[real_id=Card]:nth-of-type(6n + 3) {
   --color: #e7b338;
   --color-hover: #a0740c;
 }
-#PreschoolSection4 .preschool-section-4-card:nth-of-type(6n + 4) {
+#PreschoolSection4 .preschool-section-4-card:nth-of-type(6n + 4),
+#PreschoolSection4 div[real_id=Card]:nth-of-type(6n + 4) {
   --color: #e668b3;
   --color-hover: #873164;
 }
-#PreschoolSection4 .preschool-section-4-card:nth-of-type(6n + 5) {
+#PreschoolSection4 .preschool-section-4-card:nth-of-type(6n + 5),
+#PreschoolSection4 div[real_id=Card]:nth-of-type(6n + 5) {
   --color: #45a2bc;
   --color-hover: #1a5b6d;
 }
-#PreschoolSection4 .preschool-section-4-card:nth-of-type(6n + 6) {
+#PreschoolSection4 .preschool-section-4-card:nth-of-type(6n + 6),
+#PreschoolSection4 div[real_id=Card]:nth-of-type(6n + 6) {
   --color: #e4613c;
   --color-hover: #b13816;
 }
