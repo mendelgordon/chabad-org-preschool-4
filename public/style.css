@@ -314,11 +314,11 @@ img[src$="White-wavy-bottom-border.png"] {
   }
 }
 
-:where(.content-area-parent:has(#PreschoolSection1)) > *:not(#PreschoolSection1) {
+:where(#PreschoolSection2, #PreschoolSection3, #PreschoolSection4, #PreschoolSection5, #PreschoolSection6, #PreschoolSection7, #Testimonials, #PreschoolLatestPhotos) {
   padding-block: 50px;
 }
 @supports (grid-template-rows: subgrid) {
-  :where(.content-area-parent:has(#PreschoolSection1)) > *:not(#PreschoolSection1) {
+  :where(#PreschoolSection2, #PreschoolSection3, #PreschoolSection4, #PreschoolSection5, #PreschoolSection6, #PreschoolSection7, #Testimonials, #PreschoolLatestPhotos) {
     grid-column: content;
   }
 }
