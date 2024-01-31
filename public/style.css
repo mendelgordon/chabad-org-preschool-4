@@ -154,7 +154,8 @@ body.noselect .chabad_left_column .ContentItem[real_name=Header] {
   background: unset;
   margin: auto;
 }
-body.noselect .chabad_left_column .ContentItem[real_id=Image] {
+body.noselect .chabad_left_column .ContentItem[real_id=Image],
+body.noselect .chabad_left_column #Co_ContentEditor_Container .co_photo_gallery_body {
   width: auto !important;
 }
 body.noselect .chabad_left_column a:-webkit-any-link {
