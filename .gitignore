@@ -1,8 +1,7 @@
 node_modules/
 
-# Ignore everything in the src folder
 /src
 
-# Ignore all .json and .js in the root
 *.json
 /*.js
+bun.lockb

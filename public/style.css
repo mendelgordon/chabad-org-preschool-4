@@ -1,6 +1,10 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap");
+/* hero image container level one on old minisites ".chabad_image_banner" */
+/* hero image container level two on old minisites ".chabad_image_content" */
+/* hero text wrapper on old minisites "#chabad_banner_text" */
+/* hero bottom border on old minisites "#content_banner::after" */
 /* page tools seem to stay even if you choose to hide them so here they get set to stay hidden always */
 .page-tools-sidebar {
   display: none;
@@ -204,16 +208,16 @@ body.noselect .chabad_left_column a:-webkit-any-link {
 
 @supports (grid-template-rows: subgrid) {
   #chabad_main_content :has(#content_banner, #PreschoolSection1, #co_body_container) {
-    grid-row: 1/99;
+    grid-row: 1/20;
   }
   .section_root #chabad_main_content :has(.content-area-parent),
   .section_root #chabad_main_content .content-area-parent {
-    grid-row: 1/99;
+    grid-row: 1/20;
   }
 }
 #chabad_main_content :has(#chabad_left_colum):not(:has(#content_banner:first-child)),
 #chabad_left_colum:not(:has(#content_banner:first-child)) {
-  grid-row: 2/99;
+  grid-row: 2/20;
 }
 
 .section_root #chabad_main_content:not(:has(#content_banner:first-child, #PreschoolSection1Image)) #chabad_head {
@@ -250,6 +254,7 @@ header.article-header {
   margin-bottom: 0;
 }
 
+/* Old minisites spell it chabad_left_colum instead of chabad_left_column */
 #chabad_left_colum > :nth-child(1),
 .chabad_image_banner,
 .chabad_image_content,
@@ -1752,7 +1757,7 @@ body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#ch
   font-size: inherit;
 }
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_right_colum {
-  grid-row: 100;
+  grid-row: 21;
   grid-template-rows: auto;
 }
 
