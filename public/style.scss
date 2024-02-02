@@ -210,18 +210,18 @@ body.noselect {
 @supports (grid-template-rows: subgrid) {
 	#chabad_main_content :has(#content_banner, #PreschoolSection1, #co_body_container) {
 		// Content areas should fill the entire height of the page
-		grid-row: 1/20;
+		grid-row: 1/15;
 	}
 	.section_root #chabad_main_content :has(.content-area-parent),
 	.section_root #chabad_main_content .content-area-parent {
 		// Content areas should fill the entire height of the page
-		grid-row: 1/20;
+		grid-row: 1/15;
 	}
 }
 #chabad_main_content :has(#chabad_left_colum),
 #chabad_left_colum {
 	&:not(:has(#content_banner:first-child)) {
-		grid-row: 2/20;
+		grid-row: 2/15;
 	}
 }
 .section_root #chabad_main_content:not(:has(#content_banner:first-child, #PreschoolSection1Image)) #chabad_head {
@@ -1569,7 +1569,7 @@ body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#ch
 		font-size: inherit;
 	}
 	#chabad_right_colum {
-		grid-row: 21;
+		grid-row: 16;
 		grid-template-rows: auto;
 	}
 }
