@@ -212,37 +212,56 @@ body.noselect {
 	}
 }
 
-#chabad_main_content {
-	--padding-inline: 16px;
-	--content-max-width: 1320px;
-	--breakout-max-width: 1360px;
-	--breakout-size: calc((var(--breakout-max-width) - var(--content-max-width)) / 2);
-	display: grid;
-	grid-template-columns:
-		[full-width-start] minmax(var(--padding-inline), 1fr) [breakout-start] minmax(0, var(--breakout-size)) [content-start] min(100% - (var(--padding-inline) * 2), var(--content-max-width)) [content-end] minmax(0, var(--breakout-size)) [breakout-end] minmax(var(--padding-inline), 1fr) [full-width-end];
+@supports (grid-template-rows: subgrid) {
+	#chabad_main_content {
+		--padding-inline: 16px;
+		--content-max-width: 1320px;
+		--breakout-max-width: 1360px;
+		--breakout-size: calc((var(--breakout-max-width) - var(--content-max-width)) / 2);
+		display: grid;
+		grid-template-columns:
+			[full-width-start] minmax(var(--padding-inline), 1fr) [breakout-start] minmax(0, var(--breakout-size)) [content-start] min(100% - (var(--padding-inline) * 2), var(--content-max-width)) [content-end] minmax(0, var(--breakout-size)) [breakout-end] minmax(var(--padding-inline), 1fr) [full-width-end];
 
-	* {
-		// Fixes a bug where the grid items would be too wide
-		min-width: 0;
-		// Help prevent overflow of long words/names/URLs
-		overflow-wrap: break-word;
-		text-wrap: pretty;
-	}
+		* {
+			// Fixes a bug where the grid items would be too wide
+			min-width: 0;
+			// Help prevent overflow of long words/names/URLs
+			overflow-wrap: break-word;
+			text-wrap: pretty;
+		}
 
-	#chabad_body_content,
-	#ContentArea,
-	#content_page,
-	.co_body.body_wrapper,
-	#co_body_container,
-	#ContentBody,
-	.content-area-parent,
-	#PreschoolSection1,
-	.chabad_image_content,
-	#content_banner.chabad_banner_content:first-child,
-	.chabad_left_colum,
-	#chabad_left_colum,
-	#chabad_right_colum {
-		display: contents;
+		#chabad_body_content,
+		#ContentArea,
+		#content_page,
+		.co_body.body_wrapper,
+		#co_body_container,
+		#ContentBody,
+		.content-area-parent,
+		#PreschoolSection1,
+		.chabad_image_content,
+		#content_banner.chabad_banner_content:first-child,
+		.chabad_left_colum,
+		#chabad_left_colum,
+		#chabad_right_colum {
+			display: contents;
+		}
+
+		.master-content-wrapper,
+		footer {
+			grid-column: full-width;
+			display: grid;
+			grid-template-columns: subgrid;
+			grid-template-rows: subgrid;
+		}
+
+		.master-content-wrapper {
+			grid-row: 1 / 3;
+			z-index: 0;
+		}
+
+		footer > div {
+			grid-column: content;
+		}
 	}
 }
 
@@ -260,10 +279,6 @@ body.noselect {
 	}
 
 	grid-row: 1;
-}
-
-.master-content-wrapper {
-	grid-row: 1/3;
 }
 
 header.article-header {
@@ -535,11 +550,6 @@ img {
 	}
 
 	.master-content-wrapper {
-		background-image: linear-gradient(0deg, rgba(117, 197, 221, 1) 0%, rgba(18, 176, 209, 1) 100%);
-		grid-column: full-width;
-		min-height: 300px;
-		z-index: 0;
-
 		.mobile & {
 			grid-row: 2;
 			padding-block: 35px;
@@ -803,17 +813,13 @@ body,
 }
 
 #chabad_head {
-	flex-wrap: nowrap;
-
-	@container (max-width: 600px) {
-		body::not(.mobile) & {
-			flex-wrap: wrap;
-			gap: 20px;
-		}
-	}
-
 	display: flex !important;
-	justify-content: space-between;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+	body:not(.mobile) & {
+		gap: 20px;
+	}
 
 	#PreschoolTitle {
 		color: white;

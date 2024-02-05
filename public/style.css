@@ -176,35 +176,50 @@ body.noselect .chabad_left_column a:-webkit-any-link {
   text-decoration: none;
 }
 
-#chabad_main_content {
-  --padding-inline: 16px;
-  --content-max-width: 1320px;
-  --breakout-max-width: 1360px;
-  --breakout-size: calc((var(--breakout-max-width) - var(--content-max-width)) / 2);
-  display: grid;
-  grid-template-columns: [full-width-start] minmax(var(--padding-inline), 1fr) [breakout-start] minmax(0, var(--breakout-size)) [content-start] min(100% - var(--padding-inline) * 2, var(--content-max-width)) [content-end] minmax(0, var(--breakout-size)) [breakout-end] minmax(var(--padding-inline), 1fr) [full-width-end];
+@supports (grid-template-rows: subgrid) {
+  #chabad_main_content {
+    --padding-inline: 16px;
+    --content-max-width: 1320px;
+    --breakout-max-width: 1360px;
+    --breakout-size: calc((var(--breakout-max-width) - var(--content-max-width)) / 2);
+    display: grid;
+    grid-template-columns: [full-width-start] minmax(var(--padding-inline), 1fr) [breakout-start] minmax(0, var(--breakout-size)) [content-start] min(100% - var(--padding-inline) * 2, var(--content-max-width)) [content-end] minmax(0, var(--breakout-size)) [breakout-end] minmax(var(--padding-inline), 1fr) [full-width-end];
+  }
+  #chabad_main_content * {
+    min-width: 0;
+    overflow-wrap: break-word;
+    text-wrap: pretty;
+  }
+  #chabad_main_content #chabad_body_content,
+  #chabad_main_content #ContentArea,
+  #chabad_main_content #content_page,
+  #chabad_main_content .co_body.body_wrapper,
+  #chabad_main_content #co_body_container,
+  #chabad_main_content #ContentBody,
+  #chabad_main_content .content-area-parent,
+  #chabad_main_content #PreschoolSection1,
+  #chabad_main_content .chabad_image_content,
+  #chabad_main_content #content_banner.chabad_banner_content:first-child,
+  #chabad_main_content .chabad_left_colum,
+  #chabad_main_content #chabad_left_colum,
+  #chabad_main_content #chabad_right_colum {
+    display: contents;
+  }
+  #chabad_main_content .master-content-wrapper,
+  #chabad_main_content footer {
+    grid-column: full-width;
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+  }
+  #chabad_main_content .master-content-wrapper {
+    grid-row: 1/3;
+    z-index: 0;
+  }
+  #chabad_main_content footer > div {
+    grid-column: content;
+  }
 }
-#chabad_main_content * {
-  min-width: 0;
-  overflow-wrap: break-word;
-  text-wrap: pretty;
-}
-#chabad_main_content #chabad_body_content,
-#chabad_main_content #ContentArea,
-#chabad_main_content #content_page,
-#chabad_main_content .co_body.body_wrapper,
-#chabad_main_content #co_body_container,
-#chabad_main_content #ContentBody,
-#chabad_main_content .content-area-parent,
-#chabad_main_content #PreschoolSection1,
-#chabad_main_content .chabad_image_content,
-#chabad_main_content #content_banner.chabad_banner_content:first-child,
-#chabad_main_content .chabad_left_colum,
-#chabad_main_content #chabad_left_colum,
-#chabad_main_content #chabad_right_colum {
-  display: contents;
-}
-
 .section_root #chabad_main_content:not(:has(#content_banner:first-child, #PreschoolSection1Image)) #chabad_head {
   background-color: #12b0d1;
   margin-bottom: 50px;
@@ -218,10 +233,6 @@ body.noselect .chabad_left_column a:-webkit-any-link {
   #chabad_head {
     grid-column: content;
   }
-}
-
-.master-content-wrapper {
-  grid-row: 1/3;
 }
 
 header.article-header {
@@ -510,13 +521,6 @@ img {
   top: 30px;
   right: 30px;
 }
-#chabad_body_page .master-content-wrapper,
-#Co_ContentEditor_Container .master-content-wrapper {
-  background-image: linear-gradient(0deg, rgb(117, 197, 221) 0%, rgb(18, 176, 209) 100%);
-  grid-column: full-width;
-  min-height: 300px;
-  z-index: 0;
-}
 .mobile #chabad_body_page .master-content-wrapper,
 .mobile #Co_ContentEditor_Container .master-content-wrapper {
   grid-row: 2;
@@ -758,15 +762,12 @@ body,
 }
 
 #chabad_head {
-  flex-wrap: nowrap;
   display: flex !important;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-@container (max-width: 600px) {
-  body::not(.mobile) #chabad_head {
-    flex-wrap: wrap;
-    gap: 20px;
-  }
+body:not(.mobile) #chabad_head {
+  gap: 20px;
 }
 #chabad_head #PreschoolTitle {
   color: white;
