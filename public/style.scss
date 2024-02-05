@@ -1613,6 +1613,12 @@ body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#ch
 	#content_banner {
 		&:not(:first-child) {
 			grid-column: content;
+			display: grid;
+			grid-template-rows: repeat(auto-fit, minmax(0, 1fr));
+			margin-block: 20px;
+			div {
+				grid-column: 1 / -1 !important;
+			}
 		}
 
 		&:has(~ div):first-child::after {
@@ -1626,7 +1632,7 @@ body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#ch
 
 		min-height: 500px;
 
-		.chabad_text_banner {
+		&:first-child .chabad_text_banner {
 			width: 100%;
 			display: flex;
 			justify-content: center;

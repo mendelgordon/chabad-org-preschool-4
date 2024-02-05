@@ -1497,6 +1497,12 @@ body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#ch
 }
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #content_banner:not(:first-child) {
   grid-column: content;
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(0, 1fr));
+  margin-block: 20px;
+}
+#chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #content_banner:not(:first-child) div {
+  grid-column: 1/-1 !important;
 }
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #content_banner:has(~ div):first-child::after {
   background-image: url(https://w2.chabad.org/images/Shluchim/minisites/themes/preschool2/illustrations/White-wavy-bottom-border.png);
@@ -1506,7 +1512,7 @@ body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#ch
   aspect-ratio: 3199/122;
   margin-bottom: -1px;
 }
-#chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #content_banner .chabad_text_banner {
+#chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #content_banner:first-child .chabad_text_banner {
   width: 100%;
   display: flex;
   justify-content: center;
