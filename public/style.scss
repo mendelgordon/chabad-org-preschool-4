@@ -242,7 +242,8 @@ body.noselect {
 		#content_banner.chabad_banner_content:first-child,
 		.chabad_left_colum,
 		#chabad_left_colum,
-		#chabad_right_colum {
+		#chabad_right_colum,
+		.vertical_padding {
 			display: contents;
 		}
 
@@ -774,9 +775,9 @@ body.mobile {
 			grid-column: content;
 		}
 
-		margin-block: 50px !important;
+		margin-top: 50px;
 
-		.co_body.article-body:not(:has(*)) {
+		.co_body.article-body:has(*) {
 			min-height: 300px;
 		}
 	}

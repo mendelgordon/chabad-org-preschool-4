@@ -202,7 +202,8 @@ body.noselect .chabad_left_column a:-webkit-any-link {
   #chabad_main_content #content_banner.chabad_banner_content:first-child,
   #chabad_main_content .chabad_left_colum,
   #chabad_main_content #chabad_left_colum,
-  #chabad_main_content #chabad_right_colum {
+  #chabad_main_content #chabad_right_colum,
+  #chabad_main_content .vertical_padding {
     display: contents;
   }
   #chabad_main_content .master-content-wrapper,
@@ -721,14 +722,14 @@ body.mobile footer a {
   z-index: 2;
 }
 .section_branch #cco_body {
-  margin-block: 50px !important;
+  margin-top: 50px;
 }
 @supports (grid-template-rows: subgrid) {
   .section_branch #cco_body {
     grid-column: content;
   }
 }
-.section_branch #cco_body .co_body.article-body:not(:has(*)) {
+.section_branch #cco_body .co_body.article-body:has(*) {
   min-height: 300px;
 }
 .section_branch #chabad_right_colum {
