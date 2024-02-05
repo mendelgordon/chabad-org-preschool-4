@@ -873,8 +873,8 @@ body:not(.mobile) #chabad_head {
   mask-position: center;
   -webkit-mask-size: contain;
   mask-size: contain;
-  -webkit-mask-image: url(https://w2.chabad.org/images/Shluchim/minisites/themes/preschool2/photos/Section2ImageMask.png);
-  mask-image: url(https://w2.chabad.org/images/Shluchim/minisites/themes/preschool2/photos/Section2ImageMask.png);
+  -webkit-mask-image: url(/images/Shluchim/minisites/themes/preschool2/photos/Section2ImageMask.png);
+  mask-image: url(/images/Shluchim/minisites/themes/preschool2/photos/Section2ImageMask.png);
   margin: 25px;
 }
 #PreschoolSection2 h3 {
