@@ -595,16 +595,16 @@ body:not(.mobile) #chabad_body_page #chabad_head .navi .sub_menu {
 body:not(.mobile) #chabad_body_page #chabad_head .navi .item .item {
   padding: 0;
 }
-body:not(.mobile) #chabad_body_page #chabad_head .navi .item .item:first-child {
-  padding-top: 3px;
-}
-body:not(.mobile) #chabad_body_page #chabad_head .navi .item .item:last-child {
-  padding-bottom: 3px;
-}
 body:not(.mobile) #chabad_body_page #chabad_head .navi .item .item a {
   padding: 6px 6px 6px 10px;
   font-size: 14px;
   font-weight: 300;
+}
+body:not(.mobile) #chabad_body_page #chabad_head .navi .item .item:first-child a {
+  padding-top: 9px;
+}
+body:not(.mobile) #chabad_body_page #chabad_head .navi .item .item:last-child a {
+  padding-bottom: 9px;
 }
 body:not(.mobile) #chabad_body_page #navigation {
   width: initial;

@@ -627,18 +627,22 @@ body:not(.mobile) #chabad_body_page {
 		.item .item {
 			padding: 0;
 
-			&:first-child {
-				padding-top: 3px;
-			}
-
-			&:last-child {
-				padding-bottom: 3px;
-			}
-
 			a {
 				padding: 6px 6px 6px 10px;
 				font-size: 14px;
 				font-weight: 300;
+			}
+
+			&:first-child {
+				a {
+					padding-top: 9px;
+				}
+			}
+
+			&:last-child {
+				a {
+					padding-bottom: 9px;
+				}
 			}
 		}
 	}
