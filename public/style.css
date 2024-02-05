@@ -34,10 +34,6 @@
 }
 
 /* only apply this style when the template 5 template is being used */
-html:has(link[href*=template5]) body:not(.mobile) header.article-header.cf {
-  padding: 0;
-  margin: 0;
-}
 html:has(link[href*=template5]) header.article-header.cf {
   border: 0;
 }
