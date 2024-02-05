@@ -96,7 +96,8 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index img
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   z-index: -1;
 }
 
@@ -189,34 +190,22 @@ body.noselect .chabad_left_column a:-webkit-any-link {
   text-wrap: pretty;
 }
 
-#chabad_main_content :has(.chabad_image_banner, img[src$="White-wavy-bottom-border.png"], #co_body_container, #chabad_right_colum, #chabad_left_colum, header.article-header, footer),
-#chabad_main_content :is(footer, #chabad_right_colum, #chabad_left_colum),
-.section_root #chabad_main_content :has(.content-area-parent),
-.section_root #chabad_main_content .content-area-parent {
-  display: grid;
-}
-@supports (grid-template-rows: subgrid) {
-  #chabad_main_content :has(.chabad_image_banner, img[src$="White-wavy-bottom-border.png"], #co_body_container, #chabad_right_colum, #chabad_left_colum, header.article-header, footer),
-  #chabad_main_content :is(footer, #chabad_right_colum, #chabad_left_colum),
-  .section_root #chabad_main_content :has(.content-area-parent),
-  .section_root #chabad_main_content .content-area-parent {
-    grid-template-rows: subgrid;
-    grid-template-columns: subgrid;
-    grid-column: full-width;
-  }
+#chabad_body_content,
+#ContentArea,
+#content_page,
+.co_body.body_wrapper,
+#co_body_container,
+#ContentBody,
+.content-area-parent,
+#PreschoolSection1,
+.chabad_image_content,
+#content_banner.chabad_banner_content,
+.chabad_left_colum,
+#chabad_left_colum {
+  display: contents;
 }
 
-@supports (grid-template-rows: subgrid) {
-  #chabad_main_content :has(#content_banner, #PreschoolSection1, #co_body_container) {
-    grid-row: 1/15;
-  }
-  .section_root #chabad_main_content :has(.content-area-parent),
-  .section_root #chabad_main_content .content-area-parent {
-    grid-row: 1/15;
-  }
-}
-#chabad_main_content :has(#chabad_left_colum):not(:has(#content_banner:first-child)),
-#chabad_left_colum:not(:has(#content_banner:first-child)) {
+#chabad_main_content #chabad_left_colum:not(:has(#content_banner:first-child)) {
   grid-row: 2/15;
 }
 
@@ -375,7 +364,8 @@ img {
   vertical-align: middle;
   cursor: pointer;
   -webkit-user-select: none;
-  user-select: none;
+  -moz-user-select: none;
+       user-select: none;
   border: 2px solid var(--btn-border-color);
   background-color: var(--btn-bg);
   box-shadow: unset;
@@ -395,7 +385,7 @@ img {
   font-size: 50px;
   text-wrap: balance;
 }
-@supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
+@supports ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) or (-webkit-backdrop-filter: blur(1px)) {
   #chabad_body_page .display-3,
   #Co_ContentEditor_Container .display-3 {
     -webkit-backdrop-filter: blur(1px);
@@ -515,7 +505,8 @@ img {
 #Co_ContentEditor_Container .co_photo_gallery img {
   width: 100%;
   height: auto;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   aspect-ratio: 1;
   border-radius: 5px;
 }
@@ -588,8 +579,9 @@ body:not(.mobile) #chabad_body_page #chabad_head {
   max-width: 100%;
   height: auto;
 }
-@supports (height: fit-content) {
+@supports ((height: -moz-fit-content) or (height: fit-content)) {
   body:not(.mobile) #chabad_body_page #chabad_head {
+    height: -moz-fit-content;
     height: fit-content;
   }
 }
@@ -624,7 +616,8 @@ body:not(.mobile) #chabad_body_page #navigation .navi {
 }
 @container (min-width: 992px) {
   body:not(.mobile) #chabad_body_page #navigation .navi {
-    column-gap: 10px;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
   }
 }
 @container (max-width: 991px) {
@@ -725,8 +718,9 @@ body.mobile #chabad_body_page #chabad_head {
   padding: 5px;
   height: auto;
 }
-@supports (height: fit-content) {
+@supports ((height: -moz-fit-content) or (height: fit-content)) {
   body.mobile #chabad_body_page #chabad_head {
+    height: -moz-fit-content;
     height: fit-content;
   }
 }
@@ -751,21 +745,11 @@ body.mobile footer a {
 .section_branch #chabad_head {
   z-index: 2;
 }
-.section_branch .body_wrapper,
-.section_branch #co_body_container {
-  grid-row: 3;
-}
 @supports (grid-template-rows: subgrid) {
   .section_branch .body_wrapper,
   .section_branch #co_body_container {
     grid-column: content;
   }
-}
-.section_branch #wavy-bottom-border {
-  grid-row: 4;
-}
-.section_branch #PreschoolFooterNav {
-  grid-row: 5;
 }
 .section_branch #co_body_container {
   margin-block: 50px !important;
@@ -823,7 +807,8 @@ body,
 #PreschoolSection1 #PreschoolSection1Image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   filter: brightness(0.5);
 }
 #PreschoolSection1 #PreschoolSection1Title,
@@ -901,7 +886,8 @@ body,
   width: auto;
   height: 100%;
   max-height: 518px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-position: center;
@@ -1460,8 +1446,9 @@ div[name=co_section][real_id^=column_promo] {
   width: 100%;
   height: auto;
 }
-@supports (height: fit-content) {
+@supports ((height: -moz-fit-content) or (height: fit-content)) {
   div[name=co_section][real_id^=column_promo] {
+    height: -moz-fit-content;
     height: fit-content;
   }
 }
@@ -1529,7 +1516,8 @@ body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#ch
   width: 100%;
 }
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) .chabad_image_banner img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 100%;
   width: 100%;
   filter: brightness(0.5);
@@ -1602,7 +1590,8 @@ body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#ch
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) img[src*="preschool_banner_image.jpg"],
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) .chabad_image_banner:not(:has(img)) {
   content: url(https://mendelgordon.github.io/images/Shluchim/minisites/themes/preschool2/photos/PreschoolStockBackground.jpg);
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) .chabad_image_banner:not(:has(img)) {
   height: 100%;
@@ -1645,7 +1634,7 @@ body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#ch
     font-size: 35px;
   }
 }
-@supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
+@supports ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) or (-webkit-backdrop-filter: blur(1px)) {
   #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) .big_title,
   #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) .medium_title,
   #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) .chabad_updates_head div,
@@ -1755,10 +1744,6 @@ body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#ch
 }
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_right_colum [class$=body] {
   font-size: inherit;
-}
-#chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_right_colum {
-  grid-row: 16;
-  grid-template-rows: auto;
 }
 
 body:has(#cco_body > #photos > .photo[data-img="0"]) #cco_body > #photos {
@@ -1896,11 +1881,13 @@ body.sites-article #header {
 /* CSS Mode */
 .swiper-css-mode > .swiper-wrapper {
   overflow: auto;
-  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  -ms-overflow-style: none;
+  /* For Internet Explorer and Edge */
 }
 @supports (scrollbar-width: none) {
   .swiper-css-mode > .swiper-wrapper {
-    scrollbar-width: none; /* For Firefox */
+    scrollbar-width: none;
+    /* For Firefox */
   }
 }
 .swiper-css-mode > .swiper-wrapper::-webkit-scrollbar {
@@ -2063,7 +2050,8 @@ body.sites-article #header {
 .swiper-button-next svg {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   transform-origin: center;
 }
 .swiper-rtl .swiper-button-prev svg,
@@ -2113,6 +2101,4 @@ body.sites-article #header {
   content: "next";
 }
 
-/* Navigation font end */
-
-/*# sourceMappingURL=style.css.map */
+/* Navigation font end *//*# sourceMappingURL=style.css.map */
