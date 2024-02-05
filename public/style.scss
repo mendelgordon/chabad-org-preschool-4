@@ -228,22 +228,22 @@ body.noselect {
 		overflow-wrap: break-word;
 		text-wrap: pretty;
 	}
-}
 
-#chabad_body_content,
-#ContentArea,
-#content_page,
-.co_body.body_wrapper,
-#co_body_container,
-#ContentBody,
-.content-area-parent,
-#PreschoolSection1,
-.chabad_image_content,
-#content_banner.chabad_banner_content,
-.chabad_left_colum,
-#chabad_left_colum,
-#chabad_right_colum {
-	display: contents;
+	#chabad_body_content,
+	#ContentArea,
+	#content_page,
+	.co_body.body_wrapper,
+	#co_body_container,
+	#ContentBody,
+	.content-area-parent,
+	#PreschoolSection1,
+	.chabad_image_content,
+	#content_banner.chabad_banner_content,
+	.chabad_left_colum,
+	#chabad_left_colum,
+	#chabad_right_colum {
+		display: contents;
+	}
 }
 
 #chabad_main_content #chabad_left_colum:not(:has(#content_banner:first-child)) {

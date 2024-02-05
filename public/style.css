@@ -189,20 +189,19 @@ body.noselect .chabad_left_column a:-webkit-any-link {
   overflow-wrap: break-word;
   text-wrap: pretty;
 }
-
-#chabad_body_content,
-#ContentArea,
-#content_page,
-.co_body.body_wrapper,
-#co_body_container,
-#ContentBody,
-.content-area-parent,
-#PreschoolSection1,
-.chabad_image_content,
-#content_banner.chabad_banner_content,
-.chabad_left_colum,
-#chabad_left_colum,
-#chabad_right_colum {
+#chabad_main_content #chabad_body_content,
+#chabad_main_content #ContentArea,
+#chabad_main_content #content_page,
+#chabad_main_content .co_body.body_wrapper,
+#chabad_main_content #co_body_container,
+#chabad_main_content #ContentBody,
+#chabad_main_content .content-area-parent,
+#chabad_main_content #PreschoolSection1,
+#chabad_main_content .chabad_image_content,
+#chabad_main_content #content_banner.chabad_banner_content,
+#chabad_main_content .chabad_left_colum,
+#chabad_main_content #chabad_left_colum,
+#chabad_main_content #chabad_right_colum {
   display: contents;
 }
 
