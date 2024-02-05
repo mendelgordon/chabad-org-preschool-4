@@ -241,7 +241,8 @@ body.noselect {
 .chabad_image_content,
 #content_banner.chabad_banner_content,
 .chabad_left_colum,
-#chabad_left_colum {
+#chabad_left_colum,
+#chabad_right_colum {
 	display: contents;
 }
 
@@ -339,14 +340,12 @@ img[src$="White-wavy-bottom-border.png"] {
 	}
 }
 
-:where(#chabad_left_colum > :nth-child(2), :is(#chabad_head, footer) > *) {
-	@supports (grid-template-rows: subgrid) {
+@supports (grid-template-rows: subgrid) {
+	:where(#chabad_left_colum > :nth-child(2), :is(#chabad_head, footer) > *) {
 		grid-column: content;
 	}
-}
 
-#wavy-bottom-border {
-	@supports (grid-template-rows: subgrid) {
+	#wavy-bottom-border {
 		grid-column: full-width;
 	}
 }

@@ -201,7 +201,8 @@ body.noselect .chabad_left_column a:-webkit-any-link {
 .chabad_image_content,
 #content_banner.chabad_banner_content,
 .chabad_left_colum,
-#chabad_left_colum {
+#chabad_left_colum,
+#chabad_right_colum {
   display: contents;
 }
 
@@ -309,14 +310,10 @@ img[src$="White-wavy-bottom-border.png"] {
   :where(#chabad_left_colum > :nth-child(2), :is(#chabad_head, footer) > *) {
     grid-column: content;
   }
-}
-
-@supports (grid-template-rows: subgrid) {
   #wavy-bottom-border {
     grid-column: full-width;
   }
 }
-
 :where(#PreschoolSection2, #PreschoolSection3, #PreschoolSection4, #PreschoolSection5, #PreschoolSection6, #PreschoolSection7, #Testimonials, #PreschoolLatestPhotos) {
   padding-block: 50px;
 }
