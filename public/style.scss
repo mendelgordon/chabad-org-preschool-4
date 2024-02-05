@@ -238,16 +238,12 @@ body.noselect {
 	.content-area-parent,
 	#PreschoolSection1,
 	.chabad_image_content,
-	#content_banner.chabad_banner_content,
+	#content_banner.chabad_banner_content:first-child,
 	.chabad_left_colum,
 	#chabad_left_colum,
 	#chabad_right_colum {
 		display: contents;
 	}
-}
-
-#chabad_main_content #chabad_left_colum:not(:has(#content_banner:first-child)) {
-	grid-row: 2/15;
 }
 
 .section_root #chabad_main_content:not(:has(#content_banner:first-child, #PreschoolSection1Image)) #chabad_head {
@@ -267,10 +263,6 @@ body.noselect {
 }
 
 .master-content-wrapper {
-	body:not(.mobile) & {
-		grid-template-rows: auto !important;
-	}
-
 	grid-row: 1/3;
 }
 
@@ -289,8 +281,6 @@ header.article-header {
 /* Old minisites spell it chabad_left_colum instead of chabad_left_column */
 #chabad_left_colum > :nth-child(1),
 .chabad_image_banner,
-.chabad_image_content,
-#PreschoolSection1,
 #PreschoolSection1Image {
 	@supports (grid-template-rows: subgrid) {
 		grid-column: full-width;
@@ -546,6 +536,7 @@ img {
 
 	.master-content-wrapper {
 		background-image: linear-gradient(0deg, rgba(117, 197, 221, 1) 0%, rgba(18, 176, 209, 1) 100%);
+		grid-column: full-width;
 		min-height: 300px;
 		z-index: 0;
 
@@ -681,30 +672,15 @@ body:not(.mobile) #chabad_body_page {
 	}
 }
 
-div#chabad_body_content,
-body.mobile div#chabad_body_content,
 body.mobile div#co_photo_gallery .co_photo_gallery_body {
 	padding: 0 !important;
 }
 
-div#ContentArea,
 div#chabad_main_content,
-div#chabad_body_content,
 .cco_templatelates_content {
 	margin: 0;
 	width: 100%;
 	float: none;
-}
-
-.body_wrapper.clearfix.co_body {
-	width: 100%;
-	padding: 0;
-}
-
-div#co_body_container {
-	width: 100% !important;
-	padding: 0 !important;
-	margin: 0;
 }
 
 #header.on-scroll {
@@ -783,23 +759,20 @@ body.mobile {
 		z-index: 2;
 	}
 
-	.body_wrapper,
-	#co_body_container {
+	#cco_body {
 		@supports (grid-template-rows: subgrid) {
 			grid-column: content;
 		}
-	}
 
-	#co_body_container {
 		margin-block: 50px !important;
 
-		.co_body.article-body:not(*) {
+		.co_body.article-body:not(:has(*)) {
 			min-height: 300px;
 		}
 	}
 
 	#chabad_right_colum {
-		display: none;
+		display: none !important;
 	}
 }
 
@@ -1599,21 +1572,10 @@ body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#ch
 		display: none;
 	}
 
-	div#chabad_right_colum,
-	.content_page_full,
-	div#ContentArea {
+	.content_page_full {
 		float: none;
 		margin: 0;
 		width: 100%;
-	}
-
-	.body_wrapper.clearfix.co_body {
-		padding: 0;
-	}
-
-	div#co_body_container {
-		padding: 0;
-		margin: 0;
 	}
 
 	div#chabad_main_content,
