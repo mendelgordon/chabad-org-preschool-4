@@ -30,7 +30,7 @@
 }
 
 #BodyContainer .no-hero-image #co_content_container #chabad_body_content .master-content-wrapper.master-content-wrapper,
-html:has(link[href*="template4"]) .master-content-wrapper {
+.master-content-wrapper {
 	background-color: #12b0d1 !important;
 }
 
@@ -43,10 +43,6 @@ html:has(link[href*="template5"]) {
 	.article_index .row {
 		display: flex;
 		justify-content: center;
-	}
-
-	.master-content-wrapper {
-		background-color: #12b0d1
 	}
 }
 

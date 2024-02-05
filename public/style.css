@@ -30,7 +30,7 @@
 }
 
 #BodyContainer .no-hero-image #co_content_container #chabad_body_content .master-content-wrapper.master-content-wrapper,
-html:has(link[href*=template4]) .master-content-wrapper {
+.master-content-wrapper {
   background-color: #12b0d1 !important;
 }
 
@@ -41,9 +41,6 @@ html:has(link[href*=template5]) header.article-header.cf {
 html:has(link[href*=template5]) .article_index .row {
   display: flex;
   justify-content: center;
-}
-html:has(link[href*=template5]) .master-content-wrapper {
-  background-color: #12b0d1;
 }
 
 /* only use these styles for the index page when the template 5 and sites 6 templates aren't being used */
