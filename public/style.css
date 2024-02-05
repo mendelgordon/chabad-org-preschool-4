@@ -1501,7 +1501,7 @@ body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#ch
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #content_banner:not(:first-child) {
   grid-column: content;
 }
-#chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #content_banner:first-child::after {
+#chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #content_banner:has(~ div):first-child::after {
   background-image: url(https://w2.chabad.org/images/Shluchim/minisites/themes/preschool2/illustrations/White-wavy-bottom-border.png);
   background-repeat: round no-repeat;
   background-size: contain;
