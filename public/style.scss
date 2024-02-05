@@ -48,6 +48,10 @@ html:has(link[href*="template5"]) {
 		display: flex;
 		justify-content: center;
 	}
+
+	.master-content-wrapper {
+		background-color: #12b0d1
+	}
 }
 
 /* only use these styles for the index page when the template 5 and sites 6 templates aren't being used */
