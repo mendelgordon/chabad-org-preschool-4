@@ -776,9 +776,10 @@ body.mobile {
 		}
 
 		margin-top: 50px;
+		min-height: 312px;
 
 		.co_body.article-body:has(*) {
-			min-height: 300px;
+			min-height: 50px;
 		}
 	}
 

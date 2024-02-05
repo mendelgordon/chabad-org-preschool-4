@@ -723,6 +723,7 @@ body.mobile footer a {
 }
 .section_branch #cco_body {
   margin-top: 50px;
+  min-height: 312px;
 }
 @supports (grid-template-rows: subgrid) {
   .section_branch #cco_body {
@@ -730,7 +731,7 @@ body.mobile footer a {
   }
 }
 .section_branch #cco_body .co_body.article-body:has(*) {
-  min-height: 300px;
+  min-height: 50px;
 }
 .section_branch #chabad_right_colum {
   display: none !important;
