@@ -246,13 +246,13 @@ header.article-header {
 }
 
 /* Old minisites spell it chabad_left_colum instead of chabad_left_column */
-#chabad_left_colum > :nth-child(1),
+#chabad_left_colum > #content_banner:first-child,
 .chabad_image_banner,
 #PreschoolSection1Image {
   grid-row: 1/4;
 }
 @supports (grid-template-rows: subgrid) {
-  #chabad_left_colum > :nth-child(1),
+  #chabad_left_colum > #content_banner:first-child,
   .chabad_image_banner,
   #PreschoolSection1Image {
     grid-column: full-width;
