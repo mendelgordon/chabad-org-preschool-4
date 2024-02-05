@@ -765,7 +765,7 @@ body,
 #chabad_head {
   display: flex !important;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 body:not(.mobile) #chabad_head {
   gap: 20px;
