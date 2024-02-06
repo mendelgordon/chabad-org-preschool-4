@@ -1732,7 +1732,6 @@ body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#ch
 
 	:is(.chabad_box_content_body, .content_box_custom, #chabad_right_colum > :is(#chabad_updates, #co_photo_gallery, #co_calendar, #co_section, #chabad_box_text):not(:empty)) {
 		padding: 40px 15px;
-		min-height: 350px;
 		align-content: center;
 	}
 
