@@ -757,6 +757,10 @@ body.mobile {
 				backdrop-filter: contrast(0.5);
 			}
 
+			#menu {
+				height: auto;
+			}
+
 			.item.heading a {
 				font-size: 0;
 				background: none;
@@ -1786,6 +1790,21 @@ div[name="co_section"][real_id^="column_promo"] {
 	.co_photo_gallery_head,
 	.co_section_head {
 		padding: 0 !important;
+	}
+
+	.co_calendar_text {
+		.co_date {
+			font-weight: bold;
+		}
+
+		.item.normal-width {
+			margin-bottom: 20px;
+		}
+
+		.co_text_calendar {
+			font-size: 0.9em;
+			padding-top: 3px;
+		}
 	}
 
 	.chabad_text_box div,
