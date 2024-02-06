@@ -436,18 +436,6 @@ img {
   aspect-ratio: 1;
   width: auto;
 }
-#PreschoolSection3Cards #chabad_body_page .card-bodyf img,
-#PreschoolSection3Cards #Co_ContentEditor_Container .card-bodyf img {
-  filter: brightness(0) saturate(100%) invert(41%) sepia(49%) saturate(2658%) hue-rotate(316deg) brightness(103%) contrast(102%);
-}
-#PreschoolSection3Cards #chabad_body_page .card-bodyf img:hover,
-#PreschoolSection3Cards #Co_ContentEditor_Container .card-bodyf img:hover {
-  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(271deg) brightness(108%) contrast(102%);
-}
-#PreschoolSection7Cards #chabad_body_page .card-bodyf img[src$=".svg"],
-#PreschoolSection7Cards #Co_ContentEditor_Container .card-bodyf img[src$=".svg"] {
-  filter: brightness(0) saturate(100%) invert(76%) sepia(50%) saturate(6269%) hue-rotate(213deg) brightness(102%) contrast(101%);
-}
 #chabad_body_page .card-bodyf:hover,
 #Co_ContentEditor_Container .card-bodyf:hover {
   background: #ff4880;
@@ -956,6 +944,12 @@ body:not(.mobile) #chabad_head {
     grid-column: content;
   }
 }
+#PreschoolSection3 img {
+  filter: brightness(0) saturate(100%) invert(41%) sepia(49%) saturate(2658%) hue-rotate(316deg) brightness(103%) contrast(102%);
+}
+#PreschoolSection3 img:hover {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(271deg) brightness(108%) contrast(102%);
+}
 #PreschoolSection3 h3 {
   margin-inline: auto;
 }
@@ -1193,6 +1187,9 @@ body:not(.mobile) #chabad_head {
   #PreschoolSection7 #PreschoolSection7Cards {
     grid-column: content;
   }
+}
+#PreschoolSection7 img[src$=".svg"] {
+  filter: brightness(0) saturate(100%) invert(76%) sepia(50%) saturate(6269%) hue-rotate(213deg) brightness(102%) contrast(101%);
 }
 #PreschoolSection7 .coitem {
   flex: 1 1 300px;

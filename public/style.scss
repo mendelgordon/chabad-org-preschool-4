@@ -462,17 +462,6 @@ img {
 		padding: var(--card-spacer-y) var(--card-spacer-x);
 
 		img {
-			#PreschoolSection3Cards & {
-				filter: brightness(0) saturate(100%) invert(41%) sepia(49%) saturate(2658%) hue-rotate(316deg) brightness(103%) contrast(102%);
-				&:hover {
-					filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(271deg) brightness(108%) contrast(102%);
-				}
-			}
-
-			#PreschoolSection7Cards &[src$=".svg"] {
-				filter: brightness(0) saturate(100%) invert(76%) sepia(50%) saturate(6269%) hue-rotate(213deg) brightness(102%) contrast(101%);;
-			}
-
 			height: 69px;
 			aspect-ratio: 1;
 			width: auto;
@@ -1028,6 +1017,14 @@ body,
 		gap: 25px;
 	}
 
+	img {
+		filter: brightness(0) saturate(100%) invert(41%) sepia(49%) saturate(2658%) hue-rotate(316deg) brightness(103%) contrast(102%);
+
+		&:hover {
+			filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(271deg) brightness(108%) contrast(102%);
+		}
+	}
+
 	h3 {
 		margin-inline: auto;
 
@@ -1271,6 +1268,10 @@ body,
 		flex-wrap: wrap;
 		gap: 25px;
 		justify-content: center;
+	}
+
+	img[src$=".svg"] {
+		filter: brightness(0) saturate(100%) invert(76%) sepia(50%) saturate(6269%) hue-rotate(213deg) brightness(102%) contrast(101%);
 	}
 
 	.coitem {
