@@ -922,7 +922,7 @@ body:not(.mobile) #chabad_head {
 }
 
 #PreschoolSection3 {
-  background-image: url(https://w2.chabad.org/images/Shluchim/minisites/themes/preschool2/photos/bg126.jpg);
+  background-image: url(/images/Shluchim/minisites/themes/preschool2/photos/bg126.jpg);
   display: grid;
 }
 @supports (grid-template-rows: subgrid) {
@@ -1143,7 +1143,7 @@ body:not(.mobile) #chabad_head {
 }
 
 #PreschoolSection5 {
-  background-image: url(https://w2.chabad.org/images/Shluchim/minisites/themes/preschool2/photos/bg125.jpg);
+  background-image: url(/images/Shluchim/minisites/themes/preschool2/photos/bg125.jpg);
 }
 @supports (grid-template-rows: subgrid) {
   #PreschoolSection5 {
@@ -1152,7 +1152,7 @@ body:not(.mobile) #chabad_head {
 }
 
 #PreschoolSection7 {
-  background-image: url(https://w2.chabad.org/images/Shluchim/minisites/themes/preschool2/photos/bg126.jpg);
+  background-image: url(/images/Shluchim/minisites/themes/preschool2/photos/bg126.jpg);
   display: grid;
 }
 @supports (grid-template-rows: subgrid) {
@@ -1521,7 +1521,7 @@ body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#ch
   grid-column: 1/-1 !important;
 }
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #content_banner:has(~ div):first-child::after {
-  background-image: url(https://w2.chabad.org/images/Shluchim/minisites/themes/preschool2/illustrations/White-wavy-bottom-border.png);
+  background-image: url(/images/Shluchim/minisites/themes/preschool2/illustrations/White-wavy-bottom-border.png);
   background-repeat: round no-repeat;
   background-size: contain;
   width: 100%;
@@ -1581,7 +1581,7 @@ body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#ch
 }
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) img[src*="preschool_banner_image.jpg"],
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) .chabad_image_banner:not(:has(img)) {
-  content: url(https://mendelgordon.github.io/images/Shluchim/minisites/themes/preschool2/photos/PreschoolStockBackground.jpg);
+  content: url(/images/Shluchim/minisites/themes/preschool2/photos/banner.jfif);
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1592,6 +1592,7 @@ body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#ch
 }
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) .chabad_image_banner {
   background-color: #12b0d1;
+  display: grid;
 }
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) :is(.chabad_box_content_body, .content_box_custom, #chabad_right_colum > :is(#chabad_updates, #co_photo_gallery, #co_calendar, #co_section, #chabad_box_text):not(:empty)) {
   padding: 40px 15px;
@@ -1699,11 +1700,11 @@ body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#ch
 }
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_left_colum > :nth-child(4n+3):has(*),
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_right_colum > :nth-child(4n+1):has(*) {
-  background-image: url(https://w2.chabad.org/images/Shluchim/minisites/themes/preschool2/photos/bg126.jpg);
+  background-image: url(/images/Shluchim/minisites/themes/preschool2/photos/bg126.jpg);
 }
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_left_colum > :nth-child(4n+5):has(*),
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_right_colum > :nth-child(4n+3):has(*) {
-  background-image: url(https://w2.chabad.org/images/Shluchim/minisites/themes/preschool2/photos/bg125.jpg);
+  background-image: url(/images/Shluchim/minisites/themes/preschool2/photos/bg125.jpg);
 }
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_left_colum > :nth-child(4n+4),
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_right_colum > :nth-child(4n+2) {
