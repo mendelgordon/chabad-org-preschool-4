@@ -464,6 +464,7 @@ img {
 		color: var(--card-color);
 
 		img {
+			filter: brightness(0) saturate(100%) invert(41%) sepia(49%) saturate(2658%) hue-rotate(316deg) brightness(103%) contrast(102%);
 			height: 69px;
 			aspect-ratio: 1;
 			width: auto;
