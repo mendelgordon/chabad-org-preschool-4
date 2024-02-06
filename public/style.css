@@ -947,9 +947,6 @@ body:not(.mobile) #chabad_head {
 #PreschoolSection3 img {
   filter: brightness(0) saturate(100%) invert(41%) sepia(49%) saturate(2658%) hue-rotate(316deg) brightness(103%) contrast(102%);
 }
-#PreschoolSection3 img:hover {
-  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(271deg) brightness(108%) contrast(102%);
-}
 #PreschoolSection3 h3 {
   margin-inline: auto;
 }
@@ -991,6 +988,9 @@ body:not(.mobile) #chabad_head {
   border-bottom-right-radius: 0.4rem;
   content: "";
   position: absolute;
+}
+#PreschoolSection3 .card:hover img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(271deg) brightness(108%) contrast(102%);
 }
 #PreschoolSection3 .card h4 {
   font-weight: 600;
