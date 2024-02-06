@@ -4,7 +4,7 @@
 /* hero image container level one on old minisites ".chabad_image_banner" */
 /* hero image container level two on old minisites ".chabad_image_content" */
 /* hero text wrapper on old minisites "#chabad_banner_text" */
-/* hero bottom border on old minisites "#content_banner::after" */
+/* hero bottom border on old minisites "#content_banner:after" */
 /* page tools seem to stay even if you choose to hide them so here they get set to stay hidden always */
 .page-tools-sidebar {
 	display: none;
@@ -48,7 +48,7 @@ html:has(link[href*="template5"]) {
 
 /* only use these styles for the index page when the template 5 and sites 6 templates aren't being used */
 html:not(:has(link#k[href*="sites6"], link#k[href*="template5"])) .article_index {
-	&.clearfix::after {
+	&.clearfix:after {
 		display: none;
 	}
 
@@ -219,9 +219,9 @@ body.noselect {
 			[full-width-start] minmax(var(--padding-inline), 1fr) [breakout-start] minmax(0, var(--breakout-size)) [content-start] min(100% - (var(--padding-inline) * 2), var(--content-max-width)) [content-end] minmax(0, var(--breakout-size)) [breakout-end] minmax(var(--padding-inline), 1fr) [full-width-end];
 
 		* {
-			// Fixes a bug where the grid items would be too wide
+			/* Fixes a bug where the grid items would be too wide */
 			min-width: 0;
-			// Help prevent overflow of long words/names/URLs
+			/* Help prevent overflow of long words/names/URLs */
 			overflow-wrap: break-word;
 			text-wrap: pretty;
 		}
@@ -268,7 +268,7 @@ body.noselect {
 }
 
 #chabad_head {
-	// Header should overlap the first row of content
+	/* Header should overlap the first row of content */
 	z-index: 1;
 
 	@supports (grid-template-rows: subgrid) {
@@ -321,7 +321,7 @@ header.article-header {
 	margin-block: 50px;
 }
 
-#content_banner::after,
+#content_banner:after,
 img[src$="White-wavy-bottom-border.png"] {
 	@supports (grid-template-rows: subgrid) {
 		grid-column: full-width;
@@ -335,10 +335,6 @@ img[src$="White-wavy-bottom-border.png"] {
 .mobile #chabad_head {
 	@supports (grid-template-rows: subgrid) {
 		grid-column: full-width;
-	}
-
-	> * {
-		width: 100%;
 	}
 }
 
@@ -567,7 +563,7 @@ img {
 		}
 	}
 
-	.card-border-bottom::after {
+	.card-border-bottom:after {
 		bottom: 0;
 		right: 0;
 		left: 0;
@@ -613,7 +609,7 @@ body:not(.mobile) #chabad_body_page {
 			padding-inline: 10px;
 		}
 
-		a.parent.arrow::after {
+		a.parent.arrow:after {
 			content: " ↓";
 		}
 
@@ -748,13 +744,7 @@ body.mobile {
 		}
 
 		#chabad_head {
-			background: #f9f9f9;
-		}
-
-		#chabad_head {
-			flex-direction: column;
 			justify-content: center;
-			align-items: center;
 			padding: 5px;
 			height: auto;
 
@@ -762,10 +752,23 @@ body.mobile {
 				height: fit-content;
 			}
 
-			> a {
-				width: 100%;
-				margin: 0 !important;
-				color: black !important;
+			@supports (-webkit-backdrop-filter: contrast(0.5)) or (backdrop-filter: contrast(0.5)) {
+				-webkit-backdrop-filter: contrast(0.5);
+				backdrop-filter: contrast(0.5);
+			}
+
+			.item.heading a {
+				font-size: 0;
+				background: none;
+				padding: 0;
+
+				&:after {
+					content: "☰";
+					font-size: 30px;
+					color: white;
+					display: inline-block;
+					margin-top: 8px;
+				}
 			}
 		}
 	}
@@ -774,6 +777,7 @@ body.mobile {
 		top: -6px;
 		right: 10px;
 		z-index: 10;
+		color: white;
 	}
 
 	footer a {
@@ -838,15 +842,17 @@ body,
 	display: flex !important;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	color: white;
+	font-family: "Open Sans", sans-serif;
 
 	body:not(.mobile) & {
 		gap: 20px;
 	}
 
 	#PreschoolTitle {
-		color: white;
-		font-size: clamp(17px, 2vw, 37px);
+		font-size: clamp(18px, 2vw, 37px);
 		font-weight: bold;
+		margin: 10px 30px;
 	}
 }
 
@@ -858,7 +864,7 @@ body,
 		filter: brightness(0.5);
 	}
 
-	// animation
+	/* animation */
 	#PreschoolSection1Title,
 	#PreschoolSection1Description,
 	#PreschoolSection1Button {
@@ -1048,7 +1054,7 @@ body,
 		--card-spacer-y: 40px;
 		--card-spacer-x: 40px;
 
-		&::after {
+		&:after {
 			bottom: 0;
 			right: 0;
 			left: 0;
@@ -1289,7 +1295,7 @@ body,
 		--card-spacer-y: 40px;
 		--card-spacer-x: 40px;
 
-		&::after {
+		&:after {
 			bottom: 0;
 			right: 0;
 			left: 0;
@@ -1576,7 +1582,7 @@ div[name="co_section"][real_id^="column_promo"] {
 }
 
 /* styles for backwards compatibility */
-body:not(.mobile) #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_head .chabad_logo {
+#chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_head .chabad_logo {
 	color: white;
 }
 
@@ -1585,26 +1591,21 @@ body:not(.mobile) #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) 
 	max-height: max(30vmax, 800px) !important;
 }
 
-body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#chabad_head .chabad_logo {
-
-	a,
-	div,
-	a div {
-		width: 100%;
-		color: black;
-		font-size: clamp(17px, 2vw, 37px);
-		font-weight: bold;
-	}
-}
-
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) {
 	td.chabad_logo {
+		> :first-child {
+			margin: 10px 30px;
+		}
 
 		div,
 		a,
-		h1 {
-			font-size: clamp(17px, 2vw, 37px);
+		a div,
+		h1,
+		span,
+		strong {
+			font-size: clamp(20px, 2vw, 37px) !important;
 			font-weight: bold;
+			color: white;
 		}
 	}
 
@@ -1642,7 +1643,7 @@ body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#ch
 			}
 		}
 
-		&:has(~ div):first-child::after {
+		&:has(~ div):first-child:after {
 			background-image: url(/images/Shluchim/minisites/themes/preschool2/illustrations/White-wavy-bottom-border.png);
 			background-repeat: round no-repeat;
 			background-size: contain;
@@ -1835,7 +1836,7 @@ body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#ch
 	#chabad_right_colum > :nth-child(4n + 2) {
 		position: relative;
 
-		&::before {
+		&:before {
 			content: "";
 			bottom: 50px;
 			right: 15%;
@@ -1847,7 +1848,7 @@ body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#ch
 			width: 120px;
 		}
 
-		&::after {
+		&:after {
 			content: "";
 			top: 50px;
 			left: 15%;
@@ -2015,7 +2016,7 @@ body.sites-article #header {
 		-ms-overflow-style: none;
 
 		/* For Internet Explorer and Edge */
-		&::-webkit-scrollbar {
+		&:-webkit-scrollbar {
 			display: none;
 		}
 	}
@@ -2047,7 +2048,7 @@ body.sites-article #header {
 	}
 
 	&.swiper-centered {
-		> .swiper-wrapper::before {
+		> .swiper-wrapper:before {
 			content: "";
 			flex-shrink: 0;
 			order: 9999;
@@ -2067,7 +2068,7 @@ body.sites-article #header {
 			margin-inline-start: var(--swiper-centered-offset-before);
 		}
 
-		> .swiper-wrapper::before {
+		> .swiper-wrapper:before {
 			height: 100%;
 			min-height: 1px;
 			width: var(--swiper-centered-offset-after);
@@ -2079,7 +2080,7 @@ body.sites-article #header {
 			margin-block-start: var(--swiper-centered-offset-before);
 		}
 
-		> .swiper-wrapper::before {
+		> .swiper-wrapper:before {
 			width: 100%;
 			min-width: 1px;
 			height: var(--swiper-centered-offset-after);

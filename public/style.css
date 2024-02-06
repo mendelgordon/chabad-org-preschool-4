@@ -4,7 +4,7 @@
 /* hero image container level one on old minisites ".chabad_image_banner" */
 /* hero image container level two on old minisites ".chabad_image_content" */
 /* hero text wrapper on old minisites "#chabad_banner_text" */
-/* hero bottom border on old minisites "#content_banner::after" */
+/* hero bottom border on old minisites "#content_banner:after" */
 /* page tools seem to stay even if you choose to hide them so here they get set to stay hidden always */
 .page-tools-sidebar {
   display: none;
@@ -50,7 +50,7 @@ html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index {
   justify-content: center;
   gap: 25px;
 }
-html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index.clearfix::after {
+html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index.clearfix:after {
   display: none;
 }
 html:not(:has(link#k[href*=sites6], link#k[href*=template5])) .article_index .row {
@@ -183,7 +183,9 @@ body.noselect .chabad_left_column a:-webkit-any-link {
     grid-template-columns: [full-width-start] minmax(var(--padding-inline), 1fr) [breakout-start] minmax(0, var(--breakout-size)) [content-start] min(100% - var(--padding-inline) * 2, var(--content-max-width)) [content-end] minmax(0, var(--breakout-size)) [breakout-end] minmax(var(--padding-inline), 1fr) [full-width-end];
   }
   #chabad_main_content * {
+    /* Fixes a bug where the grid items would be too wide */
     min-width: 0;
+    /* Help prevent overflow of long words/names/URLs */
     overflow-wrap: break-word;
     text-wrap: pretty;
   }
@@ -224,6 +226,7 @@ body.noselect .chabad_left_column a:-webkit-any-link {
 }
 
 #chabad_head {
+  /* Header should overlap the first row of content */
   z-index: 1;
   grid-row: 1;
 }
@@ -281,14 +284,14 @@ header.article-header {
   margin-block: 50px;
 }
 
-#content_banner::after,
+#content_banner:after,
 img[src$="White-wavy-bottom-border.png"] {
   grid-row: 3;
   align-self: end;
   z-index: 0;
 }
 @supports (grid-template-rows: subgrid) {
-  #content_banner::after,
+  #content_banner:after,
   img[src$="White-wavy-bottom-border.png"] {
     grid-column: full-width;
   }
@@ -298,9 +301,6 @@ img[src$="White-wavy-bottom-border.png"] {
   .mobile #chabad_head {
     grid-column: full-width;
   }
-}
-.mobile #chabad_head > * {
-  width: 100%;
 }
 
 @supports (grid-template-rows: subgrid) {
@@ -540,8 +540,8 @@ img {
     font-size: 40px;
   }
 }
-#chabad_body_page .card-border-bottom::after,
-#Co_ContentEditor_Container .card-border-bottom::after {
+#chabad_body_page .card-border-bottom:after,
+#Co_ContentEditor_Container .card-border-bottom:after {
   bottom: 0;
   right: 0;
   left: 0;
@@ -584,7 +584,7 @@ body:not(.mobile) #chabad_body_page #chabad_head .navi a {
   font-family: "Open Sans", sans-serif;
   padding-inline: 10px;
 }
-body:not(.mobile) #chabad_body_page #chabad_head .navi a.parent.arrow::after {
+body:not(.mobile) #chabad_body_page #chabad_head .navi a.parent.arrow:after {
   content: " ↓";
 }
 body:not(.mobile) #chabad_body_page #chabad_head .navi .sub_menu {
@@ -698,12 +698,7 @@ body.mobile #chabad_body_page h2 {
   font-size: 20px;
 }
 body.mobile #chabad_body_page #chabad_head {
-  background: #f9f9f9;
-}
-body.mobile #chabad_body_page #chabad_head {
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
   padding: 5px;
   height: auto;
 }
@@ -713,15 +708,29 @@ body.mobile #chabad_body_page #chabad_head {
     height: fit-content;
   }
 }
-body.mobile #chabad_body_page #chabad_head > a {
-  width: 100%;
-  margin: 0 !important;
-  color: black !important;
+@supports ((-webkit-backdrop-filter: contrast(0.5)) or (backdrop-filter: contrast(0.5))) {
+  body.mobile #chabad_body_page #chabad_head {
+    -webkit-backdrop-filter: contrast(0.5);
+    backdrop-filter: contrast(0.5);
+  }
+}
+body.mobile #chabad_body_page #chabad_head .item.heading a {
+  font-size: 0;
+  background: none;
+  padding: 0;
+}
+body.mobile #chabad_body_page #chabad_head .item.heading a:after {
+  content: "☰";
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  margin-top: 8px;
 }
 body.mobile.cco_templateless_page #chabad_body_page .bh {
   top: -6px;
   right: 10px;
   z-index: 10;
+  color: white;
 }
 body.mobile footer a {
   color: white;
@@ -780,16 +789,21 @@ body,
   display: flex !important;
   flex-wrap: wrap;
   justify-content: space-between;
+  color: white;
+  font-family: "Open Sans", sans-serif;
 }
 body:not(.mobile) #chabad_head {
   gap: 20px;
 }
 #chabad_head #PreschoolTitle {
-  color: white;
-  font-size: clamp(17px, 2vw, 37px);
+  font-size: clamp(18px, 2vw, 37px);
   font-weight: bold;
+  margin: 10px 30px;
 }
 
+#PreschoolSection1 {
+  /* animation */
+}
 #PreschoolSection1 #PreschoolSection1Image {
   width: 100%;
   height: 100%;
@@ -974,7 +988,7 @@ body:not(.mobile) #chabad_head {
   --card-spacer-y: 40px;
   --card-spacer-x: 40px;
 }
-#PreschoolSection3 .card::after {
+#PreschoolSection3 .card:after {
   bottom: 0;
   right: 0;
   left: 0;
@@ -1205,7 +1219,7 @@ body:not(.mobile) #chabad_head {
   --card-spacer-y: 40px;
   --card-spacer-x: 40px;
 }
-#PreschoolSection7 .card::after {
+#PreschoolSection7 .card:after {
   bottom: 0;
   right: 0;
   left: 0;
@@ -1465,7 +1479,7 @@ div[name=co_section][real_id^=column_promo] {
   }
 }
 /* styles for backwards compatibility */
-body:not(.mobile) #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_head .chabad_logo {
+#chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_head .chabad_logo {
   color: white;
 }
 
@@ -1474,20 +1488,18 @@ body:not(.mobile) #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) 
   max-height: max(30vmax, 800px) !important;
 }
 
-body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#chabad_head .chabad_logo a,
-body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#chabad_head .chabad_logo div,
-body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#chabad_head .chabad_logo a div {
-  width: 100%;
-  color: black;
-  font-size: clamp(17px, 2vw, 37px);
-  font-weight: bold;
+#chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) td.chabad_logo > :first-child {
+  margin: 10px 30px;
 }
-
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) td.chabad_logo div,
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) td.chabad_logo a,
-#chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) td.chabad_logo h1 {
-  font-size: clamp(17px, 2vw, 37px);
+#chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) td.chabad_logo a div,
+#chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) td.chabad_logo h1,
+#chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) td.chabad_logo span,
+#chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) td.chabad_logo strong {
+  font-size: clamp(20px, 2vw, 37px) !important;
   font-weight: bold;
+  color: white;
 }
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) .chabad_text_head {
   display: none;
@@ -1520,7 +1532,7 @@ body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#ch
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #content_banner:not(:first-child) div {
   grid-column: 1/-1 !important;
 }
-#chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #content_banner:has(~ div):first-child::after {
+#chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #content_banner:has(~ div):first-child:after {
   background-image: url(/images/Shluchim/minisites/themes/preschool2/illustrations/White-wavy-bottom-border.png);
   background-repeat: round no-repeat;
   background-size: contain;
@@ -1709,8 +1721,8 @@ body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#ch
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_right_colum > :nth-child(4n+2) {
   position: relative;
 }
-#chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_left_colum > :nth-child(4n+4)::before,
-#chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_right_colum > :nth-child(4n+2)::before {
+#chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_left_colum > :nth-child(4n+4):before,
+#chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_right_colum > :nth-child(4n+2):before {
   content: "";
   bottom: 50px;
   right: 15%;
@@ -1721,8 +1733,8 @@ body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#ch
   height: 120px;
   width: 120px;
 }
-#chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_left_colum > :nth-child(4n+4)::after,
-#chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_right_colum > :nth-child(4n+2)::after {
+#chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_left_colum > :nth-child(4n+4):after,
+#chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) #chabad_right_colum > :nth-child(4n+2):after {
   content: "";
   top: 50px;
   left: 15%;
@@ -1882,7 +1894,7 @@ body.sites-article #header {
     /* For Firefox */
   }
 }
-.swiper-css-mode > .swiper-wrapper::-webkit-scrollbar {
+.swiper-css-mode > .swiper-wrapper:-webkit-scrollbar {
   display: none;
 }
 .swiper-css-mode > .swiper-wrapper > .swiper-slide {
@@ -1900,7 +1912,7 @@ body.sites-article #header {
 .swiper-css-mode.swiper-free-mode > .swiper-wrapper > .swiper-slide {
   scroll-snap-align: none;
 }
-.swiper-css-mode.swiper-centered > .swiper-wrapper::before {
+.swiper-css-mode.swiper-centered > .swiper-wrapper:before {
   content: "";
   flex-shrink: 0;
   order: 9999;
@@ -1916,7 +1928,7 @@ body.sites-article #header {
 .swiper-css-mode.swiper-centered.swiper-horizontal > .swiper-wrapper > .swiper-slide:first-child {
   margin-inline-start: var(--swiper-centered-offset-before);
 }
-.swiper-css-mode.swiper-centered.swiper-horizontal > .swiper-wrapper::before {
+.swiper-css-mode.swiper-centered.swiper-horizontal > .swiper-wrapper:before {
   height: 100%;
   min-height: 1px;
   width: var(--swiper-centered-offset-after);
@@ -1924,7 +1936,7 @@ body.sites-article #header {
 .swiper-css-mode.swiper-centered.swiper-vertical > .swiper-wrapper > .swiper-slide:first-child {
   margin-block-start: var(--swiper-centered-offset-before);
 }
-.swiper-css-mode.swiper-centered.swiper-vertical > .swiper-wrapper::before {
+.swiper-css-mode.swiper-centered.swiper-vertical > .swiper-wrapper:before {
   width: 100%;
   min-width: 1px;
   height: var(--swiper-centered-offset-after);
