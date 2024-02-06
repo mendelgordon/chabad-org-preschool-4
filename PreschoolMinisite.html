@@ -1,14 +1,14 @@
 <co:advanced />
 <co:settings detached="true" />
-<style>
-	@import url("https://preschool-template-6.netlify.app/style.css");
+<style id="kpreschool">
+	@import url("/images/shluchim/minisites/themes/preschool2/styles.css");
 </style>
 <div id="chabad_body_page">
 	<div id="chabad_main_content">
 		<co:template id="HeaderSection" name="header_section" title="Header Section" type="static" detached="true">
 			<co:section id="HeaderInner" name="Header" title="Header">
 				<div id="chabad_head">
-					<a href="#" id="PreschoolTitle">
+					<a href="/<<articleid>>" id="PreschoolTitle">
 						<co:editable id="PreschoolName" name="PreschoolName" title="Preschool Name" actions="edit" datatype="line">Chabad Preschool</co:editable>
 					</a>
 					<co:template class="chabad_navigator_bar" id="Navigation" name="nagivation" title="Navigation Bar" max_chars="70" use_custom_separator="true"></co:template>
@@ -521,4 +521,5 @@
 		</co:template>
 	</div>
 </div>
-<co:template id="cms_item" title="SliderJS" name="SliderJS" aid="6296004" type="dynamic" actions="delete" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="/images/shluchim/minisites/themes/preschool2/scripts.js"></script>

@@ -463,6 +463,12 @@ img {
 		padding: var(--card-spacer-y) var(--card-spacer-x);
 		color: var(--card-color);
 
+		img {
+			height: 69px;
+			aspect-ratio: 1;
+			width: auto;
+		}
+
 		&:hover {
 			background: #ff4880;
 		}
@@ -627,6 +633,10 @@ body:not(.mobile) #chabad_body_page {
 				padding: 6px 6px 6px 10px;
 				font-size: 14px;
 				font-weight: 300;
+			}
+
+			:hover {
+				font-weight: bold;
 			}
 
 			&:first-child {
@@ -1521,7 +1531,7 @@ body,
 #chabad_body_page .btn,
 .co_photo_gallery_footer a,
 #PreschoolSection1Button {
-	:hover {
+	&:hover {
 		transform: translateY(-3px);
 		box-shadow: 0 5px 15px rgba(30, 34, 40, 0.15);
 	}
@@ -1616,6 +1626,7 @@ body.mobile #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) div#ch
 			display: grid;
 			grid-template-rows: repeat(auto-fit, minmax(0, 1fr));
 			margin-block: 20px;
+
 			div {
 				grid-column: 1 / -1 !important;
 			}

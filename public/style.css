@@ -432,6 +432,12 @@ img {
   padding: var(--card-spacer-y) var(--card-spacer-x);
   color: var(--card-color);
 }
+#chabad_body_page .card-bodyf img,
+#Co_ContentEditor_Container .card-bodyf img {
+  height: 69px;
+  aspect-ratio: 1;
+  width: auto;
+}
 #chabad_body_page .card-bodyf:hover,
 #Co_ContentEditor_Container .card-bodyf:hover {
   background: #ff4880;
@@ -596,6 +602,9 @@ body:not(.mobile) #chabad_body_page #chabad_head .navi .item .item a {
   padding: 6px 6px 6px 10px;
   font-size: 14px;
   font-weight: 300;
+}
+body:not(.mobile) #chabad_body_page #chabad_head .navi .item .item :hover {
+  font-weight: bold;
 }
 body:not(.mobile) #chabad_body_page #chabad_head .navi .item .item:first-child a {
   padding-top: 9px;
@@ -1411,11 +1420,11 @@ body:not(.mobile) #chabad_head {
   }
 }
 
-#PreschoolFooterButton :hover,
-.chabad_more_button :hover,
-#chabad_body_page .btn :hover,
-.co_photo_gallery_footer a :hover,
-#PreschoolSection1Button :hover {
+#PreschoolFooterButton:hover,
+.chabad_more_button:hover,
+#chabad_body_page .btn:hover,
+.co_photo_gallery_footer a:hover,
+#PreschoolSection1Button:hover {
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(30, 34, 40, 0.15);
 }
