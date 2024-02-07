@@ -112,12 +112,46 @@ body.noselect {
 		box-sizing: border-box;
 	}
 
+	&:has(#chabad_body_page) {
+		h3 {
+			padding: unset;
+			margin: auto;
+			line-height: normal;
+		}
+
+		[name="co_template"],
+		[name="co_section"],
+		[name="co_editable"] {
+			display: contents !important;
+		}
+
+		#chabad_head,
+		#PreschoolFooterNav {
+			* {
+				color: white;
+				background: unset;
+			}
+		}
+
+		co\:item {
+			grid-column: 1 / -1;
+		}
+
+		.sub_menu {
+			width: min-content;
+
+			ul {
+				padding: 0;
+			}
+		}
+	}
+
 	div.chabad_left_colum,
 	div.chabad_left_column {
 		width: 100%;
 	}
 
-	.chabad_left_column {
+	&:not(:has(#chabad_body_page)).chabad_left_column {
 		h3 {
 			line-height: normal;
 
@@ -163,24 +197,6 @@ body.noselect {
 			}
 		}
 
-		#TestimonialSlides {
-			overflow: hidden;
-
-			.swiper {
-				overflow: auto;
-			}
-
-			.card-body {
-				padding: 0;
-			}
-
-			.slider-wrapper .card {
-				padding: 10px;
-				margin-inline: 10px;
-				min-width: 300px;
-			}
-		}
-
 		.ContentItem[name="co_section"],
 		.ContentItem[name="co_template"] {
 			flex: 1 1 500px;
@@ -201,10 +217,28 @@ body.noselect {
 		#Co_ContentEditor_Container .co_photo_gallery_body {
 			width: auto !important;
 		}
+	}
 
-		a:-webkit-any-link {
-			text-decoration: none;
+	#TestimonialSlides {
+		overflow: hidden;
+
+		.swiper {
+			overflow: auto;
 		}
+
+		.card-body {
+			padding: 0;
+		}
+
+		.slider-wrapper .card {
+			padding: 10px;
+			margin-inline: 10px;
+			min-width: 300px;
+		}
+	}
+
+	a:-webkit-any-link {
+		text-decoration: none;
 	}
 }
 
@@ -336,6 +370,7 @@ img[src$="White-wavy-bottom-border.png"] {
 	@supports (grid-template-rows: subgrid) {
 		grid-column: full-width;
 	}
+
 	html:has(.chabad_left_column) & {
 		align-items: baseline;
 	}
@@ -919,6 +954,7 @@ body,
 		margin-bottom: -1px;
 		background-repeat: no-repeat;
 		padding-top: 20px;
+		width: 100%;
 	}
 }
 
@@ -1568,13 +1604,6 @@ div[name="co_section"][real_id^="column_promo"] {
 	@supports (height: fit-content) {
 		height: fit-content;
 	}
-}
-
-.ContentItem[real_name="Header"] {
-	height: 90px;
-	background: silver;
-	margin-bottom: -15px;
-	width: 685px;
 }
 
 @keyframes zoomIn {
