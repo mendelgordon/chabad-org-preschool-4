@@ -302,6 +302,9 @@ img[src$="White-wavy-bottom-border.png"] {
     grid-column: full-width;
   }
 }
+html:has(.chabad_left_column) .mobile #chabad_head {
+  align-items: baseline;
+}
 
 @supports (grid-template-rows: subgrid) {
   :where(#chabad_left_colum > :nth-child(2), :is(#chabad_head, footer) > *) {
