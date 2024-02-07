@@ -1,10 +1,15 @@
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-	const co_photo_gallery = document.querySelector('.co_photo_gallery');
-	function addSwiperClass(el) {
-		return el.classList.add('swiper-slide');
-	}
+const preschoolcss = document.getElementById('kpreschool');
+if (preschoolcss) {
+	preschoolcss.innerHTML = `@import url("/images/shluchim/minisites/themes/preschool2/styles.css?v=1.0.13")`;
+}
 
+const co_photo_gallery = document.querySelector('.co_photo_gallery');
+function addSwiperClass(el) {
+	return el.classList.add('swiper-slide');
+}
+
+// run once the page dom is loaded so we can start the sliders even though the scripts are being called at the top of the page
+document.addEventListener('DOMContentLoaded', function () {
 	if (co_photo_gallery) {
 		const parentElement = co_photo_gallery.parentElement;
 		const navigationButtonNext = document.createElement('div');
@@ -58,4 +63,8 @@
 			});
 		}
 	}
-</script>
+
+	if (document.querySelector('#k16031')) {
+		document.querySelector('#k16031').remove()
+	}
+});
