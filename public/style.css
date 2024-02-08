@@ -531,6 +531,7 @@ img {
 #chabad_body_page .co_photo_gallery img,
 #Co_ContentEditor_Container .co_photo_gallery img {
   width: 100%;
+  max-width: 250px;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;

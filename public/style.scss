@@ -563,6 +563,7 @@ img {
 
 	.co_photo_gallery img {
 		width: 100%;
+		max-width: 250px;
 		height: auto;
 		object-fit: cover;
 		aspect-ratio: 1;
