@@ -528,8 +528,8 @@ img {
 #Co_ContentEditor_Container .slider-wrapper > :is(.slide, a):hover + :is(.slide, a) {
   opacity: 0.8;
 }
-#chabad_body_page .swiper.fonts,
-#Co_ContentEditor_Container .swiper.fonts {
+#chabad_body_page .swiper .fonts,
+#Co_ContentEditor_Container .swiper .fonts {
   max-height: 150px;
   overflow-y: auto;
 }
