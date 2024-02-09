@@ -486,6 +486,16 @@ img {
 		padding: var(--card-spacer-y) var(--card-spacer-x);
 	}
 
+	.coitem:hover .card-bodyf {
+		background: #ff4880;
+
+		&,
+		h4 {
+			color: #fff;
+			border-radius: 7px;
+		}
+	}
+
 	.card-bodyf {
 		flex: 1 1 auto;
 		padding: var(--card-spacer-y) var(--card-spacer-x);
@@ -495,16 +505,6 @@ img {
 			height: 69px;
 			aspect-ratio: 1;
 			width: auto;
-		}
-
-		&:hover {
-			background: #ff4880;
-		}
-
-		&:hover,
-		&:hover h4 {
-			color: #fff;
-			border-radius: 7px;
 		}
 	}
 
@@ -549,9 +549,19 @@ img {
 		}
 	}
 
+	.swiper.fonts {
+		max-height: 150px;
+		overflow-y: auto;
+	}
+
 	.coitem,
 	.preschool-section-4-card {
 		transition: all 0.3s;
+
+		.fonts {
+			max-height: 100px;
+			overflow-y: auto;
+		}
 
 		&:hover {
 			z-index: 1;
@@ -574,10 +584,6 @@ img {
 		.slide {
 			border-radius: 5px;
 			flex: 1 1 250px;
-		}
-
-		.card {
-			padding: 20px;
 		}
 
 		.blockquote-details img {
@@ -939,7 +945,6 @@ body,
 		filter: brightness(0.5);
 	}
 
-	/* animation */
 	#PreschoolSection1Title,
 	#PreschoolSection1Description,
 	#PreschoolSection1Button {
@@ -1117,6 +1122,12 @@ body,
 
 	.coitem {
 		flex: 1 1 300px;
+		max-height: 400px;
+		overflow-y: auto;
+
+		&:hover img {
+			filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(271deg) brightness(108%) contrast(102%);
+		}
 	}
 
 	.card {
@@ -1129,6 +1140,8 @@ body,
 		border-radius: 8px;
 		--card-spacer-y: 40px;
 		--card-spacer-x: 40px;
+		display: flex;
+		height: 100%;
 
 		&:after {
 			bottom: 0;
@@ -1144,10 +1157,6 @@ body,
 			border-bottom-right-radius: 0.4rem;
 			content: "";
 			position: absolute;
-		}
-
-		&:hover img {
-			filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(271deg) brightness(108%) contrast(102%);
 		}
 
 		h4 {
