@@ -152,7 +152,7 @@ body.noselect {
 		width: 100%;
 	}
 
-	&:not(:has(#chabad_body_page)).chabad_left_column {
+	&:not(:has(#chabad_body_page)) :is(.chabad_left_colum, .chabad_left_column) {
 		h3 {
 			line-height: normal;
 

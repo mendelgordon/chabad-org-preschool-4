@@ -131,54 +131,54 @@ body.noselect div.chabad_left_colum,
 body.noselect div.chabad_left_column {
   width: 100%;
 }
-body.noselect:not(:has(#chabad_body_page)).chabad_left_column h3 {
+body.noselect:not(:has(#chabad_body_page)) :is(.chabad_left_colum, .chabad_left_column) h3 {
   line-height: normal;
 }
-body.noselect:not(:has(#chabad_body_page)).chabad_left_column h3 div {
+body.noselect:not(:has(#chabad_body_page)) :is(.chabad_left_colum, .chabad_left_column) h3 div {
   line-height: normal;
   font-size: inherit;
 }
-body.noselect:not(:has(#chabad_body_page)).chabad_left_column #PreschoolSection1 {
+body.noselect:not(:has(#chabad_body_page)) :is(.chabad_left_colum, .chabad_left_column) #PreschoolSection1 {
   display: grid;
 }
-body.noselect:not(:has(#chabad_body_page)).chabad_left_column #PreschoolSection1 > * {
+body.noselect:not(:has(#chabad_body_page)) :is(.chabad_left_colum, .chabad_left_column) #PreschoolSection1 > * {
   grid-row: 1;
   grid-column: 1;
 }
-body.noselect:not(:has(#chabad_body_page)).chabad_left_column #PreschoolSection2 {
+body.noselect:not(:has(#chabad_body_page)) :is(.chabad_left_colum, .chabad_left_column) #PreschoolSection2 {
   display: flex !important;
   flex-direction: column;
 }
-body.noselect:not(:has(#chabad_body_page)).chabad_left_column #PreschoolSection2 * {
+body.noselect:not(:has(#chabad_body_page)) :is(.chabad_left_colum, .chabad_left_column) #PreschoolSection2 * {
   align-self: center !important;
 }
-body.noselect:not(:has(#chabad_body_page)).chabad_left_column #PreschoolSection3Cards > div,
-body.noselect:not(:has(#chabad_body_page)).chabad_left_column #PreschoolSection4 > div,
-body.noselect:not(:has(#chabad_body_page)).chabad_left_column #PreschoolSection7Cards > div {
+body.noselect:not(:has(#chabad_body_page)) :is(.chabad_left_colum, .chabad_left_column) #PreschoolSection3Cards > div,
+body.noselect:not(:has(#chabad_body_page)) :is(.chabad_left_colum, .chabad_left_column) #PreschoolSection4 > div,
+body.noselect:not(:has(#chabad_body_page)) :is(.chabad_left_colum, .chabad_left_column) #PreschoolSection7Cards > div {
   flex: 1 1 300px;
 }
-body.noselect:not(:has(#chabad_body_page)).chabad_left_column #PreschoolSection4 > :first-child {
+body.noselect:not(:has(#chabad_body_page)) :is(.chabad_left_colum, .chabad_left_column) #PreschoolSection4 > :first-child {
   min-width: 100%;
 }
-body.noselect:not(:has(#chabad_body_page)).chabad_left_column #PreschoolSection4 .preschool-section-4-card {
+body.noselect:not(:has(#chabad_body_page)) :is(.chabad_left_colum, .chabad_left_column) #PreschoolSection4 .preschool-section-4-card {
   width: auto;
 }
-body.noselect:not(:has(#chabad_body_page)).chabad_left_column .ContentItem[name=co_section],
-body.noselect:not(:has(#chabad_body_page)).chabad_left_column .ContentItem[name=co_template] {
+body.noselect:not(:has(#chabad_body_page)) :is(.chabad_left_colum, .chabad_left_column) .ContentItem[name=co_section],
+body.noselect:not(:has(#chabad_body_page)) :is(.chabad_left_colum, .chabad_left_column) .ContentItem[name=co_template] {
   flex: 1 1 500px;
   display: grid;
 }
-body.noselect:not(:has(#chabad_body_page)).chabad_left_column .ContentItem[name=co_section] > *,
-body.noselect:not(:has(#chabad_body_page)).chabad_left_column .ContentItem[name=co_template] > * {
+body.noselect:not(:has(#chabad_body_page)) :is(.chabad_left_colum, .chabad_left_column) .ContentItem[name=co_section] > *,
+body.noselect:not(:has(#chabad_body_page)) :is(.chabad_left_colum, .chabad_left_column) .ContentItem[name=co_template] > * {
   grid-column: 1 !important;
 }
-body.noselect:not(:has(#chabad_body_page)).chabad_left_column .ContentItem[real_name=Header] {
+body.noselect:not(:has(#chabad_body_page)) :is(.chabad_left_colum, .chabad_left_column) .ContentItem[real_name=Header] {
   height: auto;
   background: unset;
   margin: auto;
 }
-body.noselect:not(:has(#chabad_body_page)).chabad_left_column .ContentItem[real_id=Image],
-body.noselect:not(:has(#chabad_body_page)).chabad_left_column #Co_ContentEditor_Container .co_photo_gallery_body {
+body.noselect:not(:has(#chabad_body_page)) :is(.chabad_left_colum, .chabad_left_column) .ContentItem[real_id=Image],
+body.noselect:not(:has(#chabad_body_page)) :is(.chabad_left_colum, .chabad_left_column) #Co_ContentEditor_Container .co_photo_gallery_body {
   width: auto !important;
 }
 body.noselect #TestimonialSlides .card-body {
