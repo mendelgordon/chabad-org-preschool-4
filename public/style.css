@@ -354,6 +354,10 @@ img {
 #Co_ContentEditor_Container {
   container-type: inline-size;
 }
+#chabad_body_page .preschool-blue-color,
+#Co_ContentEditor_Container .preschool-blue-color {
+  color: #393d72;
+}
 #chabad_body_page .btn,
 #chabad_body_page .chabad_welcome,
 #chabad_body_page .chabad_more_button,
@@ -1243,10 +1247,6 @@ body:not(.mobile) #chabad_head {
   .preschool-title-spacing {
     padding-inline: 50px;
   }
-}
-
-.preschool-blue-color {
-  color: #393d72;
 }
 
 #PreschoolSection5 {
