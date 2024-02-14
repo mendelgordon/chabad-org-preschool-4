@@ -463,7 +463,6 @@ img {
 #Co_ContentEditor_Container .coitem:hover .card-bodyf,
 #Co_ContentEditor_Container .coitem:hover .card-bodyf h4 {
   color: #fff;
-  border-radius: 7px;
 }
 #chabad_body_page .card-bodyf,
 #Co_ContentEditor_Container .card-bodyf {
@@ -533,23 +532,31 @@ img {
 #Co_ContentEditor_Container .slider-wrapper > :is(.slide, a):hover + :is(.slide, a) {
   opacity: 0.8;
 }
-#chabad_body_page .swiper .fonts,
-#Co_ContentEditor_Container .swiper .fonts {
-  max-height: 150px;
-  overflow-y: auto;
+@media (min-width: 600px) {
+  #chabad_body_page #Testimonials .card,
+  #chabad_body_page .preschool-section-4-card,
+  #Co_ContentEditor_Container #Testimonials .card,
+  #Co_ContentEditor_Container .preschool-section-4-card {
+    max-height: 216px;
+    overflow-y: auto;
+  }
+  #chabad_body_page #PreschoolSection7 .card,
+  #Co_ContentEditor_Container #PreschoolSection7 .card {
+    max-height: 284px;
+    overflow-y: auto;
+  }
+  #chabad_body_page #PreschoolSection3 .coitem,
+  #Co_ContentEditor_Container #PreschoolSection3 .coitem {
+    max-height: 310px;
+    overflow-y: auto;
+    z-index: 1;
+  }
 }
 #chabad_body_page .coitem,
 #chabad_body_page .preschool-section-4-card,
 #Co_ContentEditor_Container .coitem,
 #Co_ContentEditor_Container .preschool-section-4-card {
   transition: all 0.3s;
-}
-#chabad_body_page .coitem .fonts,
-#chabad_body_page .preschool-section-4-card .fonts,
-#Co_ContentEditor_Container .coitem .fonts,
-#Co_ContentEditor_Container .preschool-section-4-card .fonts {
-  max-height: 100px;
-  overflow-y: auto;
 }
 #chabad_body_page .coitem:hover,
 #chabad_body_page .preschool-section-4-card:hover,
@@ -1068,16 +1075,16 @@ body:not(.mobile) #chabad_head {
 }
 #PreschoolSection3 .coitem {
   flex: 1 1 300px;
-  max-height: 400px;
-  overflow-y: auto;
 }
 #PreschoolSection3 .coitem:hover img {
   filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(271deg) brightness(108%) contrast(102%);
 }
 #PreschoolSection3 .card {
-  border: 0;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 6px solid #ff4880;
   color: inherit;
-  border-color: #ff4880;
   box-shadow: 0 5px 35px rgba(30, 34, 40, 0.07);
   background-color: #fff;
   background-clip: border-box;
@@ -1085,22 +1092,6 @@ body:not(.mobile) #chabad_head {
   --card-spacer-y: 40px;
   --card-spacer-x: 40px;
   display: flex;
-  height: 100%;
-}
-#PreschoolSection3 .card:after {
-  bottom: 0;
-  right: 0;
-  left: 0;
-  border-bottom-width: 6px;
-  border-top-width: 2px;
-  border-bottom-style: solid;
-  border-top-style: solid;
-  border-bottom-color: inherit;
-  border-top-color: transparent;
-  border-bottom-left-radius: 0.4rem;
-  border-bottom-right-radius: 0.4rem;
-  content: "";
-  position: absolute;
 }
 #PreschoolSection3 .card h4 {
   font-weight: 600;
@@ -1302,30 +1293,17 @@ body:not(.mobile) #chabad_head {
   flex: 1 1 300px;
 }
 #PreschoolSection7 .card {
-  border: 0;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 6px solid #ff4880;
   color: inherit;
-  border-color: #ff4880;
   box-shadow: 0 5px 35px rgba(30, 34, 40, 0.07);
   background-color: #fff;
   background-clip: border-box;
   border-radius: 8px;
   --card-spacer-y: 40px;
   --card-spacer-x: 40px;
-}
-#PreschoolSection7 .card:after {
-  bottom: 0;
-  right: 0;
-  left: 0;
-  border-bottom-width: 6px;
-  border-top-width: 2px;
-  border-bottom-style: solid;
-  border-top-style: solid;
-  border-bottom-color: inherit;
-  border-top-color: transparent;
-  border-bottom-left-radius: 0.4rem;
-  border-bottom-right-radius: 0.4rem;
-  content: "";
-  position: absolute;
 }
 #PreschoolSection7 .card h4 {
   font-weight: 600;
@@ -1414,6 +1392,7 @@ body:not(.mobile) #chabad_head {
   font-size: 200px;
   line-height: 1;
   z-index: 1;
+  overflow: hidden;
 }
 #Testimonials .blockquote-details {
   display: flex;
