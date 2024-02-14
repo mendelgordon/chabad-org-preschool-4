@@ -598,7 +598,7 @@ img {
 #Co_ContentEditor_Container .co_photo_gallery a {
   flex: 1 1 230px;
   margin: 0;
-  max-width: calc(50% - 10px);
+  max-width: min(50% - 10px, 300px);
 }
 #chabad_body_page .co_photo_gallery img,
 #Co_ContentEditor_Container .co_photo_gallery img {

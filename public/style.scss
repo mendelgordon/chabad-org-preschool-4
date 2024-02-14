@@ -613,7 +613,7 @@ img {
 		a {
 			flex: 1 1 230px;
 			margin: 0;
-			max-width: calc(50% - 10px);
+			max-width: min(calc(50% - 10px), 300px);
 		}
 
 		img {
