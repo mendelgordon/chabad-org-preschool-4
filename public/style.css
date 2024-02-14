@@ -1615,6 +1615,7 @@ div[name=co_section][real_id^=column_promo] {
   align-items: center;
   flex-direction: column;
   height: 100%;
+  z-index: 1;
 }
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) .chabad_welcome {
   color: white;
