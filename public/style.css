@@ -274,7 +274,6 @@ header.article-header {
 .chabad_image_banner,
 #PreschoolSection1Image {
   grid-row: 1/4;
-  max-height: max(95vh, 800px);
 }
 @supports (grid-template-rows: subgrid) {
   #chabad_left_colum > #content_banner:first-child,
@@ -909,6 +908,7 @@ body:not(.mobile) #chabad_head {
   -o-object-fit: cover;
      object-fit: cover;
   filter: brightness(0.5);
+  max-height: max(95vh, 800px);
 }
 #PreschoolSection1 #PreschoolSection1Title,
 #PreschoolSection1 #PreschoolSection1Description,
