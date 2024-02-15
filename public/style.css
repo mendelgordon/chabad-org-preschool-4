@@ -274,7 +274,7 @@ header.article-header {
 .chabad_image_banner,
 #PreschoolSection1Image {
   grid-row: 1/4;
-  max-height: max(100vh, 800px);
+  max-height: max(95vh, 800px);
 }
 @supports (grid-template-rows: subgrid) {
   #chabad_left_colum > #content_banner:first-child,
