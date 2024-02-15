@@ -538,11 +538,9 @@ img {
 }
 @media (min-width: 600px) {
   #chabad_body_page #Testimonials .card,
-  #chabad_body_page .preschool-section-4-card,
   #chabad_body_page #PreschoolSection7 .card,
   #chabad_body_page #PreschoolSection3 .coitem,
   #Co_ContentEditor_Container #Testimonials .card,
-  #Co_ContentEditor_Container .preschool-section-4-card,
   #Co_ContentEditor_Container #PreschoolSection7 .card,
   #Co_ContentEditor_Container #PreschoolSection3 .coitem {
     height: 100%;
