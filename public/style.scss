@@ -368,6 +368,10 @@ img[src$="White-wavy-bottom-border.png"] {
 	}
 }
 
+#chabad_head {
+	align-items: center;
+}
+
 html:has(.chabad_left_column) #chabad_head {
 	align-items: baseline;
 }
