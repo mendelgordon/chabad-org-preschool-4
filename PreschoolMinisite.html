@@ -1,19 +1,18 @@
-<co:settings detached="true" />
-<style id="kpreschool">
+<style>
 	@import url("/images/shluchim/minisites/themes/preschool2/styles.css");
 </style>
 <div id="chabad_body_page">
 	<div id="chabad_main_content">
-		<co:template id="HeaderSection" name="header_section" title="Header Section" type="static" detached="true">
-			<co:section id="HeaderInner" name="Header" title="Header">
-				<div id="chabad_head">
+		<div id="chabad_head">
+			<co:template id="HeaderSection" name="header_section" title="Header Section" type="static" detached="true">
+				<co:section id="HeaderInner" name="Header" title="Header">
 					<a href="/<<articleid>>" id="PreschoolTitle">
 						<co:editable id="PreschoolName" name="PreschoolName" title="Preschool Name" actions="edit" datatype="line"><co:translate>Chabad Preschool</co:translate></co:editable>
 					</a>
 					<co:template class="chabad_navigator_bar" id="Navigation" name="nagivation" title="Navigation Bar" max_chars="70" use_custom_separator="true"></co:template>
-				</div>
-			</co:section>
-		</co:template>
+				</co:section>
+			</co:template>
+		</div>
 		<div id="chabad_body_content">
 			<co:template class="chabad_left_column" title="Content Area" actions="edit,delete" name="content_area" id="ContentArea" type="static">
 				<co:section id="Section1" name="Section" title="Hero Section" actions="edit,copy,delete">
@@ -438,4 +437,3 @@
 		</co:template>
 	</div>
 </div>
-<script src="/images/shluchim/minisites/themes/preschool2/scripts.js?v=12"></script>
