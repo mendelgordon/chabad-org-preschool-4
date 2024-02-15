@@ -324,6 +324,10 @@ img[src$="White-wavy-bottom-border.png"] {
   }
 }
 
+#chabad_head {
+  align-items: center;
+}
+
 html:has(.chabad_left_column) #chabad_head {
   align-items: baseline;
 }
@@ -535,21 +539,13 @@ img {
 @media (min-width: 600px) {
   #chabad_body_page #Testimonials .card,
   #chabad_body_page .preschool-section-4-card,
-  #Co_ContentEditor_Container #Testimonials .card,
-  #Co_ContentEditor_Container .preschool-section-4-card {
-    max-height: 216px;
-    overflow-y: auto;
-  }
   #chabad_body_page #PreschoolSection7 .card,
-  #Co_ContentEditor_Container #PreschoolSection7 .card {
-    max-height: 284px;
-    overflow-y: auto;
-  }
   #chabad_body_page #PreschoolSection3 .coitem,
+  #Co_ContentEditor_Container #Testimonials .card,
+  #Co_ContentEditor_Container .preschool-section-4-card,
+  #Co_ContentEditor_Container #PreschoolSection7 .card,
   #Co_ContentEditor_Container #PreschoolSection3 .coitem {
-    max-height: 310px;
-    overflow-y: auto;
-    z-index: 1;
+    height: 100%;
   }
 }
 #chabad_body_page .coitem,
