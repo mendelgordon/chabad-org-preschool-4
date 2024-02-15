@@ -329,6 +329,7 @@ header.article-header {
 	}
 
 	grid-row: 1/4;
+	max-height: max(100vh, 800px);
 }
 
 #chabad_banner_text,
@@ -1969,3 +1970,6 @@ a {
 body.sites-article #header {
 	border-bottom: none;
 }
+
+/* styles are hosted at https://preschool-template-6.netlify.app/style.css */
+/* scss is hosted at https://preschool-template-6.netlify.app/style.scss */
