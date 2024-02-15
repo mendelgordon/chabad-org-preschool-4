@@ -560,20 +560,10 @@ img {
 	@media (min-width: 600px) {
 
 		#Testimonials .card,
-		.preschool-section-4-card {
-			max-height: 216px;
-			overflow-y: auto;
-		}
-
-		#PreschoolSection7 .card {
-			max-height: 284px;
-			overflow-y: auto;
-		}
-
+		.preschool-section-4-card,
+		#PreschoolSection7 .card,
 		#PreschoolSection3 .coitem {
-			max-height: 310px;
-			overflow-y: auto;
-			z-index: 1;
+			height: 100%;
 		}
 	}
 
