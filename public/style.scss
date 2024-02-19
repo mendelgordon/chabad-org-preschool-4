@@ -495,7 +495,7 @@ img {
 		padding: var(--card-spacer-y) var(--card-spacer-x);
 	}
 
-	.coitem:hover .card-bodyf {
+	.card-bodyf:hover {
 		background: #ff4880;
 
 		&,
@@ -557,7 +557,7 @@ img {
 		}
 	}
 
-	.coitem,
+	.card-bodyf,
 	.preschool-section-4-card {
 		transition: all 0.3s;
 
@@ -567,8 +567,8 @@ img {
 		}
 	}
 
-	.coitem:hover + .coitem,
-	.coitem:has(+.coitem:hover) {
+	.coitem:hover + .coitem div,
+	.coitem:has(+.coitem:hover) div {
 		opacity: 0.8;
 	}
 
@@ -581,7 +581,7 @@ img {
 
 		.slide {
 			border-radius: 5px;
-			flex: 1 1 250px;
+			flex: 1 1 350px;
 		}
 
 		.blockquote-details img {
@@ -1103,6 +1103,11 @@ body,
 		gap: 25px;
 	}
 
+	.card,
+	.coitem {
+		display: contents;
+	}
+
 	img {
 		filter: brightness(0) saturate(100%) invert(41%) sepia(49%) saturate(2658%) hue-rotate(316deg) brightness(103%) contrast(102%);
 	}
@@ -1119,15 +1124,8 @@ body,
 		}
 	}
 
-	.coitem {
+	.card-bodyf {
 		flex: 1 1 300px;
-
-		&:hover img {
-			filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(271deg) brightness(108%) contrast(102%);
-		}
-	}
-
-	.card {
 		border-top: 0;
 		border-right: 0;
 		border-left: 0;
@@ -1140,6 +1138,13 @@ body,
 		--card-spacer-y: 40px;
 		--card-spacer-x: 40px;
 		display: flex;
+		flex-direction: column;
+		align-items: center;
+		z-index: 1;
+
+		&:hover img {
+			filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(271deg) brightness(108%) contrast(102%);
+		}
 
 		h4 {
 			font-weight: 600;
@@ -1344,11 +1349,16 @@ body,
 		filter: brightness(0) saturate(100%) invert(76%) sepia(50%) saturate(6269%) hue-rotate(213deg) brightness(102%) contrast(101%);
 	}
 
-	.coitem {
-		flex: 1 1 300px;
+	.card {
+		display: contents;
 	}
 
-	.card {
+	.coitem {
+		flex: 1 1 350px;
+		z-index: 1;
+	}
+
+	.card-bodyf {
 		border-top: 0;
 		border-right: 0;
 		border-left: 0;
@@ -1360,6 +1370,7 @@ body,
 		border-radius: 8px;
 		--card-spacer-y: 40px;
 		--card-spacer-x: 40px;
+		height: calc(100% - 40px);
 
 		h4 {
 			font-weight: 600;
@@ -1417,6 +1428,10 @@ body,
 		width: 120px;
 	}
 
+	.card {
+		display: contents;
+	}
+
 	.card-body:before {
 		position: absolute;
 		top: 0;
@@ -1429,7 +1444,7 @@ body,
 		content: "";
 	}
 
-	.card {
+	.card-body {
 		border: 0;
 		color: inherit;
 		background-color: #fff;
@@ -1437,6 +1452,7 @@ body,
 		border-radius: 8px;
 		--card-spacer-y: 40px;
 		--card-spacer-x: 40px;
+		height: calc(100% - 85px);
 	}
 
 	blockquote.icon {
@@ -1458,6 +1474,10 @@ body,
 			line-height: 1;
 			z-index: 1;
 			overflow: hidden;
+
+			@supports (overflow: clip) {
+				overflow: clip;
+			}
 		}
 	}
 
@@ -1487,7 +1507,7 @@ body,
 
 	@container (max-width: 767px) {
 		.card-body {
-			padding: 10px;
+			padding: 20px;
 		}
 	}
 }
