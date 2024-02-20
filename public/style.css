@@ -501,6 +501,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: stretch;
 }
 #chabad_body_page .co_photo_gallery .slide,
 #chabad_body_page .co_photo_gallery a,
