@@ -1404,7 +1404,7 @@ body:not(.mobile) #chabad_head {
   text-align: left;
 }
 #Testimonials .blockquote-details .info {
-  padding-left: 20px;
+  padding-inline: 20px;
 }
 #Testimonials .blockquote-details .info h5 {
   line-height: 1.5;
