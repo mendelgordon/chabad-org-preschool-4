@@ -299,7 +299,7 @@ body.noselect {
 
 #chabad_head {
 	/* Header should overlap the first row of content */
-	z-index: 1;
+	z-index: 2;
 
 	@supports (grid-template-rows: subgrid) {
 		grid-column: content;
