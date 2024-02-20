@@ -1853,12 +1853,16 @@ div[name="co_section"][real_id^="column_promo"] {
 	}
 
 	.co_calendar_text {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+
 		.co_date {
 			font-weight: bold;
 		}
 
-		.item.normal-width {
-			margin-bottom: 20px;
+		.item {
+			flex: 1 1 300px;
 		}
 
 		.co_text_calendar {

@@ -1749,11 +1749,16 @@ div[name=co_section][real_id^=column_promo] {
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) .co_section_head {
   padding: 0 !important;
 }
+#chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) .co_calendar_text {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) .co_calendar_text .co_date {
   font-weight: bold;
 }
-#chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) .co_calendar_text .item.normal-width {
-  margin-bottom: 20px;
+#chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) .co_calendar_text .item {
+  flex: 1 1 300px;
 }
 #chabad_body_page:has(#chabad_left_colum, .chabad_left_colum) .co_calendar_text .co_text_calendar {
   font-size: 0.9em;
