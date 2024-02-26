@@ -774,6 +774,10 @@ body:not(.mobile) #chabad_body_page {
 			margin-bottom: 10px;
 			font-size: 20px;
 			letter-spacing: 0.5px;
+
+			.parent {
+				padding-inline: 16px;
+			}
 		}
 	}
 }
@@ -787,6 +791,7 @@ div#chabad_main_content,
 	margin: 0;
 	width: 100%;
 	float: none;
+	text-align: start;
 }
 
 #header.on-scroll {
@@ -1012,12 +1017,12 @@ body,
 		h3 {
 			grid-area: 1/2/2/3;
 			align-self: end;
-			justify-self: left;
+			justify-self: start;
 		}
 
 		.fonts {
 			grid-area: 2/2/3/3;
-			text-align: left;
+			text-align: start;
 			align-self: start;
 		}
 	}
@@ -1484,7 +1489,7 @@ body,
 	.blockquote-details {
 		display: flex;
 		align-items: center;
-		text-align: left;
+		text-align: start;
 
 		.info {
 			padding-inline: 20px;

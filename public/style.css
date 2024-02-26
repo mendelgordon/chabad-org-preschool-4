@@ -742,6 +742,9 @@ body:not(.mobile) #chabad_body_page footer #menu .parent {
   font-size: 20px;
   letter-spacing: 0.5px;
 }
+body:not(.mobile) #chabad_body_page footer #menu .parent .parent {
+  padding-inline: 16px;
+}
 
 body.mobile div#co_photo_gallery .co_photo_gallery_body {
   padding: 0 !important;
@@ -752,6 +755,7 @@ div#chabad_main_content,
   margin: 0;
   width: 100%;
   float: none;
+  text-align: start;
 }
 
 #header.on-scroll {
@@ -957,11 +961,11 @@ body:not(.mobile) #chabad_head {
   #PreschoolSection2 h3 {
     grid-area: 1/2/2/3;
     align-self: end;
-    justify-self: left;
+    justify-self: start;
   }
   #PreschoolSection2 .fonts {
     grid-area: 2/2/3/3;
-    text-align: left;
+    text-align: start;
     align-self: start;
   }
 }
@@ -1401,7 +1405,7 @@ body:not(.mobile) #chabad_head {
 #Testimonials .blockquote-details {
   display: flex;
   align-items: center;
-  text-align: left;
+  text-align: start;
 }
 #Testimonials .blockquote-details .info {
   padding-inline: 20px;
