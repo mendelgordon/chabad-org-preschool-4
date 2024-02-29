@@ -256,6 +256,16 @@ body.noselect {
 		}
 	}
 
+	:where(#chabad_main_content *:not([class], [id], [style])) {
+		/* using :where() so this doesn't override anything else */
+		grid-column: full-width;
+		display: contents;
+		/* 
+		these styles are to workaround sitecontrol randomly adding divs
+		the rules here are to make sure that the content still uses the available space, unless it has a set width or display property already, in which case that will take affect instead of these rules
+		*/
+	}
+
 	#chabad_body_content,
 	#ContentArea,
 	#content_page,
@@ -1551,7 +1561,7 @@ body,
 		@container (min-width: 768px) {
 			grid-template-columns: [about-start] 1fr [about-end nav-start] 2fr [nav-end];
 
-			> :last-child {
+			#navigation {
 				grid-column: nav;
 				justify-self: end;
 				grid-row: 1/3;
