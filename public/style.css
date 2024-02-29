@@ -209,7 +209,7 @@ body.noselect a:-webkit-any-link {
     overflow-wrap: break-word;
     text-wrap: pretty;
   }
-  :where(#chabad_main_content *:not([class], [id], [style])) {
+  :where(#chabad_main_content div:not([class], [id], [style])) {
     /* using :where() so this doesn't override anything else */
     grid-column: full-width;
     display: contents;
