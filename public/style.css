@@ -1145,6 +1145,7 @@ body:not(.mobile) #chabad_head {
   color: #fff;
   transition: all 0.3s;
   padding: 3%;
+  width: 100%;
 }
 @container (min-width: 768px) {
   #PreschoolSection4 .preschool-section-4-card {
