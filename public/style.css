@@ -1494,6 +1494,9 @@ body:not(.mobile) #chabad_head {
   background: #061737;
   color: #fff;
 }
+#PreschoolFooter > div:first-child {
+  display: block;
+}
 @container (min-width: 768px) {
   #PreschoolFooter > div:first-child {
     display: grid;

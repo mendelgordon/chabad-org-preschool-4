@@ -1592,6 +1592,8 @@ body,
 	color: #fff;
 
 	> div:first-child {
+		display: block;
+
 		@container (min-width: 768px) {
 			display: grid;
 			grid-template-columns: [about-start] 2fr [about-end nav-start] 1fr [nav-end];
