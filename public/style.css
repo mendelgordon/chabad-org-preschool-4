@@ -10,6 +10,11 @@
   display: none;
 }
 
+/* breadcrumbs sometimes show */
+.article-header .breadcrumbs {
+  display: none;
+}
+
 .co_content_container {
   padding-top: 0;
 }
@@ -18,6 +23,7 @@
 #BodyContainer {
   max-width: 100%;
   margin: auto;
+  grid-column: full-width;
 }
 
 #co_content_container {
@@ -221,6 +227,8 @@ body.noselect a:-webkit-any-link {
   #chabad_body_content,
   #ContentArea,
   #content_page,
+  .cco_templateless_page #co_content_container,
+  #co_content_container > .clearfix,
   .co_body.body_wrapper,
   #co_body_container,
   #ContentBody,
