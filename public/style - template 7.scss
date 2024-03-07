@@ -1,0 +1,1566 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+/* page tools seem to stay even if you choose to hide them so here they get set to stay hidden always */
+.page-tools-sidebar {
+	display: none;
+}
+
+/* breadcrumbs sometimes show */
+.article-header .breadcrumbs {
+	display: none;
+}
+
+.co_content_container {
+	padding-top: 0;
+}
+
+.g960.footer,
+#BodyContainer {
+	max-width: 100%;
+	margin: auto;
+	grid-column: full-width;
+}
+
+#co_content_container {
+	font-size: 17px;
+	color: #585858;
+}
+
+.fonts {
+	line-height: 1.6;
+}
+
+#BodyContainer#BodyContainer .no-hero-image #co_content_container #chabad_body_content .master-content-wrapper.master-content-wrapper,
+.master-content-wrapper {
+	background-color: #12b0d1 !important;
+}
+
+/* only apply this style when the template 5 template is being used */
+html:has(link[href*="template5"]) {
+	header.article-header.cf {
+		border: 0;
+	}
+
+	.article_index .row {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+/* only use these styles for the index page when the template 5 and sites 6 templates aren't being used */
+html:not(:has(link#k[href*="sites6"], link#k[href*="template5"])) .article_index {
+	&.clearfix:after {
+		display: none;
+	}
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 25px;
+
+	.row {
+		margin: 0;
+		position: relative;
+		width: 250px;
+		height: 150px;
+	}
+
+	.item {
+		background: none;
+		padding: 0;
+	}
+
+	.title {
+		padding: 0;
+		text-align: center;
+
+		a {
+			color: white;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 15px;
+			transition: all 0.3s;
+			font-size: 18px;
+			transition: all 0.3s;
+			background-color: rgba(120, 120, 120, 0.6);
+
+			&:hover {
+				background: rgba(49, 124, 184, 0.6);
+			}
+		}
+	}
+
+	img {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		z-index: -1;
+	}
+}
+
+body.noselect {
+	* {
+		box-sizing: border-box;
+	}
+
+	&:has(#chabad_body_page) {
+		h3 {
+			padding: unset;
+			margin: auto;
+			line-height: normal;
+		}
+
+		[name="co_template"],
+		[name="co_section"],
+		[name="co_editable"] {
+			display: contents !important;
+		}
+
+		#chabad_head,
+		#PreschoolFooterNav {
+			* {
+				color: white;
+				background: unset;
+			}
+		}
+
+		co\:item {
+			grid-column: 1 / -1;
+		}
+
+		.sub_menu {
+			width: min-content;
+
+			ul {
+				padding: 0;
+			}
+		}
+	}
+
+	div.chabad_left_column {
+		width: 100%;
+	}
+
+	&:not(:has(#chabad_body_page)) .chabad_left_column {
+		h3 {
+			line-height: normal;
+
+			div {
+				line-height: normal;
+				font-size: inherit;
+			}
+		}
+
+		#PreschoolSection1 {
+			display: grid;
+
+			> * {
+				grid-row: 1;
+				grid-column: 1;
+			}
+		}
+
+		#PreschoolSection2 {
+			display: flex !important;
+			flex-direction: column;
+
+			* {
+				align-self: center !important;
+			}
+		}
+
+		#PreschoolSection3Cards,
+		#PreschoolSection4,
+		#PreschoolSection7Cards {
+			> div {
+				flex: 1 1 300px;
+			}
+		}
+
+		#PreschoolSection4 {
+			> :first-child {
+				min-width: 100%;
+			}
+
+			.preschool-section-4-card {
+				width: auto;
+			}
+		}
+
+		.ContentItem[name="co_section"],
+		.ContentItem[name="co_template"] {
+			flex: 1 1 500px;
+			display: grid;
+
+			> * {
+				grid-column: 1 !important;
+			}
+		}
+
+		.ContentItem[real_name="Header"] {
+			height: auto;
+			background: unset;
+			margin: auto;
+		}
+
+		.ContentItem[real_id="Image"],
+		#Co_ContentEditor_Container .co_photo_gallery_body {
+			width: auto !important;
+		}
+	}
+
+	#TestimonialSlides {
+		.card-body {
+			padding: 0;
+		}
+
+		.slider-wrapper .card {
+			padding: 10px;
+			margin-inline: 10px;
+			min-width: 300px;
+		}
+	}
+
+	a:-webkit-any-link {
+		text-decoration: none;
+	}
+}
+
+@supports (grid-template-rows: subgrid) {
+	#chabad_main_content {
+		--padding-inline: 16px;
+		--content-max-width: 1320px;
+		--breakout-max-width: 1360px;
+		--breakout-size: calc((var(--breakout-max-width) - var(--content-max-width)) / 2);
+		display: grid;
+		grid-template-columns:
+			[full-width-start] minmax(var(--padding-inline), 1fr) [breakout-start] minmax(0, var(--breakout-size)) [content-start] min(100% - (var(--padding-inline) * 2), var(--content-max-width)) [content-end] minmax(0, var(--breakout-size)) [breakout-end] minmax(var(--padding-inline), 1fr) [full-width-end];
+
+		* {
+			/* Fixes a bug where the grid items would be too wide */
+			min-width: 0;
+			/* Help prevent overflow of long words/names/URLs */
+			overflow-wrap: break-word;
+			text-wrap: pretty;
+		}
+	}
+
+	:where(#chabad_main_content div:not([class], [id], [style])) {
+		/* using :where() so this doesn't override anything else */
+		grid-column: full-width;
+		display: contents;
+		/* 
+		these styles are to workaround sitecontrol randomly adding divs
+		the rules here are to make sure that the content still uses the available space, unless it has a set width or display property already, in which case that will take affect instead of these rules
+		*/
+	}
+
+	#chabad_body_content,
+	#ContentArea,
+	#content_page,
+	.cco_templateless_page #co_content_container,
+	#co_content_container > .clearfix,
+	.co_body.body_wrapper,
+	#co_body_container,
+	#ContentBody,
+	.content-area-parent,
+	#content_page_full,
+	#PreschoolSection1,
+	.vertical_padding {
+		display: contents !important;
+	}
+
+	.master-content-wrapper,
+	footer {
+		grid-column: full-width;
+		display: grid;
+		grid-template-columns: subgrid;
+		grid-template-rows: subgrid;
+	}
+
+	.master-content-wrapper {
+		grid-row: 1 / 3;
+		z-index: 0;
+	}
+
+	footer > div {
+		grid-column: content;
+	}
+}
+
+.section_root #chabad_main_content:not(:has(#PreschoolSection1Image)) #chabad_head {
+	background-color: #12b0d1;
+	margin-bottom: 50px;
+}
+
+#chabad_head {
+	/* Header should overlap the first row of content */
+	z-index: 2;
+
+	@supports (grid-template-rows: subgrid) {
+		grid-column: content;
+	}
+
+	grid-row: 1;
+}
+
+header.article-header {
+	grid-row: 2;
+
+	@supports (grid-template-rows: subgrid) {
+		grid-column: content;
+	}
+
+	.mobile & {
+		margin-bottom: 0;
+	}
+}
+
+#PreschoolSection1Image {
+	@supports (grid-template-rows: subgrid) {
+		grid-column: full-width;
+	}
+
+	grid-row: 1/3;
+}
+
+#PreschoolSection1Text {
+	@supports (grid-template-rows: subgrid) {
+		grid-column: content;
+	}
+
+	grid-row: 2;
+}
+
+#PreschoolSection1Text {
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	align-content: center;
+	gap: 20px;
+	max-width: 900px;
+	place-self: center;
+	margin-bottom: 50px;
+}
+
+img[src$="White-wavy-bottom-border.png"] {
+	display: none;
+}
+
+.mobile #chabad_head {
+	@supports (grid-template-rows: subgrid) {
+		grid-column: full-width;
+	}
+}
+
+#chabad_head {
+	align-items: center;
+}
+
+html:has(.chabad_left_column) #chabad_head {
+	align-items: baseline;
+}
+
+@supports (grid-template-rows: subgrid) {
+	:where(:is(#chabad_head, footer) > *) {
+		grid-column: content;
+	}
+
+	#wavy-bottom-border {
+		grid-column: full-width;
+	}
+}
+
+:where(#PreschoolSection4, #PreschoolSection5, #PreschoolSection6, #PreschoolSection7, #Testimonials, #PreschoolLatestPhotos) {
+	padding-block: 50px;
+
+	@supports (grid-template-rows: subgrid) {
+		grid-column: content;
+	}
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+#chabad_body_page,
+#Co_ContentEditor_Container {
+	container-type: inline-size;
+
+	.preschool-blue-color {
+		color: white;
+	}
+
+	.btn,
+	.chabad_welcome,
+	.chabad_more_button,
+	.chabad_text_banner_description {
+		animation-name: zoomIn;
+		animation-duration: 700ms;
+		animation-timing-function: ease;
+		animation-direction: normal;
+		animation-fill-mode: both;
+	}
+
+	.btn {
+		--btn-padding-x: 24px;
+		--btn-padding-y: 10px;
+		--btn-bg: transparent;
+		--btn-border-color: transparent;
+		--btn-hover-border-color: transparent;
+		padding: var(--btn-padding-y) var(--btn-padding-x);
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 1.7;
+		color: #585858;
+		vertical-align: middle;
+		cursor: pointer;
+		-webkit-user-select: none;
+		user-select: none;
+		border: 2px solid var(--btn-border-color);
+		background-color: var(--btn-bg);
+		box-shadow: unset;
+		transition: all 0.3s;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		transform: translateY(0);
+		letter-spacing: -0.2px;
+		position: relative;
+		animation-delay: 1500ms;
+		border-radius: 1000px !important;
+	}
+
+	.display-3 {
+		font-family: "Cinzel", Helvetica, Arial, "sans-serif";
+		font-size: 50px;
+		text-wrap: balance;
+		font-weight: 400;
+
+		@supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
+			-webkit-backdrop-filter: blur(1px);
+			backdrop-filter: blur(1px);
+		}
+	}
+
+	.btn-primaryx,
+	.btn-primaryx2 {
+		font-size: 20px;
+		margin-top: -35px;
+		--btn-padding-x: 28px !important;
+		--btn-padding-y: 20px !important;
+		--btn-bg: #fff;
+		--btn-hover-bg: #fff;
+		--btn-active-bg: #fff;
+	}
+
+	.btn-primaryx {
+		--btn-border-color: #fff;
+		--btn-hover-border-color: #fff;
+		--btn-active-border-color: #fff;
+	}
+
+	.btn-primaryx2 {
+		--btn-border-color: #9a8fff;
+		--btn-hover-border-color: #9a8fff;
+		--btn-active-border-color: #9a8fff;
+	}
+
+	.swiper-slide,
+	.card {
+		position: relative;
+	}
+
+	.blockquote-details {
+		margin-top: 20px;
+	}
+
+	.card-body {
+		flex: 1 1 auto;
+		padding: var(--card-spacer-y) var(--card-spacer-x);
+	}
+
+	.card-bodyf {
+		flex: 1 1 auto;
+		padding: var(--card-spacer-y) var(--card-spacer-x);
+		transition: all 0.3s;
+
+		img {
+			height: 69px;
+			aspect-ratio: 1;
+			width: auto;
+		}
+	}
+
+	.iconsfoot {
+		margin-right: 15px !important;
+
+		i {
+			margin-right: 5px;
+			color: #32afea;
+		}
+	}
+
+	.form-check-input {
+		flex-shrink: initial;
+	}
+
+	.co_photo_gallery,
+	.slider-wrapper {
+		padding: 20px 0 40px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		> a:hover {
+			transform: scale(1.2);
+			z-index: 1;
+		}
+	}
+
+	#TestimonialSlides {
+		position: relative;
+	}
+
+	.slider-wrapper {
+		gap: 20px;
+
+		.slide {
+			border-radius: 5px;
+			flex: 1 1 350px;
+		}
+
+		.blockquote-details img {
+			border-radius: 50%;
+			width: 70px;
+			margin-right: 15px;
+		}
+	}
+
+	.co_photo_gallery {
+		gap: 10px;
+
+		a {
+			flex: 1 1 230px;
+			margin: 0;
+			max-width: min(calc(50% - 10px), 300px);
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+			object-fit: cover;
+			display: block;
+			border-radius: 5px;
+			aspect-ratio: 16/10;
+		}
+	}
+
+	.co_photo_gallery_head div {
+		color: #393d72;
+		font-size: 50px;
+		font-family: Cinzel, Helvetica, Arial, sans-serif;
+		font-weight: 400;
+		line-height: 1.25;
+		padding-bottom: 20px;
+	}
+
+	.bh {
+		position: absolute;
+		top: 30px;
+		right: 30px;
+	}
+
+	.master-content-wrapper {
+		.mobile & {
+			grid-row: 2;
+			padding-block: 35px;
+		}
+
+		.article-header__title {
+			color: #717863 !important;
+			font-family: "Cinzel", Helvetica, Arial, "sans-serif";
+			font-size: 70px;
+
+			@container (max-width: 700px) {
+				font-size: 40px;
+			}
+		}
+	}
+
+	.card-border-bottom:after {
+		bottom: 0;
+		right: 0;
+		left: 0;
+		border-bottom-width: 4px;
+		border-top-width: calc(8px - 4px);
+		border-bottom-style: solid;
+		border-top-style: solid;
+		border-bottom-color: inherit;
+		border-top-color: transparent;
+		border-bottom-left-radius: 8px;
+		border-bottom-right-radius: 8px;
+		content: "";
+		position: absolute;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+}
+
+/* General Styling for the Navbar */
+body:not(.mobile) #chabad_body_page {
+	.chabad_navigator_bar ul li {
+		z-index: initial;
+		border: 0;
+	}
+
+	#chabad_head {
+		padding: 20px;
+		max-width: 100%;
+		height: auto;
+
+		@supports (height: fit-content) {
+			height: fit-content;
+		}
+	}
+
+	#chabad_head .navi {
+		height: unset;
+
+		a {
+			font-family: "Open Sans", sans-serif;
+			padding-inline: 10px;
+		}
+
+		a.parent.arrow:after {
+			content: " ↓";
+		}
+
+		.sub_menu {
+			border-bottom-right-radius: 10px;
+			border-bottom-left-radius: 10px;
+			background: #393d72;
+			top: auto;
+		}
+
+		.item .item {
+			padding: 0;
+
+			a {
+				padding: 6px 6px 6px 10px;
+				font-size: 14px;
+				font-weight: 300;
+			}
+
+			:hover {
+				font-weight: bold;
+			}
+
+			&:first-child {
+				a {
+					padding-top: 9px;
+				}
+			}
+
+			&:last-child {
+				a {
+					padding-bottom: 9px;
+				}
+			}
+		}
+	}
+
+	#navigation {
+		width: initial;
+		height: initial;
+
+		.navi {
+			@container (min-width: 992px) {
+				column-gap: 10px;
+			}
+
+			@container (max-width: 991px) {
+				row-gap: 10px;
+			}
+
+			display: flex;
+			flex-wrap: wrap;
+
+			li,
+			a {
+				float: none;
+				line-height: normal;
+			}
+
+			a {
+				font-size: 17px;
+				color: white;
+				background: unset;
+			}
+		}
+	}
+
+	footer #menu {
+		height: unset;
+
+		.sub_menu a {
+			font-family: "Open Sans", sans-serif;
+			font-size: 15px;
+			font-weight: 500;
+		}
+
+		ul {
+			padding: 0;
+		}
+
+		.parent {
+			font-family: "Cinzel", Helvetica, Arial, "sans-serif";
+			margin-bottom: 10px;
+			font-size: 20px;
+			letter-spacing: 0.5px;
+
+			.parent {
+				padding-inline: 16px;
+			}
+		}
+	}
+}
+
+body.mobile div#co_photo_gallery .co_photo_gallery_body {
+	padding: 0 !important;
+}
+
+div#chabad_main_content,
+.cco_templatelates_content {
+	margin: 0;
+	width: 100%;
+	float: none;
+	text-align: start;
+}
+
+#header.on-scroll {
+	position: absolute !important;
+}
+
+div#co_photo_gallery .co_photo_gallery_footer a {
+	float: none;
+	padding-top: 30px;
+	background-color: #ffae00;
+	border: solid 2px #ffae00;
+	display: inline-block;
+	color: #fff;
+	border-radius: 1000px;
+	font-size: 20px;
+	padding: 8px 20px;
+}
+
+body.mobile {
+	#chabad_body_page {
+		.display-1 {
+			font-size: 40px !important;
+			margin-top: 35px;
+		}
+
+		h2 {
+			letter-spacing: normal !important;
+			line-height: normal;
+			font-size: 20px;
+		}
+
+		#chabad_head {
+			justify-content: center;
+			padding: 5px;
+			height: auto;
+
+			@supports (height: fit-content) {
+				height: fit-content;
+			}
+
+			@supports (-webkit-backdrop-filter: contrast(0.5)) or (backdrop-filter: contrast(0.5)) {
+				-webkit-backdrop-filter: contrast(0.5);
+				backdrop-filter: contrast(0.5);
+			}
+
+			#menu {
+				height: auto;
+			}
+
+			.item.heading a {
+				font-size: 0;
+				background: none;
+				padding: 0;
+
+				&:after {
+					content: "☰";
+					font-size: 30px;
+					color: white;
+					display: inline-block;
+					margin-top: 8px;
+				}
+			}
+		}
+	}
+
+	&.cco_templateless_page #chabad_body_page .bh {
+		top: -6px;
+		right: 10px;
+		z-index: 10;
+		color: white;
+	}
+
+	footer a {
+		color: white;
+	}
+}
+
+.footer_hr {
+	height: 1px;
+}
+
+.section_branch {
+	#chabad_head {
+		z-index: 2;
+	}
+
+	#cco_body {
+		@supports (grid-template-rows: subgrid) {
+			grid-column: content;
+		}
+
+		margin-top: 50px;
+		min-height: 312px;
+
+		.co_body.article-body:has(*) {
+			min-height: 50px;
+		}
+	}
+}
+
+.co_body .content p,
+.co_body .content li,
+.co_body .content .form-all li,
+html body.cco_body p,
+.form-all {
+	color: #343333;
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+}
+
+.form-line {
+	border: 0;
+}
+
+.cco_templateless_template,
+.cco_templateless_template a {
+	background: #f9f9f9;
+}
+
+body,
+.cco_templateless_template,
+.cco_templateless_template a {
+	color: black;
+	font-family: "Open Sans", sans-serif;
+}
+
+#chabad_head {
+	display: flex !important;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	color: white;
+	font-family: "Open Sans", sans-serif;
+
+	body:not(.mobile) & {
+		gap: 20px;
+	}
+
+	#PreschoolTitle {
+		font-size: clamp(18px, 2vw, 37px);
+		font-weight: bold;
+		margin: 10px 30px;
+	}
+}
+
+#PreschoolSection1 {
+	#PreschoolSection1Image {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		filter: brightness(0.6);
+		max-height: max(30vh, 600px, 100%);
+	}
+
+	#PreschoolSection1Title,
+	#PreschoolSection1Description,
+	#PreschoolSection1Button {
+		animation-name: zoomIn;
+		animation-duration: 700ms;
+		animation-timing-function: ease;
+		animation-direction: normal;
+		animation-fill-mode: both;
+	}
+
+	#PreschoolSection1Title {
+		color: white;
+		font-size: 70px;
+		font-weight: 400;
+		font-family: Cinzel, Helvetica, Arial, sans-serif;
+		animation-delay: 500ms;
+
+		@container (max-width: 600px) {
+			font-size: 50px;
+		}
+
+		text-wrap: balance;
+	}
+
+	#PreschoolSection1Description {
+		animation-delay: 1000ms;
+		letter-spacing: 1px;
+		font-size: 23px;
+		color: white;
+	}
+
+	#PreschoolSection1Button {
+		animation-delay: 1500ms;
+		background-color: #7B8965;
+		color: white;
+		border-radius: 1000px;
+		font-size: 25px;
+		padding: 15px 30px;
+		font-weight: 400;
+		z-index: 1;
+		font-family: Cinzel, Helvetica, Arial, sans-serif;
+	}
+
+	.fonts {
+		font-family: "Open Sans", sans-serif;
+		font-weight: normal;
+		margin-bottom: 30px;
+		max-width: 600px;
+	}
+}
+
+#PreschoolSection2 {
+	@supports (grid-template-rows: subgrid) {
+		grid-column: full-width;
+	}
+
+	container-type: inline-size;
+	display: grid;
+	place-items: center;
+
+	@container (min-width: 850px) {
+		img {
+			grid-area: 1/1/3/2;
+		}
+
+		h3 {
+			grid-area: 1/2/2/3;
+			align-self: end;
+			justify-self: start;
+		}
+
+		.fonts {
+			grid-area: 2/2/3/3;
+			text-align: start;
+			align-self: start;
+		}
+	}
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		mask: none;
+	}
+
+	h3 {
+		color: #697B54;
+		margin: 25px 25px 0 25px;
+	}
+
+	.fonts {
+		margin: 25px;
+	}
+}
+
+#PreschoolSection3 {
+	background: #73875C;
+	display: grid;
+	padding-bottom: 80px;
+	padding-top: 50px;
+
+	@supports (grid-template-rows: subgrid) {
+		grid-template-columns: subgrid;
+		grid-column: full-width;
+
+		> :first-child {
+			grid-column: content;
+		}
+	}
+
+	#PreschoolSection3Cards {
+		@supports (grid-template-rows: subgrid) {
+			grid-column: content;
+		}
+
+		display: flex;
+		flex-wrap: wrap;
+		gap: 25px;
+	}
+
+	.card,
+	.coitem {
+		display: contents;
+	}
+
+	img {
+		filter: brightness(0) saturate(100%) invert(56%) sepia(11%) saturate(815%) hue-rotate(40deg) brightness(88%) contrast(85%);
+	}
+
+	h3 {
+		margin-inline: auto;
+	}
+
+	.coitem:nth-child(even) .card-bodyf {
+		transform: scale(0.9);
+	}
+
+	.coitem:nth-of-type(2) .card-bodyf {
+		background: #566841;
+		color: white;
+		border: none;
+
+		* {
+			color: inherit;
+		}
+
+		img {
+			filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(31deg) brightness(102%) contrast(101%);
+		}
+	}
+
+	.card-bodyf {
+		flex: 1 1 300px;
+		border-top: 0;
+		border-right: 0;
+		border-left: 0;
+		border-bottom: 6px solid #8B9A77;
+		color: inherit;
+		box-shadow: 0 5px 35px rgba(30, 34, 40, 0.07);
+		background-color: #fff;
+		background-clip: border-box;
+		--card-spacer-y: 30px;
+		--card-spacer-x: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		z-index: 1;
+
+		h4 {
+			font-weight: 400;
+			font-family: Cinzel, Helvetica, Arial, sans-serif;
+			margin-bottom: 5px;
+			line-height: 1.45;
+			margin-top: 0;
+			color: #717863;
+			letter-spacing: -0.2px;
+			font-size: 19px;
+		}
+
+		.fonts {
+			margin-bottom: 10px;
+		}
+	}
+}
+
+#PreschoolSection4 {
+	@supports (grid-template-rows: subgrid) {
+		grid-column: breakout;
+	}
+
+	display: flex;
+	flex-wrap: wrap;
+
+	> :first-child {
+		width: 100%;
+	}
+
+	h3 {
+		color: #576147;
+	}
+
+	#PreschoolSection4Description {
+		line-height: 1.4;
+		padding-bottom: 40px;
+		margin-inline: auto;
+		max-width: 600px;
+	}
+
+	.preschool-section-4-card {
+		background: var(--color);
+		color: #fff;
+		padding: 2%;
+		width: 100%;
+
+		@container (min-width: 768px) {
+			width: 50%;
+		}
+
+		@container (min-width: 992px) {
+			width: 33.3333333333%;
+		}
+
+		h4 {
+			font-size: 30px;
+			color: #fff;
+			font-weight: 400;
+			font-family: Cinzel, Helvetica, Arial, sans-serif;
+			margin-bottom: 5px;
+			line-height: 1.45;
+			margin-top: 0;
+			letter-spacing: -0.2px;
+		}
+
+		.fonts {
+			margin-bottom: 0;
+		}
+	}
+
+	.preschool-section-4-card:nth-of-type(6n + 1),
+	div[real_id="Card"]:nth-of-type(6n + 1) .preschool-section-4-card {
+		--color: #3ab764;
+		--color-hover: #1d6e39;
+	}
+
+	.preschool-section-4-card:nth-of-type(6n + 2),
+	div[real_id="Card"]:nth-of-type(6n + 2) .preschool-section-4-card {
+		--color: #fc5172;
+		--color-hover: #832739;
+	}
+
+	.preschool-section-4-card:nth-of-type(6n + 3),
+	div[real_id="Card"]:nth-of-type(6n + 3) .preschool-section-4-card {
+		--color: #e7b338;
+		--color-hover: #a0740c;
+	}
+
+	.preschool-section-4-card:nth-of-type(6n + 4),
+	div[real_id="Card"]:nth-of-type(6n + 4) .preschool-section-4-card {
+		--color: #e668b3;
+		--color-hover: #873164;
+	}
+
+	.preschool-section-4-card:nth-of-type(6n + 5),
+	div[real_id="Card"]:nth-of-type(6n + 5) .preschool-section-4-card {
+		--color: #45a2bc;
+		--color-hover: #1a5b6d;
+	}
+
+	.preschool-section-4-card:nth-of-type(6n + 6),
+	div[real_id="Card"]:nth-of-type(6n + 6) .preschool-section-4-card {
+		--color: #e4613c;
+		--color-hover: #b13816;
+	}
+}
+
+.preschool-custom-section {
+	min-height: 350px;
+	display: grid;
+
+	@supports (grid-template-rows: subgrid) {
+		grid-template-columns: subgrid;
+		grid-column: content;
+	}
+
+	align-content: center;
+
+	> * {
+		margin-inline: auto;
+
+		@supports (grid-template-rows: subgrid) {
+			grid-column: content;
+		}
+
+		@container (min-width: 1200px) {
+			width: 91%;
+		}
+
+		@container (min-width: 1400px) {
+			width: 83%;
+		}
+	}
+}
+
+.preschool-title-spacing {
+	@container (min-width: 1200px) {
+		padding-inline: 50px;
+	}
+
+	margin-bottom: 40px;
+}
+
+#PreschoolSection5 {
+	background-image: url(/images/Shluchim/minisites/themes/preschool2/photos/bg125.jpg);
+
+	@supports (grid-template-rows: subgrid) {
+		grid-column: full-width;
+	}
+}
+
+#PreschoolSection7 {
+	background-image: url(/images/Shluchim/minisites/themes/preschool2/photos/bg126.jpg);
+	display: grid;
+
+	@supports (grid-template-rows: subgrid) {
+		grid-column: full-width;
+		grid-template-columns: subgrid;
+
+		> :first-child {
+			grid-column: content;
+		}
+	}
+
+	h3 {
+		margin-inline: auto;
+	}
+
+	#PreschoolSection7Cards {
+		@supports (grid-template-rows: subgrid) {
+			grid-column: content;
+		}
+
+		display: flex;
+		flex-wrap: wrap;
+		gap: 25px;
+		justify-content: center;
+	}
+
+	img[src$=".svg"] {
+		filter: brightness(0) saturate(100%) invert(76%) sepia(50%) saturate(6269%) hue-rotate(213deg) brightness(102%) contrast(101%);
+	}
+
+	.card {
+		display: contents;
+	}
+
+	.coitem {
+		flex: 1 1 350px;
+		z-index: 1;
+	}
+
+	.card-bodyf {
+		border-top: 0;
+		border-right: 0;
+		border-left: 0;
+		border-bottom: 6px solid #7B8965;
+		color: inherit;
+		box-shadow: 0 5px 35px rgba(30, 34, 40, 0.07);
+		background-color: #fff;
+		background-clip: border-box;
+		border-radius: 8px;
+		--card-spacer-y: 40px;
+		--card-spacer-x: 40px;
+		height: calc(100% - 40px);
+
+		h4 {
+			font-weight: 400;
+			font-family: Cinzel, Helvetica, Arial, sans-serif;
+			margin-bottom: 5px;
+			line-height: 1.45;
+			margin-top: 0;
+			color: #717863;
+			letter-spacing: -0.2px;
+			font-size: 19px;
+		}
+
+		.fonts {
+			margin-bottom: 10px;
+		}
+	}
+}
+
+#Testimonials {
+	display: grid;
+
+	@supports (grid-template-rows: subgrid) {
+		grid-column: full-width;
+		grid-template-columns: subgrid;
+
+		> * {
+			grid-column: content;
+		}
+	}
+
+	background-color: #eff6fe !important;
+
+	#TestimonialsTitle {
+		color: #92278f;
+	}
+
+	.card {
+		display: contents;
+	}
+
+	.card-body:before {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 0;
+		height: 0;
+		border-left: 20px solid transparent;
+		border-top: 20px solid red;
+		margin: 10px;
+		content: "";
+	}
+
+	.card-body {
+		border: 0;
+		color: inherit;
+		background-color: #fff;
+		background-clip: border-box;
+		border-radius: 8px;
+		--card-spacer-y: 40px;
+		--card-spacer-x: 40px;
+		height: calc(100% - 85px);
+	}
+
+	blockquote.icon {
+		position: relative;
+		border: 0;
+		padding: 0;
+		font-size: 17px;
+		line-height: 1.7;
+		font-weight: 500;
+		margin: 0;
+
+		&:before {
+			content: "\201d";
+			position: absolute;
+			top: -30px;
+			left: -18px;
+			color: rgba(52, 63, 82, 0.05);
+			font-size: 200px;
+			line-height: 1;
+			z-index: 1;
+			overflow: hidden;
+
+			@supports (overflow: clip) {
+				overflow: clip;
+			}
+		}
+	}
+
+	.blockquote-details {
+		display: flex;
+		align-items: center;
+		text-align: start;
+
+		.info {
+			padding-inline: 20px;
+
+			h5 {
+				line-height: 1.5;
+				margin-bottom: 5px;
+				font-weight: 400;
+				color: #717863;
+				font-size: 19px;
+				letter-spacing: 0.3px;
+				font-family: Cinzel, Helvetica, Arial, sans-serif;
+			}
+
+			.fonts {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	@container (max-width: 767px) {
+		.card-body {
+			padding: 20px;
+		}
+	}
+}
+
+#PreschoolLatestPhotos {
+	&:not(:has(div)) {
+		padding: 0 !important;
+	}
+}
+
+/* hide the wavy bottom border if there are no photos, so that it doesn't show up with a white background right after the other color */
+#wavy-bottom-border {
+	display: none;
+}
+
+/* if there are photos, show it with display block so it doesn't have a white space under it */
+#chabad_main_content:has(#PreschoolLatestPhotos div),
+.section_branch {
+	#wavy-bottom-border {
+		display: block;
+		padding-top: 50px;
+	}
+}
+
+#PreschoolFooterNav {
+	padding-top: 25px;
+	padding-bottom: 35px;
+	background: #5674a1;
+	color: white;
+
+	> div:first-child {
+		display: grid;
+		align-items: center;
+		gap: 25px;
+
+		@container (min-width: 768px) {
+			grid-template-columns: [about-start] 1fr [about-end nav-start] 2fr [nav-end];
+
+			#navigation {
+				grid-column: nav;
+				justify-self: end;
+				grid-row: 1/3;
+			}
+		}
+
+		h3 {
+			font-size: 23px;
+			font-weight: 400;
+			font-family: Cinzel, Helvetica, Arial, sans-serif;
+			line-height: 1.35;
+			color: white;
+			letter-spacing: 1px;
+			grid-column: 1;
+		}
+
+		.fonts {
+			font-size: 18px;
+			font-weight: 500;
+			grid-column: 1;
+		}
+	}
+}
+
+#PreschoolFooter {
+	padding-block: 25px;
+	background: #061737;
+	color: #fff;
+
+	> div:first-child {
+		display: block;
+
+		@container (min-width: 768px) {
+			display: grid;
+			grid-template-columns: [about-start] 2fr [about-end nav-start] 1fr [nav-end];
+			justify-content: space-between;
+			align-items: center;
+
+			.fonts {
+				grid-column: about;
+			}
+		}
+	}
+
+	#PreschoolFooterButton {
+		display: block;
+		grid-column: nav;
+		background-color: #32afea;
+		color: white;
+		border-radius: 1000px;
+		font-size: 20px;
+		line-height: 34px;
+		padding: 10px 20px;
+		font-weight: 400;
+		max-width: -moz-fit-content;
+		max-width: fit-content;
+		justify-self: end;
+
+		@container (max-width: 768px) {
+			margin-top: 25px;
+			margin-inline: auto;
+		}
+	}
+}
+
+#PreschoolFooterButton,
+.chabad_more_button,
+#chabad_body_page .btn,
+.co_photo_gallery_footer a,
+#PreschoolSection1Button {
+	transition: all 0.3s;
+
+	&:hover {
+		transform: translateY(-3px);
+		box-shadow: 0 5px 15px rgba(30, 34, 40, 0.15);
+	}
+}
+
+div[name="co_section"][real_id^="column_promo"] {
+	display: flex;
+	width: 100%;
+	height: auto;
+
+	@supports (height: fit-content) {
+		height: fit-content;
+	}
+}
+
+@keyframes zoomIn {
+	0% {
+		opacity: 0;
+		transform: scale3d(0.3, 0.3, 0.3);
+	}
+
+	50% {
+		opacity: 1;
+	}
+}
+
+body:has(#cco_body > #photos > .photo[data-img="0"]) {
+	#cco_body > #photos {
+		min-height: 150px;
+	}
+}
+
+:where(.set-direction-to-content, .co_photo_gallery, .co_photo_gallery_head div, div#co_photo_gallery .co_photo_gallery_footer, div#co_photo_gallery .co_photo_gallery_footer a, .chabad_text_banner, #PreschoolSection7, .preschool-section-4-card h4, #PreschoolSection4, #PreschoolSection3, #PreschoolSection2, #PreschoolSection1, body.mobile #chabad_head a, .article-header__title, .card-bodyf, .display-3, .btn),
+div#chabad_head .chabad_logo :is(a, div, a div) {
+	text-align: center;
+}
+
+img[src$="/bh.gif"],
+.content3:has(script),
+.preschool-shape-1,
+.preschool-shape-2 {
+	display: none;
+}
+
+.chabad_announce {
+	overflow: visible;
+}
+
+div,
+a {
+	font-family: inherit;
+}
+
+body.sites-article #header {
+	border-bottom: none;
+}
+
+/* styles are hosted at https://preschool-template-6.netlify.app/style.css */
+/* scss is hosted at https://preschool-template-6.netlify.app/style.scss */
