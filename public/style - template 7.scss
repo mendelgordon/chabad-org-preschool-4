@@ -398,43 +398,6 @@ img {
 		color: white;
 	}
 
-	.btn {
-		animation-name: zoomIn;
-		animation-duration: 700ms;
-		animation-timing-function: ease;
-		animation-direction: normal;
-		animation-fill-mode: both;
-	}
-
-	.btn {
-		--btn-padding-x: 24px;
-		--btn-padding-y: 10px;
-		--btn-bg: transparent;
-		--btn-border-color: transparent;
-		--btn-hover-border-color: transparent;
-		padding: var(--btn-padding-y) var(--btn-padding-x);
-		font-size: 16px;
-		font-weight: 400;
-		line-height: 1.7;
-		color: #585858;
-		vertical-align: middle;
-		cursor: pointer;
-		-webkit-user-select: none;
-		user-select: none;
-		border: 2px solid var(--btn-border-color);
-		background-color: var(--btn-bg);
-		box-shadow: unset;
-		transition: all 0.3s;
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
-		transform: translateY(0);
-		letter-spacing: -0.2px;
-		position: relative;
-		animation-delay: 1500ms;
-		border-radius: 1000px !important;
-	}
-
 	.display-3 {
 		font-family: "Cinzel", Helvetica, Arial, "sans-serif";
 		font-size: 50px;
@@ -445,29 +408,6 @@ img {
 			-webkit-backdrop-filter: blur(1px);
 			backdrop-filter: blur(1px);
 		}
-	}
-
-	.btn-primaryx,
-	.btn-primaryx2 {
-		font-size: 20px;
-		margin-top: -35px;
-		--btn-padding-x: 28px !important;
-		--btn-padding-y: 20px !important;
-		--btn-bg: #fff;
-		--btn-hover-bg: #fff;
-		--btn-active-bg: #fff;
-	}
-
-	.btn-primaryx {
-		--btn-border-color: #fff;
-		--btn-hover-border-color: #fff;
-		--btn-active-border-color: #fff;
-	}
-
-	.btn-primaryx2 {
-		--btn-border-color: #9a8fff;
-		--btn-hover-border-color: #9a8fff;
-		--btn-active-border-color: #9a8fff;
 	}
 
 	.swiper-slide,
@@ -592,22 +532,6 @@ img {
 				font-size: 40px;
 			}
 		}
-	}
-
-	.card-border-bottom:after {
-		bottom: 0;
-		right: 0;
-		left: 0;
-		border-bottom-width: 4px;
-		border-top-width: calc(8px - 4px);
-		border-bottom-style: solid;
-		border-top-style: solid;
-		border-bottom-color: inherit;
-		border-top-color: transparent;
-		border-bottom-left-radius: 8px;
-		border-bottom-right-radius: 8px;
-		content: "";
-		position: absolute;
 	}
 
 	a:hover {
@@ -1544,7 +1468,6 @@ body {
 }
 
 #PreschoolFooterButton,
-#chabad_body_page .btn,
 .co_photo_gallery_footer a,
 #PreschoolSection1Button {
 	transition: all 0.3s;
@@ -1582,7 +1505,7 @@ body:has(#cco_body > #photos > .photo[data-img="0"]) {
 	}
 }
 
-:where(.set-direction-to-content, .co_photo_gallery, .co_photo_gallery_head div, div#co_photo_gallery .co_photo_gallery_footer, div#co_photo_gallery .co_photo_gallery_footer a, #PreschoolSection7, .preschool-section-4-card h4, #PreschoolSection4, #PreschoolSection3, #PreschoolSection2, #PreschoolSection1, body.mobile #chabad_head a, .article-header__title, .card-bodyf, .display-3, .btn) {
+:where(.set-direction-to-content, .co_photo_gallery, .co_photo_gallery_head div, div#co_photo_gallery .co_photo_gallery_footer, div#co_photo_gallery .co_photo_gallery_footer a, #PreschoolSection7, .preschool-section-4-card h4, #PreschoolSection4, #PreschoolSection3, #PreschoolSection2, #PreschoolSection1, body.mobile #chabad_head a, .article-header__title, .card-bodyf, .display-3) {
 	text-align: center;
 }
 

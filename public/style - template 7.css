@@ -347,42 +347,6 @@ img {
 :is(#chabad_body_page, #Co_ContentEditor_Container) .preschool-blue-color {
   color: white;
 }
-:is(#chabad_body_page, #Co_ContentEditor_Container) .btn {
-  animation-name: zoomIn;
-  animation-duration: 700ms;
-  animation-timing-function: ease;
-  animation-direction: normal;
-  animation-fill-mode: both;
-}
-:is(#chabad_body_page, #Co_ContentEditor_Container) .btn {
-  --btn-padding-x: 24px;
-  --btn-padding-y: 10px;
-  --btn-bg: transparent;
-  --btn-border-color: transparent;
-  --btn-hover-border-color: transparent;
-  padding: var(--btn-padding-y) var(--btn-padding-x);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.7;
-  color: #585858;
-  vertical-align: middle;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-       user-select: none;
-  border: 2px solid var(--btn-border-color);
-  background-color: var(--btn-bg);
-  box-shadow: unset;
-  transition: all 0.3s;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transform: translateY(0);
-  letter-spacing: -0.2px;
-  position: relative;
-  animation-delay: 1500ms;
-  border-radius: 1000px !important;
-}
 :is(#chabad_body_page, #Co_ContentEditor_Container) .display-3 {
   font-family: "Cinzel", Helvetica, Arial, "sans-serif";
   font-size: 50px;
@@ -394,26 +358,6 @@ img {
     -webkit-backdrop-filter: blur(1px);
     backdrop-filter: blur(1px);
   }
-}
-:is(#chabad_body_page, #Co_ContentEditor_Container) .btn-primaryx,
-:is(#chabad_body_page, #Co_ContentEditor_Container) .btn-primaryx2 {
-  font-size: 20px;
-  margin-top: -35px;
-  --btn-padding-x: 28px !important;
-  --btn-padding-y: 20px !important;
-  --btn-bg: #fff;
-  --btn-hover-bg: #fff;
-  --btn-active-bg: #fff;
-}
-:is(#chabad_body_page, #Co_ContentEditor_Container) .btn-primaryx {
-  --btn-border-color: #fff;
-  --btn-hover-border-color: #fff;
-  --btn-active-border-color: #fff;
-}
-:is(#chabad_body_page, #Co_ContentEditor_Container) .btn-primaryx2 {
-  --btn-border-color: #9a8fff;
-  --btn-hover-border-color: #9a8fff;
-  --btn-active-border-color: #9a8fff;
 }
 :is(#chabad_body_page, #Co_ContentEditor_Container) .swiper-slide,
 :is(#chabad_body_page, #Co_ContentEditor_Container) .card {
@@ -517,21 +461,6 @@ img {
   :is(#chabad_body_page, #Co_ContentEditor_Container) .master-content-wrapper .article-header__title {
     font-size: 40px;
   }
-}
-:is(#chabad_body_page, #Co_ContentEditor_Container) .card-border-bottom:after {
-  bottom: 0;
-  right: 0;
-  left: 0;
-  border-bottom-width: 4px;
-  border-top-width: 4px;
-  border-bottom-style: solid;
-  border-top-style: solid;
-  border-bottom-color: inherit;
-  border-top-color: transparent;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  content: "";
-  position: absolute;
 }
 :is(#chabad_body_page, #Co_ContentEditor_Container) a:hover {
   text-decoration: none;
@@ -1366,13 +1295,11 @@ body:not(.mobile) #chabad_head {
 }
 
 #PreschoolFooterButton,
-#chabad_body_page .btn,
 .co_photo_gallery_footer a,
 #PreschoolSection1Button {
   transition: all 0.3s;
 }
 #PreschoolFooterButton:hover,
-#chabad_body_page .btn:hover,
 .co_photo_gallery_footer a:hover,
 #PreschoolSection1Button:hover {
   transform: translateY(-3px);
@@ -1404,7 +1331,7 @@ body:has(#cco_body > #photos > .photo[data-img="0"]) #cco_body > #photos {
   min-height: 150px;
 }
 
-:where(.set-direction-to-content, .co_photo_gallery, .co_photo_gallery_head div, div#co_photo_gallery .co_photo_gallery_footer, div#co_photo_gallery .co_photo_gallery_footer a, #PreschoolSection7, .preschool-section-4-card h4, #PreschoolSection4, #PreschoolSection3, #PreschoolSection2, #PreschoolSection1, body.mobile #chabad_head a, .article-header__title, .card-bodyf, .display-3, .btn) {
+:where(.set-direction-to-content, .co_photo_gallery, .co_photo_gallery_head div, div#co_photo_gallery .co_photo_gallery_footer, div#co_photo_gallery .co_photo_gallery_footer a, #PreschoolSection7, .preschool-section-4-card h4, #PreschoolSection4, #PreschoolSection3, #PreschoolSection2, #PreschoolSection1, body.mobile #chabad_head a, .article-header__title, .card-bodyf, .display-3) {
   text-align: center;
 }
 
