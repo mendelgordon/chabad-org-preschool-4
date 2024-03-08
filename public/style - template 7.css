@@ -15,11 +15,10 @@
   padding-top: 0;
 }
 
-.g960.footer {
+.g960.footer.g960.footer {
   display: none;
 }
 
-.g960.footer,
 #BodyContainer {
   max-width: 100%;
   margin: auto;
@@ -253,7 +252,7 @@ body.noselect a:-webkit-any-link {
   }
 }
 .section_root #chabad_main_content:not(:has(#PreschoolSection1Image)) #chabad_head {
-  background-color: #12b0d1;
+  background-color: #8B9A77;
   margin-bottom: 50px;
 }
 
@@ -887,6 +886,7 @@ body:not(.mobile) #chabad_head {
 @container (min-width: 850px) {
   #PreschoolSection2 img {
     grid-area: 1/1/3/2;
+    height: 100%;
   }
   #PreschoolSection2 h3 {
     grid-area: 1/2/2/3;
@@ -901,11 +901,9 @@ body:not(.mobile) #chabad_head {
 }
 #PreschoolSection2 img {
   width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-mask: none;
-          mask: none;
+  height: auto;
 }
 #PreschoolSection2 h3 {
   color: #697B54;
