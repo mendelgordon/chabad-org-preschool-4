@@ -914,7 +914,7 @@ body:not(.mobile) #chabad_head {
 
 #PreschoolSection3 {
   position: relative;
-  background-image: url(/media/images/1269/TBqB12692128.jpg);
+  background-image: url(https://w2.chabad.org/media/images/1269/TBqB12692128.jpg);
   display: grid;
   padding-bottom: 80px;
   padding-top: 50px;
@@ -1117,7 +1117,7 @@ body:not(.mobile) #chabad_head {
 
 #PreschoolSection5 {
   position: relative;
-  background-image: url(/media/images/1269/IDCY12692266.jpg);
+  background-image: url(https://w2.chabad.org/media/images/1269/IDCY12692266.jpg);
 }
 #PreschoolSection5::before {
   content: "";
@@ -1189,7 +1189,7 @@ body:not(.mobile) #chabad_head {
   height: calc(100% - 20px);
 }
 #PreschoolSection7 .coitem:nth-of-type(odd) .preschool-background-circle {
-  background-image: url(/media/images/1269/RwBI12692346.png);
+  background-image: url(https://w2.chabad.org/media/images/1269/RwBI12692346.png);
 }
 #PreschoolSection7 .coitem:nth-of-type(odd) .preschool-background-circle img {
   filter: brightness(0) saturate(100%) invert(96%) sepia(0%) saturate(0%) hue-rotate(119deg) brightness(104%) contrast(104%);
@@ -1201,13 +1201,13 @@ body:not(.mobile) #chabad_head {
   color: #fff;
 }
 #PreschoolSection7 .coitem:nth-of-type(even) .preschool-background-circle {
-  background-image: url(/media/images/1269/qGVT12692344.png);
+  background-image: url(https://w2.chabad.org/media/images/1269/qGVT12692344.png);
 }
 #PreschoolSection7 .coitem:nth-of-type(even) .preschool-background-circle img {
   filter: brightness(0) saturate(100%) invert(38%) sepia(50%) saturate(337%) hue-rotate(42deg) brightness(98%) contrast(85%);
 }
 #PreschoolSection7 .coitem:nth-of-type(even) .preschool-section-7-button img {
-  content: url(/media/images/1269/lRWq12692688.png);
+  content: url(https://w2.chabad.org/media/images/1269/lRWq12692688.png);
 }
 #PreschoolSection7 .preschool-section-7-button {
   height: 50px;
