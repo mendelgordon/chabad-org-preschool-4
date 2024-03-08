@@ -795,12 +795,11 @@ html body.cco_body p,
 
 .cco_templateless_template,
 .cco_templateless_template a {
-  background: #f9f9f9;
+  background: #85916a;
+  color: white;
 }
 
-body,
-.cco_templateless_template,
-.cco_templateless_template a {
+body {
   color: black;
   font-family: "Open Sans", sans-serif;
 }
