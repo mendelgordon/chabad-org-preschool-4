@@ -645,7 +645,9 @@ body:not(.mobile) #chabad_body_page {
 		}
 
 		a.parent.arrow:after {
-			content: " ↓";
+			content: " \f107";
+			font-family: 'Font Awesome 5 Pro';
+			white-space: pre;
 		}
 
 		.sub_menu {

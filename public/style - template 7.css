@@ -603,7 +603,9 @@ body:not(.mobile) #chabad_body_page #chabad_head .navi a {
   padding-inline: 10px;
 }
 body:not(.mobile) #chabad_body_page #chabad_head .navi a.parent.arrow:after {
-  content: " ↓";
+  content: " \f107";
+  font-family: "Font Awesome 5 Pro";
+  white-space: pre;
 }
 body:not(.mobile) #chabad_body_page #chabad_head .navi .sub_menu {
   border-bottom-right-radius: 10px;
