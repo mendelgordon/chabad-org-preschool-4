@@ -822,7 +822,7 @@ body:not(.mobile) #chabad_head {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  filter: brightness(0.6);
+  filter: brightness(0.4);
   max-height: max(30vh, 600px, 100%);
 }
 #PreschoolSection1 #PreschoolSection1Title,
