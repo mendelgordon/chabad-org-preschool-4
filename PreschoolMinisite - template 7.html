@@ -1,0 +1,435 @@
+<co:settings detached="true"/>
+<div id="chabad_body_page">
+	<div id="chabad_main_content">
+		<div id="chabad_head">
+			<co:template id="HeaderSection" name="header_section" title="Header Section" type="static" detached="true">
+				<co:section id="HeaderInner" name="Header" title="Header">
+					<a href="/<<articleid>>" id="PreschoolTitle">
+						<co:editable id="PreschoolName" name="PreschoolName" title="Preschool Name" actions="edit" datatype="line"><co:translate>Chabad Preschool</co:translate></co:editable>
+					</a>
+				</co:section>
+				<co:template class="chabad_navigator_bar" id="Navigation" name="nagivation" title="Navigation Bar" max_chars="70" use_custom_separator="true"></co:template>
+			</co:template>
+		</div>
+		<div id="chabad_body_content">
+			<co:template class="chabad_left_column" title="Content Area" actions="edit,delete" name="content_area" id="ContentArea" type="static">
+				<co:section id="Section1" name="Section" title="Hero Section" actions="edit,copy,delete">
+					<div id="PreschoolSection1">
+						<co:editable id="Image" name="Image" title="Image" attribute="src" actions="edit" tag_only="true">
+							<img src="/images/Shluchim/minisites/themes/preschool2/photos/banner.jfif" alt="Background" id="PreschoolSection1Image" />
+						</co:editable>
+						<div id="PreschoolSection1Text">
+							<h3 id="PreschoolSection1Title">
+								<co:editable id="Title" name="Title" title="Title" actions="edit,delete" datatype="html"><co:translate>Chabad Preschool Now Open!</co:translate></co:editable>
+							</h3>
+							<h2 class="fonts" id="PreschoolSection1Description">
+								<co:editable id="Description" name="Description" title="Description" actions="edit,delete" datatype="line"><co:translate>We are excited to announce that Chabad Preschool is now open.</co:translate></co:editable>
+							</h2>
+							<co:editable id="Button" name="Button" title="Button" attribute="href,innertext" actions="edit,delete,copy" tag_only="true">
+								<a href="/pregister" id="PreschoolSection1Button"><co:translate>Apply Now</co:translate></a>
+							</co:editable>
+						</div>
+					</div>
+				</co:section>
+				<co:section id="Section2" name="Section" title="Text and Image" actions="edit,delete,copy">
+					<div id="PreschoolSection2">
+						<co:editable id="Image" name="Image" title="Image" attribute="src" actions="edit,delete" tag_only="true">
+							<img src="/images/Shluchim/minisites/themes/preschool2/photos/banner.jfif" alt="image" id="PreschoolSection2Image" />
+						</co:editable>
+						<h3 class="display-3">
+							<co:editable id="Title" name="Title" title="Title" actions="edit,delete" datatype="html"><co:translate>Welcome to School!</co:translate></co:editable>
+						</h3>
+						<div class="fonts">
+							<co:editable id="Description" name="Description" title="Description" actions="edit,delete" datatype="text"><co:translate>Chabad Preschool offers an early childhood learning experience for 18 month olds through Pre-Kindergarten as well as Mom and Me classes for toddlers. Our core program is from 9am to 12:30pm with options for extended afternoon as well as full day. Our program places the highest priority on ensuring that every student is well prepared for Kindergarten. In addition, the children explores their Jewish heritage through singing and dancing, painting and creating, holiday cooking, story telling and lots of imaginative play. Each class enjoys all of our weekly specials; Drama, Yoga, Hebrew, Dance, Karate and Shabbat sing.</co:translate></co:editable>
+						</div>
+					</div>
+				</co:section>
+				<co:section id="column_promo_section_three" name="Columns" title="White Cards" actions="edit,delete,copy">
+					<div id="PreschoolSection3">
+						<co:section id="Header" name="Header" title="Header" actions="edit,delete,copy">
+							<co:item>
+								<h3 class="display-3 preschool-title-spacing preschool-blue-color">
+									<co:editable id="Title" name="Title" title="Title" actions="edit,delete,copy" datatype="line"><co:translate>Get Started With Our School</co:translate></co:editable>
+								</h3>
+							</co:item>
+						</co:section>
+						<div id="PreschoolSection3Cards">
+							<div class="preschool-shape-1"></div>
+							<div class="preschool-shape-2"></div>
+							<co:section id="Promo1" name="Promo" title="Promo" actions="edit,delete,copy">
+								<co:item class="coitem">
+									<div class="card">
+										<div class="card-bodyf">
+											<co:editable id="Image" name="Image" title="Image" attribute="src" actions="edit,delete" tag_only="true">
+												<img src="/images/Shluchim/minisites/themes/preschool2/photos/icon4.png" alt="" />
+											</co:editable>
+											<h4>
+												<co:editable id="Title" name="Title" title="Title" actions="edit,delete" datatype="line"><co:translate>Special Education</co:translate></co:editable>
+											</h4>
+											<div class="fonts">
+												<co:editable id="Description" name="Description" title="Description" actions="edit,delete" datatype="text"><co:translate>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.</co:translate></co:editable>
+											</div>
+										</div>
+									</div>
+								</co:item>
+							</co:section>
+							<co:section id="Promo2" name="Promo" title="Promo" actions="edit,delete,copy">
+								<co:item class="coitem">
+									<div class="card">
+										<div class="card-bodyf">
+											<co:editable id="Image" name="Image" title="Image" attribute="src" actions="edit,delete" tag_only="true">
+												<img src="/images/Shluchim/minisites/themes/preschool2/photos/icon5.png" alt="" />
+											</co:editable>
+											<h4>
+												<co:editable id="Title" name="Title" title="Title" actions="edit,delete" datatype="line"><co:translate>Full Day Session</co:translate></co:editable>
+											</h4>
+											<div class="fonts">
+												<co:editable id="Description" name="Description" title="Description" actions="edit,delete" datatype="text"><co:translate>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.</co:translate></co:editable>
+											</div>
+										</div>
+									</div>
+								</co:item>
+							</co:section>
+							<co:section id="Promo3" name="Promo" title="Promo" actions="edit,delete,copy">
+								<co:item class="coitem">
+									<div class="card">
+										<div class="card-bodyf">
+											<co:editable id="Image" name="Image" title="Image" attribute="src" actions="edit,delete" tag_only="true">
+												<img src="/images/Shluchim/minisites/themes/preschool2/photos/icon6.png" alt="" />
+											</co:editable>
+											<h4>
+												<co:editable id="Title" name="Title" title="Title" actions="edit,delete" datatype="line"><co:translate>Qualified Teachers</co:translate></co:editable>
+											</h4>
+											<div class="fonts">
+												<co:editable id="Description" name="Description" title="Description" actions="edit,delete" datatype="text"><co:translate>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.</co:translate></co:editable>
+											</div>
+										</div>
+									</div>
+								</co:item>
+							</co:section>
+							<co:section id="Promo4" name="Promo" title="Promo" actions="edit,delete,copy">
+								<co:item class="coitem">
+									<div class="card">
+										<div class="card-bodyf">
+											<co:editable id="Image" name="Image" title="Image" attribute="src" actions="edit,delete" tag_only="true">
+												<img src="/images/Shluchim/minisites/themes/preschool2/photos/icon7.png" alt="" />
+											</co:editable>
+											<h4>
+												<co:editable id="Title" name="Title" title="Title" actions="edit,delete" datatype="line"><co:translate>Quality Education</co:translate></co:editable>
+											</h4>
+											<div class="fonts">
+												<co:editable id="Description" name="Description" title="Description" actions="edit,delete" datatype="text"><co:translate>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.</co:translate></co:editable>
+											</div>
+										</div>
+									</div>
+								</co:item>
+							</co:section>
+						</div>
+					</div>
+				</co:section>
+				<co:section id="column_promoB" name="Columns" title="Colored Cards" actions="edit,delete,copy">
+					<div id="PreschoolSection4">
+						<co:section id="Heading" name="Heading" title="Heading" actions="edit,delete,copy">
+							<co:item>
+								<h3 id="PreschoolSection4Title" class="display-3 preschool-title-spacing">
+									<co:editable id="Title" name="Title" title="Title" actions="edit,delete" datatype="line"><co:translate>What We Offer</co:translate></co:editable>
+								</h3>
+								<div class="fonts" id="PreschoolSection4Description">
+									<co:editable id="Description" name="Description" title="Description" actions="edit,delete" datatype="text"><co:translate>At our education center, we provide a variety of benefits and advantages for your kids’ successful education, while allowing your kid to stay fully active, creative and healthy</co:translate></co:editable>
+								</div>
+							</co:item>
+						</co:section>
+						<co:section id="Card" name="Card" title="Card" actions="edit,delete,copy">
+							<co:item class="preschool-section-4-card">
+								<h4>
+									<co:editable id="Title" name="Title" title="Title" actions="edit,delete" datatype="line"><co:translate>Safety First</co:translate></co:editable>
+								</h4>
+								<div class="fonts">
+									<co:editable id="Description" name="Description" title="Description" actions="edit,delete" datatype="text"><co:translate>Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.</co:translate></co:editable>
+								</div>
+							</co:item>
+						</co:section>
+						<co:section id="Card" name="Card" title="Card" actions="edit,delete,copy">
+							<co:item class="preschool-section-4-card">
+								<h4>
+									<co:editable id="Title" name="Title" title="Title" actions="edit,delete" datatype="line"><co:translate>Small Class Size</co:translate></co:editable>
+								</h4>
+								<div class="fonts">
+									<co:editable id="Description" name="Description" title="Description" actions="edit,delete" datatype="text"><co:translate>Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.</co:translate></co:editable>
+								</div>
+							</co:item>
+						</co:section>
+						<co:section id="Card" name="Card" title="Card" actions="edit,delete,copy">
+							<co:item class="preschool-section-4-card">
+								<h4>
+									<co:editable id="Title" name="Title" title="Title" actions="edit,delete" datatype="line"><co:translate>Certified Teachers</co:translate></co:editable>
+								</h4>
+								<div class="fonts">
+									<co:editable id="Description" name="Description" title="Description" actions="edit,delete" datatype="text"><co:translate>Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.</co:translate></co:editable>
+								</div>
+							</co:item>
+						</co:section>
+						<co:section id="Card" name="Card" title="Card" actions="edit,delete,copy">
+							<co:item class="preschool-section-4-card">
+								<h4>
+									<co:editable id="Title" name="Title" title="Title" actions="edit,delete" datatype="line"><co:translate>Infant Care</co:translate></co:editable>
+								</h4>
+								<div class="fonts">
+									<co:editable id="Description" name="Description" title="Description" actions="edit,delete" datatype="text"><co:translate>Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.</co:translate></co:editable>
+								</div>
+							</co:item>
+						</co:section>
+						<co:section id="Card" name="Card" title="Card" actions="edit,delete,copy">
+							<co:item class="preschool-section-4-card">
+								<h4>
+									<co:editable id="Title" name="Title" title="Title" actions="edit,delete" datatype="line"><co:translate>Creative Lessons</co:translate></co:editable>
+								</h4>
+								<div class="fonts">
+									<co:editable id="Description" name="Description" title="Description" actions="edit,delete" datatype="text"><co:translate>Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.</co:translate></co:editable>
+								</div>
+							</co:item>
+						</co:section>
+						<co:section id="Card" name="Card" title="Card" actions="edit,delete,copy">
+							<co:item class="preschool-section-4-card">
+								<h4>
+									<co:editable id="Title" name="Title" title="Title" actions="edit,delete" datatype="line"><co:translate>Happy Environment</co:translate></co:editable>
+								</h4>
+								<div class="fonts">
+									<co:editable id="Description" name="Description" title="Description" actions="edit,delete" datatype="text"><co:translate>Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.</co:translate></co:editable>
+								</div>
+							</co:item>
+						</co:section>
+					</div>
+				</co:section>
+				<co:section id="Section5" name="Section" title="Custom (Grey)" actions="edit,delete,copy">
+					<div id="PreschoolSection5" class="preschool-custom-section">
+						<h3 class="display-3 preschool-title-spacing preschool-blue-color">
+							<co:editable id="Title" name="Title" title="Title" actions="edit,delete" datatype="line"><co:translate>Title 1</co:translate></co:editable>
+						</h3>
+						<div class="fonts">
+							<co:editable id="Description" name="Description" title="Description" actions="edit,delete" datatype="html"><co:translate>Chabad Preschool offers an early childhood learning experience for 18 month olds through Pre-Kindergarten as well as Mom and Me classes for toddlers. Our core program is from 9am to 12:30pm with options for extended afternoon as well as full day. Our program places the highest priority on ensuring that every student is well prepared for Kindergarten. In addition, the children explores their Jewish heritage through singing and dancing, painting and creating, holiday cooking, story telling and lots of imaginative play. Each class enjoys all of our weekly specials; Drama, Yoga, Hebrew, Dance, Karate and Shabbat sing.</co:translate></co:editable>
+						</div>
+					</div>
+				</co:section>
+				<co:section id="Section6" name="Section" title="Custom (White)" actions="edit,delete,copy">
+					<div id="PreschoolSection6" class="preschool-custom-section">
+						<h3 class="display-3 preschool-title-spacing preschool-blue-color">
+							<co:editable id="Title" name="Title" title="Title" actions="edit,delete" datatype="line"><co:translate>Title 1</co:translate></co:editable>
+						</h3>
+						<div class="fonts">
+							<co:editable id="Description" name="Description" title="Description" actions="edit,delete" datatype="html"><co:translate>Chabad Preschool offers an early childhood learning experience for 18 month olds through Pre-Kindergarten as well as Mom and Me classes for toddlers. Our core program is from 9am to 12:30pm with options for extended afternoon as well as full day. Our program places the highest priority on ensuring that every student is well prepared for Kindergarten. In addition, the children explores their Jewish heritage through singing and dancing, painting and creating, holiday cooking, story telling and lots of imaginative play. Each class enjoys all of our weekly specials; Drama, Yoga, Hebrew, Dance, Karate and Shabbat sing.</co:translate></co:editable>
+						</div>
+					</div>
+				</co:section>
+				<co:section id="column_promoC" name="Columns" title="Cards with Buttons" actions="edit,delete,copy">
+					<div id="PreschoolSection7">
+						<co:section id="Header" name="Header" title="Header" actions="edit,delete,copy">
+							<co:item>
+								<h3 class="display-3 preschool-title-spacing preschool-blue-color">
+									<co:editable id="Title" name="Title" title="Title" actions="edit,delete" datatype="line"><co:translate>Our Programs</co:translate></co:editable>
+								</h3>
+							</co:item>
+						</co:section>
+						<div id="PreschoolSection7Cards">
+							<co:section id="Card" name="Card" title="Card" actions="edit,delete,copy">
+								<co:item class="coitem">
+									<div class="card">
+										<div class="card-bodyf">
+											<div class="preschool-background-circle">
+											<co:editable id="Image" name="Image" title="Image" attribute="src" actions="edit,delete" tag_only="true">
+												<img src="/images/Shluchim/minisites/themes/preschool2/icons/lineal/watercolor.svg" alt="" />
+											</co:editable></div>
+											<h4>
+												<co:editable id="Title" name="Title" title="Title" datatype="line"><co:translate>Arts Program</co:translate></co:editable>
+											</h4>
+											<div class="fonts">
+												<co:editable id="Description" name="Description" title="Description" datatype="text"><co:translate>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.</co:translate></co:editable>
+											</div>
+										</div>
+									</div>
+									<co:editable id="Image" name="Image" title="Button" attribute="src,href" actions="edit,delete" tag_only="true">
+									<a href="#" class="preschool-section-7-button">
+									<img src="/media/images/1269/hmvY12692687.png" alt="Learn More Button" /></a>	
+									</co:editable>
+								</co:item>
+							</co:section>
+							<co:section id="Card" name="Card" title="Card" actions="edit,delete,copy">
+								<co:item class="coitem">
+									<div class="card">
+										<div class="card-bodyf">
+											<div class="preschool-background-circle"><co:editable id="Image" name="Image" title="Image" attribute="src" actions="edit,delete" tag_only="true">
+												<img src="/images/Shluchim/minisites/themes/preschool2/icons/lineal/light-bulb.svg" alt="" />
+											</co:editable></div>
+											<h4>
+												<co:editable id="Title" name="Title" title="Title" datatype="line"><co:translate>Jewish Studies</co:translate></co:editable>
+											</h4>
+											<div class="fonts">
+												<co:editable id="Description" name="Description" title="Description" datatype="text"><co:translate>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.</co:translate></co:editable>
+											</div>
+										</div>
+									</div>
+									<co:editable id="Image" name="Image" title="Button" attribute="src,href" actions="edit,delete" tag_only="true">
+									<a href="#" class="preschool-section-7-button">
+									<img src="/media/images/1269/hmvY12692687.png" alt="Learn More Button" /></a>	
+									</co:editable>
+								</co:item>
+							</co:section>
+							<co:section id="Card" name="Card" title="Card" actions="edit,delete,copy">
+								<co:item class="coitem">
+									<div class="card">
+										<div class="card-bodyf">
+											<div class="preschool-background-circle"><co:editable id="Image" name="Image" title="Image" attribute="src" actions="edit,delete" tag_only="true">
+												<img src="/images/Shluchim/minisites/themes/preschool2/icons/lineal/award.svg" alt="" />
+											</co:editable></div>
+											<h4>
+												<co:editable id="Title" name="Title" title="Title" datatype="line"><co:translate>Sports Program</co:translate></co:editable>
+											</h4>
+											<div class="fonts">
+												<co:editable id="Description" name="Description" title="Description" datatype="text"><co:translate>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.</co:translate></co:editable>
+											</div>
+										</div>
+									</div>
+									<co:editable id="Image" name="Image" title="Button" attribute="src,href" actions="edit,delete" tag_only="true">
+									<a href="#" class="preschool-section-7-button">
+									<img src="/media/images/1269/hmvY12692687.png" alt="Learn More Button" /></a>	
+									</co:editable>
+								</co:item>
+							</co:section>
+						</div>
+					</div>
+				</co:section>
+				<co:section id="column_promoD" name="Columns" title="Testimonials" actions="edit,delete,copy">
+					<div id="Testimonials">
+						<co:section id="Header" name="Header" title="Header" actions="edit,delete,copy">
+							<co:item>
+								<h3 class="display-3 preschool-title-spacing" id="TestimonialsTitle">
+									<co:editable id="Title" name="Title" title="Title" actions="edit,delete" datatype="line"><co:translate>What Parents Say</co:translate></co:editable>
+								</h3>
+							</co:item>
+						</co:section>
+						<div id="TestimonialSlides">
+							<div class="slider-wrapper">
+								<co:section id="Testimonial" name="Testimonial" title="Testimonial" actions="edit,delete,copy">
+									<co:item class="slide swiper-slide">
+										<div class="card">
+											<div class="card-body">
+												<blockquote class="icon">
+													<div class="fonts">
+														<co:editable id="Quote" name="Quote" title="Quote" datatype="text"><co:translate>“Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Cras justo odio dapibus facilisis sociis natoque penatibus.”</co:translate></co:editable>
+													</div>
+												</blockquote>
+											</div>
+										</div>
+										<div class="blockquote-details">
+											<co:editable id="Image" name="Image" title="Image" attribute="src" actions="edit,delete" tag_only="true">
+												<img src="/media/images/206/ivVI2067031.jpg" alt="" />
+											</co:editable>
+											<div class="info">
+												<h5>
+													<co:editable id="Name" name="Name" title="Name" datatype="line"><co:translate>Coriss Ambady</co:translate></co:editable>
+												</h5>
+												<div class="fonts">
+													<co:editable id="Title" name="Title" title="Title" datatype="line"><co:translate>Financial Analyst</co:translate></co:editable>
+												</div>
+											</div>
+										</div>
+									</co:item>
+								</co:section>
+								<co:section id="Testimonial" name="Testimonial" title="Testimonial" actions="edit,delete,copy">
+									<co:item class="slide swiper-slide">
+										<div class="card">
+											<div class="card-body">
+												<blockquote class="icon">
+													<div class="fonts">
+														<co:editable id="Quote" name="Quote" title="Quote" datatype="text"><co:translate>“Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Cras justo odio dapibus facilisis sociis natoque penatibus.”</co:translate></co:editable>
+													</div>
+												</blockquote>
+											</div>
+										</div>
+										<div class="blockquote-details">
+											<co:editable id="Image" name="Image" title="Image" attribute="src" actions="edit,delete" tag_only="true">
+												<img src="/media/images/206/ivVI2067031.jpg" alt="" />
+											</co:editable>
+											<div class="info">
+												<h5>
+													<co:editable id="Name" name="Name" title="Name" datatype="line"><co:translate>Cory Zamora</co:translate></co:editable>
+												</h5>
+												<div class="fonts">
+													<co:editable id="Title" name="Title" title="Title" datatype="line"><co:translate>Marketing Specialist</co:translate></co:editable>
+												</div>
+											</div>
+										</div>
+									</co:item>
+								</co:section>
+								<co:section id="Testimonial" name="Testimonial" title="Testimonial" actions="edit,delete,copy">
+									<co:item class="slide swiper-slide">
+										<div class="card">
+											<div class="card-body">
+												<blockquote class="icon">
+													<div class="fonts">
+														<co:editable id="Quote" name="Quote" title="Quote" datatype="text"><co:translate>“Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Cras justo odio dapibus facilisis sociis natoque penatibus.”</co:translate></co:editable>
+													</div>
+												</blockquote>
+											</div>
+										</div>
+										<div class="blockquote-details">
+											<co:editable id="Image" name="Image" title="Image" attribute="src" actions="edit,delete" tag_only="true">
+												<img src="/media/images/206/ivVI2067031.jpg" alt="" />
+											</co:editable>
+											<div class="info">
+												<h5>
+													<co:editable id="Name" name="Name" title="Name" datatype="line"><co:translate>Nikolas Brooten</co:translate></co:editable>
+												</h5>
+												<div class="fonts">
+													<co:editable id="Title" name="Title" title="Title" datatype="line"><co:translate>Sales Manager</co:translate></co:editable>
+												</div>
+											</div>
+										</div>
+									</co:item>
+								</co:section>
+							</div>
+						</div>
+					</div>
+				</co:section>
+				<co:section id="Section10" name="Latest Photos" title="Latest Photos" actions="edit,delete,copy">
+					<div id="PreschoolLatestPhotos">
+						<co:template id="latest_photo" name="Latest_Photo" title="Our Preschool in Photos" autoselect="true" aid="-1" actions="delete" photo_count="10" />
+					</div>
+				</co:section>
+			</co:template>
+		</div>
+		<co:template id="FooterSection" name="footer_section" title="Footer Section" type="static" detached="true">
+			<co:section id="Footer" name="Footer" title="Footer" actions="edit,delete">
+				<footer id="PreschoolFooterNav">
+					<div>
+						<h3>
+							<co:editable id="FooterHead" name="FooterHead" title="Title" actions="edit,delete,copy" datatype="line"><co:translate>ABOUT</co:translate></co:editable>
+						</h3>
+						<div class="fonts">
+							<co:editable id="FooterText" name="FooterText" title="Description" actions="edit,delete,copy" datatype="text"><co:translate>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididunt ultimam quantum</co:translate></co:editable>
+						</div>
+						<co:template class="chabad_navigator_bar" id="Navigation" name="nagivation" title="Navigation Bar" max_chars="70" use_custom_separator="true"></co:template>
+					</div>
+				</footer>
+				<footer id="PreschoolFooter">
+					<div>
+						<co:editable id="FooterContact" name="FooterContact" title="Contact Info" actions="edit,delete,copy" datatype="html">
+							<div class="fonts">
+								<span class="iconsfoot"><i class="fa fa-home">&nbsp;</i>
+									<<mosad_address>>
+								</span>
+								<span class="iconsfoot"><i class="fa fa-phone">&nbsp;</i>
+									<<mosad_phone>>
+								</span>
+								<span class="iconsfoot"><i class="fa fa-envelope">&nbsp;</i> <<mosad-director_primary_email_address>></span>
+							</div>
+						</co:editable>
+						<co:editable id="FooterApply" name="FooterApply" title="Button" attribute="href,innertext" actions="edit,delete" tag_only="true">
+							<a href="/pregister" id="PreschoolFooterButton"> <co:translate>APPLY NOW</co:translate></a>
+						</co:editable>
+					</div>
+				</footer>
+			</co:section>
+		</co:template>
+	</div>
+</div>

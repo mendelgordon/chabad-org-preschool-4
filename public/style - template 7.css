@@ -33,7 +33,7 @@
 
 #BodyContainer#BodyContainer .no-hero-image #co_content_container #chabad_body_content .master-content-wrapper.master-content-wrapper,
 .master-content-wrapper {
-  background-color: #12b0d1 !important;
+  background-color: #707D5E !important;
 }
 
 /* only apply this style when the template 5 template is being used */
@@ -305,10 +305,6 @@ header.article-header {
   margin-bottom: 50px;
 }
 
-img[src$="White-wavy-bottom-border.png"] {
-  display: none;
-}
-
 @supports (grid-template-rows: subgrid) {
   .mobile #chabad_head {
     grid-column: full-width;
@@ -326,9 +322,6 @@ html:has(.chabad_left_column) #chabad_head {
 @supports (grid-template-rows: subgrid) {
   :where(:is(#chabad_head, footer) > *) {
     grid-column: content;
-  }
-  #wavy-bottom-border {
-    grid-column: full-width;
   }
 }
 :where(#PreschoolSection4, #PreschoolSection5, #PreschoolSection6, #PreschoolSection7, #Testimonials, #PreschoolLatestPhotos) {
@@ -484,13 +477,6 @@ img {
   flex-wrap: wrap;
   justify-content: center;
 }
-#chabad_body_page .co_photo_gallery > a:hover,
-#chabad_body_page .slider-wrapper > a:hover,
-#Co_ContentEditor_Container .co_photo_gallery > a:hover,
-#Co_ContentEditor_Container .slider-wrapper > a:hover {
-  transform: scale(1.2);
-  z-index: 1;
-}
 #chabad_body_page #TestimonialSlides,
 #Co_ContentEditor_Container #TestimonialSlides {
   position: relative;
@@ -507,7 +493,11 @@ img {
 #chabad_body_page .slider-wrapper .blockquote-details img,
 #Co_ContentEditor_Container .slider-wrapper .blockquote-details img {
   border-radius: 50%;
-  width: 70px;
+  width: 55px;
+  height: auto;
+  aspect-ratio: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-right: 15px;
 }
 #chabad_body_page .co_photo_gallery,
@@ -527,12 +517,15 @@ img {
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
-  border-radius: 5px;
   aspect-ratio: 16/10;
+}
+#chabad_body_page .co_photo_gallery_head,
+#Co_ContentEditor_Container .co_photo_gallery_head {
+  text-align: center;
 }
 #chabad_body_page .co_photo_gallery_head div,
 #Co_ContentEditor_Container .co_photo_gallery_head div {
-  color: #393d72;
+  color: #576941;
   font-size: 50px;
   font-family: Cinzel, Helvetica, Arial, sans-serif;
   font-weight: 400;
@@ -552,7 +545,7 @@ img {
 }
 #chabad_body_page .master-content-wrapper .article-header__title,
 #Co_ContentEditor_Container .master-content-wrapper .article-header__title {
-  color: #717863 !important;
+  color: white !important;
   font-family: "Cinzel", Helvetica, Arial, "sans-serif";
   font-size: 70px;
 }
@@ -612,7 +605,7 @@ body:not(.mobile) #chabad_body_page #chabad_head .navi a.parent.arrow:after {
 body:not(.mobile) #chabad_body_page #chabad_head .navi .sub_menu {
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
-  background: #393d72;
+  background: #D3B398;
   top: auto;
 }
 body:not(.mobile) #chabad_body_page #chabad_head .navi .item .item {
@@ -673,7 +666,7 @@ body:not(.mobile) #chabad_body_page footer #menu ul {
   padding: 0;
 }
 body:not(.mobile) #chabad_body_page footer #menu .parent {
-  font-family: "Cinzel", Helvetica, Arial, "sans-serif";
+  font-family: "Open Sans", sans-serif;
   margin-bottom: 10px;
   font-size: 20px;
   letter-spacing: 0.5px;
@@ -701,13 +694,14 @@ div#chabad_main_content,
 div#co_photo_gallery .co_photo_gallery_footer a {
   float: none;
   padding-top: 30px;
-  background-color: #ffae00;
-  border: solid 2px #ffae00;
+  background-color: #566841;
+  border: solid 2px #566841;
   display: inline-block;
   color: #fff;
   border-radius: 1000px;
   font-size: 20px;
   padding: 8px 20px;
+  font-family: Cinzel, Helvetica, Arial, "sans-serif";
 }
 
 body.mobile #chabad_body_page .display-1 {
@@ -919,10 +913,18 @@ body:not(.mobile) #chabad_head {
 }
 
 #PreschoolSection3 {
-  background: #73875C;
+  position: relative;
+  background-image: url(/media/images/1269/TBqB12692128.jpg);
   display: grid;
   padding-bottom: 80px;
   padding-top: 50px;
+}
+#PreschoolSection3::before {
+  content: "";
+  position: absolute;
+  background-color: #73875C;
+  opacity: 0.9;
+  inset: 0;
 }
 @supports (grid-template-rows: subgrid) {
   #PreschoolSection3 {
@@ -936,7 +938,7 @@ body:not(.mobile) #chabad_head {
 #PreschoolSection3 #PreschoolSection3Cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 10px;
 }
 @supports (grid-template-rows: subgrid) {
   #PreschoolSection3 #PreschoolSection3Cards {
@@ -968,7 +970,7 @@ body:not(.mobile) #chabad_head {
   filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(31deg) brightness(102%) contrast(101%);
 }
 #PreschoolSection3 .card-bodyf {
-  flex: 1 1 300px;
+  flex: 1 1 200px;
   border-top: 0;
   border-right: 0;
   border-left: 0;
@@ -977,8 +979,8 @@ body:not(.mobile) #chabad_head {
   box-shadow: 0 5px 35px rgba(30, 34, 40, 0.07);
   background-color: #fff;
   background-clip: border-box;
-  --card-spacer-y: 30px;
-  --card-spacer-x: 30px;
+  --card-spacer-y: 20px;
+  --card-spacer-x: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1012,12 +1014,13 @@ body:not(.mobile) #chabad_head {
 }
 #PreschoolSection4 h3 {
   color: #576147;
+  margin-bottom: 20px;
 }
 #PreschoolSection4 #PreschoolSection4Description {
   line-height: 1.4;
   padding-bottom: 40px;
   margin-inline: auto;
-  max-width: 600px;
+  max-width: 800px;
 }
 #PreschoolSection4 .preschool-section-4-card {
   background: var(--color);
@@ -1048,35 +1051,29 @@ body:not(.mobile) #chabad_head {
 #PreschoolSection4 .preschool-section-4-card .fonts {
   margin-bottom: 0;
 }
-#PreschoolSection4 .preschool-section-4-card:nth-of-type(6n + 1),
-#PreschoolSection4 div[real_id=Card]:nth-of-type(6n + 1) .preschool-section-4-card {
-  --color: #3ab764;
-  --color-hover: #1d6e39;
-}
 #PreschoolSection4 .preschool-section-4-card:nth-of-type(6n + 2),
-#PreschoolSection4 div[real_id=Card]:nth-of-type(6n + 2) .preschool-section-4-card {
-  --color: #fc5172;
-  --color-hover: #832739;
+#PreschoolSection4 div[real_id=Card]:nth-of-type(6n + 1) .preschool-section-4-card {
+  --color: #556841;
 }
 #PreschoolSection4 .preschool-section-4-card:nth-of-type(6n + 3),
-#PreschoolSection4 div[real_id=Card]:nth-of-type(6n + 3) .preschool-section-4-card {
-  --color: #e7b338;
-  --color-hover: #a0740c;
+#PreschoolSection4 div[real_id=Card]:nth-of-type(6n + 2) .preschool-section-4-card {
+  --color: #E39834;
 }
 #PreschoolSection4 .preschool-section-4-card:nth-of-type(6n + 4),
-#PreschoolSection4 div[real_id=Card]:nth-of-type(6n + 4) .preschool-section-4-card {
-  --color: #e668b3;
-  --color-hover: #873164;
+#PreschoolSection4 div[real_id=Card]:nth-of-type(6n + 3) .preschool-section-4-card {
+  --color: #D2B298;
 }
 #PreschoolSection4 .preschool-section-4-card:nth-of-type(6n + 5),
-#PreschoolSection4 div[real_id=Card]:nth-of-type(6n + 5) .preschool-section-4-card {
-  --color: #45a2bc;
-  --color-hover: #1a5b6d;
+#PreschoolSection4 div[real_id=Card]:nth-of-type(6n + 4) .preschool-section-4-card {
+  --color: #76523E;
 }
 #PreschoolSection4 .preschool-section-4-card:nth-of-type(6n + 6),
+#PreschoolSection4 div[real_id=Card]:nth-of-type(6n + 5) .preschool-section-4-card {
+  --color: #9AA08C;
+}
+#PreschoolSection4 .preschool-section-4-card:nth-of-type(6n + 7),
 #PreschoolSection4 div[real_id=Card]:nth-of-type(6n + 6) .preschool-section-4-card {
-  --color: #e4613c;
-  --color-hover: #b13816;
+  --color: #786054;
 }
 
 .preschool-custom-section {
@@ -1119,7 +1116,23 @@ body:not(.mobile) #chabad_head {
 }
 
 #PreschoolSection5 {
-  background-image: url(/images/Shluchim/minisites/themes/preschool2/photos/bg125.jpg);
+  position: relative;
+  background-image: url(/media/images/1269/IDCY12692266.jpg);
+}
+#PreschoolSection5::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #D2B298;
+  opacity: 0.95;
+}
+#PreschoolSection5 .display-3 {
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+#PreschoolSection5 .fonts {
+  color: #0D0000;
+  z-index: 1;
 }
 @supports (grid-template-rows: subgrid) {
   #PreschoolSection5 {
@@ -1127,8 +1140,12 @@ body:not(.mobile) #chabad_head {
   }
 }
 
+#PreschoolSection6 .display-3 {
+  color: #624232;
+}
+
 #PreschoolSection7 {
-  background-image: url(/images/Shluchim/minisites/themes/preschool2/photos/bg126.jpg);
+  background-color: #9AA08C;
   display: grid;
 }
 @supports (grid-template-rows: subgrid) {
@@ -1154,21 +1171,14 @@ body:not(.mobile) #chabad_head {
     grid-column: content;
   }
 }
-#PreschoolSection7 img[src$=".svg"] {
-  filter: brightness(0) saturate(100%) invert(76%) sepia(50%) saturate(6269%) hue-rotate(213deg) brightness(102%) contrast(101%);
+#PreschoolSection7 .coitem {
+  flex: 1 1 250px;
+  z-index: 1;
 }
 #PreschoolSection7 .card {
   display: contents;
 }
-#PreschoolSection7 .coitem {
-  flex: 1 1 350px;
-  z-index: 1;
-}
 #PreschoolSection7 .card-bodyf {
-  border-top: 0;
-  border-right: 0;
-  border-left: 0;
-  border-bottom: 6px solid #7B8965;
   color: inherit;
   box-shadow: 0 5px 35px rgba(30, 34, 40, 0.07);
   background-color: #fff;
@@ -1176,25 +1186,70 @@ body:not(.mobile) #chabad_head {
   border-radius: 8px;
   --card-spacer-y: 40px;
   --card-spacer-x: 40px;
-  height: calc(100% - 40px);
+  height: calc(100% - 20px);
 }
-#PreschoolSection7 .card-bodyf h4 {
+#PreschoolSection7 .coitem:nth-of-type(odd) .preschool-background-circle {
+  background-image: url(/media/images/1269/RwBI12692346.png);
+}
+#PreschoolSection7 .coitem:nth-of-type(odd) .preschool-background-circle img {
+  filter: brightness(0) saturate(100%) invert(96%) sepia(0%) saturate(0%) hue-rotate(119deg) brightness(104%) contrast(104%);
+}
+#PreschoolSection7 .coitem:nth-of-type(even) .card-bodyf {
+  background-color: #617444;
+}
+#PreschoolSection7 .coitem:nth-of-type(even) .card-bodyf * {
+  color: #fff;
+}
+#PreschoolSection7 .coitem:nth-of-type(even) .preschool-background-circle {
+  background-image: url(/media/images/1269/qGVT12692344.png);
+}
+#PreschoolSection7 .coitem:nth-of-type(even) .preschool-background-circle img {
+  filter: brightness(0) saturate(100%) invert(38%) sepia(50%) saturate(337%) hue-rotate(42deg) brightness(98%) contrast(85%);
+}
+#PreschoolSection7 .coitem:nth-of-type(even) .preschool-section-7-button img {
+  content: url(/media/images/1269/lRWq12692688.png);
+}
+#PreschoolSection7 .preschool-section-7-button {
+  height: 50px;
+  width: 50px;
+  margin-top: -25px;
+  box-shadow: 0 5px 35px rgba(30, 34, 40, 0.07);
+  border-radius: calc(infinity * 1px);
+  display: block;
+  margin-inline: auto;
+  background-color: white;
+}
+#PreschoolSection7 .preschool-background-circle {
+  background-size: contain;
+  height: 100px;
+  width: 100px;
+  margin-inline: auto;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#PreschoolSection7 .preschool-background-circle img {
+  height: 75px;
+  padding: 15px;
+}
+#PreschoolSection7 h4 {
   font-weight: 400;
   font-family: Cinzel, Helvetica, Arial, sans-serif;
   margin-bottom: 5px;
   line-height: 1.45;
   margin-top: 0;
-  color: #717863;
+  color: #654635;
   letter-spacing: -0.2px;
-  font-size: 19px;
+  font-size: 22px;
 }
-#PreschoolSection7 .card-bodyf .fonts {
+#PreschoolSection7 .fonts {
   margin-bottom: 10px;
 }
 
 #Testimonials {
   display: grid;
-  background-color: #eff6fe !important;
+  border-bottom: 1px solid #C8C7C5;
 }
 @supports (grid-template-rows: subgrid) {
   #Testimonials {
@@ -1206,7 +1261,8 @@ body:not(.mobile) #chabad_head {
   }
 }
 #Testimonials #TestimonialsTitle {
-  color: #92278f;
+  color: #796457;
+  font-weight: 600;
 }
 #Testimonials .card {
   display: contents;
@@ -1218,64 +1274,52 @@ body:not(.mobile) #chabad_head {
   width: 0;
   height: 0;
   border-left: 20px solid transparent;
-  border-top: 20px solid red;
+  border-top: 20px solid #A2D158;
   margin: 10px;
   content: "";
+}
+#Testimonials .slide:nth-of-type(even) .card-body {
+  border: 1px solid #a2d158;
 }
 #Testimonials .card-body {
   border: 0;
   color: inherit;
   background-color: #fff;
-  background-clip: border-box;
-  border-radius: 8px;
+  box-shadow: 0 5px 35px rgba(30, 34, 40, 0.07);
   --card-spacer-y: 40px;
   --card-spacer-x: 40px;
   height: calc(100% - 85px);
 }
 #Testimonials blockquote.icon {
-  position: relative;
   border: 0;
   padding: 0;
   font-size: 17px;
   line-height: 1.7;
   font-weight: 500;
   margin: 0;
-}
-#Testimonials blockquote.icon:before {
-  content: "”";
-  position: absolute;
-  top: -30px;
-  left: -18px;
-  color: rgba(52, 63, 82, 0.05);
-  font-size: 200px;
-  line-height: 1;
-  z-index: 1;
-  overflow: hidden;
-}
-@supports (overflow: clip) {
-  #Testimonials blockquote.icon:before {
-    overflow: clip;
-  }
+  color: #858585;
 }
 #Testimonials .blockquote-details {
   display: flex;
   align-items: center;
   text-align: start;
 }
+#Testimonials .blockquote-details img[src$="/ivVI2067031.jpg"] {
+  filter: grayscale(1);
+}
 #Testimonials .blockquote-details .info {
   padding-inline: 20px;
 }
 #Testimonials .blockquote-details .info h5 {
-  line-height: 1.5;
-  margin-bottom: 5px;
+  line-height: 1;
   font-weight: 400;
-  color: #717863;
+  color: #585858;
   font-size: 19px;
-  letter-spacing: 0.3px;
-  font-family: Cinzel, Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 #Testimonials .blockquote-details .info .fonts {
   margin-bottom: 0;
+  color: #858585;
 }
 @container (max-width: 767px) {
   #Testimonials .card-body {
@@ -1283,26 +1327,14 @@ body:not(.mobile) #chabad_head {
   }
 }
 
-#PreschoolLatestPhotos:not(:has(div)) {
+#PreschoolLatestPhotos:not(:has(.co_photo_gallery)) {
   padding: 0 !important;
-}
-
-/* hide the wavy bottom border if there are no photos, so that it doesn't show up with a white background right after the other color */
-#wavy-bottom-border {
-  display: none;
-}
-
-/* if there are photos, show it with display block so it doesn't have a white space under it */
-#chabad_main_content:has(#PreschoolLatestPhotos div) #wavy-bottom-border,
-.section_branch #wavy-bottom-border {
-  display: block;
-  padding-top: 50px;
 }
 
 #PreschoolFooterNav {
   padding-top: 25px;
   padding-bottom: 35px;
-  background: #5674a1;
+  background: #566841;
   color: white;
 }
 #PreschoolFooterNav > div:first-child {
@@ -1323,7 +1355,7 @@ body:not(.mobile) #chabad_head {
 #PreschoolFooterNav > div:first-child h3 {
   font-size: 23px;
   font-weight: 400;
-  font-family: Cinzel, Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.35;
   color: white;
   letter-spacing: 1px;
@@ -1336,8 +1368,7 @@ body:not(.mobile) #chabad_head {
 }
 
 #PreschoolFooter {
-  padding-block: 25px;
-  background: #061737;
+  background: #0C1F3D;
   color: #fff;
 }
 #PreschoolFooter > div:first-child {
@@ -1359,7 +1390,6 @@ body:not(.mobile) #chabad_head {
   grid-column: nav;
   background-color: #32afea;
   color: white;
-  border-radius: 1000px;
   font-size: 20px;
   line-height: 34px;
   padding: 10px 20px;
