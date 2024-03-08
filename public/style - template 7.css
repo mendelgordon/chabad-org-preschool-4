@@ -25,7 +25,8 @@
   grid-column: full-width;
 }
 
-#co_content_container {
+#co_content_container,
+.cco_templateless_page {
   font-size: 17px;
   color: #585858;
 }
