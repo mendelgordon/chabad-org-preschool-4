@@ -903,7 +903,6 @@ body:not(.mobile) #chabad_head {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  height: auto;
 }
 #PreschoolSection2 h3 {
   color: #697B54;
