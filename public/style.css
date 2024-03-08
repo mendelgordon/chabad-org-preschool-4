@@ -693,7 +693,7 @@ body:not(.mobile) #chabad_body_page #chabad_head .navi a {
   padding-inline: 10px;
 }
 body:not(.mobile) #chabad_body_page #chabad_head .navi a.parent.arrow:after {
-  content: " \f107";
+  content: "  \f107";
   font-family: "Font Awesome 5 Pro";
   white-space: pre;
 }
@@ -772,6 +772,10 @@ body:not(.mobile) #chabad_body_page footer #menu .parent .parent {
 
 body.mobile div#co_photo_gallery .co_photo_gallery_body {
   padding: 0 !important;
+}
+
+#chabad_head .chabad_navigator_bar * {
+  float: none !important;
 }
 
 div#chabad_main_content,
@@ -1469,7 +1473,7 @@ body:not(.mobile) #chabad_head {
 }
 
 /* if there are photos, show it with display block so it doesn't have a white space under it */
-#chabad_main_content:has(#PreschoolLatestPhotos div) #wavy-bottom-border,
+#chabad_main_content:has(#PreschoolLatestPhotos .co_photo_gallery) #wavy-bottom-border,
 .section_branch #wavy-bottom-border {
   display: block;
   padding-top: 50px;

@@ -566,7 +566,7 @@ body:not(.mobile) #chabad_body_page {
 		}
 
 		a.parent.arrow:after {
-			content: " \f107";
+			content: "  \f107";
 			font-family: 'Font Awesome 5 Pro';
 			white-space: pre;
 		}
@@ -659,6 +659,10 @@ body:not(.mobile) #chabad_body_page {
 			}
 		}
 	}
+}
+
+#chabad_head .chabad_navigator_bar * {
+	float: none !important;
 }
 
 body.mobile div#co_photo_gallery .co_photo_gallery_body {

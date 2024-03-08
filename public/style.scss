@@ -712,7 +712,7 @@ body:not(.mobile) #chabad_body_page {
 		}
 
 		a.parent.arrow:after {
-			content: " \f107";
+			content: "  \f107";
 			font-family: 'Font Awesome 5 Pro';
 			white-space: pre;
 		}
@@ -809,6 +809,10 @@ body:not(.mobile) #chabad_body_page {
 
 body.mobile div#co_photo_gallery .co_photo_gallery_body {
 	padding: 0 !important;
+}
+
+#chabad_head .chabad_navigator_bar * {
+	float: none !important;
 }
 
 div#chabad_main_content,
@@ -1018,11 +1022,11 @@ body,
 		z-index: 1;
 		font-family: "Open Sans", sans-serif;
 	}
-		
-		.fonts {
-			font-family: "Open Sans", sans-serif;
-			font-weight: normal;
-		}
+
+	.fonts {
+		font-family: "Open Sans", sans-serif;
+		font-weight: normal;
+	}
 
 	img[src$="White-wavy-bottom-border.png"] {
 		margin-bottom: -1px;
@@ -1562,7 +1566,7 @@ body,
 }
 
 /* if there are photos, show it with display block so it doesn't have a white space under it */
-#chabad_main_content:has(#PreschoolLatestPhotos div),
+#chabad_main_content:has(#PreschoolLatestPhotos .co_photo_gallery),
 .section_branch {
 	#wavy-bottom-border {
 		display: block;

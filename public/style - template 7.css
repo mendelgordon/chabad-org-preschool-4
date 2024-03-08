@@ -492,7 +492,7 @@ body:not(.mobile) #chabad_body_page #chabad_head .navi a {
   padding-inline: 10px;
 }
 body:not(.mobile) #chabad_body_page #chabad_head .navi a.parent.arrow:after {
-  content: " \f107";
+  content: "  \f107";
   font-family: "Font Awesome 5 Pro";
   white-space: pre;
 }
@@ -567,6 +567,10 @@ body:not(.mobile) #chabad_body_page footer #menu .parent {
 }
 body:not(.mobile) #chabad_body_page footer #menu .parent .parent {
   padding-inline: 16px;
+}
+
+#chabad_head .chabad_navigator_bar * {
+  float: none !important;
 }
 
 body.mobile div#co_photo_gallery .co_photo_gallery_body {
