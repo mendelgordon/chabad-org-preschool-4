@@ -32,6 +32,7 @@
 
 .fonts {
   line-height: 1.6;
+  font-family: "Open Sans", sans-serif;
 }
 
 #BodyContainer#BodyContainer .no-hero-image #co_content_container #chabad_body_content .master-content-wrapper.master-content-wrapper,
@@ -756,7 +757,6 @@ body:not(.mobile) #chabad_head {
   font-family: Cinzel, Helvetica, Arial, sans-serif;
 }
 #PreschoolSection1 .fonts {
-  font-family: "Open Sans", sans-serif;
   font-weight: normal;
   margin-bottom: 30px;
   max-width: 600px;
@@ -1336,9 +1336,7 @@ body:has(#cco_body > #photos > .photo[data-img="0"]) #cco_body > #photos {
 }
 
 img[src$="/bh.gif"],
-.content3:has(script),
-.preschool-shape-1,
-.preschool-shape-2 {
+.content3:has(script) {
   display: none;
 }
 

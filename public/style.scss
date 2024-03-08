@@ -19,7 +19,10 @@
 	padding-top: 0;
 }
 
-.g960.footer,
+.g960.footer.g960.footer {
+	display: none;
+}
+
 #BodyContainer {
 	max-width: 100%;
 	margin: auto;
@@ -33,6 +36,7 @@
 
 .fonts {
 	line-height: 1.6;
+	font-family: "Open Sans", sans-serif;
 }
 
 #BodyContainer#BodyContainer .no-hero-image #co_content_container #chabad_body_content .master-content-wrapper.master-content-wrapper,
@@ -707,7 +711,9 @@ body:not(.mobile) #chabad_body_page {
 		}
 
 		a.parent.arrow:after {
-			content: " ↓";
+			content: " \f107";
+			font-family: 'Font Awesome 5 Pro';
+			white-space: pre;
 		}
 
 		.sub_menu {
@@ -826,6 +832,7 @@ div#co_photo_gallery .co_photo_gallery_footer a {
 	border-radius: 1000px;
 	font-size: 20px;
 	padding: 8px 20px;
+	font-family: "Open Sans", sans-serif;
 }
 
 body.mobile {
@@ -1008,7 +1015,13 @@ body,
 		padding: 15px 20px;
 		font-weight: 700;
 		z-index: 1;
+		font-family: "Open Sans", sans-serif;
 	}
+		
+		.fonts {
+			font-family: "Open Sans", sans-serif;
+			font-weight: normal;
+		}
 
 	img[src$="White-wavy-bottom-border.png"] {
 		margin-bottom: -1px;
@@ -1537,7 +1550,7 @@ body,
 }
 
 #PreschoolLatestPhotos {
-	&:not(:has(div)) {
+	&:not(:has(.co_photo_gallery)) {
 		padding: 0 !important;
 	}
 }
