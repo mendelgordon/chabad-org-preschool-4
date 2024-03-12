@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
 
+:root {
+	--preschool-font-family: "Cinzel", serif;
+	--preschool-font-family-2: "Open Sans", sans-serif;
+}
+
 /* page tools seem to stay even if you choose to hide them so here they get set to stay hidden always */
 .page-tools-sidebar {
 	display: none;
@@ -33,12 +38,12 @@
 
 .fonts {
 	line-height: 1.6;
-	font-family: "Open Sans", sans-serif;
+	font-family: var(--preschool-font-family-2);
 }
 
 #BodyContainer#BodyContainer .no-hero-image #co_content_container #chabad_body_content .master-content-wrapper.master-content-wrapper,
 .master-content-wrapper {
-	background-color: #707D5E !important;
+	background-color: rgb(112, 125, 94) !important;
 }
 
 /* only apply this style when the template 5 template is being used */
@@ -97,7 +102,7 @@ html:not(:has(link#k[href*="sites6"], link#k[href*="template5"])) .article_index
 			background-color: rgba(120, 120, 120, 0.6);
 
 			&:hover {
-				background: rgba(49, 124, 184, 0.6);
+				background: rgba(129, 185, 49, 0.6);
 			}
 		}
 	}
@@ -401,7 +406,7 @@ img {
 	}
 
 	.display-3 {
-		font-family: "Cinzel", Helvetica, Arial, "sans-serif";
+		font-family: var(--preschool-font-family);
 		font-size: 50px;
 		text-wrap: balance;
 		font-weight: 400;
@@ -443,7 +448,6 @@ img {
 
 		i {
 			margin-right: 5px;
-			color: #32afea;
 		}
 	}
 
@@ -505,7 +509,7 @@ img {
 		div {
 			color: #576941;
 			font-size: 50px;
-			font-family: Cinzel, Helvetica, Arial, sans-serif;
+			font-family: var(--preschool-font-family);
 			font-weight: 400;
 			line-height: 1.25;
 			padding-bottom: 20px;
@@ -526,7 +530,7 @@ img {
 
 		.article-header__title {
 			color: white !important;
-			font-family: "Cinzel", Helvetica, Arial, "sans-serif";
+			font-family: var(--preschool-font-family);
 			font-size: 70px;
 
 			@container (max-width: 700px) {
@@ -561,7 +565,7 @@ body:not(.mobile) #chabad_body_page {
 		height: unset;
 
 		a {
-			font-family: "Open Sans", sans-serif;
+			font-family: var(--preschool-font-family-2);
 			padding-inline: 10px;
 		}
 
@@ -639,7 +643,7 @@ body:not(.mobile) #chabad_body_page {
 		height: unset;
 
 		.sub_menu a {
-			font-family: "Open Sans", sans-serif;
+			font-family: var(--preschool-font-family-2);
 			font-size: 15px;
 			font-weight: 500;
 		}
@@ -649,7 +653,7 @@ body:not(.mobile) #chabad_body_page {
 		}
 
 		.parent {
-			font-family: "Open Sans", sans-serif;
+			font-family: var(--preschool-font-family-2);
 			margin-bottom: 10px;
 			font-size: 20px;
 			letter-spacing: 0.5px;
@@ -691,7 +695,7 @@ div#co_photo_gallery .co_photo_gallery_footer a {
 	border-radius: 1000px;
 	font-size: 20px;
 	padding: 8px 20px;
-	font-family: Cinzel, Helvetica, Arial, "sans-serif";
+	font-family: var(--preschool-font-family);
 }
 
 body.mobile {
@@ -782,7 +786,7 @@ body.mobile {
 html body.cco_body p,
 .form-all {
 	color: #343333;
-	font-family: "Open Sans", sans-serif;
+	font-family: var(--preschool-font-family-2);
 	font-size: 16px;
 }
 
@@ -798,7 +802,7 @@ html body.cco_body p,
 
 body {
 	color: black;
-	font-family: "Open Sans", sans-serif;
+	font-family: var(--preschool-font-family-2);
 }
 
 #chabad_head {
@@ -806,7 +810,7 @@ body {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	color: white;
-	font-family: "Open Sans", sans-serif;
+	font-family: var(--preschool-font-family-2);
 
 	body:not(.mobile) & {
 		gap: 20px;
@@ -842,7 +846,7 @@ body {
 		color: white;
 		font-size: 70px;
 		font-weight: 400;
-		font-family: Cinzel, Helvetica, Arial, sans-serif;
+		font-family: var(--preschool-font-family);
 		animation-delay: 500ms;
 
 		@container (max-width: 600px) {
@@ -868,7 +872,7 @@ body {
 		padding: 15px 30px;
 		font-weight: 400;
 		z-index: 1;
-		font-family: Cinzel, Helvetica, Arial, sans-serif;
+		font-family: var(--preschool-font-family);
 	}
 
 	.fonts {
@@ -1006,7 +1010,7 @@ body {
 
 		h4 {
 			font-weight: 400;
-			font-family: Cinzel, Helvetica, Arial, sans-serif;
+			font-family: var(--preschool-font-family);
 			margin-bottom: 5px;
 			line-height: 1.45;
 			margin-top: 0;
@@ -1063,7 +1067,7 @@ body {
 			font-size: 30px;
 			color: #fff;
 			font-weight: 400;
-			font-family: Cinzel, Helvetica, Arial, sans-serif;
+			font-family: var(--preschool-font-family);
 			margin-bottom: 5px;
 			line-height: 1.45;
 			margin-top: 0;
@@ -1281,7 +1285,7 @@ body {
 
 	h4 {
 		font-weight: 400;
-		font-family: Cinzel, Helvetica, Arial, sans-serif;
+		font-family: var(--preschool-font-family);
 		margin-bottom: 5px;
 		line-height: 1.45;
 		margin-top: 0;
@@ -1370,7 +1374,7 @@ body {
 				font-weight: 400;
 				color: #585858;
 				font-size: 19px;
-				font-family: "Open Sans", sans-serif;
+				font-family: var(--preschool-font-family-2);
 			}
 
 			.fonts {
@@ -1417,7 +1421,7 @@ body {
 		h3 {
 			font-size: 23px;
 			font-weight: 400;
-			font-family: "Open Sans", sans-serif;
+			font-family: var(--preschool-font-family-2);
 			line-height: 1.35;
 			color: white;
 			letter-spacing: 1px;
@@ -1433,8 +1437,8 @@ body {
 }
 
 #PreschoolFooter {
-	background: #0C1F3D;
-	color: #fff;
+	background: #D2B298;
+	color: black;
 
 	> div:first-child {
 		display: block;
@@ -1454,7 +1458,7 @@ body {
 	#PreschoolFooterButton {
 		display: block;
 		grid-column: nav;
-		background-color: #32afea;
+		background-color: #7e5c48;
 		color: white;
 		font-size: 20px;
 		line-height: 34px;
@@ -1463,11 +1467,16 @@ body {
 		max-width: -moz-fit-content;
 		max-width: fit-content;
 		justify-self: end;
+		font-family: var(--preschool-font-family);
 
 		@container (max-width: 768px) {
 			margin-top: 25px;
 			margin-inline: auto;
 		}
+	}
+
+	span[id="Tag: mosad-director_primary_email_address"] {
+		display: none;
 	}
 }
 
