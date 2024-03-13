@@ -724,7 +724,11 @@ body:not(.mobile) #chabad_head {
   -o-object-fit: cover;
      object-fit: cover;
   filter: brightness(0.4);
-  max-height: max(30vh, 600px, 100%);
+}
+@media (min-width: 1200px) {
+  #PreschoolSection1 #PreschoolSection1Image {
+    max-height: 800px;
+  }
 }
 #PreschoolSection1 #PreschoolSection1Title,
 #PreschoolSection1 #PreschoolSection1Description,

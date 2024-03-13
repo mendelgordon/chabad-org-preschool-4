@@ -829,7 +829,10 @@ body {
 		height: 100%;
 		object-fit: cover;
 		filter: brightness(0.4);
-		max-height: max(30vh, 600px, 100%);
+
+		@media (min-width: 1200px) {
+			max-height: 800px;
+		}
 	}
 
 	#PreschoolSection1Title,
