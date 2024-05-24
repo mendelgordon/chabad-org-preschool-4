@@ -338,6 +338,12 @@ header.article-header {
 	}
 }
 
+@supports (grid-template-rows: subgrid) {
+	.blog.feed {
+		grid-column: content;
+	}
+}
+
 #PreschoolSection1Image {
 	@supports (grid-template-rows: subgrid) {
 		grid-column: full-width;

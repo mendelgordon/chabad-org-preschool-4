@@ -343,6 +343,12 @@ header.article-header {
 	}
 }
 
+@supports (grid-template-rows: subgrid) {
+	.blog.feed {
+		grid-column: content;
+	}
+}
+
 /* Old minisites spell it chabad_left_colum instead of chabad_left_column */
 #chabad_left_colum > #content_banner:first-child,
 .chabad_image_banner,
