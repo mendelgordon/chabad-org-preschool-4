@@ -863,22 +863,22 @@ body.mobile footer a {
   height: 1px;
 }
 
-.section_branch #chabad_head {
+body:not(.section_root) #chabad_head {
   z-index: 2;
 }
-.section_branch #cco_body {
+body:not(.section_root) #cco_body {
   margin-top: 50px;
   min-height: 312px;
 }
 @supports (grid-template-rows: subgrid) {
-  .section_branch #cco_body {
+  body:not(.section_root) #cco_body {
     grid-column: content;
   }
 }
-.section_branch #cco_body .co_body.article-body:has(*) {
+body:not(.section_root) #cco_body .co_body.article-body:has(*) {
   min-height: 50px;
 }
-.section_branch #chabad_right_colum {
+body:not(.section_root) #chabad_right_colum {
   display: none !important;
 }
 
@@ -1479,7 +1479,7 @@ body:not(.mobile) #chabad_head {
 
 /* if there are photos, show it with display block so it doesn't have a white space under it */
 #chabad_main_content:has(#PreschoolLatestPhotos .co_photo_gallery) #wavy-bottom-border,
-.section_branch #wavy-bottom-border {
+body:not(.section_root) #wavy-bottom-border {
   display: block;
   padding-top: 50px;
 }

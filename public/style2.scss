@@ -767,7 +767,7 @@ body.mobile {
 	height: 1px;
 }
 
-.section_branch {
+body:not(.section_root) {
 	#chabad_head {
 		z-index: 2;
 	}

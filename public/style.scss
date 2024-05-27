@@ -909,7 +909,7 @@ body.mobile {
 	height: 1px;
 }
 
-.section_branch {
+body:not(.section_root) {
 	#chabad_head {
 		z-index: 2;
 	}
@@ -1573,7 +1573,7 @@ body,
 
 /* if there are photos, show it with display block so it doesn't have a white space under it */
 #chabad_main_content:has(#PreschoolLatestPhotos .co_photo_gallery),
-.section_branch {
+body:not(.section_root) {
 	#wavy-bottom-border {
 		display: block;
 		padding-top: 50px;
