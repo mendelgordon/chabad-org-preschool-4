@@ -263,7 +263,8 @@ body.noselect a:-webkit-any-link {
     grid-column: content;
   }
 }
-.section_root #chabad_main_content:not(:has(#content_banner:first-child, #PreschoolSection1Image)) #chabad_head {
+.section_root #chabad_main_content:not(:has(#content_banner:first-child, #PreschoolSection1Image)) #chabad_head,
+.section_branch:not(:has(.master-content-wrapper)) #chabad_head {
   background-color: #12b0d1;
   margin-bottom: 50px;
 }
