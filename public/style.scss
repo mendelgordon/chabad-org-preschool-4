@@ -347,6 +347,10 @@ header.article-header {
 	.blog.feed {
 		grid-column: content;
 	}
+
+	body.form.section_branch #ContentBody:not(:has(form)) * {
+		grid-column: content;
+	}
 }
 
 /* Old minisites spell it chabad_left_colum instead of chabad_left_column */
