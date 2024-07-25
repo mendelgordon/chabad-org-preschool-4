@@ -265,13 +265,17 @@ body.noselect {
 			overflow-wrap: break-word;
 			text-wrap: pretty;
 		}
+		/* Make the content width lower on inner pages of the minisite */
+		.section_branch & {
+			--content-max-width: 945px;
+		}
 	}
 
 	:where(#chabad_main_content div:not([class], [id], [style])) {
 		/* using :where() so this doesn't override anything else */
 		grid-column: full-width;
 		display: contents;
-		/* 
+		/*
 		these styles are to workaround sitecontrol randomly adding divs
 		the rules here are to make sure that the content still uses the available space, unless it has a set width or display property already, in which case that will take affect instead of these rules
 		*/
@@ -831,6 +835,10 @@ body {
 		font-size: clamp(18px, 2vw, 37px);
 		font-weight: bold;
 		margin: 10px 30px;
+	}
+
+	&:has(li:nth-of-type(8)) {
+		justify-content: center;
 	}
 }
 
