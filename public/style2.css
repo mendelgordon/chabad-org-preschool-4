@@ -292,7 +292,8 @@ header.article-header {
 }
 
 @supports (grid-template-rows: subgrid) {
-  .blog.feed {
+  .blog.feed,
+  .no_margin:has(> .blog) {
     grid-column: content;
   }
   body.form.section_branch #ContentBody:not(:has(form)) * {
