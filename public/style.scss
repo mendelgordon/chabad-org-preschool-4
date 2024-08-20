@@ -265,6 +265,7 @@ body.noselect {
 			overflow-wrap: break-word;
 			text-wrap: pretty;
 		}
+
 		.section_branch & {
 			/* Lower max width for inner pages of minisite */
 			--content-max-width: 945px;
@@ -349,7 +350,9 @@ header.article-header {
 }
 
 @supports (grid-template-rows: subgrid) {
-	.blog.feed {
+
+	.blog.feed,
+	.no_margin:has(>.blog) {
 		grid-column: content;
 	}
 
